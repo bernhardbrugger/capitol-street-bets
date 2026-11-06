@@ -1,0 +1,303 @@
+{
+  "bioguide_id": "CG0012",
+  "name": "Taylor Idris",
+  "initials": "TI",
+  "chamber": "Senate",
+  "party": "D",
+  "state": "CO",
+  "district": null,
+  "years_in_service": 1.8,
+  "curves": {
+    "30d": [
+      {
+        "date": "2026-10-21",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-28",
+        "member": 100.2252,
+        "spy": 100.1751
+      },
+      {
+        "date": "2026-11-04",
+        "member": 100.4509,
+        "spy": 100.3506
+      },
+      {
+        "date": "2026-11-06",
+        "member": 100.5414,
+        "spy": 100.4208
+      }
+    ],
+    "ytd": [
+      {
+        "date": "2026-10-21",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-28",
+        "member": 100.2252,
+        "spy": 100.1751
+      },
+      {
+        "date": "2026-11-04",
+        "member": 100.4509,
+        "spy": 100.3506
+      },
+      {
+        "date": "2026-11-06",
+        "member": 100.5414,
+        "spy": 100.4208
+      }
+    ],
+    "12m": [
+      {
+        "date": "2026-10-21",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-28",
+        "member": 100.2252,
+        "spy": 100.1751
+      },
+      {
+        "date": "2026-11-04",
+        "member": 100.4509,
+        "spy": 100.3506
+      },
+      {
+        "date": "2026-11-06",
+        "member": 100.5414,
+        "spy": 100.4208
+      }
+    ],
+    "all": [
+      {
+        "date": "2026-10-21",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-28",
+        "member": 100.2252,
+        "spy": 100.1751
+      },
+      {
+        "date": "2026-11-04",
+        "member": 100.4509,
+        "spy": 100.3506
+      },
+      {
+        "date": "2026-11-06",
+        "member": 100.5414,
+        "spy": 100.4208
+      }
+    ]
+  },
+  "trades": [
+    {
+      "transaction_date": "2026-10-21",
+      "filed_date": "2026-10-28",
+      "lag_days": 7,
+      "late": false,
+      "side": "buy",
+      "symbol": "AAPL",
+      "asset_name": "AAPL common stock [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    }
+  ],
+  "windows": {
+    "30d": {
+      "rank": null,
+      "previous_rank": null,
+      "rank_change": null,
+      "streak": 0,
+      "on_fire": false,
+      "benched": true,
+      "return": 0.005414,
+      "alpha": 0.001205,
+      "benchmark": 0.004208,
+      "copycat_return": 0.003154,
+      "copycat_alpha": 0.000702,
+      "trades": 1,
+      "avg_hold_days": 16.0,
+      "avg_filing_lag": 7.0,
+      "late_filings": 0,
+      "filings": 1,
+      "badges": [
+        {
+          "id": "beat_the_market",
+          "name": "Beat the Market",
+          "blurb": "Positive alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "index_hugger",
+          "name": "Index Hugger",
+          "blurb": "Alpha landed within 2 percentage points of the S&P."
+        },
+        {
+          "id": "tech_bro",
+          "name": "Tech Bro",
+          "blurb": "At least half the midpoint dollars sit in the technology list."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        }
+      ],
+      "excluded_options": 0,
+      "excluded_non_stock": 0,
+      "excluded_unknown": 0,
+      "unmatched_sells": 0,
+      "uncopyable": 0
+    },
+    "ytd": {
+      "rank": null,
+      "previous_rank": null,
+      "rank_change": null,
+      "streak": 0,
+      "on_fire": false,
+      "benched": true,
+      "return": 0.005414,
+      "alpha": 0.001205,
+      "benchmark": 0.004208,
+      "copycat_return": 0.003154,
+      "copycat_alpha": 0.000702,
+      "trades": 1,
+      "avg_hold_days": 16.0,
+      "avg_filing_lag": 7.0,
+      "late_filings": 0,
+      "filings": 1,
+      "badges": [
+        {
+          "id": "beat_the_market",
+          "name": "Beat the Market",
+          "blurb": "Positive alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "index_hugger",
+          "name": "Index Hugger",
+          "blurb": "Alpha landed within 2 percentage points of the S&P."
+        },
+        {
+          "id": "tech_bro",
+          "name": "Tech Bro",
+          "blurb": "At least half the midpoint dollars sit in the technology list."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        }
+      ],
+      "excluded_options": 0,
+      "excluded_non_stock": 0,
+      "excluded_unknown": 0,
+      "unmatched_sells": 0,
+      "uncopyable": 0
+    },
+    "12m": {
+      "rank": null,
+      "previous_rank": null,
+      "rank_change": null,
+      "streak": 0,
+      "on_fire": false,
+      "benched": true,
+      "return": 0.005414,
+      "alpha": 0.001205,
+      "benchmark": 0.004208,
+      "copycat_return": 0.003154,
+      "copycat_alpha": 0.000702,
+      "trades": 1,
+      "avg_hold_days": 16.0,
+      "avg_filing_lag": 7.0,
+      "late_filings": 0,
+      "filings": 1,
+      "badges": [
+        {
+          "id": "beat_the_market",
+          "name": "Beat the Market",
+          "blurb": "Positive alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "index_hugger",
+          "name": "Index Hugger",
+          "blurb": "Alpha landed within 2 percentage points of the S&P."
+        },
+        {
+          "id": "tech_bro",
+          "name": "Tech Bro",
+          "blurb": "At least half the midpoint dollars sit in the technology list."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        }
+      ],
+      "excluded_options": 0,
+      "excluded_non_stock": 0,
+      "excluded_unknown": 0,
+      "unmatched_sells": 0,
+      "uncopyable": 0
+    },
+    "all": {
+      "rank": null,
+      "previous_rank": null,
+      "rank_change": null,
+      "streak": 0,
+      "on_fire": false,
+      "benched": true,
+      "return": 0.005414,
+      "alpha": 0.001205,
+      "benchmark": 0.004208,
+      "copycat_return": 0.003154,
+      "copycat_alpha": 0.000702,
+      "trades": 1,
+      "avg_hold_days": 16.0,
+      "avg_filing_lag": 7.0,
+      "late_filings": 0,
+      "filings": 1,
+      "badges": [
+        {
+          "id": "beat_the_market",
+          "name": "Beat the Market",
+          "blurb": "Positive alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "index_hugger",
+          "name": "Index Hugger",
+          "blurb": "Alpha landed within 2 percentage points of the S&P."
+        },
+        {
+          "id": "tech_bro",
+          "name": "Tech Bro",
+          "blurb": "At least half the midpoint dollars sit in the technology list."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        }
+      ],
+      "excluded_options": 0,
+      "excluded_non_stock": 0,
+      "excluded_unknown": 0,
+      "unmatched_sells": 0,
+      "uncopyable": 0
+    }
+  }
+}

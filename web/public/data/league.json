@@ -1,0 +1,2976 @@
+{
+  "generated_at": "2026-11-06T10:03:49+00:00",
+  "as_of": "2026-11-06",
+  "sample": true,
+  "price_mode": "sample",
+  "min_trades": 3,
+  "late_days": 45,
+  "attribution": "Data: Alpha Vantage",
+  "disclaimer": "For entertainment. Based on public disclosures via Alpha Vantage. Amounts are estimated from disclosed ranges. Not financial advice.",
+  "notes": [
+    "Sample league: fictional members and simulated prices, not live disclosures.",
+    "Run `python -m capitol_gains run` with ALPHAVANTAGE_API_KEY set to replace this board.",
+    "Position size is the midpoint of the disclosed range."
+  ],
+  "windows": {
+    "30d": {
+      "as_of": "2026-11-06",
+      "previous_date": "2026-11-05",
+      "ranked": [
+        {
+          "bioguide_id": "CG0001",
+          "name": "Jordan Hale",
+          "initials": "JH",
+          "chamber": "House",
+          "party": "D",
+          "state": "CA",
+          "district": "12",
+          "years_in_service": 7.8,
+          "rank": 1,
+          "previous_rank": 6,
+          "rank_change": 5,
+          "streak": 1,
+          "on_fire": false,
+          "took_first": true,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": 0.165739,
+          "alpha": 0.161412,
+          "benchmark": 0.004328,
+          "copycat_return": 0.164186,
+          "copycat_alpha": 0.161029,
+          "trades": 3,
+          "avg_hold_days": 16.3,
+          "avg_filing_lag": 4.7,
+          "late_filings": 0,
+          "filings": 3,
+          "excluded_options": 1,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "beat_the_market",
+              "name": "Beat the Market",
+              "blurb": "Positive alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "BOOM"
+        },
+        {
+          "bioguide_id": "CG0002",
+          "name": "Casey Nguyen",
+          "initials": "CN",
+          "chamber": "Senate",
+          "party": "R",
+          "state": "WA",
+          "district": null,
+          "years_in_service": 9.8,
+          "rank": 2,
+          "previous_rank": 3,
+          "rank_change": 1,
+          "streak": 3,
+          "on_fire": true,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": 0.020815,
+          "alpha": 0.015784,
+          "benchmark": 0.00503,
+          "copycat_return": 0.019437,
+          "copycat_alpha": 0.015462,
+          "trades": 3,
+          "avg_hold_days": 19.7,
+          "avg_filing_lag": 5.0,
+          "late_filings": 0,
+          "filings": 3,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "beat_the_market",
+              "name": "Beat the Market",
+              "blurb": "Positive alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "LIFT"
+        },
+        {
+          "bioguide_id": "CG0005",
+          "name": "Avery Shah",
+          "initials": "AS",
+          "chamber": "House",
+          "party": "R",
+          "state": "TX",
+          "district": "24",
+          "years_in_service": 3.8,
+          "rank": 3,
+          "previous_rank": 2,
+          "rank_change": -1,
+          "streak": 0,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": 0.019891,
+          "alpha": 0.01358,
+          "benchmark": 0.006311,
+          "copycat_return": 0.011002,
+          "copycat_alpha": 0.0075,
+          "trades": 3,
+          "avg_hold_days": 20.7,
+          "avg_filing_lag": 9.0,
+          "late_filings": 0,
+          "filings": 3,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "beat_the_market",
+              "name": "Beat the Market",
+              "blurb": "Positive alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "one_big_bet",
+              "name": "One Big Bet",
+              "blurb": "The largest one or two trades are at least 70% of the dollars."
+            },
+            {
+              "id": "tech_bro",
+              "name": "Tech Bro",
+              "blurb": "At least half the midpoint dollars sit in the technology list."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "NVDA"
+        },
+        {
+          "bioguide_id": "CG0010",
+          "name": "Reese Dalton",
+          "initials": "RD",
+          "chamber": "House",
+          "party": "D",
+          "state": "WA",
+          "district": "1",
+          "years_in_service": 8.8,
+          "rank": 4,
+          "previous_rank": 4,
+          "rank_change": 0,
+          "streak": 0,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": 0.008987,
+          "alpha": 0.00447,
+          "benchmark": 0.004517,
+          "copycat_return": 0.006272,
+          "copycat_alpha": 0.002972,
+          "trades": 3,
+          "avg_hold_days": 20.3,
+          "avg_filing_lag": 5.7,
+          "late_filings": 0,
+          "filings": 3,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "beat_the_market",
+              "name": "Beat the Market",
+              "blurb": "Positive alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "one_big_bet",
+              "name": "One Big Bet",
+              "blurb": "The largest one or two trades are at least 70% of the dollars."
+            },
+            {
+              "id": "tech_bro",
+              "name": "Tech Bro",
+              "blurb": "At least half the midpoint dollars sit in the technology list."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "NVDA"
+        },
+        {
+          "bioguide_id": "CG0007",
+          "name": "Parker Singh",
+          "initials": "PS",
+          "chamber": "Senate",
+          "party": "R",
+          "state": "OH",
+          "district": null,
+          "years_in_service": 7.8,
+          "rank": 5,
+          "previous_rank": 5,
+          "rank_change": 0,
+          "streak": 0,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": 0.003386,
+          "alpha": 0.00231,
+          "benchmark": 0.001076,
+          "copycat_return": 0.001324,
+          "copycat_alpha": 0.000903,
+          "trades": 6,
+          "avg_hold_days": 9.6,
+          "avg_filing_lag": 3.6,
+          "late_filings": 0,
+          "filings": 5,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 4,
+          "badges": [
+            {
+              "id": "beat_the_market",
+              "name": "Beat the Market",
+              "blurb": "Positive alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "tech_bro",
+              "name": "Tech Bro",
+              "blurb": "At least half the midpoint dollars sit in the technology list."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            },
+            {
+              "id": "paper_hands",
+              "name": "Paper Hands",
+              "blurb": "Shortest average holding period on the board."
+            }
+          ],
+          "top_ticker": "NVDA"
+        },
+        {
+          "bioguide_id": "CG0004",
+          "name": "Morgan Ellis",
+          "initials": "ME",
+          "chamber": "Senate",
+          "party": "I",
+          "state": "ME",
+          "district": null,
+          "years_in_service": 11.8,
+          "rank": 6,
+          "previous_rank": 7,
+          "rank_change": 1,
+          "streak": 1,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": 0.004712,
+          "alpha": 0.0,
+          "benchmark": 0.004712,
+          "copycat_return": 0.004126,
+          "copycat_alpha": -0.0,
+          "trades": 4,
+          "avg_hold_days": 19.5,
+          "avg_filing_lag": 4.0,
+          "late_filings": 0,
+          "filings": 4,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "SPY"
+        },
+        {
+          "bioguide_id": "CG0009",
+          "name": "Skyler Brooks",
+          "initials": "SB",
+          "chamber": "Senate",
+          "party": "D",
+          "state": "HI",
+          "district": null,
+          "years_in_service": 5.8,
+          "rank": 7,
+          "previous_rank": 8,
+          "rank_change": 1,
+          "streak": 1,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": 0.002737,
+          "alpha": -0.00366,
+          "benchmark": 0.006398,
+          "copycat_return": 0.002377,
+          "copycat_alpha": -0.003178,
+          "trades": 3,
+          "avg_hold_days": 23.7,
+          "avg_filing_lag": 3.7,
+          "late_filings": 0,
+          "filings": 3,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "market_beat_you",
+              "name": "The Market Beat You",
+              "blurb": "Negative alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "one_big_bet",
+              "name": "One Big Bet",
+              "blurb": "The largest one or two trades are at least 70% of the dollars."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "XOM"
+        },
+        {
+          "bioguide_id": "CG0013",
+          "name": "Rowan Blake",
+          "initials": "RB",
+          "chamber": "House",
+          "party": "R",
+          "state": "MI",
+          "district": "8",
+          "years_in_service": 15.8,
+          "rank": 8,
+          "previous_rank": 9,
+          "rank_change": 1,
+          "streak": 1,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": -0.00429,
+          "alpha": -0.00932,
+          "benchmark": 0.00503,
+          "copycat_return": -0.002696,
+          "copycat_alpha": -0.005851,
+          "trades": 3,
+          "avg_hold_days": 19.0,
+          "avg_filing_lag": 8.0,
+          "late_filings": 0,
+          "filings": 3,
+          "excluded_options": 0,
+          "excluded_non_stock": 1,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "market_beat_you",
+              "name": "The Market Beat You",
+              "blurb": "Negative alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "JNJ"
+        },
+        {
+          "bioguide_id": "CG0011",
+          "name": "Jamie Ortiz",
+          "initials": "JO",
+          "chamber": "House",
+          "party": "R",
+          "state": "AZ",
+          "district": "2",
+          "years_in_service": 6.8,
+          "rank": 9,
+          "previous_rank": 10,
+          "rank_change": 1,
+          "streak": 1,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": -0.010191,
+          "alpha": -0.013186,
+          "benchmark": 0.002995,
+          "copycat_return": -0.007189,
+          "copycat_alpha": -0.009294,
+          "trades": 3,
+          "avg_hold_days": 23.5,
+          "avg_filing_lag": 7.5,
+          "late_filings": 0,
+          "filings": 2,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 3,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "market_beat_you",
+              "name": "The Market Beat You",
+              "blurb": "Negative alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            },
+            {
+              "id": "buy_high_sell_low",
+              "name": "Buy High Sell Low",
+              "blurb": "Worst capital-weighted return on positions that were closed."
+            }
+          ],
+          "top_ticker": "FADE"
+        },
+        {
+          "bioguide_id": "CG0003",
+          "name": "Riley Okonkwo",
+          "initials": "RO",
+          "chamber": "House",
+          "party": "D",
+          "state": "NY",
+          "district": "7",
+          "years_in_service": 5.8,
+          "rank": 10,
+          "previous_rank": 1,
+          "rank_change": -9,
+          "streak": 0,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": true,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": -0.497908,
+          "alpha": -0.502408,
+          "benchmark": 0.004501,
+          "copycat_return": -0.506152,
+          "copycat_alpha": -0.508993,
+          "trades": 3,
+          "avg_hold_days": 20.0,
+          "avg_filing_lag": 7.7,
+          "late_filings": 0,
+          "filings": 3,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "market_beat_you",
+              "name": "The Market Beat You",
+              "blurb": "Negative alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "one_big_bet",
+              "name": "One Big Bet",
+              "blurb": "The largest one or two trades are at least 70% of the dollars."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "SPIKE"
+        }
+      ],
+      "benched": [
+        {
+          "bioguide_id": "CG0008",
+          "name": "Drew Coleman",
+          "initials": "DC",
+          "chamber": "House",
+          "party": "R",
+          "state": "FL",
+          "district": "3",
+          "years_in_service": 1.8,
+          "rank": null,
+          "previous_rank": null,
+          "rank_change": null,
+          "streak": 0,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": true,
+          "return": -0.006579,
+          "alpha": -0.014307,
+          "benchmark": 0.007728,
+          "copycat_return": -0.002397,
+          "copycat_alpha": -0.005201,
+          "trades": 0,
+          "avg_hold_days": 86.3,
+          "avg_filing_lag": 80.0,
+          "late_filings": 2,
+          "filings": 2,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "market_beat_you",
+              "name": "The Market Beat You",
+              "blurb": "Negative alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "fashionably_late",
+              "name": "Fashionably Late",
+              "blurb": "Highest average gap between the trade and the filing."
+            }
+          ],
+          "top_ticker": null
+        },
+        {
+          "bioguide_id": "CG0006",
+          "name": "Quinn Alvarez",
+          "initials": "QA",
+          "chamber": "House",
+          "party": "D",
+          "state": "NM",
+          "district": "1",
+          "years_in_service": 13.8,
+          "rank": null,
+          "previous_rank": null,
+          "rank_change": null,
+          "streak": 0,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": true,
+          "return": 0.009947,
+          "alpha": 0.002219,
+          "benchmark": 0.007728,
+          "copycat_return": 0.009947,
+          "copycat_alpha": 0.002219,
+          "trades": 0,
+          "avg_hold_days": 476.7,
+          "avg_filing_lag": null,
+          "late_filings": 0,
+          "filings": 0,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "beat_the_market",
+              "name": "Beat the Market",
+              "blurb": "Positive alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "diamond_hands",
+              "name": "Diamond Hands",
+              "blurb": "Longest average holding period on the board."
+            }
+          ],
+          "top_ticker": null
+        },
+        {
+          "bioguide_id": "CG0012",
+          "name": "Taylor Idris",
+          "initials": "TI",
+          "chamber": "Senate",
+          "party": "D",
+          "state": "CO",
+          "district": null,
+          "years_in_service": 1.8,
+          "rank": null,
+          "previous_rank": null,
+          "rank_change": null,
+          "streak": 0,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": true,
+          "return": 0.005414,
+          "alpha": 0.001205,
+          "benchmark": 0.004208,
+          "copycat_return": 0.003154,
+          "copycat_alpha": 0.000702,
+          "trades": 1,
+          "avg_hold_days": 16.0,
+          "avg_filing_lag": 7.0,
+          "late_filings": 0,
+          "filings": 1,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "beat_the_market",
+              "name": "Beat the Market",
+              "blurb": "Positive alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "tech_bro",
+              "name": "Tech Bro",
+              "blurb": "At least half the midpoint dollars sit in the technology list."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "AAPL"
+        }
+      ],
+      "beat_market": 5,
+      "field_size": 10,
+      "benched_size": 3,
+      "ticker_tape": [
+        "Jordan Hale takes the top spot. Somebody order a small, tasteful celebration.",
+        "Jordan Hale is climbing, 5 spots at a time. The streak watch begins.",
+        "A 9-spot drop for Riley Okonkwo. The arrow is not being subtle.",
+        "On fire: Casey Nguyen, up the table 3 days running.",
+        "Drew Coleman filed 80 days after the transaction. Punctuality is a skill tree.",
+        "5 beat the S&P over 30d. The holding periods were matched on purpose.",
+        "Skyler Brooks trails the benchmark by -0.4%. The Market Beat You badge is in the mail.",
+        "Quinn Alvarez and the calendar spent 477 days together. One of them blinked.",
+        "Parker Singh held about 10 days on average. Diamond hands, or a very calm inbox.",
+        "Drew Coleman is benched until more priced equity trades show up. The minimum is 3.",
+        "Jordan Hale logged 3 priced equity trades. Return +16.6%.",
+        "The tape sees Casey Nguyen at rank 2 after the latest shuffle.",
+        "Welcome back to the only league where the lineup files the box score later.",
+        "Unmatched sales stay unmatched. This board does not invent a position it cannot see."
+      ]
+    },
+    "ytd": {
+      "as_of": "2026-11-06",
+      "previous_date": "2026-11-05",
+      "ranked": [
+        {
+          "bioguide_id": "CG0001",
+          "name": "Jordan Hale",
+          "initials": "JH",
+          "chamber": "House",
+          "party": "D",
+          "state": "CA",
+          "district": "12",
+          "years_in_service": 7.8,
+          "rank": 1,
+          "previous_rank": 6,
+          "rank_change": 5,
+          "streak": 1,
+          "on_fire": false,
+          "took_first": true,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": 0.165739,
+          "alpha": 0.161412,
+          "benchmark": 0.004328,
+          "copycat_return": 0.164186,
+          "copycat_alpha": 0.161029,
+          "trades": 3,
+          "avg_hold_days": 16.3,
+          "avg_filing_lag": 4.7,
+          "late_filings": 0,
+          "filings": 3,
+          "excluded_options": 1,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "beat_the_market",
+              "name": "Beat the Market",
+              "blurb": "Positive alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "BOOM"
+        },
+        {
+          "bioguide_id": "CG0002",
+          "name": "Casey Nguyen",
+          "initials": "CN",
+          "chamber": "Senate",
+          "party": "R",
+          "state": "WA",
+          "district": null,
+          "years_in_service": 9.8,
+          "rank": 2,
+          "previous_rank": 3,
+          "rank_change": 1,
+          "streak": 3,
+          "on_fire": true,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": 0.020815,
+          "alpha": 0.015784,
+          "benchmark": 0.00503,
+          "copycat_return": 0.019437,
+          "copycat_alpha": 0.015462,
+          "trades": 3,
+          "avg_hold_days": 19.7,
+          "avg_filing_lag": 5.0,
+          "late_filings": 0,
+          "filings": 3,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "beat_the_market",
+              "name": "Beat the Market",
+              "blurb": "Positive alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "LIFT"
+        },
+        {
+          "bioguide_id": "CG0005",
+          "name": "Avery Shah",
+          "initials": "AS",
+          "chamber": "House",
+          "party": "R",
+          "state": "TX",
+          "district": "24",
+          "years_in_service": 3.8,
+          "rank": 3,
+          "previous_rank": 2,
+          "rank_change": -1,
+          "streak": 0,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": 0.019891,
+          "alpha": 0.01358,
+          "benchmark": 0.006311,
+          "copycat_return": 0.011002,
+          "copycat_alpha": 0.0075,
+          "trades": 3,
+          "avg_hold_days": 20.7,
+          "avg_filing_lag": 9.0,
+          "late_filings": 0,
+          "filings": 3,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "beat_the_market",
+              "name": "Beat the Market",
+              "blurb": "Positive alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "one_big_bet",
+              "name": "One Big Bet",
+              "blurb": "The largest one or two trades are at least 70% of the dollars."
+            },
+            {
+              "id": "tech_bro",
+              "name": "Tech Bro",
+              "blurb": "At least half the midpoint dollars sit in the technology list."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "NVDA"
+        },
+        {
+          "bioguide_id": "CG0010",
+          "name": "Reese Dalton",
+          "initials": "RD",
+          "chamber": "House",
+          "party": "D",
+          "state": "WA",
+          "district": "1",
+          "years_in_service": 8.8,
+          "rank": 4,
+          "previous_rank": 4,
+          "rank_change": 0,
+          "streak": 0,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": 0.008987,
+          "alpha": 0.00447,
+          "benchmark": 0.004517,
+          "copycat_return": 0.006272,
+          "copycat_alpha": 0.002972,
+          "trades": 3,
+          "avg_hold_days": 20.3,
+          "avg_filing_lag": 5.7,
+          "late_filings": 0,
+          "filings": 3,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "beat_the_market",
+              "name": "Beat the Market",
+              "blurb": "Positive alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "one_big_bet",
+              "name": "One Big Bet",
+              "blurb": "The largest one or two trades are at least 70% of the dollars."
+            },
+            {
+              "id": "tech_bro",
+              "name": "Tech Bro",
+              "blurb": "At least half the midpoint dollars sit in the technology list."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "NVDA"
+        },
+        {
+          "bioguide_id": "CG0007",
+          "name": "Parker Singh",
+          "initials": "PS",
+          "chamber": "Senate",
+          "party": "R",
+          "state": "OH",
+          "district": null,
+          "years_in_service": 7.8,
+          "rank": 5,
+          "previous_rank": 5,
+          "rank_change": 0,
+          "streak": 0,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": 0.003377,
+          "alpha": 0.002303,
+          "benchmark": 0.001073,
+          "copycat_return": 0.001413,
+          "copycat_alpha": 0.000964,
+          "trades": 10,
+          "avg_hold_days": 9.0,
+          "avg_filing_lag": 3.6,
+          "late_filings": 0,
+          "filings": 9,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 4,
+          "badges": [
+            {
+              "id": "beat_the_market",
+              "name": "Beat the Market",
+              "blurb": "Positive alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "tech_bro",
+              "name": "Tech Bro",
+              "blurb": "At least half the midpoint dollars sit in the technology list."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            },
+            {
+              "id": "paper_hands",
+              "name": "Paper Hands",
+              "blurb": "Shortest average holding period on the board."
+            }
+          ],
+          "top_ticker": "NVDA"
+        },
+        {
+          "bioguide_id": "CG0004",
+          "name": "Morgan Ellis",
+          "initials": "ME",
+          "chamber": "Senate",
+          "party": "I",
+          "state": "ME",
+          "district": null,
+          "years_in_service": 11.8,
+          "rank": 6,
+          "previous_rank": 7,
+          "rank_change": 1,
+          "streak": 1,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": 0.004712,
+          "alpha": 0.0,
+          "benchmark": 0.004712,
+          "copycat_return": 0.004126,
+          "copycat_alpha": -0.0,
+          "trades": 4,
+          "avg_hold_days": 19.5,
+          "avg_filing_lag": 4.0,
+          "late_filings": 0,
+          "filings": 4,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "SPY"
+        },
+        {
+          "bioguide_id": "CG0009",
+          "name": "Skyler Brooks",
+          "initials": "SB",
+          "chamber": "Senate",
+          "party": "D",
+          "state": "HI",
+          "district": null,
+          "years_in_service": 5.8,
+          "rank": 7,
+          "previous_rank": 8,
+          "rank_change": 1,
+          "streak": 1,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": 0.002737,
+          "alpha": -0.00366,
+          "benchmark": 0.006398,
+          "copycat_return": 0.002377,
+          "copycat_alpha": -0.003178,
+          "trades": 3,
+          "avg_hold_days": 23.7,
+          "avg_filing_lag": 3.7,
+          "late_filings": 0,
+          "filings": 3,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "market_beat_you",
+              "name": "The Market Beat You",
+              "blurb": "Negative alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "one_big_bet",
+              "name": "One Big Bet",
+              "blurb": "The largest one or two trades are at least 70% of the dollars."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "XOM"
+        },
+        {
+          "bioguide_id": "CG0013",
+          "name": "Rowan Blake",
+          "initials": "RB",
+          "chamber": "House",
+          "party": "R",
+          "state": "MI",
+          "district": "8",
+          "years_in_service": 15.8,
+          "rank": 8,
+          "previous_rank": 9,
+          "rank_change": 1,
+          "streak": 1,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": -0.00429,
+          "alpha": -0.00932,
+          "benchmark": 0.00503,
+          "copycat_return": -0.002696,
+          "copycat_alpha": -0.005851,
+          "trades": 3,
+          "avg_hold_days": 19.0,
+          "avg_filing_lag": 8.0,
+          "late_filings": 0,
+          "filings": 3,
+          "excluded_options": 0,
+          "excluded_non_stock": 1,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "market_beat_you",
+              "name": "The Market Beat You",
+              "blurb": "Negative alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "JNJ"
+        },
+        {
+          "bioguide_id": "CG0011",
+          "name": "Jamie Ortiz",
+          "initials": "JO",
+          "chamber": "House",
+          "party": "R",
+          "state": "AZ",
+          "district": "2",
+          "years_in_service": 6.8,
+          "rank": 9,
+          "previous_rank": 10,
+          "rank_change": 1,
+          "streak": 1,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": -0.021372,
+          "alpha": -0.027691,
+          "benchmark": 0.00632,
+          "copycat_return": -0.013906,
+          "copycat_alpha": -0.017997,
+          "trades": 6,
+          "avg_hold_days": 25.3,
+          "avg_filing_lag": 7.8,
+          "late_filings": 0,
+          "filings": 5,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 3,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "market_beat_you",
+              "name": "The Market Beat You",
+              "blurb": "Negative alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            },
+            {
+              "id": "buy_high_sell_low",
+              "name": "Buy High Sell Low",
+              "blurb": "Worst capital-weighted return on positions that were closed."
+            }
+          ],
+          "top_ticker": "FADE"
+        },
+        {
+          "bioguide_id": "CG0008",
+          "name": "Drew Coleman",
+          "initials": "DC",
+          "chamber": "House",
+          "party": "R",
+          "state": "FL",
+          "district": "3",
+          "years_in_service": 1.8,
+          "rank": 10,
+          "previous_rank": 11,
+          "rank_change": 1,
+          "streak": 1,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": -0.018528,
+          "alpha": -0.040582,
+          "benchmark": 0.022054,
+          "copycat_return": -0.002397,
+          "copycat_alpha": -0.005201,
+          "trades": 3,
+          "avg_hold_days": 86.3,
+          "avg_filing_lag": 80.0,
+          "late_filings": 2,
+          "filings": 2,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "market_beat_you",
+              "name": "The Market Beat You",
+              "blurb": "Negative alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "fashionably_late",
+              "name": "Fashionably Late",
+              "blurb": "Highest average gap between the trade and the filing."
+            }
+          ],
+          "top_ticker": "JNJ"
+        },
+        {
+          "bioguide_id": "CG0003",
+          "name": "Riley Okonkwo",
+          "initials": "RO",
+          "chamber": "House",
+          "party": "D",
+          "state": "NY",
+          "district": "7",
+          "years_in_service": 5.8,
+          "rank": 11,
+          "previous_rank": 1,
+          "rank_change": -10,
+          "streak": 0,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": true,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": -0.497908,
+          "alpha": -0.502408,
+          "benchmark": 0.004501,
+          "copycat_return": -0.506152,
+          "copycat_alpha": -0.508993,
+          "trades": 3,
+          "avg_hold_days": 20.0,
+          "avg_filing_lag": 7.7,
+          "late_filings": 0,
+          "filings": 3,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "market_beat_you",
+              "name": "The Market Beat You",
+              "blurb": "Negative alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "one_big_bet",
+              "name": "One Big Bet",
+              "blurb": "The largest one or two trades are at least 70% of the dollars."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "SPIKE"
+        }
+      ],
+      "benched": [
+        {
+          "bioguide_id": "CG0006",
+          "name": "Quinn Alvarez",
+          "initials": "QA",
+          "chamber": "House",
+          "party": "D",
+          "state": "NM",
+          "district": "1",
+          "years_in_service": 13.8,
+          "rank": null,
+          "previous_rank": null,
+          "rank_change": null,
+          "streak": 0,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": true,
+          "return": 0.104539,
+          "alpha": 0.024133,
+          "benchmark": 0.080406,
+          "copycat_return": 0.104539,
+          "copycat_alpha": 0.024133,
+          "trades": 0,
+          "avg_hold_days": 476.7,
+          "avg_filing_lag": null,
+          "late_filings": 0,
+          "filings": 0,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "beat_the_market",
+              "name": "Beat the Market",
+              "blurb": "Positive alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "diamond_hands",
+              "name": "Diamond Hands",
+              "blurb": "Longest average holding period on the board."
+            }
+          ],
+          "top_ticker": null
+        },
+        {
+          "bioguide_id": "CG0012",
+          "name": "Taylor Idris",
+          "initials": "TI",
+          "chamber": "Senate",
+          "party": "D",
+          "state": "CO",
+          "district": null,
+          "years_in_service": 1.8,
+          "rank": null,
+          "previous_rank": null,
+          "rank_change": null,
+          "streak": 0,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": true,
+          "return": 0.005414,
+          "alpha": 0.001205,
+          "benchmark": 0.004208,
+          "copycat_return": 0.003154,
+          "copycat_alpha": 0.000702,
+          "trades": 1,
+          "avg_hold_days": 16.0,
+          "avg_filing_lag": 7.0,
+          "late_filings": 0,
+          "filings": 1,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "beat_the_market",
+              "name": "Beat the Market",
+              "blurb": "Positive alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "tech_bro",
+              "name": "Tech Bro",
+              "blurb": "At least half the midpoint dollars sit in the technology list."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "AAPL"
+        }
+      ],
+      "beat_market": 5,
+      "field_size": 11,
+      "benched_size": 2,
+      "ticker_tape": [
+        "The chair at #1 has a new name on it: Jordan Hale.",
+        "Jordan Hale picks up 5 places. The replay is worth a second look.",
+        "Riley Okonkwo loses 10 places. Same holding-period rules, tougher print.",
+        "Casey Nguyen has a 3-snapshot heater. Enjoy it at the speed of filings.",
+        "Drew Coleman filed 80 days late. The STOCK Act called. It wants its deadline back.",
+        "5 members beat SPY in the ytd window. The benchmark brought its shoes.",
+        "Skyler Brooks is behind SPY by -0.4%. Gravity still works.",
+        "Average hold for Quinn Alvarez: 477 days. The lots were not in a hurry.",
+        "Short stay: Parker Singh at 9 days. Hello, goodbye, next disclosure.",
+        "Bench note: Quinn Alvarez is listed, not ranked. 0 trades so far.",
+        "House check. Jordan Hale is at rank 1 with alpha +16.1%.",
+        "If you copied Casey Nguyen on the filing date, the screen says +1.9%.",
+        "Unmatched sales stay unmatched. This board does not invent a position it cannot see.",
+        "Options and mystery tickers sit out and get counted. The scoreboard likes a paper trail."
+      ]
+    },
+    "12m": {
+      "as_of": "2026-11-06",
+      "previous_date": "2026-11-05",
+      "ranked": [
+        {
+          "bioguide_id": "CG0001",
+          "name": "Jordan Hale",
+          "initials": "JH",
+          "chamber": "House",
+          "party": "D",
+          "state": "CA",
+          "district": "12",
+          "years_in_service": 7.8,
+          "rank": 1,
+          "previous_rank": 6,
+          "rank_change": 5,
+          "streak": 1,
+          "on_fire": false,
+          "took_first": true,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": 0.165739,
+          "alpha": 0.161412,
+          "benchmark": 0.004328,
+          "copycat_return": 0.164186,
+          "copycat_alpha": 0.161029,
+          "trades": 3,
+          "avg_hold_days": 16.3,
+          "avg_filing_lag": 4.7,
+          "late_filings": 0,
+          "filings": 3,
+          "excluded_options": 1,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "beat_the_market",
+              "name": "Beat the Market",
+              "blurb": "Positive alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "BOOM"
+        },
+        {
+          "bioguide_id": "CG0002",
+          "name": "Casey Nguyen",
+          "initials": "CN",
+          "chamber": "Senate",
+          "party": "R",
+          "state": "WA",
+          "district": null,
+          "years_in_service": 9.8,
+          "rank": 2,
+          "previous_rank": 3,
+          "rank_change": 1,
+          "streak": 3,
+          "on_fire": true,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": 0.020815,
+          "alpha": 0.015784,
+          "benchmark": 0.00503,
+          "copycat_return": 0.019437,
+          "copycat_alpha": 0.015462,
+          "trades": 3,
+          "avg_hold_days": 19.7,
+          "avg_filing_lag": 5.0,
+          "late_filings": 0,
+          "filings": 3,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "beat_the_market",
+              "name": "Beat the Market",
+              "blurb": "Positive alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "LIFT"
+        },
+        {
+          "bioguide_id": "CG0005",
+          "name": "Avery Shah",
+          "initials": "AS",
+          "chamber": "House",
+          "party": "R",
+          "state": "TX",
+          "district": "24",
+          "years_in_service": 3.8,
+          "rank": 3,
+          "previous_rank": 2,
+          "rank_change": -1,
+          "streak": 0,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": 0.019891,
+          "alpha": 0.01358,
+          "benchmark": 0.006311,
+          "copycat_return": 0.011002,
+          "copycat_alpha": 0.0075,
+          "trades": 3,
+          "avg_hold_days": 20.7,
+          "avg_filing_lag": 9.0,
+          "late_filings": 0,
+          "filings": 3,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "beat_the_market",
+              "name": "Beat the Market",
+              "blurb": "Positive alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "one_big_bet",
+              "name": "One Big Bet",
+              "blurb": "The largest one or two trades are at least 70% of the dollars."
+            },
+            {
+              "id": "tech_bro",
+              "name": "Tech Bro",
+              "blurb": "At least half the midpoint dollars sit in the technology list."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "NVDA"
+        },
+        {
+          "bioguide_id": "CG0010",
+          "name": "Reese Dalton",
+          "initials": "RD",
+          "chamber": "House",
+          "party": "D",
+          "state": "WA",
+          "district": "1",
+          "years_in_service": 8.8,
+          "rank": 4,
+          "previous_rank": 4,
+          "rank_change": 0,
+          "streak": 0,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": 0.008987,
+          "alpha": 0.00447,
+          "benchmark": 0.004517,
+          "copycat_return": 0.006272,
+          "copycat_alpha": 0.002972,
+          "trades": 3,
+          "avg_hold_days": 20.3,
+          "avg_filing_lag": 5.7,
+          "late_filings": 0,
+          "filings": 3,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "beat_the_market",
+              "name": "Beat the Market",
+              "blurb": "Positive alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "one_big_bet",
+              "name": "One Big Bet",
+              "blurb": "The largest one or two trades are at least 70% of the dollars."
+            },
+            {
+              "id": "tech_bro",
+              "name": "Tech Bro",
+              "blurb": "At least half the midpoint dollars sit in the technology list."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "NVDA"
+        },
+        {
+          "bioguide_id": "CG0007",
+          "name": "Parker Singh",
+          "initials": "PS",
+          "chamber": "Senate",
+          "party": "R",
+          "state": "OH",
+          "district": null,
+          "years_in_service": 7.8,
+          "rank": 5,
+          "previous_rank": 5,
+          "rank_change": 0,
+          "streak": 0,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": 0.003377,
+          "alpha": 0.002303,
+          "benchmark": 0.001073,
+          "copycat_return": 0.001413,
+          "copycat_alpha": 0.000964,
+          "trades": 10,
+          "avg_hold_days": 9.0,
+          "avg_filing_lag": 3.6,
+          "late_filings": 0,
+          "filings": 9,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 4,
+          "badges": [
+            {
+              "id": "beat_the_market",
+              "name": "Beat the Market",
+              "blurb": "Positive alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "tech_bro",
+              "name": "Tech Bro",
+              "blurb": "At least half the midpoint dollars sit in the technology list."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            },
+            {
+              "id": "paper_hands",
+              "name": "Paper Hands",
+              "blurb": "Shortest average holding period on the board."
+            }
+          ],
+          "top_ticker": "NVDA"
+        },
+        {
+          "bioguide_id": "CG0004",
+          "name": "Morgan Ellis",
+          "initials": "ME",
+          "chamber": "Senate",
+          "party": "I",
+          "state": "ME",
+          "district": null,
+          "years_in_service": 11.8,
+          "rank": 6,
+          "previous_rank": 7,
+          "rank_change": 1,
+          "streak": 1,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": 0.004712,
+          "alpha": 0.0,
+          "benchmark": 0.004712,
+          "copycat_return": 0.004126,
+          "copycat_alpha": -0.0,
+          "trades": 4,
+          "avg_hold_days": 19.5,
+          "avg_filing_lag": 4.0,
+          "late_filings": 0,
+          "filings": 4,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "SPY"
+        },
+        {
+          "bioguide_id": "CG0009",
+          "name": "Skyler Brooks",
+          "initials": "SB",
+          "chamber": "Senate",
+          "party": "D",
+          "state": "HI",
+          "district": null,
+          "years_in_service": 5.8,
+          "rank": 7,
+          "previous_rank": 8,
+          "rank_change": 1,
+          "streak": 1,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": 0.002737,
+          "alpha": -0.00366,
+          "benchmark": 0.006398,
+          "copycat_return": 0.002377,
+          "copycat_alpha": -0.003178,
+          "trades": 3,
+          "avg_hold_days": 23.7,
+          "avg_filing_lag": 3.7,
+          "late_filings": 0,
+          "filings": 3,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "market_beat_you",
+              "name": "The Market Beat You",
+              "blurb": "Negative alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "one_big_bet",
+              "name": "One Big Bet",
+              "blurb": "The largest one or two trades are at least 70% of the dollars."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "XOM"
+        },
+        {
+          "bioguide_id": "CG0013",
+          "name": "Rowan Blake",
+          "initials": "RB",
+          "chamber": "House",
+          "party": "R",
+          "state": "MI",
+          "district": "8",
+          "years_in_service": 15.8,
+          "rank": 8,
+          "previous_rank": 9,
+          "rank_change": 1,
+          "streak": 1,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": -0.00429,
+          "alpha": -0.00932,
+          "benchmark": 0.00503,
+          "copycat_return": -0.002696,
+          "copycat_alpha": -0.005851,
+          "trades": 3,
+          "avg_hold_days": 19.0,
+          "avg_filing_lag": 8.0,
+          "late_filings": 0,
+          "filings": 3,
+          "excluded_options": 0,
+          "excluded_non_stock": 1,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "market_beat_you",
+              "name": "The Market Beat You",
+              "blurb": "Negative alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "JNJ"
+        },
+        {
+          "bioguide_id": "CG0011",
+          "name": "Jamie Ortiz",
+          "initials": "JO",
+          "chamber": "House",
+          "party": "R",
+          "state": "AZ",
+          "district": "2",
+          "years_in_service": 6.8,
+          "rank": 9,
+          "previous_rank": 10,
+          "rank_change": 1,
+          "streak": 1,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": -0.021372,
+          "alpha": -0.027691,
+          "benchmark": 0.00632,
+          "copycat_return": -0.013906,
+          "copycat_alpha": -0.017997,
+          "trades": 6,
+          "avg_hold_days": 25.3,
+          "avg_filing_lag": 7.8,
+          "late_filings": 0,
+          "filings": 5,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 3,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "market_beat_you",
+              "name": "The Market Beat You",
+              "blurb": "Negative alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            },
+            {
+              "id": "buy_high_sell_low",
+              "name": "Buy High Sell Low",
+              "blurb": "Worst capital-weighted return on positions that were closed."
+            }
+          ],
+          "top_ticker": "FADE"
+        },
+        {
+          "bioguide_id": "CG0008",
+          "name": "Drew Coleman",
+          "initials": "DC",
+          "chamber": "House",
+          "party": "R",
+          "state": "FL",
+          "district": "3",
+          "years_in_service": 1.8,
+          "rank": 10,
+          "previous_rank": 11,
+          "rank_change": 1,
+          "streak": 1,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": -0.018528,
+          "alpha": -0.040582,
+          "benchmark": 0.022054,
+          "copycat_return": -0.002397,
+          "copycat_alpha": -0.005201,
+          "trades": 3,
+          "avg_hold_days": 86.3,
+          "avg_filing_lag": 80.0,
+          "late_filings": 2,
+          "filings": 2,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "market_beat_you",
+              "name": "The Market Beat You",
+              "blurb": "Negative alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "fashionably_late",
+              "name": "Fashionably Late",
+              "blurb": "Highest average gap between the trade and the filing."
+            }
+          ],
+          "top_ticker": "JNJ"
+        },
+        {
+          "bioguide_id": "CG0003",
+          "name": "Riley Okonkwo",
+          "initials": "RO",
+          "chamber": "House",
+          "party": "D",
+          "state": "NY",
+          "district": "7",
+          "years_in_service": 5.8,
+          "rank": 11,
+          "previous_rank": 1,
+          "rank_change": -10,
+          "streak": 0,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": true,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": -0.497908,
+          "alpha": -0.502408,
+          "benchmark": 0.004501,
+          "copycat_return": -0.506152,
+          "copycat_alpha": -0.508993,
+          "trades": 3,
+          "avg_hold_days": 20.0,
+          "avg_filing_lag": 7.7,
+          "late_filings": 0,
+          "filings": 3,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "market_beat_you",
+              "name": "The Market Beat You",
+              "blurb": "Negative alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "one_big_bet",
+              "name": "One Big Bet",
+              "blurb": "The largest one or two trades are at least 70% of the dollars."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "SPIKE"
+        }
+      ],
+      "benched": [
+        {
+          "bioguide_id": "CG0006",
+          "name": "Quinn Alvarez",
+          "initials": "QA",
+          "chamber": "House",
+          "party": "D",
+          "state": "NM",
+          "district": "1",
+          "years_in_service": 13.8,
+          "rank": null,
+          "previous_rank": null,
+          "rank_change": null,
+          "streak": 0,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": true,
+          "return": 0.124596,
+          "alpha": 0.028961,
+          "benchmark": 0.095635,
+          "copycat_return": 0.124596,
+          "copycat_alpha": 0.028961,
+          "trades": 0,
+          "avg_hold_days": 476.7,
+          "avg_filing_lag": null,
+          "late_filings": 0,
+          "filings": 0,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "beat_the_market",
+              "name": "Beat the Market",
+              "blurb": "Positive alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "diamond_hands",
+              "name": "Diamond Hands",
+              "blurb": "Longest average holding period on the board."
+            }
+          ],
+          "top_ticker": null
+        },
+        {
+          "bioguide_id": "CG0012",
+          "name": "Taylor Idris",
+          "initials": "TI",
+          "chamber": "Senate",
+          "party": "D",
+          "state": "CO",
+          "district": null,
+          "years_in_service": 1.8,
+          "rank": null,
+          "previous_rank": null,
+          "rank_change": null,
+          "streak": 0,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": true,
+          "return": 0.005414,
+          "alpha": 0.001205,
+          "benchmark": 0.004208,
+          "copycat_return": 0.003154,
+          "copycat_alpha": 0.000702,
+          "trades": 1,
+          "avg_hold_days": 16.0,
+          "avg_filing_lag": 7.0,
+          "late_filings": 0,
+          "filings": 1,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "beat_the_market",
+              "name": "Beat the Market",
+              "blurb": "Positive alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "tech_bro",
+              "name": "Tech Bro",
+              "blurb": "At least half the midpoint dollars sit in the technology list."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "AAPL"
+        }
+      ],
+      "beat_market": 5,
+      "field_size": 11,
+      "benched_size": 2,
+      "ticker_tape": [
+        "The chair at #1 has a new name on it: Jordan Hale.",
+        "Jordan Hale advances 5 places. The arrow is green and it means it.",
+        "Riley Okonkwo falls 10 and the confetti stays in the jar.",
+        "The arrow next to Casey Nguyen has worked 3 days without a day off.",
+        "Drew Coleman posted a 80-day gap between trade and filing. The calendar noticed.",
+        "Congress versus the market, 12m: 5 ahead of SPY.",
+        "Alpha for Skyler Brooks: -0.4%. The S&P did not send a gift basket.",
+        "Short stay: Quinn Alvarez at 477 days. Hello, goodbye, next disclosure.",
+        "Holding period, Parker Singh: 9 days. Long enough to need a labeled folder.",
+        "No rank yet for Quinn Alvarez. 0 of 3 priced equity trades in the window.",
+        "Two clocks, one member. Jordan Hale: +16.6% theirs, +16.4% for the copycats.",
+        "LIFT is doing a lot of the work in Casey Nguyen's book this window.",
+        "The 12m window is selected. Arrows compare it with the previous snapshot.",
+        "SPY is on the field too. Nobody gets a custom benchmark."
+      ]
+    },
+    "all": {
+      "as_of": "2026-11-06",
+      "previous_date": "2026-11-05",
+      "ranked": [
+        {
+          "bioguide_id": "CG0001",
+          "name": "Jordan Hale",
+          "initials": "JH",
+          "chamber": "House",
+          "party": "D",
+          "state": "CA",
+          "district": "12",
+          "years_in_service": 7.8,
+          "rank": 1,
+          "previous_rank": 7,
+          "rank_change": 6,
+          "streak": 1,
+          "on_fire": false,
+          "took_first": true,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": 0.165739,
+          "alpha": 0.161412,
+          "benchmark": 0.004328,
+          "copycat_return": 0.164186,
+          "copycat_alpha": 0.161029,
+          "trades": 3,
+          "avg_hold_days": 16.3,
+          "avg_filing_lag": 4.7,
+          "late_filings": 0,
+          "filings": 3,
+          "excluded_options": 1,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "beat_the_market",
+              "name": "Beat the Market",
+              "blurb": "Positive alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "BOOM"
+        },
+        {
+          "bioguide_id": "CG0006",
+          "name": "Quinn Alvarez",
+          "initials": "QA",
+          "chamber": "House",
+          "party": "D",
+          "state": "NM",
+          "district": "1",
+          "years_in_service": 13.8,
+          "rank": 2,
+          "previous_rank": 1,
+          "rank_change": -1,
+          "streak": 0,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": 0.166067,
+          "alpha": 0.039147,
+          "benchmark": 0.126921,
+          "copycat_return": 0.162221,
+          "copycat_alpha": 0.038192,
+          "trades": 3,
+          "avg_hold_days": 476.7,
+          "avg_filing_lag": 10.0,
+          "late_filings": 0,
+          "filings": 3,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "beat_the_market",
+              "name": "Beat the Market",
+              "blurb": "Positive alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "tech_bro",
+              "name": "Tech Bro",
+              "blurb": "At least half the midpoint dollars sit in the technology list."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            },
+            {
+              "id": "diamond_hands",
+              "name": "Diamond Hands",
+              "blurb": "Longest average holding period on the board."
+            }
+          ],
+          "top_ticker": "AAPL"
+        },
+        {
+          "bioguide_id": "CG0002",
+          "name": "Casey Nguyen",
+          "initials": "CN",
+          "chamber": "Senate",
+          "party": "R",
+          "state": "WA",
+          "district": null,
+          "years_in_service": 9.8,
+          "rank": 3,
+          "previous_rank": 4,
+          "rank_change": 1,
+          "streak": 3,
+          "on_fire": true,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": 0.020815,
+          "alpha": 0.015784,
+          "benchmark": 0.00503,
+          "copycat_return": 0.019437,
+          "copycat_alpha": 0.015462,
+          "trades": 3,
+          "avg_hold_days": 19.7,
+          "avg_filing_lag": 5.0,
+          "late_filings": 0,
+          "filings": 3,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "beat_the_market",
+              "name": "Beat the Market",
+              "blurb": "Positive alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "LIFT"
+        },
+        {
+          "bioguide_id": "CG0005",
+          "name": "Avery Shah",
+          "initials": "AS",
+          "chamber": "House",
+          "party": "R",
+          "state": "TX",
+          "district": "24",
+          "years_in_service": 3.8,
+          "rank": 4,
+          "previous_rank": 3,
+          "rank_change": -1,
+          "streak": 0,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": 0.019891,
+          "alpha": 0.01358,
+          "benchmark": 0.006311,
+          "copycat_return": 0.011002,
+          "copycat_alpha": 0.0075,
+          "trades": 3,
+          "avg_hold_days": 20.7,
+          "avg_filing_lag": 9.0,
+          "late_filings": 0,
+          "filings": 3,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "beat_the_market",
+              "name": "Beat the Market",
+              "blurb": "Positive alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "one_big_bet",
+              "name": "One Big Bet",
+              "blurb": "The largest one or two trades are at least 70% of the dollars."
+            },
+            {
+              "id": "tech_bro",
+              "name": "Tech Bro",
+              "blurb": "At least half the midpoint dollars sit in the technology list."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "NVDA"
+        },
+        {
+          "bioguide_id": "CG0010",
+          "name": "Reese Dalton",
+          "initials": "RD",
+          "chamber": "House",
+          "party": "D",
+          "state": "WA",
+          "district": "1",
+          "years_in_service": 8.8,
+          "rank": 5,
+          "previous_rank": 5,
+          "rank_change": 0,
+          "streak": 0,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": 0.008987,
+          "alpha": 0.00447,
+          "benchmark": 0.004517,
+          "copycat_return": 0.006272,
+          "copycat_alpha": 0.002972,
+          "trades": 3,
+          "avg_hold_days": 20.3,
+          "avg_filing_lag": 5.7,
+          "late_filings": 0,
+          "filings": 3,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "beat_the_market",
+              "name": "Beat the Market",
+              "blurb": "Positive alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "one_big_bet",
+              "name": "One Big Bet",
+              "blurb": "The largest one or two trades are at least 70% of the dollars."
+            },
+            {
+              "id": "tech_bro",
+              "name": "Tech Bro",
+              "blurb": "At least half the midpoint dollars sit in the technology list."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "NVDA"
+        },
+        {
+          "bioguide_id": "CG0007",
+          "name": "Parker Singh",
+          "initials": "PS",
+          "chamber": "Senate",
+          "party": "R",
+          "state": "OH",
+          "district": null,
+          "years_in_service": 7.8,
+          "rank": 6,
+          "previous_rank": 6,
+          "rank_change": 0,
+          "streak": 0,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": 0.003377,
+          "alpha": 0.002303,
+          "benchmark": 0.001073,
+          "copycat_return": 0.001413,
+          "copycat_alpha": 0.000964,
+          "trades": 10,
+          "avg_hold_days": 9.0,
+          "avg_filing_lag": 3.6,
+          "late_filings": 0,
+          "filings": 9,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 4,
+          "badges": [
+            {
+              "id": "beat_the_market",
+              "name": "Beat the Market",
+              "blurb": "Positive alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "tech_bro",
+              "name": "Tech Bro",
+              "blurb": "At least half the midpoint dollars sit in the technology list."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            },
+            {
+              "id": "paper_hands",
+              "name": "Paper Hands",
+              "blurb": "Shortest average holding period on the board."
+            }
+          ],
+          "top_ticker": "NVDA"
+        },
+        {
+          "bioguide_id": "CG0004",
+          "name": "Morgan Ellis",
+          "initials": "ME",
+          "chamber": "Senate",
+          "party": "I",
+          "state": "ME",
+          "district": null,
+          "years_in_service": 11.8,
+          "rank": 7,
+          "previous_rank": 8,
+          "rank_change": 1,
+          "streak": 1,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": 0.004712,
+          "alpha": 0.0,
+          "benchmark": 0.004712,
+          "copycat_return": 0.004126,
+          "copycat_alpha": -0.0,
+          "trades": 4,
+          "avg_hold_days": 19.5,
+          "avg_filing_lag": 4.0,
+          "late_filings": 0,
+          "filings": 4,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "SPY"
+        },
+        {
+          "bioguide_id": "CG0009",
+          "name": "Skyler Brooks",
+          "initials": "SB",
+          "chamber": "Senate",
+          "party": "D",
+          "state": "HI",
+          "district": null,
+          "years_in_service": 5.8,
+          "rank": 8,
+          "previous_rank": 9,
+          "rank_change": 1,
+          "streak": 1,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": 0.002737,
+          "alpha": -0.00366,
+          "benchmark": 0.006398,
+          "copycat_return": 0.002377,
+          "copycat_alpha": -0.003178,
+          "trades": 3,
+          "avg_hold_days": 23.7,
+          "avg_filing_lag": 3.7,
+          "late_filings": 0,
+          "filings": 3,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "market_beat_you",
+              "name": "The Market Beat You",
+              "blurb": "Negative alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "one_big_bet",
+              "name": "One Big Bet",
+              "blurb": "The largest one or two trades are at least 70% of the dollars."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "XOM"
+        },
+        {
+          "bioguide_id": "CG0013",
+          "name": "Rowan Blake",
+          "initials": "RB",
+          "chamber": "House",
+          "party": "R",
+          "state": "MI",
+          "district": "8",
+          "years_in_service": 15.8,
+          "rank": 9,
+          "previous_rank": 10,
+          "rank_change": 1,
+          "streak": 1,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": -0.00429,
+          "alpha": -0.00932,
+          "benchmark": 0.00503,
+          "copycat_return": -0.002696,
+          "copycat_alpha": -0.005851,
+          "trades": 3,
+          "avg_hold_days": 19.0,
+          "avg_filing_lag": 8.0,
+          "late_filings": 0,
+          "filings": 3,
+          "excluded_options": 0,
+          "excluded_non_stock": 1,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "market_beat_you",
+              "name": "The Market Beat You",
+              "blurb": "Negative alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "JNJ"
+        },
+        {
+          "bioguide_id": "CG0011",
+          "name": "Jamie Ortiz",
+          "initials": "JO",
+          "chamber": "House",
+          "party": "R",
+          "state": "AZ",
+          "district": "2",
+          "years_in_service": 6.8,
+          "rank": 10,
+          "previous_rank": 11,
+          "rank_change": 1,
+          "streak": 1,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": -0.021372,
+          "alpha": -0.027691,
+          "benchmark": 0.00632,
+          "copycat_return": -0.013906,
+          "copycat_alpha": -0.017997,
+          "trades": 6,
+          "avg_hold_days": 25.3,
+          "avg_filing_lag": 7.8,
+          "late_filings": 0,
+          "filings": 5,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 3,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "market_beat_you",
+              "name": "The Market Beat You",
+              "blurb": "Negative alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            },
+            {
+              "id": "buy_high_sell_low",
+              "name": "Buy High Sell Low",
+              "blurb": "Worst capital-weighted return on positions that were closed."
+            }
+          ],
+          "top_ticker": "FADE"
+        },
+        {
+          "bioguide_id": "CG0008",
+          "name": "Drew Coleman",
+          "initials": "DC",
+          "chamber": "House",
+          "party": "R",
+          "state": "FL",
+          "district": "3",
+          "years_in_service": 1.8,
+          "rank": 11,
+          "previous_rank": 12,
+          "rank_change": 1,
+          "streak": 1,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": -0.018528,
+          "alpha": -0.040582,
+          "benchmark": 0.022054,
+          "copycat_return": -0.002397,
+          "copycat_alpha": -0.005201,
+          "trades": 3,
+          "avg_hold_days": 86.3,
+          "avg_filing_lag": 80.0,
+          "late_filings": 2,
+          "filings": 2,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "market_beat_you",
+              "name": "The Market Beat You",
+              "blurb": "Negative alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "fashionably_late",
+              "name": "Fashionably Late",
+              "blurb": "Highest average gap between the trade and the filing."
+            }
+          ],
+          "top_ticker": "JNJ"
+        },
+        {
+          "bioguide_id": "CG0003",
+          "name": "Riley Okonkwo",
+          "initials": "RO",
+          "chamber": "House",
+          "party": "D",
+          "state": "NY",
+          "district": "7",
+          "years_in_service": 5.8,
+          "rank": 12,
+          "previous_rank": 2,
+          "rank_change": -10,
+          "streak": 0,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": true,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": -0.497908,
+          "alpha": -0.502408,
+          "benchmark": 0.004501,
+          "copycat_return": -0.506152,
+          "copycat_alpha": -0.508993,
+          "trades": 3,
+          "avg_hold_days": 20.0,
+          "avg_filing_lag": 7.7,
+          "late_filings": 0,
+          "filings": 3,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "market_beat_you",
+              "name": "The Market Beat You",
+              "blurb": "Negative alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "one_big_bet",
+              "name": "One Big Bet",
+              "blurb": "The largest one or two trades are at least 70% of the dollars."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "SPIKE"
+        }
+      ],
+      "benched": [
+        {
+          "bioguide_id": "CG0012",
+          "name": "Taylor Idris",
+          "initials": "TI",
+          "chamber": "Senate",
+          "party": "D",
+          "state": "CO",
+          "district": null,
+          "years_in_service": 1.8,
+          "rank": null,
+          "previous_rank": null,
+          "rank_change": null,
+          "streak": 0,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": true,
+          "return": 0.005414,
+          "alpha": 0.001205,
+          "benchmark": 0.004208,
+          "copycat_return": 0.003154,
+          "copycat_alpha": 0.000702,
+          "trades": 1,
+          "avg_hold_days": 16.0,
+          "avg_filing_lag": 7.0,
+          "late_filings": 0,
+          "filings": 1,
+          "excluded_options": 0,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 0,
+          "unmatched_sells": 0,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "beat_the_market",
+              "name": "Beat the Market",
+              "blurb": "Positive alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "tech_bro",
+              "name": "Tech Bro",
+              "blurb": "At least half the midpoint dollars sit in the technology list."
+            },
+            {
+              "id": "punctual_pro",
+              "name": "Punctual Pro",
+              "blurb": "Every filing in this window landed inside 45 days."
+            }
+          ],
+          "top_ticker": "AAPL"
+        }
+      ],
+      "beat_market": 6,
+      "field_size": 12,
+      "benched_size": 1,
+      "ticker_tape": [
+        "Jordan Hale takes the top spot. Somebody order a small, tasteful celebration.",
+        "A 6-spot climb for Jordan Hale. No parade, just a better rank.",
+        "The board reshuffles. Riley Okonkwo is 10 spots softer.",
+        "Casey Nguyen climbs again. That makes 3 in a row.",
+        "Drew Coleman cleared the 45-day line by landing at 80. The flag is informational.",
+        "6 beat the S&P over all. The holding periods were matched on purpose.",
+        "Skyler Brooks trails the benchmark by -0.4%. The Market Beat You badge is in the mail.",
+        "Quinn Alvarez turned positions over in about 477 days. Paper, possibly recycled.",
+        "Parker Singh and the calendar spent 9 days together. One of them blinked.",
+        "Taylor Idris stays on the bench with 1 trades. The threshold is 3, not a vibe.",
+        "House check. Jordan Hale is at rank 1 with alpha +16.1%.",
+        "AAPL is doing a lot of the work in Quinn Alvarez's book this window.",
+        "Unmatched sales stay unmatched. This board does not invent a position it cannot see.",
+        "Rank needs 3 priced equity trades in the window. Otherwise: benched."
+      ]
+    }
+  },
+  "badges": {
+    "beat_the_market": {
+      "name": "Beat the Market",
+      "blurb": "Positive alpha versus SPY over the same holding periods."
+    },
+    "market_beat_you": {
+      "name": "The Market Beat You",
+      "blurb": "Negative alpha versus SPY over the same holding periods."
+    },
+    "index_hugger": {
+      "name": "Index Hugger",
+      "blurb": "Alpha landed within 2 percentage points of the S&P."
+    },
+    "one_big_bet": {
+      "name": "One Big Bet",
+      "blurb": "The largest one or two trades are at least 70% of the dollars."
+    },
+    "tech_bro": {
+      "name": "Tech Bro",
+      "blurb": "At least half the midpoint dollars sit in the technology list."
+    },
+    "punctual_pro": {
+      "name": "Punctual Pro",
+      "blurb": "Every filing in this window landed inside 45 days."
+    },
+    "diamond_hands": {
+      "name": "Diamond Hands",
+      "blurb": "Longest average holding period on the board."
+    },
+    "paper_hands": {
+      "name": "Paper Hands",
+      "blurb": "Shortest average holding period on the board."
+    },
+    "fashionably_late": {
+      "name": "Fashionably Late",
+      "blurb": "Highest average gap between the trade and the filing."
+    },
+    "buy_high_sell_low": {
+      "name": "Buy High Sell Low",
+      "blurb": "Worst capital-weighted return on positions that were closed."
+    }
+  }
+}

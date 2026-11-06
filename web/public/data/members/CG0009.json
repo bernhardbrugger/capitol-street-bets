@@ -1,0 +1,361 @@
+{
+  "bioguide_id": "CG0009",
+  "name": "Skyler Brooks",
+  "initials": "SB",
+  "chamber": "Senate",
+  "party": "D",
+  "state": "HI",
+  "district": null,
+  "years_in_service": 5.8,
+  "curves": {
+    "30d": [
+      {
+        "date": "2026-10-09",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-16",
+        "member": 100.0751,
+        "spy": 100.1751
+      },
+      {
+        "date": "2026-10-23",
+        "member": 100.1472,
+        "spy": 100.3436
+      },
+      {
+        "date": "2026-10-30",
+        "member": 100.2223,
+        "spy": 100.5193
+      },
+      {
+        "date": "2026-11-06",
+        "member": 100.2886,
+        "spy": 100.6745
+      }
+    ],
+    "ytd": [
+      {
+        "date": "2026-10-09",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-16",
+        "member": 100.0751,
+        "spy": 100.1751
+      },
+      {
+        "date": "2026-10-23",
+        "member": 100.1472,
+        "spy": 100.3436
+      },
+      {
+        "date": "2026-10-30",
+        "member": 100.2223,
+        "spy": 100.5193
+      },
+      {
+        "date": "2026-11-06",
+        "member": 100.2886,
+        "spy": 100.6745
+      }
+    ],
+    "12m": [
+      {
+        "date": "2026-10-09",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-16",
+        "member": 100.0751,
+        "spy": 100.1751
+      },
+      {
+        "date": "2026-10-23",
+        "member": 100.1472,
+        "spy": 100.3436
+      },
+      {
+        "date": "2026-10-30",
+        "member": 100.2223,
+        "spy": 100.5193
+      },
+      {
+        "date": "2026-11-06",
+        "member": 100.2886,
+        "spy": 100.6745
+      }
+    ],
+    "all": [
+      {
+        "date": "2026-10-09",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-16",
+        "member": 100.0751,
+        "spy": 100.1751
+      },
+      {
+        "date": "2026-10-23",
+        "member": 100.1472,
+        "spy": 100.3436
+      },
+      {
+        "date": "2026-10-30",
+        "member": 100.2223,
+        "spy": 100.5193
+      },
+      {
+        "date": "2026-11-06",
+        "member": 100.2886,
+        "spy": 100.6745
+      }
+    ]
+  },
+  "trades": [
+    {
+      "transaction_date": "2026-11-03",
+      "filed_date": "2026-11-05",
+      "lag_days": 2,
+      "late": false,
+      "side": "sell",
+      "symbol": "XOM",
+      "asset_name": "XOM common stock [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2026-10-19",
+      "filed_date": "2026-10-24",
+      "lag_days": 5,
+      "late": false,
+      "side": "buy",
+      "symbol": "XOM",
+      "asset_name": "XOM common stock [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2026-10-09",
+      "filed_date": "2026-10-13",
+      "lag_days": 4,
+      "late": false,
+      "side": "buy",
+      "symbol": "XOM",
+      "asset_name": "XOM common stock [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    }
+  ],
+  "windows": {
+    "30d": {
+      "rank": 7,
+      "previous_rank": 8,
+      "rank_change": 1,
+      "streak": 1,
+      "on_fire": false,
+      "benched": false,
+      "return": 0.002737,
+      "alpha": -0.00366,
+      "benchmark": 0.006398,
+      "copycat_return": 0.002377,
+      "copycat_alpha": -0.003178,
+      "trades": 3,
+      "avg_hold_days": 23.7,
+      "avg_filing_lag": 3.7,
+      "late_filings": 0,
+      "filings": 3,
+      "badges": [
+        {
+          "id": "market_beat_you",
+          "name": "The Market Beat You",
+          "blurb": "Negative alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "index_hugger",
+          "name": "Index Hugger",
+          "blurb": "Alpha landed within 2 percentage points of the S&P."
+        },
+        {
+          "id": "one_big_bet",
+          "name": "One Big Bet",
+          "blurb": "The largest one or two trades are at least 70% of the dollars."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        }
+      ],
+      "excluded_options": 0,
+      "excluded_non_stock": 0,
+      "excluded_unknown": 0,
+      "unmatched_sells": 0,
+      "uncopyable": 0
+    },
+    "ytd": {
+      "rank": 7,
+      "previous_rank": 8,
+      "rank_change": 1,
+      "streak": 1,
+      "on_fire": false,
+      "benched": false,
+      "return": 0.002737,
+      "alpha": -0.00366,
+      "benchmark": 0.006398,
+      "copycat_return": 0.002377,
+      "copycat_alpha": -0.003178,
+      "trades": 3,
+      "avg_hold_days": 23.7,
+      "avg_filing_lag": 3.7,
+      "late_filings": 0,
+      "filings": 3,
+      "badges": [
+        {
+          "id": "market_beat_you",
+          "name": "The Market Beat You",
+          "blurb": "Negative alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "index_hugger",
+          "name": "Index Hugger",
+          "blurb": "Alpha landed within 2 percentage points of the S&P."
+        },
+        {
+          "id": "one_big_bet",
+          "name": "One Big Bet",
+          "blurb": "The largest one or two trades are at least 70% of the dollars."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        }
+      ],
+      "excluded_options": 0,
+      "excluded_non_stock": 0,
+      "excluded_unknown": 0,
+      "unmatched_sells": 0,
+      "uncopyable": 0
+    },
+    "12m": {
+      "rank": 7,
+      "previous_rank": 8,
+      "rank_change": 1,
+      "streak": 1,
+      "on_fire": false,
+      "benched": false,
+      "return": 0.002737,
+      "alpha": -0.00366,
+      "benchmark": 0.006398,
+      "copycat_return": 0.002377,
+      "copycat_alpha": -0.003178,
+      "trades": 3,
+      "avg_hold_days": 23.7,
+      "avg_filing_lag": 3.7,
+      "late_filings": 0,
+      "filings": 3,
+      "badges": [
+        {
+          "id": "market_beat_you",
+          "name": "The Market Beat You",
+          "blurb": "Negative alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "index_hugger",
+          "name": "Index Hugger",
+          "blurb": "Alpha landed within 2 percentage points of the S&P."
+        },
+        {
+          "id": "one_big_bet",
+          "name": "One Big Bet",
+          "blurb": "The largest one or two trades are at least 70% of the dollars."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        }
+      ],
+      "excluded_options": 0,
+      "excluded_non_stock": 0,
+      "excluded_unknown": 0,
+      "unmatched_sells": 0,
+      "uncopyable": 0
+    },
+    "all": {
+      "rank": 8,
+      "previous_rank": 9,
+      "rank_change": 1,
+      "streak": 1,
+      "on_fire": false,
+      "benched": false,
+      "return": 0.002737,
+      "alpha": -0.00366,
+      "benchmark": 0.006398,
+      "copycat_return": 0.002377,
+      "copycat_alpha": -0.003178,
+      "trades": 3,
+      "avg_hold_days": 23.7,
+      "avg_filing_lag": 3.7,
+      "late_filings": 0,
+      "filings": 3,
+      "badges": [
+        {
+          "id": "market_beat_you",
+          "name": "The Market Beat You",
+          "blurb": "Negative alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "index_hugger",
+          "name": "Index Hugger",
+          "blurb": "Alpha landed within 2 percentage points of the S&P."
+        },
+        {
+          "id": "one_big_bet",
+          "name": "One Big Bet",
+          "blurb": "The largest one or two trades are at least 70% of the dollars."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        }
+      ],
+      "excluded_options": 0,
+      "excluded_non_stock": 0,
+      "excluded_unknown": 0,
+      "unmatched_sells": 0,
+      "uncopyable": 0
+    }
+  }
+}

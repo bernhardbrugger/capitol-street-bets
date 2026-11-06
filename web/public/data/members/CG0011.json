@@ -1,0 +1,558 @@
+{
+  "bioguide_id": "CG0011",
+  "name": "Jamie Ortiz",
+  "initials": "JO",
+  "chamber": "House",
+  "party": "R",
+  "state": "AZ",
+  "district": "2",
+  "years_in_service": 6.8,
+  "curves": {
+    "30d": [
+      {
+        "date": "2026-10-07",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-14",
+        "member": 99.5208,
+        "spy": 100.1401
+      },
+      {
+        "date": "2026-10-21",
+        "member": 99.163,
+        "spy": 100.2452
+      },
+      {
+        "date": "2026-10-28",
+        "member": 98.5694,
+        "spy": 100.4208
+      },
+      {
+        "date": "2026-11-04",
+        "member": 97.9795,
+        "spy": 100.5967
+      },
+      {
+        "date": "2026-11-06",
+        "member": 97.9795,
+        "spy": 100.5967
+      }
+    ],
+    "ytd": [
+      {
+        "date": "2026-08-04",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-08-11",
+        "member": 99.4015,
+        "spy": 100.1751
+      },
+      {
+        "date": "2026-08-18",
+        "member": 98.8064,
+        "spy": 100.3506
+      },
+      {
+        "date": "2026-08-25",
+        "member": 98.215,
+        "spy": 100.5263
+      },
+      {
+        "date": "2026-09-01",
+        "member": 97.6271,
+        "spy": 100.7023
+      },
+      {
+        "date": "2026-09-08",
+        "member": 97.51,
+        "spy": 100.7376
+      },
+      {
+        "date": "2026-09-15",
+        "member": 97.51,
+        "spy": 100.7376
+      },
+      {
+        "date": "2026-09-22",
+        "member": 96.9264,
+        "spy": 100.914
+      },
+      {
+        "date": "2026-09-29",
+        "member": 96.3462,
+        "spy": 101.0907
+      },
+      {
+        "date": "2026-10-06",
+        "member": 95.7695,
+        "spy": 101.2678
+      },
+      {
+        "date": "2026-10-13",
+        "member": 95.1963,
+        "spy": 101.4451
+      },
+      {
+        "date": "2026-10-20",
+        "member": 94.968,
+        "spy": 101.5161
+      },
+      {
+        "date": "2026-10-27",
+        "member": 94.3996,
+        "spy": 101.6939
+      },
+      {
+        "date": "2026-11-03",
+        "member": 93.8345,
+        "spy": 101.872
+      },
+      {
+        "date": "2026-11-06",
+        "member": 93.7219,
+        "spy": 101.9076
+      }
+    ],
+    "12m": [
+      {
+        "date": "2026-08-04",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-08-11",
+        "member": 99.4015,
+        "spy": 100.1751
+      },
+      {
+        "date": "2026-08-18",
+        "member": 98.8064,
+        "spy": 100.3506
+      },
+      {
+        "date": "2026-08-25",
+        "member": 98.215,
+        "spy": 100.5263
+      },
+      {
+        "date": "2026-09-01",
+        "member": 97.6271,
+        "spy": 100.7023
+      },
+      {
+        "date": "2026-09-08",
+        "member": 97.51,
+        "spy": 100.7376
+      },
+      {
+        "date": "2026-09-15",
+        "member": 97.51,
+        "spy": 100.7376
+      },
+      {
+        "date": "2026-09-22",
+        "member": 96.9264,
+        "spy": 100.914
+      },
+      {
+        "date": "2026-09-29",
+        "member": 96.3462,
+        "spy": 101.0907
+      },
+      {
+        "date": "2026-10-06",
+        "member": 95.7695,
+        "spy": 101.2678
+      },
+      {
+        "date": "2026-10-13",
+        "member": 95.1963,
+        "spy": 101.4451
+      },
+      {
+        "date": "2026-10-20",
+        "member": 94.968,
+        "spy": 101.5161
+      },
+      {
+        "date": "2026-10-27",
+        "member": 94.3996,
+        "spy": 101.6939
+      },
+      {
+        "date": "2026-11-03",
+        "member": 93.8345,
+        "spy": 101.872
+      },
+      {
+        "date": "2026-11-06",
+        "member": 93.7219,
+        "spy": 101.9076
+      }
+    ],
+    "all": [
+      {
+        "date": "2026-08-04",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-08-11",
+        "member": 99.4015,
+        "spy": 100.1751
+      },
+      {
+        "date": "2026-08-18",
+        "member": 98.8064,
+        "spy": 100.3506
+      },
+      {
+        "date": "2026-08-25",
+        "member": 98.215,
+        "spy": 100.5263
+      },
+      {
+        "date": "2026-09-01",
+        "member": 97.6271,
+        "spy": 100.7023
+      },
+      {
+        "date": "2026-09-08",
+        "member": 97.51,
+        "spy": 100.7376
+      },
+      {
+        "date": "2026-09-15",
+        "member": 97.51,
+        "spy": 100.7376
+      },
+      {
+        "date": "2026-09-22",
+        "member": 96.9264,
+        "spy": 100.914
+      },
+      {
+        "date": "2026-09-29",
+        "member": 96.3462,
+        "spy": 101.0907
+      },
+      {
+        "date": "2026-10-06",
+        "member": 95.7695,
+        "spy": 101.2678
+      },
+      {
+        "date": "2026-10-13",
+        "member": 95.1963,
+        "spy": 101.4451
+      },
+      {
+        "date": "2026-10-20",
+        "member": 94.968,
+        "spy": 101.5161
+      },
+      {
+        "date": "2026-10-27",
+        "member": 94.3996,
+        "spy": 101.6939
+      },
+      {
+        "date": "2026-11-03",
+        "member": 93.8345,
+        "spy": 101.872
+      },
+      {
+        "date": "2026-11-06",
+        "member": 93.7219,
+        "spy": 101.9076
+      }
+    ]
+  },
+  "trades": [
+    {
+      "transaction_date": "2026-11-04",
+      "filed_date": "2026-11-10",
+      "lag_days": 6,
+      "late": false,
+      "side": "sell",
+      "symbol": "FADE",
+      "asset_name": "FADE common stock [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 50001.0,
+      "amount_max": 100000.0,
+      "midpoint": 75000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2026-10-16",
+      "filed_date": "2026-10-25",
+      "lag_days": 9,
+      "late": false,
+      "side": "buy",
+      "symbol": "FADE",
+      "asset_name": "FADE common stock [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 50001.0,
+      "amount_max": 100000.0,
+      "midpoint": 75000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2026-10-13",
+      "filed_date": "2026-10-19",
+      "lag_days": 6,
+      "late": false,
+      "side": "sell",
+      "symbol": "FADE",
+      "asset_name": "FADE common stock [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 50001.0,
+      "amount_max": 100000.0,
+      "midpoint": 75000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2026-09-15",
+      "filed_date": "2026-09-24",
+      "lag_days": 9,
+      "late": false,
+      "side": "buy",
+      "symbol": "FADE",
+      "asset_name": "FADE common stock [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 50001.0,
+      "amount_max": 100000.0,
+      "midpoint": 75000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2026-09-02",
+      "filed_date": "2026-09-08",
+      "lag_days": 6,
+      "late": false,
+      "side": "sell",
+      "symbol": "FADE",
+      "asset_name": "FADE common stock [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 50001.0,
+      "amount_max": 100000.0,
+      "midpoint": 75000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2026-08-04",
+      "filed_date": "2026-08-13",
+      "lag_days": 9,
+      "late": false,
+      "side": "buy",
+      "symbol": "FADE",
+      "asset_name": "FADE common stock [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 50001.0,
+      "amount_max": 100000.0,
+      "midpoint": 75000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    }
+  ],
+  "windows": {
+    "30d": {
+      "rank": 9,
+      "previous_rank": 10,
+      "rank_change": 1,
+      "streak": 1,
+      "on_fire": false,
+      "benched": false,
+      "return": -0.010191,
+      "alpha": -0.013186,
+      "benchmark": 0.002995,
+      "copycat_return": -0.007189,
+      "copycat_alpha": -0.009294,
+      "trades": 3,
+      "avg_hold_days": 23.5,
+      "avg_filing_lag": 7.5,
+      "late_filings": 0,
+      "filings": 2,
+      "badges": [
+        {
+          "id": "market_beat_you",
+          "name": "The Market Beat You",
+          "blurb": "Negative alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "index_hugger",
+          "name": "Index Hugger",
+          "blurb": "Alpha landed within 2 percentage points of the S&P."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        },
+        {
+          "id": "buy_high_sell_low",
+          "name": "Buy High Sell Low",
+          "blurb": "Worst capital-weighted return on positions that were closed."
+        }
+      ],
+      "excluded_options": 0,
+      "excluded_non_stock": 0,
+      "excluded_unknown": 0,
+      "unmatched_sells": 3,
+      "uncopyable": 0
+    },
+    "ytd": {
+      "rank": 9,
+      "previous_rank": 10,
+      "rank_change": 1,
+      "streak": 1,
+      "on_fire": false,
+      "benched": false,
+      "return": -0.021372,
+      "alpha": -0.027691,
+      "benchmark": 0.00632,
+      "copycat_return": -0.013906,
+      "copycat_alpha": -0.017997,
+      "trades": 6,
+      "avg_hold_days": 25.3,
+      "avg_filing_lag": 7.8,
+      "late_filings": 0,
+      "filings": 5,
+      "badges": [
+        {
+          "id": "market_beat_you",
+          "name": "The Market Beat You",
+          "blurb": "Negative alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        },
+        {
+          "id": "buy_high_sell_low",
+          "name": "Buy High Sell Low",
+          "blurb": "Worst capital-weighted return on positions that were closed."
+        }
+      ],
+      "excluded_options": 0,
+      "excluded_non_stock": 0,
+      "excluded_unknown": 0,
+      "unmatched_sells": 3,
+      "uncopyable": 0
+    },
+    "12m": {
+      "rank": 9,
+      "previous_rank": 10,
+      "rank_change": 1,
+      "streak": 1,
+      "on_fire": false,
+      "benched": false,
+      "return": -0.021372,
+      "alpha": -0.027691,
+      "benchmark": 0.00632,
+      "copycat_return": -0.013906,
+      "copycat_alpha": -0.017997,
+      "trades": 6,
+      "avg_hold_days": 25.3,
+      "avg_filing_lag": 7.8,
+      "late_filings": 0,
+      "filings": 5,
+      "badges": [
+        {
+          "id": "market_beat_you",
+          "name": "The Market Beat You",
+          "blurb": "Negative alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        },
+        {
+          "id": "buy_high_sell_low",
+          "name": "Buy High Sell Low",
+          "blurb": "Worst capital-weighted return on positions that were closed."
+        }
+      ],
+      "excluded_options": 0,
+      "excluded_non_stock": 0,
+      "excluded_unknown": 0,
+      "unmatched_sells": 3,
+      "uncopyable": 0
+    },
+    "all": {
+      "rank": 10,
+      "previous_rank": 11,
+      "rank_change": 1,
+      "streak": 1,
+      "on_fire": false,
+      "benched": false,
+      "return": -0.021372,
+      "alpha": -0.027691,
+      "benchmark": 0.00632,
+      "copycat_return": -0.013906,
+      "copycat_alpha": -0.017997,
+      "trades": 6,
+      "avg_hold_days": 25.3,
+      "avg_filing_lag": 7.8,
+      "late_filings": 0,
+      "filings": 5,
+      "badges": [
+        {
+          "id": "market_beat_you",
+          "name": "The Market Beat You",
+          "blurb": "Negative alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        },
+        {
+          "id": "buy_high_sell_low",
+          "name": "Buy High Sell Low",
+          "blurb": "Worst capital-weighted return on positions that were closed."
+        }
+      ],
+      "excluded_options": 0,
+      "excluded_non_stock": 0,
+      "excluded_unknown": 0,
+      "unmatched_sells": 3,
+      "uncopyable": 0
+    }
+  }
+}

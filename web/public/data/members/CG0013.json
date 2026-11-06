@@ -1,0 +1,380 @@
+{
+  "bioguide_id": "CG0013",
+  "name": "Rowan Blake",
+  "initials": "RB",
+  "chamber": "House",
+  "party": "R",
+  "state": "MI",
+  "district": "8",
+  "years_in_service": 15.8,
+  "curves": {
+    "30d": [
+      {
+        "date": "2026-10-08",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-15",
+        "member": 99.8501,
+        "spy": 100.1751
+      },
+      {
+        "date": "2026-10-22",
+        "member": 99.7304,
+        "spy": 100.3154
+      },
+      {
+        "date": "2026-10-29",
+        "member": 99.6108,
+        "spy": 100.4559
+      },
+      {
+        "date": "2026-11-05",
+        "member": 99.4615,
+        "spy": 100.6318
+      },
+      {
+        "date": "2026-11-06",
+        "member": 99.4317,
+        "spy": 100.667
+      }
+    ],
+    "ytd": [
+      {
+        "date": "2026-10-08",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-15",
+        "member": 99.8501,
+        "spy": 100.1751
+      },
+      {
+        "date": "2026-10-22",
+        "member": 99.7304,
+        "spy": 100.3154
+      },
+      {
+        "date": "2026-10-29",
+        "member": 99.6108,
+        "spy": 100.4559
+      },
+      {
+        "date": "2026-11-05",
+        "member": 99.4615,
+        "spy": 100.6318
+      },
+      {
+        "date": "2026-11-06",
+        "member": 99.4317,
+        "spy": 100.667
+      }
+    ],
+    "12m": [
+      {
+        "date": "2026-10-08",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-15",
+        "member": 99.8501,
+        "spy": 100.1751
+      },
+      {
+        "date": "2026-10-22",
+        "member": 99.7304,
+        "spy": 100.3154
+      },
+      {
+        "date": "2026-10-29",
+        "member": 99.6108,
+        "spy": 100.4559
+      },
+      {
+        "date": "2026-11-05",
+        "member": 99.4615,
+        "spy": 100.6318
+      },
+      {
+        "date": "2026-11-06",
+        "member": 99.4317,
+        "spy": 100.667
+      }
+    ],
+    "all": [
+      {
+        "date": "2026-10-08",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-15",
+        "member": 99.8501,
+        "spy": 100.1751
+      },
+      {
+        "date": "2026-10-22",
+        "member": 99.7304,
+        "spy": 100.3154
+      },
+      {
+        "date": "2026-10-29",
+        "member": 99.6108,
+        "spy": 100.4559
+      },
+      {
+        "date": "2026-11-05",
+        "member": 99.4615,
+        "spy": 100.6318
+      },
+      {
+        "date": "2026-11-06",
+        "member": 99.4317,
+        "spy": 100.667
+      }
+    ]
+  },
+  "trades": [
+    {
+      "transaction_date": "2026-10-27",
+      "filed_date": "2026-11-02",
+      "lag_days": 6,
+      "late": false,
+      "side": "buy",
+      "symbol": "JNJ",
+      "asset_name": "JNJ common stock [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2026-10-19",
+      "filed_date": "2026-10-27",
+      "lag_days": 8,
+      "late": false,
+      "side": "buy",
+      "symbol": "JNJ",
+      "asset_name": "JNJ common stock [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2026-10-08",
+      "filed_date": "2026-10-18",
+      "lag_days": 10,
+      "late": false,
+      "side": "buy",
+      "symbol": "JNJ",
+      "asset_name": "JNJ common stock [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2026-10-02",
+      "filed_date": "2026-10-12",
+      "lag_days": 10,
+      "late": false,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "U.S. Treasury Note 4.25% 2030",
+      "asset_type_code": null,
+      "amount_min": 15001,
+      "amount_max": 50000,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    }
+  ],
+  "windows": {
+    "30d": {
+      "rank": 8,
+      "previous_rank": 9,
+      "rank_change": 1,
+      "streak": 1,
+      "on_fire": false,
+      "benched": false,
+      "return": -0.00429,
+      "alpha": -0.00932,
+      "benchmark": 0.00503,
+      "copycat_return": -0.002696,
+      "copycat_alpha": -0.005851,
+      "trades": 3,
+      "avg_hold_days": 19.0,
+      "avg_filing_lag": 8.0,
+      "late_filings": 0,
+      "filings": 3,
+      "badges": [
+        {
+          "id": "market_beat_you",
+          "name": "The Market Beat You",
+          "blurb": "Negative alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "index_hugger",
+          "name": "Index Hugger",
+          "blurb": "Alpha landed within 2 percentage points of the S&P."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        }
+      ],
+      "excluded_options": 0,
+      "excluded_non_stock": 1,
+      "excluded_unknown": 0,
+      "unmatched_sells": 0,
+      "uncopyable": 0
+    },
+    "ytd": {
+      "rank": 8,
+      "previous_rank": 9,
+      "rank_change": 1,
+      "streak": 1,
+      "on_fire": false,
+      "benched": false,
+      "return": -0.00429,
+      "alpha": -0.00932,
+      "benchmark": 0.00503,
+      "copycat_return": -0.002696,
+      "copycat_alpha": -0.005851,
+      "trades": 3,
+      "avg_hold_days": 19.0,
+      "avg_filing_lag": 8.0,
+      "late_filings": 0,
+      "filings": 3,
+      "badges": [
+        {
+          "id": "market_beat_you",
+          "name": "The Market Beat You",
+          "blurb": "Negative alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "index_hugger",
+          "name": "Index Hugger",
+          "blurb": "Alpha landed within 2 percentage points of the S&P."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        }
+      ],
+      "excluded_options": 0,
+      "excluded_non_stock": 1,
+      "excluded_unknown": 0,
+      "unmatched_sells": 0,
+      "uncopyable": 0
+    },
+    "12m": {
+      "rank": 8,
+      "previous_rank": 9,
+      "rank_change": 1,
+      "streak": 1,
+      "on_fire": false,
+      "benched": false,
+      "return": -0.00429,
+      "alpha": -0.00932,
+      "benchmark": 0.00503,
+      "copycat_return": -0.002696,
+      "copycat_alpha": -0.005851,
+      "trades": 3,
+      "avg_hold_days": 19.0,
+      "avg_filing_lag": 8.0,
+      "late_filings": 0,
+      "filings": 3,
+      "badges": [
+        {
+          "id": "market_beat_you",
+          "name": "The Market Beat You",
+          "blurb": "Negative alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "index_hugger",
+          "name": "Index Hugger",
+          "blurb": "Alpha landed within 2 percentage points of the S&P."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        }
+      ],
+      "excluded_options": 0,
+      "excluded_non_stock": 1,
+      "excluded_unknown": 0,
+      "unmatched_sells": 0,
+      "uncopyable": 0
+    },
+    "all": {
+      "rank": 9,
+      "previous_rank": 10,
+      "rank_change": 1,
+      "streak": 1,
+      "on_fire": false,
+      "benched": false,
+      "return": -0.00429,
+      "alpha": -0.00932,
+      "benchmark": 0.00503,
+      "copycat_return": -0.002696,
+      "copycat_alpha": -0.005851,
+      "trades": 3,
+      "avg_hold_days": 19.0,
+      "avg_filing_lag": 8.0,
+      "late_filings": 0,
+      "filings": 3,
+      "badges": [
+        {
+          "id": "market_beat_you",
+          "name": "The Market Beat You",
+          "blurb": "Negative alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "index_hugger",
+          "name": "Index Hugger",
+          "blurb": "Alpha landed within 2 percentage points of the S&P."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        }
+      ],
+      "excluded_options": 0,
+      "excluded_non_stock": 1,
+      "excluded_unknown": 0,
+      "unmatched_sells": 0,
+      "uncopyable": 0
+    }
+  }
+}

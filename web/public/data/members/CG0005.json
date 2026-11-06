@@ -1,0 +1,381 @@
+{
+  "bioguide_id": "CG0005",
+  "name": "Avery Shah",
+  "initials": "AS",
+  "chamber": "House",
+  "party": "R",
+  "state": "TX",
+  "district": "24",
+  "years_in_service": 3.8,
+  "curves": {
+    "30d": [
+      {
+        "date": "2026-10-13",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-20",
+        "member": 100.5499,
+        "spy": 100.175
+      },
+      {
+        "date": "2026-10-27",
+        "member": 101.1015,
+        "spy": 100.3503
+      },
+      {
+        "date": "2026-11-03",
+        "member": 101.6563,
+        "spy": 100.526
+      },
+      {
+        "date": "2026-11-06",
+        "member": 101.9906,
+        "spy": 100.6316
+      }
+    ],
+    "ytd": [
+      {
+        "date": "2026-10-13",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-20",
+        "member": 100.5499,
+        "spy": 100.175
+      },
+      {
+        "date": "2026-10-27",
+        "member": 101.1015,
+        "spy": 100.3503
+      },
+      {
+        "date": "2026-11-03",
+        "member": 101.6563,
+        "spy": 100.526
+      },
+      {
+        "date": "2026-11-06",
+        "member": 101.9906,
+        "spy": 100.6316
+      }
+    ],
+    "12m": [
+      {
+        "date": "2026-10-13",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-20",
+        "member": 100.5499,
+        "spy": 100.175
+      },
+      {
+        "date": "2026-10-27",
+        "member": 101.1015,
+        "spy": 100.3503
+      },
+      {
+        "date": "2026-11-03",
+        "member": 101.6563,
+        "spy": 100.526
+      },
+      {
+        "date": "2026-11-06",
+        "member": 101.9906,
+        "spy": 100.6316
+      }
+    ],
+    "all": [
+      {
+        "date": "2026-10-13",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-20",
+        "member": 100.5499,
+        "spy": 100.175
+      },
+      {
+        "date": "2026-10-27",
+        "member": 101.1015,
+        "spy": 100.3503
+      },
+      {
+        "date": "2026-11-03",
+        "member": 101.6563,
+        "spy": 100.526
+      },
+      {
+        "date": "2026-11-06",
+        "member": 101.9906,
+        "spy": 100.6316
+      }
+    ]
+  },
+  "trades": [
+    {
+      "transaction_date": "2026-10-22",
+      "filed_date": "2026-10-29",
+      "lag_days": 7,
+      "late": false,
+      "side": "buy",
+      "symbol": "XOM",
+      "asset_name": "XOM common stock [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2026-10-14",
+      "filed_date": "2026-10-23",
+      "lag_days": 9,
+      "late": false,
+      "side": "buy",
+      "symbol": "XOM",
+      "asset_name": "XOM common stock [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2026-10-13",
+      "filed_date": "2026-10-24",
+      "lag_days": 11,
+      "late": false,
+      "side": "buy",
+      "symbol": "NVDA",
+      "asset_name": "NVDA common stock [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 1000001.0,
+      "amount_max": 5000000.0,
+      "midpoint": 3000000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    }
+  ],
+  "windows": {
+    "30d": {
+      "rank": 3,
+      "previous_rank": 2,
+      "rank_change": -1,
+      "streak": 0,
+      "on_fire": false,
+      "benched": false,
+      "return": 0.019891,
+      "alpha": 0.01358,
+      "benchmark": 0.006311,
+      "copycat_return": 0.011002,
+      "copycat_alpha": 0.0075,
+      "trades": 3,
+      "avg_hold_days": 20.7,
+      "avg_filing_lag": 9.0,
+      "late_filings": 0,
+      "filings": 3,
+      "badges": [
+        {
+          "id": "beat_the_market",
+          "name": "Beat the Market",
+          "blurb": "Positive alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "index_hugger",
+          "name": "Index Hugger",
+          "blurb": "Alpha landed within 2 percentage points of the S&P."
+        },
+        {
+          "id": "one_big_bet",
+          "name": "One Big Bet",
+          "blurb": "The largest one or two trades are at least 70% of the dollars."
+        },
+        {
+          "id": "tech_bro",
+          "name": "Tech Bro",
+          "blurb": "At least half the midpoint dollars sit in the technology list."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        }
+      ],
+      "excluded_options": 0,
+      "excluded_non_stock": 0,
+      "excluded_unknown": 0,
+      "unmatched_sells": 0,
+      "uncopyable": 0
+    },
+    "ytd": {
+      "rank": 3,
+      "previous_rank": 2,
+      "rank_change": -1,
+      "streak": 0,
+      "on_fire": false,
+      "benched": false,
+      "return": 0.019891,
+      "alpha": 0.01358,
+      "benchmark": 0.006311,
+      "copycat_return": 0.011002,
+      "copycat_alpha": 0.0075,
+      "trades": 3,
+      "avg_hold_days": 20.7,
+      "avg_filing_lag": 9.0,
+      "late_filings": 0,
+      "filings": 3,
+      "badges": [
+        {
+          "id": "beat_the_market",
+          "name": "Beat the Market",
+          "blurb": "Positive alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "index_hugger",
+          "name": "Index Hugger",
+          "blurb": "Alpha landed within 2 percentage points of the S&P."
+        },
+        {
+          "id": "one_big_bet",
+          "name": "One Big Bet",
+          "blurb": "The largest one or two trades are at least 70% of the dollars."
+        },
+        {
+          "id": "tech_bro",
+          "name": "Tech Bro",
+          "blurb": "At least half the midpoint dollars sit in the technology list."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        }
+      ],
+      "excluded_options": 0,
+      "excluded_non_stock": 0,
+      "excluded_unknown": 0,
+      "unmatched_sells": 0,
+      "uncopyable": 0
+    },
+    "12m": {
+      "rank": 3,
+      "previous_rank": 2,
+      "rank_change": -1,
+      "streak": 0,
+      "on_fire": false,
+      "benched": false,
+      "return": 0.019891,
+      "alpha": 0.01358,
+      "benchmark": 0.006311,
+      "copycat_return": 0.011002,
+      "copycat_alpha": 0.0075,
+      "trades": 3,
+      "avg_hold_days": 20.7,
+      "avg_filing_lag": 9.0,
+      "late_filings": 0,
+      "filings": 3,
+      "badges": [
+        {
+          "id": "beat_the_market",
+          "name": "Beat the Market",
+          "blurb": "Positive alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "index_hugger",
+          "name": "Index Hugger",
+          "blurb": "Alpha landed within 2 percentage points of the S&P."
+        },
+        {
+          "id": "one_big_bet",
+          "name": "One Big Bet",
+          "blurb": "The largest one or two trades are at least 70% of the dollars."
+        },
+        {
+          "id": "tech_bro",
+          "name": "Tech Bro",
+          "blurb": "At least half the midpoint dollars sit in the technology list."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        }
+      ],
+      "excluded_options": 0,
+      "excluded_non_stock": 0,
+      "excluded_unknown": 0,
+      "unmatched_sells": 0,
+      "uncopyable": 0
+    },
+    "all": {
+      "rank": 4,
+      "previous_rank": 3,
+      "rank_change": -1,
+      "streak": 0,
+      "on_fire": false,
+      "benched": false,
+      "return": 0.019891,
+      "alpha": 0.01358,
+      "benchmark": 0.006311,
+      "copycat_return": 0.011002,
+      "copycat_alpha": 0.0075,
+      "trades": 3,
+      "avg_hold_days": 20.7,
+      "avg_filing_lag": 9.0,
+      "late_filings": 0,
+      "filings": 3,
+      "badges": [
+        {
+          "id": "beat_the_market",
+          "name": "Beat the Market",
+          "blurb": "Positive alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "index_hugger",
+          "name": "Index Hugger",
+          "blurb": "Alpha landed within 2 percentage points of the S&P."
+        },
+        {
+          "id": "one_big_bet",
+          "name": "One Big Bet",
+          "blurb": "The largest one or two trades are at least 70% of the dollars."
+        },
+        {
+          "id": "tech_bro",
+          "name": "Tech Bro",
+          "blurb": "At least half the midpoint dollars sit in the technology list."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        }
+      ],
+      "excluded_options": 0,
+      "excluded_non_stock": 0,
+      "excluded_unknown": 0,
+      "unmatched_sells": 0,
+      "uncopyable": 0
+    }
+  }
+}

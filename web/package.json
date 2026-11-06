@@ -1,0 +1,20 @@
+{
+  "name": "capitol-gains-web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 4731 --strictPort",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4731 --strictPort",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "@fontsource/barlow": "^5.2.5",
+    "@fontsource/teko": "^5.2.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.2",
+    "typescript": "^5.6.3",
+    "vite": "^6.0.3"
+  }
+}

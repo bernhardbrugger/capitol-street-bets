@@ -1,0 +1,340 @@
+{
+  "bioguide_id": "CG0001",
+  "name": "Jordan Hale",
+  "initials": "JH",
+  "chamber": "House",
+  "party": "D",
+  "state": "CA",
+  "district": "12",
+  "years_in_service": 7.8,
+  "curves": {
+    "30d": [
+      {
+        "date": "2026-10-09",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-16",
+        "member": 100.2002,
+        "spy": 100.1751
+      },
+      {
+        "date": "2026-10-23",
+        "member": 100.3606,
+        "spy": 100.3155
+      },
+      {
+        "date": "2026-10-30",
+        "member": 100.5614,
+        "spy": 100.4911
+      },
+      {
+        "date": "2026-11-06",
+        "member": 116.8692,
+        "spy": 100.6554
+      }
+    ],
+    "ytd": [
+      {
+        "date": "2026-10-09",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-16",
+        "member": 100.2002,
+        "spy": 100.1751
+      },
+      {
+        "date": "2026-10-23",
+        "member": 100.3606,
+        "spy": 100.3155
+      },
+      {
+        "date": "2026-10-30",
+        "member": 100.5614,
+        "spy": 100.4911
+      },
+      {
+        "date": "2026-11-06",
+        "member": 116.8692,
+        "spy": 100.6554
+      }
+    ],
+    "12m": [
+      {
+        "date": "2026-10-09",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-16",
+        "member": 100.2002,
+        "spy": 100.1751
+      },
+      {
+        "date": "2026-10-23",
+        "member": 100.3606,
+        "spy": 100.3155
+      },
+      {
+        "date": "2026-10-30",
+        "member": 100.5614,
+        "spy": 100.4911
+      },
+      {
+        "date": "2026-11-06",
+        "member": 116.8692,
+        "spy": 100.6554
+      }
+    ],
+    "all": [
+      {
+        "date": "2026-10-09",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-16",
+        "member": 100.2002,
+        "spy": 100.1751
+      },
+      {
+        "date": "2026-10-23",
+        "member": 100.3606,
+        "spy": 100.3155
+      },
+      {
+        "date": "2026-10-30",
+        "member": 100.5614,
+        "spy": 100.4911
+      },
+      {
+        "date": "2026-11-06",
+        "member": 116.8692,
+        "spy": 100.6554
+      }
+    ]
+  },
+  "trades": [
+    {
+      "transaction_date": "2026-11-02",
+      "filed_date": "2026-11-05",
+      "lag_days": 3,
+      "late": false,
+      "side": "buy",
+      "symbol": "BOOM",
+      "asset_name": "BOOM common stock [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2026-10-20",
+      "filed_date": "2026-10-25",
+      "lag_days": 5,
+      "late": false,
+      "side": "buy",
+      "symbol": "BOOM",
+      "asset_name": "BOOM common stock [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2026-10-15",
+      "filed_date": "2026-10-21",
+      "lag_days": 6,
+      "late": false,
+      "side": "buy",
+      "symbol": "SPY",
+      "asset_name": "SPY Jan 2027 500 call option",
+      "asset_type_code": "OP",
+      "amount_min": 1001,
+      "amount_max": 15000,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "option",
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2026-10-09",
+      "filed_date": "2026-10-15",
+      "lag_days": 6,
+      "late": false,
+      "side": "buy",
+      "symbol": "BOOM",
+      "asset_name": "BOOM common stock [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    }
+  ],
+  "windows": {
+    "30d": {
+      "rank": 1,
+      "previous_rank": 6,
+      "rank_change": 5,
+      "streak": 1,
+      "on_fire": false,
+      "benched": false,
+      "return": 0.165739,
+      "alpha": 0.161412,
+      "benchmark": 0.004328,
+      "copycat_return": 0.164186,
+      "copycat_alpha": 0.161029,
+      "trades": 3,
+      "avg_hold_days": 16.3,
+      "avg_filing_lag": 4.7,
+      "late_filings": 0,
+      "filings": 3,
+      "badges": [
+        {
+          "id": "beat_the_market",
+          "name": "Beat the Market",
+          "blurb": "Positive alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        }
+      ],
+      "excluded_options": 1,
+      "excluded_non_stock": 0,
+      "excluded_unknown": 0,
+      "unmatched_sells": 0,
+      "uncopyable": 0
+    },
+    "ytd": {
+      "rank": 1,
+      "previous_rank": 6,
+      "rank_change": 5,
+      "streak": 1,
+      "on_fire": false,
+      "benched": false,
+      "return": 0.165739,
+      "alpha": 0.161412,
+      "benchmark": 0.004328,
+      "copycat_return": 0.164186,
+      "copycat_alpha": 0.161029,
+      "trades": 3,
+      "avg_hold_days": 16.3,
+      "avg_filing_lag": 4.7,
+      "late_filings": 0,
+      "filings": 3,
+      "badges": [
+        {
+          "id": "beat_the_market",
+          "name": "Beat the Market",
+          "blurb": "Positive alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        }
+      ],
+      "excluded_options": 1,
+      "excluded_non_stock": 0,
+      "excluded_unknown": 0,
+      "unmatched_sells": 0,
+      "uncopyable": 0
+    },
+    "12m": {
+      "rank": 1,
+      "previous_rank": 6,
+      "rank_change": 5,
+      "streak": 1,
+      "on_fire": false,
+      "benched": false,
+      "return": 0.165739,
+      "alpha": 0.161412,
+      "benchmark": 0.004328,
+      "copycat_return": 0.164186,
+      "copycat_alpha": 0.161029,
+      "trades": 3,
+      "avg_hold_days": 16.3,
+      "avg_filing_lag": 4.7,
+      "late_filings": 0,
+      "filings": 3,
+      "badges": [
+        {
+          "id": "beat_the_market",
+          "name": "Beat the Market",
+          "blurb": "Positive alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        }
+      ],
+      "excluded_options": 1,
+      "excluded_non_stock": 0,
+      "excluded_unknown": 0,
+      "unmatched_sells": 0,
+      "uncopyable": 0
+    },
+    "all": {
+      "rank": 1,
+      "previous_rank": 7,
+      "rank_change": 6,
+      "streak": 1,
+      "on_fire": false,
+      "benched": false,
+      "return": 0.165739,
+      "alpha": 0.161412,
+      "benchmark": 0.004328,
+      "copycat_return": 0.164186,
+      "copycat_alpha": 0.161029,
+      "trades": 3,
+      "avg_hold_days": 16.3,
+      "avg_filing_lag": 4.7,
+      "late_filings": 0,
+      "filings": 3,
+      "badges": [
+        {
+          "id": "beat_the_market",
+          "name": "Beat the Market",
+          "blurb": "Positive alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        }
+      ],
+      "excluded_options": 1,
+      "excluded_non_stock": 0,
+      "excluded_unknown": 0,
+      "unmatched_sells": 0,
+      "uncopyable": 0
+    }
+  }
+}

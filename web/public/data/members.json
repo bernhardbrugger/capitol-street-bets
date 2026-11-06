@@ -1,0 +1,95 @@
+{
+  "members": [
+    {
+      "bioguide_id": "CG0001",
+      "name": "Jordan Hale",
+      "chamber": "House",
+      "party": "D",
+      "state": "CA"
+    },
+    {
+      "bioguide_id": "CG0002",
+      "name": "Casey Nguyen",
+      "chamber": "Senate",
+      "party": "R",
+      "state": "WA"
+    },
+    {
+      "bioguide_id": "CG0003",
+      "name": "Riley Okonkwo",
+      "chamber": "House",
+      "party": "D",
+      "state": "NY"
+    },
+    {
+      "bioguide_id": "CG0004",
+      "name": "Morgan Ellis",
+      "chamber": "Senate",
+      "party": "I",
+      "state": "ME"
+    },
+    {
+      "bioguide_id": "CG0005",
+      "name": "Avery Shah",
+      "chamber": "House",
+      "party": "R",
+      "state": "TX"
+    },
+    {
+      "bioguide_id": "CG0006",
+      "name": "Quinn Alvarez",
+      "chamber": "House",
+      "party": "D",
+      "state": "NM"
+    },
+    {
+      "bioguide_id": "CG0007",
+      "name": "Parker Singh",
+      "chamber": "Senate",
+      "party": "R",
+      "state": "OH"
+    },
+    {
+      "bioguide_id": "CG0008",
+      "name": "Drew Coleman",
+      "chamber": "House",
+      "party": "R",
+      "state": "FL"
+    },
+    {
+      "bioguide_id": "CG0009",
+      "name": "Skyler Brooks",
+      "chamber": "Senate",
+      "party": "D",
+      "state": "HI"
+    },
+    {
+      "bioguide_id": "CG0010",
+      "name": "Reese Dalton",
+      "chamber": "House",
+      "party": "D",
+      "state": "WA"
+    },
+    {
+      "bioguide_id": "CG0011",
+      "name": "Jamie Ortiz",
+      "chamber": "House",
+      "party": "R",
+      "state": "AZ"
+    },
+    {
+      "bioguide_id": "CG0012",
+      "name": "Taylor Idris",
+      "chamber": "Senate",
+      "party": "D",
+      "state": "CO"
+    },
+    {
+      "bioguide_id": "CG0013",
+      "name": "Rowan Blake",
+      "chamber": "House",
+      "party": "R",
+      "state": "MI"
+    }
+  ]
+}

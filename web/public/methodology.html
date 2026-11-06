@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Methodology · Capitol Gains</title>
+    <style>
+      :root { color-scheme: dark; }
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: #081018;
+        color: #e8eef6;
+        line-height: 1.55;
+      }
+      main { width: min(760px, calc(100% - 32px)); margin: 0 auto; padding: 32px 0 64px; }
+      a { color: #ffe3a3; }
+      h1 { font-size: 48px; letter-spacing: 0.02em; margin-bottom: 0; }
+      h2 { margin-top: 2rem; }
+      code { background: #142233; padding: 0 4px; border-radius: 4px; }
+      table { width: 100%; border-collapse: collapse; }
+      th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid rgba(214,226,242,.15); vertical-align: top; }
+      .muted { color: #93a4ba; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="muted"><a href="./">← Back to the league</a></p>
+      <h1>Methodology</h1>
+      <p>Capitol Gains turns public trade ranges into a league table. The math is deliberately simple. It is a size-weighted average of holding-period returns, not a broker statement.</p>
+
+      <h2>Ranges become a size</h2>
+      <p>Disclosures list an amount range, not a share count. The position size is the midpoint: <code>(amount_min + amount_max) / 2</code>. $1,001–$15,000 becomes $8,000.50. An open-ended bucket uses the only side that was disclosed.</p>
+
+      <h2>What counts</h2>
+      <p>Stocks and ETFs count. Options, bonds, notes, crypto, and anything else are excluded and counted on the member card. A ticker with no close within 7 days is unknown. Sales that have no earlier buy in the feed are unmatched. This board does not invent a short. Same-day round trips have no close-to-close move, so they stay out of the return and still count as trades.</p>
+
+      <h2>Two clocks</h2>
+      <p><strong>Their returns</strong> start at the close on the transaction date. Shares equal midpoint divided by that close. <strong>Copycat returns</strong> deploy the same dollars at the close on the disclosure date (<code>filed_date</code>, or <code>notification_date</code> if the filing date is missing). A lot sold before it was disclosed cannot be copied.</p>
+      <p>Buys open a lot. Sales close lots FIFO, per ticker. Whatever is still open is marked to the latest close on or before the scoreboard date.</p>
+
+      <h2>Alpha versus the S&amp;P 500</h2>
+      <p>For each lot, weight is shares times the price at the start of the measured span. Dollar P&amp;L is the change in that price. SPY is measured from the same start date to the same end date. Member return is total P&amp;L divided by total weight. Alpha is that return minus the weight-matched SPY return. Overlapping lots are not a time-weighted portfolio, and there are no commissions.</p>
+      <p>The chart chains those same period returns. Both lines start at 100. A flat stretch means there was no open position, so the benchmark is flat too.</p>
+
+      <h2>Windows</h2>
+      <table>
+        <tr><th>Window</th><th>Start</th></tr>
+        <tr><td>30D</td><td>Scoreboard date minus 30 calendar days</td></tr>
+        <tr><td>YTD</td><td>January 1</td></tr>
+        <tr><td>1Y</td><td>Scoreboard date minus 365 days</td></tr>
+        <tr><td>ALL</td><td>First priced lot in the cache</td></tr>
+      </table>
+      <p>A lot is measured from the later of its entry and the window start, through the earlier of its exit and the window end. The span has to cover at least one day. Trade counts use the transaction date. Filing lag uses the disclosure date.</p>
+
+      <h2>Late filings and the bench</h2>
+      <p>Lag is disclosure date minus transaction date. More than 45 days is flagged late. That is a timer, not a legal finding. Ranked members need at least 3 priced equity trades in the window. Everyone else is benched: visible, badged, and off the arrows.</p>
+      <p>Default order is alpha, highest first. Rank change is yesterday's rank minus today's. A streak is consecutive snapshots with a strictly better rank. Three or more is on fire.</p>
+
+      <h2>Badges</h2>
+      <table>
+        <tr><th>Badge</th><th>Rule</th></tr>
+        <tr><td>Beat the Market</td><td>Alpha above zero</td></tr>
+        <tr><td>The Market Beat You</td><td>Alpha below zero</td></tr>
+        <tr><td>Index Hugger</td><td>Within 2 percentage points of SPY</td></tr>
+        <tr><td>One Big Bet</td><td>At least 3 trades, and the biggest one or two are 70% or more of the dollars</td></tr>
+        <tr><td>Tech Bro</td><td>At least half the dollars are in a bundled list of technology tickers</td></tr>
+        <tr><td>Punctual Pro</td><td>At least one filing, and none of them late</td></tr>
+        <tr><td>Diamond Hands</td><td>Longest average hold on the board</td></tr>
+        <tr><td>Paper Hands</td><td>Shortest average hold</td></tr>
+        <tr><td>Fashionably Late</td><td>Highest average filing lag</td></tr>
+        <tr><td>Buy High Sell Low</td><td>Worst capital-weighted return on positions that were actually closed</td></tr>
+      </table>
+      <p>The last four go to one member. Ties break alphabetically. Party is not an input.</p>
+
+      <h2>Prices</h2>
+      <p>Closes come from Alpha Vantage. The free plan serves raw <code>TIME_SERIES_DAILY</code> prints, about the latest 100 sessions at a time. Those sessions are merged into a local cache and are not downloaded again while the latest weekday is already stored. Adjusted history and the full series need a premium plan. Raw closes are wrong across splits. The footer names which series was used.</p>
+      <p class="muted">Data: Alpha Vantage. For entertainment. Amounts are estimated from disclosed ranges. Not financial advice.</p>
+    </main>
+  </body>
+</html>
