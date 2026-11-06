@@ -1,0 +1,30 @@
+# Serves the scoreboard on http://localhost:8088
+# Refresh with: docker compose --profile refresh run --rm refresh
+services:
+  capitol-gains:
+    build: .
+    ports:
+      - "8088:8080"
+    environment:
+      CAPITOL_SITE_DATA: /app/site/data
+      CAPITOL_DATA_DIR: /app/data
+    volumes:
+      - av-cache:/app/data
+      - ./web/public/data:/app/site/data
+
+  refresh:
+    profiles: ["refresh"]
+    build: .
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      CAPITOL_SITE_DATA: /app/site/data
+      CAPITOL_DATA_DIR: /app/data
+    volumes:
+      - av-cache:/app/data
+      - ./web/public/data:/app/site/data
+    command: ["python", "-m", "capitol_gains", "run"]
+
+volumes:
+  av-cache:
