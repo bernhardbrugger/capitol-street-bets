@@ -1,0 +1,20 @@
+[project]
+name = "capitol-gains"
+version = "0.1.0"
+description = "A playful league table of publicly disclosed US Congress stock trades."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+capitol-gains = "capitol_gains.__main__:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

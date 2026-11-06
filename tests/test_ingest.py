@@ -1,0 +1,243 @@
+"""Ingestion against a fake Alpha Vantage: throttle, resume, and a warm cache."""
+
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
+
+from capitol_gains.av import AlphaVantageClient, parse_limits
+from capitol_gains.config import Settings
+from capitol_gains.db import connect, get_meta
+from capitol_gains.ingest import ingest
+
+SECRET = "SUPERSECRETKEY"
+
+
+class Clock:
+    def __init__(self, moment: datetime):
+        self.now = moment
+
+    def __call__(self) -> datetime:
+        return self.now
+
+    def sleep(self, seconds: float) -> None:
+        self.now += timedelta(seconds=seconds)
+
+
+def _settings(tmp_path: Path, **overrides) -> Settings:
+    values = dict(
+        api_key=SECRET,
+        requests_per_minute=30,
+        requests_per_day=2,
+        price_function="TIME_SERIES_DAILY",
+        outputsize="compact",
+        price_budget_share=0.35,
+        max_requests_per_run=50,
+        min_trades=3,
+        late_days=45,
+        db_path=tmp_path / "cache" / "capitol.sqlite",
+        site_data=tmp_path / "site",
+        metadata_refresh_days=7,
+    )
+    values.update(overrides)
+    return Settings(**values)
+
+
+def _person(bioguide: str, name: str) -> dict:
+    return {
+        "bioguide_id": bioguide,
+        "display_name": name,
+        "chamber": "house",
+        "state": "OR",
+        "district": "3",
+        "party": "R",
+        "terms": [
+            {
+                "chamber": "house",
+                "state": "OR",
+                "district": "3",
+                "start_date": "2025-01-03",
+                "end_date": "2027-01-03",
+            }
+        ],
+    }
+
+
+def _trade(bioguide: str, symbol: str = "AAPL") -> dict:
+    return {
+        "bioguide_id": bioguide,
+        "symbol": symbol,
+        "transaction_type": "BUY",
+        "transaction_date": "2026-10-01",
+        "filed_date": "2026-10-08",
+        "notification_date": "2026-10-08",
+        "amount_min": "1001.00",
+        "amount_max": "15000.00",
+        "asset_name": f"{symbol} Common Stock [ST]",
+        "asset_type_code": "ST",
+        "owner_code": "SELF",
+        "chamber": "HOUSE",
+    }
+
+
+def _series(symbol: str) -> dict:
+    return {
+        "Meta Data": {"2. Symbol": symbol},
+        "Time Series (Daily)": {
+            "2026-11-06": {"4. close": "100.00", "5. volume": "10"},
+            "2026-11-09": {"4. close": "101.00", "5. volume": "11"},
+        },
+    }
+
+
+def _world(calls: list[dict]):
+    def transport(params: dict) -> dict:
+        safe = {key: value for key, value in params.items() if key != "apikey"}
+        calls.append(safe)
+        assert SECRET not in str(safe)
+        function = params["function"]
+        if function == "POLITICIAN_METADATA":
+            return {"politicians": [_person("A000001", "Alex Adey"), _person("B000002", "Blair Beck")]}
+        if function == "CONGRESS_TRADES":
+            return {"trades": [_trade(params["bioguide_id"])]}
+        if function.startswith("TIME_SERIES"):
+            return _series(params["symbol"])
+        raise AssertionError(function)
+
+    return transport
+
+
+def test_limit_parser_reads_the_note():
+    note = (
+        "Thank you for using Alpha Vantage! Our standard API call frequency is "
+        "5 calls per minute and 25 calls per day."
+    )
+    found = parse_limits(note)
+    assert found.per_minute == 5
+    assert found.per_day == 25
+
+
+def test_rate_limit_retries_and_stores_detected_plan(tmp_path: Path):
+    calls: list[dict] = []
+    state = {"hits": 0}
+
+    def transport(params: dict) -> dict:
+        calls.append(params["function"])
+        assert SECRET not in str(params.get("function"))
+        state["hits"] += 1
+        if state["hits"] == 1:
+            return {
+                "Note": (
+                    "Thank you for using Alpha Vantage! Our standard API call frequency "
+                    "is 5 calls per minute and 25 calls per day."
+                )
+            }
+        function = params["function"]
+        if function == "POLITICIAN_METADATA":
+            return {"politicians": [_person("A000001", "Alex Adey")]}
+        if function == "CONGRESS_TRADES":
+            return {"trades": [_trade(params["bioguide_id"])]}
+        if function.startswith("TIME_SERIES"):
+            return _series(params["symbol"])
+        raise AssertionError(function)
+
+    clock = Clock(datetime(2026, 11, 6, 15, tzinfo=timezone.utc))
+    settings = _settings(tmp_path, requests_per_day=20, requests_per_minute=10)
+    conn = connect(settings.db_path)
+    client = AlphaVantageClient(settings, conn, transport=transport, sleep=clock.sleep, clock=clock)
+    report = ingest(settings, conn, client, today=clock.now.date())
+    assert calls[0] == "POLITICIAN_METADATA"
+    assert calls[1] == "POLITICIAN_METADATA"
+    assert get_meta(conn, "detected_per_minute") == "5"
+    assert get_meta(conn, "detected_per_day") == "25"
+    assert report["stopped"] is None
+    assert SECRET not in str(report)
+
+
+def test_resume_after_daily_budget_and_skip_fresh_prices(tmp_path: Path):
+    calls: list[dict] = []
+    clock = Clock(datetime(2026, 11, 6, 18, tzinfo=timezone.utc))
+    settings = _settings(tmp_path, requests_per_day=2)
+    conn = connect(settings.db_path)
+    client = AlphaVantageClient(settings, conn, transport=_world(calls), sleep=clock.sleep, clock=clock)
+
+    first = ingest(settings, conn, client, today=clock.now.date())
+    assert [call["function"] for call in calls] == ["POLITICIAN_METADATA", "CONGRESS_TRADES"]
+    assert calls[1]["bioguide_id"] == "A000001"
+    assert first["members"] == ["A000001"]
+    assert first["prices"] == []
+
+    clock.now = datetime(2026, 11, 9, 18, tzinfo=timezone.utc)
+    before = len(calls)
+    second = ingest(settings, conn, client, today=clock.now.date())
+    new_calls = calls[before:]
+    assert [call["function"] for call in new_calls] == ["CONGRESS_TRADES", "TIME_SERIES_DAILY"]
+    assert new_calls[0]["bioguide_id"] == "B000002"
+    assert second["prices"] == ["SPY"]
+
+    # Same day, with room left: the remaining member and the new ticker.
+    # SPY already covers the latest session, so it is not requested again.
+    roomy = _settings(tmp_path, requests_per_day=10)
+    client.settings = roomy
+    before = len(calls)
+    third = ingest(roomy, conn, client, today=clock.now.date())
+    third_calls = calls[before:]
+    assert "SPY" not in [call.get("symbol") for call in third_calls]
+    assert third["members"] == ["A000001"]
+    assert third["prices"] == ["AAPL"]
+
+    before = len(calls)
+    fourth = ingest(roomy, conn, client, today=clock.now.date())
+    assert calls[before:] == []
+    assert fourth["members"] == []
+    assert fourth["prices"] == []
+    stored = conn.execute("SELECT COUNT(*) AS n FROM prices WHERE symbol = 'AAPL'").fetchone()["n"]
+    assert stored == 2
+
+
+def test_unchanged_member_payload_is_not_rewritten(tmp_path: Path):
+    calls: list[dict] = []
+    clock = Clock(datetime(2026, 11, 6, 18, tzinfo=timezone.utc))
+    settings = _settings(tmp_path, requests_per_day=0, max_requests_per_run=20, price_budget_share=0.1)
+    conn = connect(settings.db_path)
+    client = AlphaVantageClient(settings, conn, transport=_world(calls), sleep=clock.sleep, clock=clock)
+    ingest(settings, conn, client, today=clock.now.date())
+    first_count = conn.execute("SELECT COUNT(*) AS n FROM trades").fetchone()["n"]
+    clock.now += timedelta(days=3)
+    ingest(settings, conn, client, today=clock.now.date())
+    second_count = conn.execute("SELECT COUNT(*) AS n FROM trades").fetchone()["n"]
+    assert first_count == second_count == 2
+    unchanged = conn.execute(
+        "SELECT COUNT(*) AS n FROM member_sync WHERE status = 'unchanged'"
+    ).fetchone()["n"]
+    assert unchanged == 2
+
+
+def test_adjusted_endpoint_falls_back_when_the_plan_says_premium(tmp_path: Path):
+    calls: list[str] = []
+
+    def transport(params: dict) -> dict:
+        calls.append(params["function"])
+        function = params["function"]
+        if function == "POLITICIAN_METADATA":
+            return {"politicians": [_person("A000001", "Alex Adey")]}
+        if function == "CONGRESS_TRADES":
+            return {"trades": [_trade("A000001")]}
+        if function == "TIME_SERIES_DAILY_ADJUSTED":
+            return {"Information": "Thank you for using Alpha Vantage! This is a premium endpoint."}
+        if function == "TIME_SERIES_DAILY":
+            return _series(params["symbol"])
+        raise AssertionError(function)
+
+    clock = Clock(datetime(2026, 11, 6, 18, tzinfo=timezone.utc))
+    settings = _settings(
+        tmp_path,
+        requests_per_day=0,
+        max_requests_per_run=20,
+        price_function="TIME_SERIES_DAILY_ADJUSTED",
+    )
+    conn = connect(settings.db_path)
+    client = AlphaVantageClient(settings, conn, transport=transport, sleep=clock.sleep, clock=clock)
+    report = ingest(settings, conn, client, today=clock.now.date())
+    assert "TIME_SERIES_DAILY_ADJUSTED" in calls
+    assert "TIME_SERIES_DAILY" in calls
+    assert report["prices"]
+    assert get_meta(conn, "price_function") == "TIME_SERIES_DAILY"
