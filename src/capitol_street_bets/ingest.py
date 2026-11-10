@@ -245,6 +245,10 @@ def ingest(settings: Settings, conn, client: AlphaVantageClient, today: date | N
         room = max(0, settings.requests_per_day - spent)
     meta_due = _metadata_due(conn, today, settings.metadata_refresh_days)
     members_waiting, prices_waiting = _waiting_counts(conn, today)
+    massive = bool(settings.massive_api_key)
+    price_share = 0.0 if massive else settings.price_budget_share
+    if massive:
+        prices_waiting = 0
     # Metadata has to land before we know the roster. On a first run the
     # member count is zero until that call returns, so reserve the slot and
     # recompute the split after.
@@ -253,7 +257,7 @@ def ingest(settings: Settings, conn, client: AlphaVantageClient, today: date | N
         meta_due,
         members_waiting,
         prices_waiting,
-        settings.price_budget_share,
+        price_share,
         settings.daily_unlimited,
     )
     report = {
@@ -271,6 +275,8 @@ def ingest(settings: Settings, conn, client: AlphaVantageClient, today: date | N
             _pull_metadata(client, conn, today)
             report["metadata"] = True
             members_waiting, prices_waiting = _waiting_counts(conn, today)
+            if massive:
+                prices_waiting = 0
             # Room left after the metadata call.
             from capitol_street_bets.db import requests_today as _count
 
@@ -284,7 +290,7 @@ def ingest(settings: Settings, conn, client: AlphaVantageClient, today: date | N
                 False,
                 members_waiting,
                 prices_waiting,
-                settings.price_budget_share,
+                price_share,
                 settings.daily_unlimited,
             )
             report["plan_after_metadata"] = plan
@@ -330,7 +336,7 @@ def ingest(settings: Settings, conn, client: AlphaVantageClient, today: date | N
         used = _spent(conn, today)
         cap = settings.max_requests_per_run if settings.daily_unlimited else settings.requests_per_day
         price_limit = max(plan["prices"], cap - used if not settings.daily_unlimited else plan["prices"])
-        for symbol in _price_queue(conn, today, price_limit):
+        for symbol in ([] if massive else _price_queue(conn, today, price_limit)):
             try:
                 _pull_price(client, conn, symbol, today)
             except AVError as exc:
@@ -502,11 +508,15 @@ def compute_site(settings: Settings, conn, as_of: date | None = None) -> dict:
     ]
     history = load_history(settings.site_data / "rank-history.json")
     price_mode = get_meta(conn, "price_function", settings.price_function) or settings.price_function
+    if get_meta(conn, "price_source") == "massive":
+        price_mode = "MASSIVE_ADJUSTED"
     notes = [
         "Position size is the midpoint of the disclosed range.",
         "Alpha compares each holding period with SPY over those same dates.",
     ]
-    if price_mode == "TIME_SERIES_DAILY":
+    if price_mode == "MASSIVE_ADJUSTED":
+        notes.append("Daily closes from Massive (formerly Polygon.io), split-adjusted.")
+    elif price_mode == "TIME_SERIES_DAILY":
         notes.append(
             "Closes are raw TIME_SERIES_DAILY prints. Split-adjusted history needs a premium plan."
         )
@@ -536,3 +546,82 @@ def compute_site(settings: Settings, conn, as_of: date | None = None) -> dict:
     }
     write_site(settings.site_data, league, members, updated)
     return {"members": len(included), "as_of": as_of.isoformat()}
+
+
+def ingest_massive_prices(settings: Settings, conn, client, today: date | None = None) -> dict:
+    """Backfill two years for tickers we have never priced, then catch every
+    priced ticker up with one grouped call per missing session."""
+    from capitol_street_bets.massive import MassiveError, MassiveNotAuthorized, massive_symbol, sessions_between
+
+    today = today or datetime.now(timezone.utc).date()
+    # The run starts before the US open: the newest finished session is the
+    # previous weekday.
+    target = last_expected_session(today - timedelta(days=1))
+    budget = settings.massive_max_calls_per_run
+    report: dict = {"backfilled": [], "empty": [], "sessions": [], "errors": [], "stopped": None}
+    counts = _equity_symbol_counts(conn)
+    symbols = ["SPY", *sorted((s for s in counts if s != "SPY"), key=lambda s: (-counts[s], s))]
+    start = target - timedelta(days=settings.massive_history_days)
+    try:
+        for symbol in symbols:
+            if client.calls >= budget:
+                report["stopped"] = f"per-run cap of {budget} calls"
+                break
+            if last_bar(conn, symbol):
+                continue
+            tried = get_meta(conn, f"massive_empty:{symbol}")
+            if tried and (today - date.fromisoformat(tried)).days < 30:
+                continue
+            try:
+                closes = client.ticker_history(massive_symbol(symbol), start, target)
+            except MassiveNotAuthorized:
+                raise
+            except MassiveError as exc:
+                report["errors"].append({"symbol": symbol, "error": _safe(str(exc))})
+                continue
+            if not closes:
+                set_meta(conn, f"massive_empty:{symbol}", today.isoformat())
+                report["empty"].append(symbol)
+                conn.commit()
+                continue
+            store_prices(conn, symbol, {day: (close, close) for day, close in closes.items()})
+            mark_price_sync(conn, symbol, max(closes), "MASSIVE")
+            conn.commit()
+            report["backfilled"].append(symbol)
+
+        known = {symbol: last_bar(conn, symbol) for symbol in symbols}
+        known = {symbol: last for symbol, last in known.items() if last}
+        floor = (target - timedelta(days=45)).isoformat()
+        behind = [last for last in known.values() if floor <= last < target.isoformat()]
+        if behind and not report["stopped"]:
+            for day in sessions_between(date.fromisoformat(min(behind)), target):
+                if client.calls >= budget:
+                    report["stopped"] = f"per-run cap of {budget} calls"
+                    break
+                try:
+                    closes = client.grouped(day)
+                except MassiveNotAuthorized:
+                    raise
+                except MassiveError as exc:
+                    report["errors"].append({"session": day.isoformat(), "error": _safe(str(exc))})
+                    continue
+                if not closes:
+                    continue  # market holiday
+                iso = day.isoformat()
+                for symbol, last in known.items():
+                    close = closes.get(massive_symbol(symbol))
+                    if close is None or last >= iso:
+                        continue
+                    store_prices(conn, symbol, {iso: (close, close)})
+                    mark_price_sync(conn, symbol, iso, "MASSIVE")
+                    known[symbol] = iso
+                conn.commit()
+                report["sessions"].append(iso)
+    except MassiveNotAuthorized as exc:
+        report["stopped"] = "not authorized: " + _safe(str(exc))
+    if not str(report["stopped"] or "").startswith("not authorized"):
+        set_meta(conn, "price_source", "massive")
+    report["calls"] = client.calls
+    set_meta(conn, "last_massive_report", json.dumps(report))
+    conn.commit()
+    return report

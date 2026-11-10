@@ -47,6 +47,12 @@ class Settings:
     # so those are fetched first. Empty tuple turns discovery off.
     discovery_symbols: tuple[str, ...] = ()
     discovery_refresh_days: int = 30
+    # Massive (formerly Polygon.io) for prices. When set, Alpha Vantage spends
+    # its whole budget on member filings.
+    massive_api_key: str = ""
+    massive_per_minute: int = 5
+    massive_max_calls_per_run: int = 300
+    massive_history_days: int = 730
     active_refresh_days: int = 3
     inactive_refresh_days: int = 60
     base_url: str = "https://www.alphavantage.co/query"
@@ -76,6 +82,8 @@ def load_settings() -> Settings:
         late_days=max(1, _int("AV_LATE_DAYS", 45)),
         db_path=data_root / "cache" / "capitol.sqlite",
         site_data=site,
+        massive_api_key=os.environ.get("MASSIVE_API_KEY", "").strip(),
+        massive_max_calls_per_run=int(os.environ.get("MASSIVE_MAX_CALLS_PER_RUN", "300")),
         discovery_symbols=tuple(
             sym.strip().upper()
             for sym in os.environ.get("AV_DISCOVERY_SYMBOLS", DEFAULT_DISCOVERY).split(",")

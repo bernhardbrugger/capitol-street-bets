@@ -87,6 +87,23 @@ def main(argv: list[str] | None = None) -> None:
             )
             for item in report.get("member_errors", []) + report.get("price_errors", []):
                 print(f"skipped {item.get('bioguide_id') or item.get('symbol')}: {item['error']}")
+            if settings.massive_api_key:
+                from capitol_street_bets.ingest import ingest_massive_prices
+                from capitol_street_bets.massive import MassiveClient
+
+                prices = ingest_massive_prices(settings, conn, MassiveClient(settings.massive_api_key, settings.massive_per_minute))
+                print(
+                    "massive backfilled={b} empty={e} sessions={s} calls={c} errors={x} stopped={st}".format(
+                        b=len(prices["backfilled"]),
+                        e=len(prices["empty"]),
+                        s=len(prices["sessions"]),
+                        c=prices["calls"],
+                        x=len(prices["errors"]),
+                        st=prices["stopped"],
+                    )
+                )
+                for item in prices["errors"][:10]:
+                    print(f"massive skipped {item.get('symbol') or item.get('session')}: {item['error']}")
         if args.command in {"compute", "run"}:
             from capitol_street_bets.ingest import compute_site
 

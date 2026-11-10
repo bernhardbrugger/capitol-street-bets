@@ -28,6 +28,9 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    # The first Massive backfill pulls two years for every ticker at five
+    # calls a minute; later runs take a few minutes.
+    timeout-minutes: 90
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -56,6 +59,9 @@ jobs:
         env:
           # Only ever read from the repository secret. Never echoed, never written to disk.
           ALPHAVANTAGE_API_KEY: ${{ secrets.ALPHAVANTAGE_API_KEY }}
+          # Optional. With it, prices come from Massive and Alpha Vantage
+          # spends its whole budget on member filings.
+          MASSIVE_API_KEY: ${{ secrets.MASSIVE_API_KEY }}
         run: |
           if [ -z "$ALPHAVANTAGE_API_KEY" ]; then
             echo "ALPHAVANTAGE_API_KEY is not set. Keeping the JSON already in the repo."
