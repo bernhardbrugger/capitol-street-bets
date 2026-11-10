@@ -100,8 +100,12 @@ jobs:
           # Project pages live at /<repo-name>/.
           VITE_BASE: /${{ github.event.repository.name }}/
         run: npm run build
+      # Pages needs a public repo on a free plan. While the repo is private,
+      # data and README still refresh; the deploy waits until it is public.
       - uses: actions/upload-pages-artifact@v3
+        if: ${{ !github.event.repository.private }}
         with:
           path: web/dist
       - id: deployment
+        if: ${{ !github.event.repository.private }}
         uses: actions/deploy-pages@v4
