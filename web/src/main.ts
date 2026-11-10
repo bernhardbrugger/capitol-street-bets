@@ -622,7 +622,8 @@ function renderHome(): void {
       el("em", {}, ["members the S&P is ahead of"]),
     ]),
   );
-  const warming = !league?.sample && board.ranked.length === 0;
+  const anyRanked = Object.values(league?.windows ?? {}).some((item) => item.ranked.length > 0);
+  const warming = !league?.sample && !anyRanked;
   page.append(warming ? warmup() : score);
   // While nobody is ranked the filings are the show; afterwards the table is.
   const feed = disclosureFeed();
@@ -979,6 +980,11 @@ async function boot(): Promise<void> {
     );
     return;
   }
+  // Open on the window with the most ranked members, so an early board
+  // does not look empty just because the last 30 days are quiet.
+  const counts = (["30d", "ytd", "12m", "all"] as const).map((id) => [id, league?.windows?.[id]?.ranked?.length ?? 0] as const);
+  const best = counts.reduce((a, b) => (b[1] > a[1] ? b : a));
+  if ((league?.windows?.[state.window]?.ranked?.length ?? 0) === 0 && best[1] > 0) state.window = best[0];
   render();
 }
 

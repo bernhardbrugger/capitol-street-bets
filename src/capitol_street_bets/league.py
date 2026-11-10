@@ -343,7 +343,11 @@ def assemble_league(
 
     recent = recent_disclosures(politicians, trades_by_member, as_of, late_days)
     for name, body in windows.items():
-        tape = [line for line in body.get("ticker_tape", []) if "n/a" not in line]
+        tape = [
+            line
+            for line in body.get("ticker_tape", [])
+            if "n/a" not in line and " 0 qualifying trades" not in line and not line.startswith("0 beat")
+        ]
         if not body["ranked"]:
             tape = [disclosure_line(item) for item in recent[:8]] + tape
         body["ticker_tape"] = tape
