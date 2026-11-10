@@ -254,6 +254,12 @@ def ingest(settings: Settings, conn, client: AlphaVantageClient, today: date | N
                     {"bioguide_id": bioguide_id, "error": _safe(str(exc))}
                 )
                 continue
+            except Exception as exc:  # one odd payload must not cost the whole run
+                conn.rollback()
+                report.setdefault("member_errors", []).append(
+                    {"bioguide_id": bioguide_id, "error": _safe(f"{type(exc).__name__}: {exc}")}
+                )
+                continue
             report["members"].append(bioguide_id)
             if not changed:
                 report["skipped_unchanged_members"].append(bioguide_id)
@@ -338,10 +344,16 @@ def _pull_member(client: AlphaVantageClient, conn, bioguide_id: str) -> bool:
         conn.commit()
         return False
     rows = []
+    seen: dict[str, int] = {}
     for raw in trades:
         if not isinstance(raw, dict):
             continue
-        rows.append({"trade_id": trade_key(bioguide_id, raw), "payload": raw})
+        key = trade_key(bioguide_id, raw)
+        # Two buys of the same ticker, same day, same range and owner are two
+        # real transactions with identical disclosed fields. Keep both.
+        count = seen.get(key, 0)
+        seen[key] = count + 1
+        rows.append({"trade_id": key if count == 0 else f"{key}-{count}", "payload": raw})
     replace_member_trades(conn, bioguide_id, rows, digest, fetched_at=stamp)
     conn.commit()
     return True

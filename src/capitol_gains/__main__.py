@@ -85,6 +85,8 @@ def main(argv: list[str] | None = None) -> None:
                     stopped=report["stopped"],
                 )
             )
+            for item in report.get("member_errors", []) + report.get("price_errors", []):
+                print(f"skipped {item.get('bioguide_id') or item.get('symbol')}: {item['error']}")
         if args.command in {"compute", "run"}:
             from capitol_gains.ingest import compute_site
 

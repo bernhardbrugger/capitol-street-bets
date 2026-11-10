@@ -241,3 +241,26 @@ def test_adjusted_endpoint_falls_back_when_the_plan_says_premium(tmp_path: Path)
     assert "TIME_SERIES_DAILY" in calls
     assert report["prices"]
     assert get_meta(conn, "price_function") == "TIME_SERIES_DAILY"
+
+
+def test_identical_trade_rows_are_kept_as_separate_transactions(tmp_path):
+    from capitol_gains.db import connect, iter_trades
+    from capitol_gains.ingest import _pull_member
+
+    row = {
+        "bioguide_id": "X000001", "symbol": "NVDA", "transaction_type": "BUY",
+        "transaction_date": "2026-10-01", "filed_date": "2026-10-20",
+        "amount_min": "1001", "amount_max": "15000", "owner_code": "SPOUSE",
+        "asset_name": "NVIDIA Corp [ST]",
+    }
+
+    class FakeClient:
+        def congress_trades(self, bioguide_id):
+            return {"trades": [dict(row), dict(row)]}
+
+        def clock(self):
+            return datetime(2026, 11, 10, 6, 0, tzinfo=timezone.utc)
+
+    conn = connect(tmp_path / "c.sqlite")
+    assert _pull_member(FakeClient(), conn, "X000001") is True
+    assert len(iter_trades(conn)) == 2

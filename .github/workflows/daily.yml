@@ -43,7 +43,7 @@ jobs:
 
       # The SQLite cache holds the roster, trades and price history between runs.
       # Daily runs keep it from expiring.
-      - uses: actions/cache@v4
+      - uses: actions/cache/restore@v4
         if: github.event_name != 'push'
         with:
           path: data/cache
@@ -62,6 +62,13 @@ jobs:
             exit 0
           fi
           PYTHONPATH=src python -m capitol_gains run
+
+      # Saved even when a later step fails, so spent API calls are never lost.
+      - uses: actions/cache/save@v4
+        if: always() && github.event_name != 'push' && hashFiles('data/cache/*.sqlite') != ''
+        with:
+          path: data/cache
+          key: capitol-cache-${{ github.run_id }}
 
       - name: Write current standings into README
         if: github.event_name != 'push'
