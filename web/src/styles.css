@@ -411,3 +411,5 @@ table.trades th { color: var(--muted); font-weight: 600; }
 @media (prefers-reduced-motion: reduce) {
   .tape-track, .flame, .shaft i { animation: none; }
 }
+
+.versus-note { font-size: 13px; margin: 10px 0 0; }

@@ -827,11 +827,29 @@ function tradeTable(trades: TradeRow[]): HTMLElement {
   return card;
 }
 
+// Disclosed filings over the whole record: a stable "how much is there to
+// look at" score that does not depend on prices.
+function activity(id: string): number {
+  const all = league?.windows?.all;
+  const row = all ? [...all.ranked, ...all.benched].find((item) => item.bioguide_id === id) : undefined;
+  return row?.filings ?? 0;
+}
+
+function versusRows(): Row[] {
+  const board = currentBoard();
+  const benched = [...board.benched].sort(
+    (a, b) => activity(b.bioguide_id) - activity(a.bioguide_id) || a.name.localeCompare(b.name),
+  );
+  return [...board.ranked, ...benched];
+}
+
 function renderVersus(): void {
   stopConfetti();
-  const rows = allRows();
-  if (!state.left) state.left = rows[0]?.bioguide_id || "";
-  if (!state.right) state.right = rows[1]?.bioguide_id || state.left;
+  const rows = versusRows();
+  const lively = rows.filter((row) => row.rank != null || activity(row.bioguide_id) > 0);
+  const pool = lively.length >= 2 ? lively : rows;
+  if (!state.left) state.left = pool[0]?.bioguide_id || "";
+  if (!state.right) state.right = pool.find((row) => row.bioguide_id !== state.left)?.bioguide_id || state.left;
   const page = el("main", { class: "wrap" });
   page.append(el("h2", { class: "section-title" }, ["Head to head"]), el("div", { class: "toolbar" }, [windowBar()]));
   const grid = el("div", { class: "versus-grid" });
@@ -844,10 +862,20 @@ function versusCard(side: "left" | "right", rows: Row[]): HTMLElement {
   const selected = rows.find((row) => row.bioguide_id === state[side]) || rows[0];
   const card = el("section", { class: "versus-card" });
   const select = el("select", { class: "pick", "aria-label": side === "left" ? "First member" : "Second member" }) as HTMLSelectElement;
-  for (const row of rows) {
-    const option = el("option", { value: row.bioguide_id }, [`${row.name} · ${row.chamber}`]) as HTMLOptionElement;
-    if (row.bioguide_id === selected?.bioguide_id) option.selected = true;
-    select.append(option);
+  const groups: [string, Row[]][] = [
+    ["Ranked", rows.filter((row) => row.rank != null)],
+    ["Filed trades, not ranked yet", rows.filter((row) => row.rank == null && activity(row.bioguide_id) > 0)],
+    ["No disclosed trades loaded yet", rows.filter((row) => row.rank == null && activity(row.bioguide_id) <= 0)],
+  ];
+  for (const [label, members] of groups) {
+    if (!members.length) continue;
+    const group = el("optgroup", { label }) as HTMLOptGroupElement;
+    for (const row of members) {
+      const option = el("option", { value: row.bioguide_id }, [`${row.name} · ${row.chamber}`]) as HTMLOptionElement;
+      if (row.bioguide_id === selected?.bioguide_id) option.selected = true;
+      group.append(option);
+    }
+    select.append(group);
   }
   select.addEventListener("change", () => {
     state[side] = select.value;
@@ -870,6 +898,9 @@ function versusCard(side: "left" | "right", rows: Row[]): HTMLElement {
       stat("Copycat", pct(selected.copycat_return), tone(selected.copycat_return)),
       stat("Trades", String(selected.trades)),
     ]),
+    el("p", { class: "muted versus-note" }, [
+      `${selected.filings} disclosed in this window · ${selected.trades} with a price so far · ${activity(selected.bioguide_id)} on record`,
+    ]),
     badgeList(selected.badges, selected.on_fire),
   );
   return card;
@@ -887,7 +918,11 @@ function verdict(rows: Row[]): HTMLElement {
   const a = left.copycat_return;
   const b = right.copycat_return;
   if (a == null && b == null) {
-    box.textContent = "Neither left a copyable position in this window.";
+    const filed = left.filings + right.filings;
+    box.textContent =
+      left.trades + right.trades === 0 && filed > 0
+        ? `${filed} filings between them, but no prices loaded yet. The matchup scores itself once prices land; they are pulled a few tickers a day.`
+        : "Neither left a copyable position in this window. Try YTD or ALL.";
     return box;
   }
   if (a == null || b == null) {
