@@ -264,3 +264,36 @@ def test_identical_trade_rows_are_kept_as_separate_transactions(tmp_path):
     conn = connect(tmp_path / "c.sqlite")
     assert _pull_member(FakeClient(), conn, "X000001") is True
     assert len(iter_trades(conn)) == 2
+
+
+def test_discovery_puts_active_traders_first(tmp_path: Path):
+    from dataclasses import replace
+
+    calls: list[dict] = []
+    base = _world(calls)
+
+    def transport(params: dict) -> dict:
+        if params["function"] == "CONGRESS_TRADES" and "symbol" in params:
+            calls.append({k: v for k, v in params.items() if k != "apikey"})
+            # Only B trades NVDA, and often.
+            return {"trades": [_trade("B000002", "NVDA") for _ in range(5)]}
+        return base(params)
+
+    clock = Clock(datetime(2026, 11, 9, 18, tzinfo=timezone.utc))
+    settings = replace(_settings(tmp_path, requests_per_day=6), discovery_symbols=("NVDA",))
+    conn = connect(settings.db_path)
+    client = AlphaVantageClient(settings, conn, transport=transport, sleep=clock.sleep, clock=clock)
+    report = ingest(settings, conn, client, today=clock.now.date())
+
+    order = [c.get("symbol") or c.get("bioguide_id") or c["function"] for c in calls]
+    assert order[:3] == ["POLITICIAN_METADATA", "NVDA", "B000002"]
+    assert report["discovery"] == ["NVDA"]
+    # Discovery is a hint only: no trades are stored from the symbol pull.
+    stored = {row["bioguide_id"] for row in conn.execute("SELECT DISTINCT bioguide_id FROM trades")}
+    assert "B000002" in stored and len(stored) <= 2
+
+    # Not repeated the next day.
+    clock.now = datetime(2026, 11, 10, 18, tzinfo=timezone.utc)
+    before = len(calls)
+    ingest(settings, conn, client, today=clock.now.date())
+    assert all(c.get("symbol") != "NVDA" or c["function"] != "CONGRESS_TRADES" for c in calls[before:])

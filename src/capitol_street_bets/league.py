@@ -341,6 +341,13 @@ def assemble_league(
         updated = prior + [{"as_of": as_of.isoformat(), "ranks": today_ranks}]
         updated_history[name] = updated[-40:]
 
+    recent = recent_disclosures(politicians, trades_by_member, as_of, late_days)
+    for name, body in windows.items():
+        tape = [line for line in body.get("ticker_tape", []) if "n/a" not in line]
+        if not body["ranked"]:
+            tape = [disclosure_line(item) for item in recent[:8]] + tape
+        body["ticker_tape"] = tape
+
     league = {
         "generated_at": datetime.now(timezone.utc).replace(microsecond=0).isoformat(),
         "as_of": as_of.isoformat(),
@@ -353,6 +360,7 @@ def assemble_league(
         "notes": notes or [],
         "windows": windows,
         "badges": BADGE_COPY,
+        "recent_disclosures": recent,
     }
     members = {}
     for person in politicians:
@@ -474,3 +482,78 @@ def empty_history_from_snapshots(
                 }
             )
     return history
+
+
+def _short_money(value: float | None) -> str:
+    if value is None:
+        return "?"
+    if value >= 1_000_000:
+        return f"${value / 1_000_000:g}M"
+    if value >= 1_000:
+        return f"${round(value / 1000):g}K"
+    return f"${value:g}"
+
+
+def recent_disclosures(
+    politicians: list[Politician],
+    trades_by_member: dict[str, list[Trade]],
+    as_of: date,
+    late_days: int = 45,
+    limit: int = 12,
+) -> list[dict]:
+    """Latest filed trades across the roster. Needs no prices, so it is the
+    first thing that is useful on a fresh board."""
+    people = {person.bioguide_id: person for person in politicians}
+    rows = []
+    for bioguide_id, trades in trades_by_member.items():
+        person = people.get(bioguide_id)
+        if person is None:
+            continue
+        for trade in trades:
+            filed = trade.filed_date or trade.notification_date
+            if filed is None or filed > as_of or not trade.symbol:
+                continue
+            side = (trade.transaction_type or "").upper()
+            if side not in {"BUY", "SELL"}:
+                continue
+            lag = (filed - trade.transaction_date).days if trade.transaction_date else None
+            rows.append(
+                {
+                    "bioguide_id": bioguide_id,
+                    "name": person.name,
+                    "chamber": person.chamber,
+                    "party": person.party,
+                    "state": person.state,
+                    "side": side.lower(),
+                    "symbol": trade.symbol.upper(),
+                    "asset_name": trade.asset_name,
+                    "amount": f"{_short_money(trade.amount_min)}–{_short_money(trade.amount_max)}",
+                    "transaction_date": trade.transaction_date.isoformat() if trade.transaction_date else None,
+                    "filed_date": filed.isoformat(),
+                    "lag_days": lag,
+                    "late": lag is not None and lag > late_days,
+                }
+            )
+    rows.sort(key=lambda r: (r["filed_date"], r["transaction_date"] or "", r["name"]), reverse=True)
+    # One line per member, ticker and filing day: a PTR often lists the same
+    # buy several times in small lots.
+    seen = set()
+    unique = []
+    for row in rows:
+        key = (row["bioguide_id"], row["symbol"], row["side"], row["filed_date"])
+        if key in seen:
+            continue
+        seen.add(key)
+        unique.append(row)
+        if len(unique) >= limit:
+            break
+    return unique
+
+
+def disclosure_line(item: dict) -> str:
+    verb = "bought" if item["side"] == "buy" else "sold"
+    lag = item.get("lag_days")
+    timing = ""
+    if lag is not None:
+        timing = f", filed {lag} days later" + (" (late)" if item.get("late") else "")
+    return f"{item['name']} {verb} {item['symbol']} ({item['amount']}){timing}."

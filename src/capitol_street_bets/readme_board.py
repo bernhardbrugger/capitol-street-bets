@@ -48,7 +48,29 @@ def render(league: dict, site_url: str, top: int = 10) -> str:
         )
         lines.append("")
     if key is None:
-        lines.append("_No member has enough priced trades to be ranked yet. The board fills up with every refresh._")
+        lines.append("_Preseason: no member has enough priced trades to be ranked yet. The board fills up with every refresh._")
+        recent = league.get("recent_disclosures") or []
+        if recent:
+            lines.append("")
+            lines.append("**Latest disclosures**")
+            lines.append("")
+            lines.append("| Filed | Member | | Ticker | Amount | Filed after |")
+            lines.append("|---|---|:---:|---|---:|---:|")
+            for item in recent[:6]:
+                lag = item.get("lag_days")
+                lag_text = "–" if lag is None else f"{lag} days" + (" ⚠️" if item.get("late") else "")
+                lines.append(
+                    "| {filed} | [{name}]({url}#/member/{bid}) | {side} | **{sym}** | {amt} | {lag} |".format(
+                        filed=item.get("filed_date", ""),
+                        name=item.get("name", ""),
+                        url=site_url,
+                        bid=item.get("bioguide_id", ""),
+                        side="🟢 Buy" if item.get("side") == "buy" else "🔴 Sell",
+                        sym=item.get("symbol", ""),
+                        amt=item.get("amount", ""),
+                        lag=lag_text,
+                    )
+                )
     else:
         window = windows[key]
         lines.append(f"**Top {min(top, len(window['ranked']))}, {WINDOW_LABEL[key]}** (as of {window.get('as_of') or league.get('as_of')})")

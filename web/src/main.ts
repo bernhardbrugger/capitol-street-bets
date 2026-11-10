@@ -59,6 +59,29 @@ type League = {
   price_mode: string;
   late_days: number;
   windows: Record<string, WindowBoard>;
+  coverage?: {
+    members_loaded: number;
+    members_seated: number;
+    members_trading?: number;
+    tickers_priced?: number;
+    tickers_total?: number;
+  };
+  recent_disclosures?: Disclosure[];
+};
+type Disclosure = {
+  bioguide_id: string;
+  name: string;
+  chamber: string;
+  party: string;
+  state: string;
+  side: "buy" | "sell";
+  symbol: string;
+  asset_name: string;
+  amount: string;
+  transaction_date: string | null;
+  filed_date: string;
+  lag_days: number | null;
+  late: boolean;
 };
 type TradeRow = {
   transaction_date: string | null;
@@ -480,15 +503,92 @@ function paintBoard(host: HTMLElement, rows: Row[]): void {
     return;
   }
   for (const row of ranked) host.append(rowView(row));
-  if (benched.length) {
+  // Members with filings in this window sit on the bench; the rest of the
+  // roster has nothing to show yet and stays folded away.
+  const active = benched.filter((row) => row.filings > 0);
+  const quiet = benched.filter((row) => row.filings <= 0);
+  const searching = state.query.trim().length > 0;
+  if (active.length) {
     const details = el("details", { class: "bench" });
-    details.open = true;
-    details.append(el("summary", {}, [`Benched · ${benched.length} under ${league?.min_trades ?? 3} priced equity trades`]));
+    details.open = searching || ranked.length < 12;
+    details.append(el("summary", {}, [`Benched · ${active.length} with filings but under ${league?.min_trades ?? 3} priced equity trades`]));
     const stack = el("div", { class: "board" });
-    for (const row of benched) stack.append(rowView(row));
+    for (const row of active) stack.append(rowView(row));
     details.append(stack);
     host.append(details);
   }
+  if (quiet.length) {
+    const details = el("details", { class: "bench quiet" });
+    details.open = searching;
+    details.append(el("summary", {}, [`${quiet.length} members with no disclosed trades in this window`]));
+    const stack = el("div", { class: "board" });
+    for (const row of quiet) stack.append(rowView(row));
+    details.append(stack);
+    host.append(details);
+  }
+}
+
+function progress(label: string, done: number, total: number, note: string): HTMLElement {
+  const share = total > 0 ? Math.min(1, done / total) : 0;
+  const bar = el("div", { class: "bar" }, [el("span", { style: `width:${(share * 100).toFixed(1)}%` })]);
+  return el("div", { class: "progress" }, [
+    el("div", { class: "progress-head" }, [el("span", {}, [label]), el("strong", {}, [`${done} / ${total}`])]),
+    bar,
+    el("p", {}, [note]),
+  ]);
+}
+
+function warmup(): HTMLElement {
+  const cov = league?.coverage;
+  const box = el("section", { class: "warmup", "data-warmup": "true" });
+  box.append(
+    el("div", { class: "warmup-head" }, [
+      el("div", { class: "label" }, ["PRESEASON"]),
+      el("h2", {}, ["The league is warming up"]),
+      el("p", {}, [
+        "Filings are pulled a little every day on a free data plan. Members get ranked once they have ",
+        el("strong", {}, [`${league?.min_trades ?? 3} priced stock trades`]),
+        ". Until then, here is what they have been filing.",
+      ]),
+    ]),
+  );
+  if (cov) {
+    const grid = el("div", { class: "progress-grid" });
+    grid.append(progress("Members loaded", cov.members_loaded, cov.members_seated, `${cov.members_trading ?? 0} of them have disclosed trades`));
+    if (cov.tickers_total != null) {
+      grid.append(progress("Tickers priced", cov.tickers_priced ?? 0, cov.tickers_total, "Most-traded names go first"));
+    }
+    box.append(grid);
+  }
+  return box;
+}
+
+function disclosureFeed(): HTMLElement | null {
+  const items = league?.recent_disclosures ?? [];
+  if (!items.length) return null;
+  const section = el("section", { class: "feed", "aria-label": "Latest disclosures" });
+  section.append(el("h2", { class: "feed-title" }, ["Latest disclosures"]));
+  const grid = el("div", { class: "feed-grid" });
+  for (const item of items.slice(0, 6)) {
+    const lag = item.lag_days == null ? "" : `filed after ${item.lag_days} days`;
+    grid.append(
+      el("a", { class: `feed-card ${item.side}`, href: `#/member/${item.bioguide_id}` }, [
+        el("div", { class: "feed-top" }, [
+          el("span", { class: `side ${item.side}` }, [item.side === "buy" ? "BUY" : "SELL"]),
+          el("strong", { class: "sym" }, [item.symbol]),
+          el("span", { class: "amt" }, [item.amount]),
+        ]),
+        el("div", { class: "feed-name" }, [item.name]),
+        el("div", { class: "feed-meta" }, [
+          `${item.chamber} · ${item.state} · ${item.party} · ${item.filed_date}`,
+          lag ? " · " : "",
+          lag ? el("span", { class: item.late ? "late" : "" }, [item.late ? `${lag} (late)` : lag]) : "",
+        ]),
+      ]),
+    );
+  }
+  section.append(grid);
+  return section;
 }
 
 function renderHome(): void {
@@ -522,7 +622,11 @@ function renderHome(): void {
       el("em", {}, ["members the S&P is ahead of"]),
     ]),
   );
-  page.append(score);
+  const warming = !league?.sample && board.ranked.length === 0;
+  page.append(warming ? warmup() : score);
+  // While nobody is ranked the filings are the show; afterwards the table is.
+  const feed = disclosureFeed();
+  if (feed && warming) page.append(feed);
 
   const tools = el("div", { class: "toolbar" });
   const search = el("input", { class: "search", type: "search", placeholder: "Find a member", value: state.query, "aria-label": "Find a member" }) as HTMLInputElement;
@@ -544,6 +648,10 @@ function renderHome(): void {
 
   const host = el("section", { class: "board", id: "board" });
   page.append(host);
+  if (feed && !warming) {
+    feed.classList.add("after-board");
+    page.append(feed);
+  }
   shell(page);
 
   const visible = sorted(allRows().filter(matches));

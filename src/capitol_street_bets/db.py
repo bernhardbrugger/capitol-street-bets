@@ -49,6 +49,13 @@ CREATE TABLE IF NOT EXISTS price_sync (
     last_bar TEXT,
     price_function TEXT
 );
+CREATE TABLE IF NOT EXISTS activity_hint (
+    bioguide_id TEXT NOT NULL,
+    symbol TEXT NOT NULL,
+    trades INTEGER NOT NULL,
+    last_trade TEXT,
+    PRIMARY KEY (bioguide_id, symbol)
+);
 CREATE TABLE IF NOT EXISTS request_log (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     ts TEXT NOT NULL,
@@ -283,3 +290,11 @@ def distinct_trade_symbols(conn: sqlite3.Connection) -> list[str]:
         if symbol:
             symbols.add(symbol)
     return sorted(symbols)
+
+
+def replace_activity_hints(conn: sqlite3.Connection, symbol: str, counts: dict[str, tuple[int, str | None]]) -> None:
+    conn.execute("DELETE FROM activity_hint WHERE symbol = ?", (symbol,))
+    conn.executemany(
+        "INSERT INTO activity_hint (bioguide_id, symbol, trades, last_trade) VALUES (?, ?, ?, ?)",
+        [(bid, symbol, n, last) for bid, (n, last) in counts.items()],
+    )

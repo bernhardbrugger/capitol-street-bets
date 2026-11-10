@@ -215,6 +215,9 @@ class AlphaVantageClient:
     def congress_trades(self, bioguide_id: str) -> dict:
         return self.call("CONGRESS_TRADES", bioguide_id=bioguide_id)
 
+    def congress_trades_by_symbol(self, symbol: str) -> dict:
+        return self.call("CONGRESS_TRADES", symbol=symbol)
+
     def daily_prices(self, symbol: str) -> dict:
         return self.call(
             self.price_function,

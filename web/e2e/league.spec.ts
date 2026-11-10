@@ -23,7 +23,8 @@ test("scoreboard, sort, member card, and head to head", async ({ page }) => {
   await page.getByRole("button", { name: "30D" }).click();
   await page.waitForSelector("#board[data-settled=true]");
 
-  await page.getByRole("link", { name: /Jordan Hale/ }).click();
+  await expect(page.getByRole("region", { name: "Latest disclosures" }).locator("a.feed-card").first()).toBeVisible();
+  await page.locator("#board").getByRole("link", { name: /Jordan Hale/ }).click();
   await expect(page.getByRole("heading", { name: "Jordan Hale" })).toBeVisible();
   await expect(page.getByRole("table")).toContainText("Official search");
   await expect(page.getByRole("img", { name: /Indexed member return/ })).toBeVisible();

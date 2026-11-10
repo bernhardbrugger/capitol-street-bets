@@ -24,6 +24,11 @@ def _float(name: str, default: float) -> float:
     return float(raw)
 
 
+# Most-traded names on recent Congress disclosures; each call returns hundreds
+# of trades across many members.
+DEFAULT_DISCOVERY = "NVDA,MSFT,AAPL,AMZN,GOOGL,META,TSLA,AVGO"
+
+
 @dataclass(frozen=True)
 class Settings:
     api_key: str
@@ -38,6 +43,12 @@ class Settings:
     db_path: Path
     site_data: Path
     metadata_refresh_days: int = 7
+    # One CONGRESS_TRADES call per symbol shows which members actually trade,
+    # so those are fetched first. Empty tuple turns discovery off.
+    discovery_symbols: tuple[str, ...] = ()
+    discovery_refresh_days: int = 30
+    active_refresh_days: int = 3
+    inactive_refresh_days: int = 60
     base_url: str = "https://www.alphavantage.co/query"
 
     @property
@@ -65,4 +76,9 @@ def load_settings() -> Settings:
         late_days=max(1, _int("AV_LATE_DAYS", 45)),
         db_path=data_root / "cache" / "capitol.sqlite",
         site_data=site,
+        discovery_symbols=tuple(
+            sym.strip().upper()
+            for sym in os.environ.get("AV_DISCOVERY_SYMBOLS", DEFAULT_DISCOVERY).split(",")
+            if sym.strip()
+        ),
     )

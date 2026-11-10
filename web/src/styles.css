@@ -339,6 +339,58 @@ table.trades th { color: var(--muted); font-weight: 600; }
 
 .empty { color: var(--muted); padding: 20px; }
 
+.bench.quiet summary { font-weight: 600; opacity: 0.8; }
+
+.warmup {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(240, 193, 74, 0.09), transparent 60%), var(--panel);
+  padding: 22px 24px;
+  margin: 18px 0;
+  box-shadow: var(--shadow);
+}
+.warmup .label { letter-spacing: 0.16em; font-size: 12px; font-weight: 700; color: var(--gold); }
+.warmup h2 { font-family: "Teko", sans-serif; font-weight: 600; font-size: 40px; line-height: 1; margin: 6px 0 8px; }
+.warmup p { color: var(--muted); margin: 0; max-width: 70ch; }
+.warmup strong { color: var(--text); }
+.progress-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 18px; }
+.progress { background: var(--bg-2); border: 1px solid var(--line); border-radius: 14px; padding: 12px 14px; }
+.progress-head { display: flex; justify-content: space-between; align-items: baseline; font-weight: 600; }
+.progress-head strong { font-family: "Teko", sans-serif; font-size: 26px; color: var(--gold-2); }
+.progress .bar { height: 8px; border-radius: 99px; background: rgba(255, 255, 255, 0.06); overflow: hidden; margin: 6px 0 8px; }
+.progress .bar span { display: block; height: 100%; min-width: 4px; border-radius: inherit; background: linear-gradient(90deg, var(--gold), var(--up)); }
+.progress p { font-size: 13px; }
+
+.feed { margin: 8px 0 22px; }
+.feed.after-board { margin-top: 32px; }
+@media (max-width: 600px) {
+  .feed-card:nth-child(n + 5) { display: none; }
+}
+.feed-title { font-family: "Teko", sans-serif; font-weight: 600; font-size: 28px; margin: 0 0 8px; letter-spacing: 0.02em; }
+.feed-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; }
+.feed-card {
+  display: block;
+  text-decoration: none;
+  color: var(--text);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--up);
+  border-radius: 12px;
+  padding: 10px 12px;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+.feed-card.sell { border-left-color: var(--down); }
+.feed-card:hover { transform: translateY(-2px); border-color: rgba(240, 193, 74, 0.5); }
+.feed-top { display: flex; align-items: center; gap: 8px; }
+.feed-top .side { font-size: 11px; font-weight: 800; letter-spacing: 0.08em; padding: 2px 6px; border-radius: 6px; }
+.side.buy { background: rgba(62, 224, 162, 0.15); color: var(--up); }
+.side.sell { background: rgba(255, 107, 129, 0.15); color: var(--down); }
+.feed-top .sym { font-family: "Teko", sans-serif; font-size: 24px; line-height: 1; }
+.feed-top .amt { margin-left: auto; color: var(--muted); font-size: 13px; }
+.feed-name { font-weight: 700; margin-top: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.feed-meta { color: var(--muted); font-size: 12px; margin-top: 2px; }
+.feed-meta .late { color: var(--down); font-weight: 700; }
+
 @media (max-width: 980px) {
   .cols { display: none; }
   .row, .cols {

@@ -79,6 +79,10 @@ Defaults in `.env.example` match the free plan: `AV_REQUESTS_PER_MINUTE=5`, `AV_
 
 The demo roster on 2026-11-06 had **1,146** people, **537** of them seated (439 House, 98 Senate). A full daily pass is one metadata call, one trade call per member, and one price call per ticker that does not already have the latest weekday. Price history is never re-downloaded while that bar is cached. Member payloads with an unchanged hash are not rewritten. A run that hits the daily cap stops cleanly and continues next time with whoever is stalest.
 
+**Who gets fetched first.** A handful of `CONGRESS_TRADES?symbol=` calls (NVDA, MSFT, AAPL, … set by `AV_DISCOVERY_SYMBOLS`, at most four a run, refreshed monthly) show which members actually trade. Those members are pulled first, busiest first. Members with trades are refreshed every 3 days; members whose pull came back empty only every 60 days. Discovery is only a queue hint: every member's record still comes from their own full pull. Prices go to tickers from stock trades only, most-traded first.
+
+While nobody is ranked yet, the site and this README show a preseason view: load progress and the latest disclosures, which need no prices.
+
 On a 25-request day the split is about **1** metadata call (when the roster is older than 7 days), **8** price calls, and **16** member calls. At that pace:
 
 - Seated members each get a turn about every **34** daily runs (537 / 16), roughly five weeks for a full seated pass, then the stalest ones start again. Weekend runs spend nothing on prices, so they go almost entirely to members.

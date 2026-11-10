@@ -32,6 +32,7 @@ from capitol_street_bets.db import (
     load_price_book_rows,
     mark_price_sync,
     member_hash,
+    replace_activity_hints,
     replace_member_trades,
     set_meta,
     store_prices,
@@ -126,32 +127,53 @@ def _metadata_due(conn, today: date, refresh_days: int) -> bool:
     return (today - fetched).days >= refresh_days
 
 
-def _member_queue(conn, today: date, limit: int) -> list[str]:
+def _member_queue(conn, today: date, limit: int, settings: Settings | None = None) -> list[str]:
+    """Who to fetch next.
+
+    Never-fetched members that discovery saw trading come first, busiest first.
+    Then the rest of the never-fetched roster. Members already fetched are
+    refreshed every few days if they have trades, and only every couple of
+    months if their last pull came back empty.
+    """
     if limit <= 0:
         return []
+    active_days = settings.active_refresh_days if settings else 3
+    inactive_days = settings.inactive_refresh_days if settings else 60
     rows = conn.execute(
         """
-        SELECT p.bioguide_id
+        SELECT p.bioguide_id, p.is_current, s.last_fetched_at,
+               (SELECT COUNT(*) FROM trades t WHERE t.bioguide_id = p.bioguide_id) AS stored,
+               (SELECT COALESCE(SUM(h.trades), 0) FROM activity_hint h WHERE h.bioguide_id = p.bioguide_id) AS hinted
         FROM politicians p
         LEFT JOIN member_sync s ON s.bioguide_id = p.bioguide_id
-        WHERE s.last_fetched_at IS NULL OR substr(s.last_fetched_at, 1, 10) != ?
-        ORDER BY p.is_current DESC,
-                 s.last_fetched_at IS NOT NULL,
-                 s.last_fetched_at ASC,
-                 p.bioguide_id ASC
-        LIMIT ?
-        """,
-        (today.isoformat(), limit),
+        """
     ).fetchall()
-    return [row["bioguide_id"] for row in rows]
+    picks = []
+    for row in rows:
+        fetched = row["last_fetched_at"]
+        if fetched:
+            age = (today - date.fromisoformat(fetched[:10])).days
+            if age <= 0:
+                continue
+            if row["stored"] == 0 and age < inactive_days:
+                continue
+            if row["stored"] > 0 and age < active_days:
+                continue
+        key = (
+            fetched is not None,          # never fetched first
+            -int(row["hinted"] or 0) if fetched is None else 0,
+            not row["is_current"],        # seated before former members
+            fetched or "",                # stalest first
+            row["bioguide_id"],
+        )
+        picks.append((key, row["bioguide_id"]))
+    picks.sort()
+    return [bid for _, bid in picks[:limit]]
 
 
-def _price_queue(conn, today: date, limit: int) -> list[str]:
-    if limit <= 0:
-        return []
-    expected = last_expected_session(today).isoformat()
-    # Only tickers that appear in at least one scoreable equity trade. Options,
-    # funds, bonds and mystery tickers would spend a call and never score.
+def _equity_symbol_counts(conn) -> dict[str, int]:
+    """Tickers in at least one scoreable equity trade. Options, funds, bonds
+    and mystery tickers would spend a call and never score."""
     counts: dict[str, int] = defaultdict(int)
     for bioguide_id, payload in iter_trades(conn):
         try:
@@ -160,6 +182,14 @@ def _price_queue(conn, today: date, limit: int) -> list[str]:
             continue
         if classify_asset(trade) == "equity" and trade.symbol:
             counts[trade.symbol.strip().upper()] += 1
+    return counts
+
+
+def _price_queue(conn, today: date, limit: int) -> list[str]:
+    if limit <= 0:
+        return []
+    expected = last_expected_session(today).isoformat()
+    counts = _equity_symbol_counts(conn)
     symbols = ["SPY", *sorted(counts)]
     seen = set()
     ordered = []
@@ -190,15 +220,7 @@ def _price_queue(conn, today: date, limit: int) -> list[str]:
 
 
 def _waiting_counts(conn, today: date) -> tuple[int, int]:
-    members = conn.execute(
-        """
-        SELECT COUNT(*) AS n
-        FROM politicians p
-        LEFT JOIN member_sync s ON s.bioguide_id = p.bioguide_id
-        WHERE s.last_fetched_at IS NULL OR substr(s.last_fetched_at, 1, 10) != ?
-        """,
-        (today.isoformat(),),
-    ).fetchone()["n"]
+    members = len(_member_queue(conn, today, 10**5))
     expected = last_expected_session(today).isoformat()
     symbols = set(distinct_trade_symbols(conn))
     symbols.add("SPY")
@@ -266,7 +288,21 @@ def ingest(settings: Settings, conn, client: AlphaVantageClient, today: date | N
                 settings.daily_unlimited,
             )
             report["plan_after_metadata"] = plan
-        for bioguide_id in _member_queue(conn, today, plan["members"]):
+        member_slots = plan["members"]
+        due = _discovery_due(conn, settings, today)
+        if due and member_slots > 1:
+            # Up to four discovery calls a run, always leaving member slots.
+            take = min(len(due), 4, max(1, member_slots // 3))
+            for symbol in due[:take]:
+                try:
+                    _pull_discovery(client, conn, symbol, today)
+                    report.setdefault("discovery", []).append(symbol)
+                except AVError as exc:
+                    if isinstance(exc, (RateLimitError, DailyBudgetSpent)):
+                        raise
+                    report.setdefault("discovery_errors", []).append({"symbol": symbol, "error": _safe(str(exc))})
+                member_slots -= 1
+        for bioguide_id in _member_queue(conn, today, member_slots, settings):
             try:
                 changed = _pull_member(client, conn, bioguide_id)
             except AVError as exc:
@@ -346,6 +382,42 @@ def _pull_metadata(client: AlphaVantageClient, conn, today: date) -> None:
         )
     upsert_politicians(conn, cooked)
     set_meta(conn, "metadata_fetched_on", today.isoformat())
+    conn.commit()
+
+
+def _discovery_due(conn, settings: Settings, today: date) -> list[str]:
+    due = []
+    for symbol in settings.discovery_symbols:
+        last = get_meta(conn, f"discovery:{symbol}")
+        if last and (today - date.fromisoformat(last)).days < settings.discovery_refresh_days:
+            continue
+        due.append(symbol)
+    return due
+
+
+def _pull_discovery(client: AlphaVantageClient, conn, symbol: str, today: date) -> None:
+    """Count recent trades per member in one symbol's disclosures.
+
+    Only a hint for queue order. Member trades still come from the member's own
+    pull, so nobody's record is built from a partial, ticker-filtered view.
+    """
+    payload = client.congress_trades_by_symbol(symbol)
+    trades = payload.get("trades") or []
+    if not isinstance(trades, list):
+        raise AVError("congress trades did not include a list")
+    cutoff = (today - timedelta(days=730)).isoformat()
+    counts: dict[str, tuple[int, str | None]] = {}
+    for raw in trades:
+        if not isinstance(raw, dict):
+            continue
+        bid = str(raw.get("bioguide_id") or "").strip()
+        when = str(raw.get("transaction_date") or "")[:10]
+        if not bid or (when and when < cutoff):
+            continue
+        n, last = counts.get(bid, (0, None))
+        counts[bid] = (n + 1, max(last or "", when) or None)
+    replace_activity_hints(conn, symbol, counts)
+    set_meta(conn, f"discovery:{symbol}", today.isoformat())
     conn.commit()
 
 
@@ -453,6 +525,14 @@ def compute_site(settings: Settings, conn, as_of: date | None = None) -> dict:
     synced = conn.execute(
         "SELECT COUNT(*) FROM member_sync s JOIN politicians p USING (bioguide_id) WHERE p.is_current = 1"
     ).fetchone()[0]
-    league["coverage"] = {"members_loaded": int(synced), "members_seated": len(current_ids)}
+    tickers = _equity_symbol_counts(conn)
+    priced = sum(1 for symbol in tickers if last_bar(conn, symbol) is not None)
+    league["coverage"] = {
+        "members_loaded": int(synced),
+        "members_seated": len(current_ids),
+        "members_trading": sum(1 for bid in current_ids if grouped.get(bid)),
+        "tickers_priced": priced,
+        "tickers_total": len(tickers),
+    }
     write_site(settings.site_data, league, members, updated)
     return {"members": len(included), "as_of": as_of.isoformat()}
