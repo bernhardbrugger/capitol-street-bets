@@ -500,8 +500,10 @@ def recent_disclosures(
     as_of: date,
     late_days: int = 45,
     limit: int = 12,
+    per_member_cap: int = 2,
 ) -> list[dict]:
-    """Latest filed trades across the roster. Needs no prices, so it is the
+    """Latest filed trades across the roster, at most two per member so one
+    busy filer cannot take over the feed. Needs no prices, so it is the
     first thing that is useful on a fresh board."""
     people = {person.bioguide_id: person for person in politicians}
     rows = []
@@ -538,12 +540,14 @@ def recent_disclosures(
     # One line per member, ticker and filing day: a PTR often lists the same
     # buy several times in small lots.
     seen = set()
+    per_member: dict[str, int] = {}
     unique = []
     for row in rows:
         key = (row["bioguide_id"], row["symbol"], row["side"], row["filed_date"])
-        if key in seen:
+        if key in seen or per_member.get(row["bioguide_id"], 0) >= per_member_cap:
             continue
         seen.add(key)
+        per_member[row["bioguide_id"]] = per_member.get(row["bioguide_id"], 0) + 1
         unique.append(row)
         if len(unique) >= limit:
             break
