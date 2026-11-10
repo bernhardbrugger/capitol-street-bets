@@ -7,7 +7,18 @@ The only league where everyone files late.
 ## Current standings
 
 <!-- LEADERBOARD:START -->
-_No member has enough priced trades to be ranked yet. The board fills up with every refresh._
+_Preseason: no member has enough priced trades to be ranked yet. The board fills up with every refresh._
+
+**Latest disclosures**
+
+| Filed | Member | | Ticker | Amount | Filed after |
+|---|---|:---:|---|---:|---:|
+| 2026-10-22 | [Alan Armstrong](https://bernhardbrugger.github.io/capitol-street-bets/#/member/A000383) | 🔴 Sell | **WMB** | $250K–$500K | 44 days |
+| 2026-09-17 | [Alan Armstrong](https://bernhardbrugger.github.io/capitol-street-bets/#/member/A000383) | 🟢 Buy | **WMB** | $15K–$50K | 28 days |
+| 2026-09-17 | [Alan Armstrong](https://bernhardbrugger.github.io/capitol-street-bets/#/member/A000383) | 🔴 Sell | **EA** | $1K–$15K | 44 days |
+| 2026-07-21 | [Alan Armstrong](https://bernhardbrugger.github.io/capitol-street-bets/#/member/A000383) | 🔴 Sell | **WMB** | $5M–$25M | 27 days |
+| 2026-07-21 | [Alan Armstrong](https://bernhardbrugger.github.io/capitol-street-bets/#/member/A000383) | 🟢 Buy | **ASML** | $1K–$15K | 112 days ⚠️ |
+| 2026-07-21 | [Alan Armstrong](https://bernhardbrugger.github.io/capitol-street-bets/#/member/A000383) | 🟢 Buy | **AZN** | $1K–$15K | 112 days ⚠️ |
 
 Members loaded so far: **12 of 537** seated. Updated 2026-11-10. [Full board →](https://bernhardbrugger.github.io/capitol-street-bets/)
 <!-- LEADERBOARD:END -->
