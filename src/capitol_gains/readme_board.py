@@ -1,0 +1,98 @@
+"""Write the current top of the league into README.md between two markers.
+
+The daily workflow runs this after scoring, so the repo page itself shows
+the standings without anyone opening the site.
+"""
+
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+START = "<!-- LEADERBOARD:START -->"
+END = "<!-- LEADERBOARD:END -->"
+WINDOW_ORDER = ("12m", "ytd", "all", "30d")
+WINDOW_LABEL = {"12m": "last 12 months", "ytd": "year to date", "all": "all time", "30d": "last 30 days"}
+
+
+def _pct(value) -> str:
+    if value is None:
+        return "–"
+    return f"{value * 100:+.1f}%"
+
+
+def _arrow(row: dict) -> str:
+    change = row.get("rank_change")
+    if row.get("previous_rank") is None:
+        return "🆕"
+    if not change:
+        return "▬"
+    return f"▲{change}" if change > 0 else f"▼{abs(change)}"
+
+
+def _seat(row: dict) -> str:
+    chamber = (row.get("chamber") or "")[:1].upper()
+    party = row.get("party") or "?"
+    state = row.get("state") or ""
+    return f"{party}-{state} · {chamber}" if chamber else f"{party}-{state}"
+
+
+def render(league: dict, site_url: str, top: int = 10) -> str:
+    windows = league.get("windows", {})
+    key = next((k for k in WINDOW_ORDER if windows.get(k, {}).get("ranked")), None)
+    lines: list[str] = []
+    if league.get("sample"):
+        lines.append(
+            "> ⚠️ **Sample data.** These names and numbers are fictional. "
+            "The board switches to live disclosures after the first successful data refresh."
+        )
+        lines.append("")
+    if key is None:
+        lines.append("_No member has enough priced trades to be ranked yet. The board fills up with every refresh._")
+    else:
+        window = windows[key]
+        lines.append(f"**Top {min(top, len(window['ranked']))}, {WINDOW_LABEL[key]}** (as of {window.get('as_of') or league.get('as_of')})")
+        lines.append("")
+        lines.append("| # | | Member | Seat | Return | Alpha vs S&P | Copycat | Trades |")
+        lines.append("|---:|:---:|---|---|---:|---:|---:|---:|")
+        for row in window["ranked"][:top]:
+            lines.append(
+                "| {rank} | {arrow} | [{name}]({url}#/member/{bid}) | {seat} | {ret} | **{alpha}** | {copy} | {trades} |".format(
+                    rank=row.get("rank", ""),
+                    arrow=_arrow(row),
+                    name=row.get("name", row.get("bioguide_id", "")),
+                    url=site_url,
+                    bid=row.get("bioguide_id", ""),
+                    seat=_seat(row),
+                    ret=_pct(row.get("return")),
+                    alpha=_pct(row.get("alpha")),
+                    copy=_pct(row.get("copycat_return")),
+                    trades=row.get("trades", ""),
+                )
+            )
+    coverage = league.get("coverage")
+    lines.append("")
+    if coverage and coverage.get("members_seated"):
+        lines.append(
+            f"Members loaded so far: **{coverage['members_loaded']} of {coverage['members_seated']}** seated. "
+            f"Updated {str(league.get('generated_at', ''))[:10]}. [Full board →]({site_url})"
+        )
+    else:
+        lines.append(f"Updated {str(league.get('generated_at', ''))[:10]}. [Full board →]({site_url})")
+    return "\n".join(lines)
+
+
+def update_readme(readme: Path, league_path: Path, site_url: str, top: int = 10) -> bool:
+    league = json.loads(league_path.read_text())
+    block = f"{START}\n{render(league, site_url, top)}\n{END}"
+    text = readme.read_text()
+    if START in text and END in text:
+        head, rest = text.split(START, 1)
+        _, tail = rest.split(END, 1)
+        new = head + block + tail
+    else:
+        new = text.rstrip() + "\n\n## Current standings\n\n" + block + "\n"
+    if new == text:
+        return False
+    readme.write_text(new)
+    return True

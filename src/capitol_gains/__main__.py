@@ -34,6 +34,9 @@ def main(argv: list[str] | None = None) -> None:
     sub.add_parser("ingest", help="Fetch what today's Alpha Vantage budget allows")
     sub.add_parser("compute", help="Score the SQLite cache and write JSON")
     sub.add_parser("run", help="Ingest, then compute")
+    readme = sub.add_parser("readme", help="Write the current top of the league into README.md")
+    readme.add_argument("--url", default=os.environ.get("CAPITOL_SITE_URL", "https://bernhardbrugger.github.io/capitol-street-bets/"))
+    readme.add_argument("--top", type=int, default=10)
     serve = sub.add_parser("serve", help="Serve the built static site")
     serve.add_argument("--host", default="0.0.0.0")
     serve.add_argument("--port", type=int, default=8080)
@@ -48,6 +51,13 @@ def main(argv: list[str] | None = None) -> None:
         league = write_sample(settings.site_data)
         print(summarize(league))
         print(f"wrote {settings.site_data}")
+        return
+
+    if args.command == "readme":
+        from capitol_gains.readme_board import update_readme
+
+        changed = update_readme(ROOT / "README.md", settings.site_data / "league.json", args.url, args.top)
+        print("README standings updated" if changed else "README standings unchanged")
         return
 
     if args.command == "serve":

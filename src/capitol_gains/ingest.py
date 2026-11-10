@@ -411,5 +411,9 @@ def compute_site(settings: Settings, conn, as_of: date | None = None) -> dict:
         price_mode="adjusted" if "ADJUSTED" in price_mode else "unadjusted",
         notes=notes,
     )
+    synced = conn.execute(
+        "SELECT COUNT(*) FROM member_sync s JOIN politicians p USING (bioguide_id) WHERE p.is_current = 1"
+    ).fetchone()[0]
+    league["coverage"] = {"members_loaded": int(synced), "members_seated": len(current_ids)}
     write_site(settings.site_data, league, members, updated)
     return {"members": len(included), "as_of": as_of.isoformat()}

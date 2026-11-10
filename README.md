@@ -2,6 +2,31 @@
 
 The only league where everyone files late.
 
+### 🏛 [**Open the live scoreboard →**](https://bernhardbrugger.github.io/capitol-street-bets/)
+
+## Current standings
+
+<!-- LEADERBOARD:START -->
+> ⚠️ **Sample data.** These names and numbers are fictional. The board switches to live disclosures after the first successful data refresh.
+
+**Top 10, last 12 months** (as of 2026-11-06)
+
+| # | | Member | Seat | Return | Alpha vs S&P | Copycat | Trades |
+|---:|:---:|---|---|---:|---:|---:|---:|
+| 1 | ▲5 | [Jordan Hale](https://bernhardbrugger.github.io/capitol-street-bets/#/member/CG0001) | D-CA · H | +16.6% | **+16.1%** | +16.4% | 3 |
+| 2 | ▲1 | [Casey Nguyen](https://bernhardbrugger.github.io/capitol-street-bets/#/member/CG0002) | R-WA · S | +2.1% | **+1.6%** | +1.9% | 3 |
+| 3 | ▼1 | [Avery Shah](https://bernhardbrugger.github.io/capitol-street-bets/#/member/CG0005) | R-TX · H | +2.0% | **+1.4%** | +1.1% | 3 |
+| 4 | ▬ | [Reese Dalton](https://bernhardbrugger.github.io/capitol-street-bets/#/member/CG0010) | D-WA · H | +0.9% | **+0.4%** | +0.6% | 3 |
+| 5 | ▬ | [Parker Singh](https://bernhardbrugger.github.io/capitol-street-bets/#/member/CG0007) | R-OH · S | +0.3% | **+0.2%** | +0.1% | 10 |
+| 6 | ▲1 | [Morgan Ellis](https://bernhardbrugger.github.io/capitol-street-bets/#/member/CG0004) | I-ME · S | +0.5% | **+0.0%** | +0.4% | 4 |
+| 7 | ▲1 | [Skyler Brooks](https://bernhardbrugger.github.io/capitol-street-bets/#/member/CG0009) | D-HI · S | +0.3% | **-0.4%** | +0.2% | 3 |
+| 8 | ▲1 | [Rowan Blake](https://bernhardbrugger.github.io/capitol-street-bets/#/member/CG0013) | R-MI · H | -0.4% | **-0.9%** | -0.3% | 3 |
+| 9 | ▲1 | [Jamie Ortiz](https://bernhardbrugger.github.io/capitol-street-bets/#/member/CG0011) | R-AZ · H | -2.1% | **-2.8%** | -1.4% | 6 |
+| 10 | ▲1 | [Drew Coleman](https://bernhardbrugger.github.io/capitol-street-bets/#/member/CG0008) | R-FL · H | -1.9% | **-4.1%** | -0.2% | 3 |
+
+Updated 2026-11-06. [Full board →](https://bernhardbrugger.github.io/capitol-street-bets/)
+<!-- LEADERBOARD:END -->
+
 A scoreboard of how members of Congress do with their **publicly disclosed** stock trades: rank arrows, badges, a daily ticker tape, and a head-to-head for anyone deciding who they would rather copy. The tone stays on the numbers. Party is a label on the card, not a punchline.
 
 ![League table](docs/demo.gif)
@@ -21,7 +46,7 @@ The long version is [METHODOLOGY.md](METHODOLOGY.md), and the same note is linke
 
 **Data: Alpha Vantage.**
 
-Live site, once GitHub Pages is enabled on this repo: `https://<github-user>.github.io/capitol-gains/`
+Live site: **https://bernhardbrugger.github.io/capitol-street-bets/**
 
 ## How it is built
 
@@ -71,7 +96,7 @@ The demo roster on 2026-11-06 had **1,146** people, **537** of them seated (439 
 
 On a 25-request day the split is about **1** metadata call (when the roster is older than 7 days), **8** price calls, and **16** member calls. At that pace:
 
-- Seated members each get a turn about every **34** weekday runs (537 / 16), roughly seven weeks for a full seated pass, then the stalest ones start again.
+- Seated members each get a turn about every **34** daily runs (537 / 16), roughly five weeks for a full seated pass, then the stalest ones start again. Weekend runs spend nothing on prices, so they go almost entirely to members.
 - A planning guess of **1,500** distinct tickers (not measured until a real ingest) would take about **190** trading days to touch once at 8 prices a day. The free plan cannot keep a full book marked to the latest close. Windows are limited to the sessions actually cached. `outputsize=compact` starts with about 100 sessions and then grows by the new days you merge in. `outputsize=full` and `TIME_SERIES_DAILY_ADJUSTED` are premium. Raw closes are not split-adjusted.
 
 On the cheapest premium plan (75/minute, no daily cap) a seated pass plus 1,500 tickers is about **2,040** requests, roughly **half an hour**. Set:
@@ -109,10 +134,18 @@ docker compose --profile refresh run --rm refresh
 ## GitHub Actions
 
 - `.github/workflows/test.yml` runs pytest and Playwright on push.
-- `.github/workflows/daily.yml` runs on weekday evenings UTC. It caches the SQLite file, ingests with the `ALPHAVANTAGE_API_KEY` repository secret, commits any JSON change, and deploys `web/dist` to GitHub Pages.
+- `.github/workflows/daily.yml` does the refresh and the deploy:
+  - **Once a day** (05:17 UTC) or on a manual *Run workflow*, it restores the SQLite cache, ingests what the Alpha Vantage plan allows with the `ALPHAVANTAGE_API_KEY` repository secret, scores, writes the top 10 into the *Current standings* block of this README, commits any change and deploys `web/dist` to GitHub Pages.
+  - On a **push to `main`** that touches `web/`, `src/` or the workflow, it only rebuilds and redeploys the site from the JSON already in the repo. No API calls.
 
-One-time Pages setup: Settings → Pages → Build and deployment → Source: **GitHub Actions**. The workflow's base path is `/capitol-gains/`, which matches a project site for a repo of that name.
+The API key lives only in the repository secret. It is never printed, never written to the cache, the JSON, the README or the built site, and the browser never talks to Alpha Vantage: the page only reads static JSON.
 
-Secret to add: **`ALPHAVANTAGE_API_KEY`**.
+Pages setup (already done for this repo): Settings → Pages → Source: **GitHub Actions**. The base path is taken from the repo name, so a rename or fork just works.
 
-Until that secret exists, the daily job leaves the sample JSON in place and still deploys the site.
+Until the secret exists, the daily job leaves the sample JSON in place and still deploys the site.
+
+Regenerate the standings block locally:
+
+```bash
+PYTHONPATH=src python -m capitol_gains readme
+```

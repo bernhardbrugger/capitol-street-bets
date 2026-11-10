@@ -96,6 +96,8 @@ const WINDOWS: { id: string; label: string }[] = [
 ];
 const HUES = [28, 46, 78, 152, 168, 188, 262, 282, 314, 332];
 const BASE = import.meta.env.BASE_URL;
+const REPO_URL = "https://github.com/bernhardbrugger/capitol-street-bets";
+const PROFILE_URL = "https://github.com/bernhardbrugger";
 
 type SortKey = "rank" | "return" | "alpha" | "trades" | "copycat" | "name";
 const state: { window: string; sort: SortKey; dir: "asc" | "desc"; query: string; left: string; right: string } = {
@@ -430,7 +432,8 @@ function shell(body: HTMLElement): void {
   const routeName = parseRoute().name;
   if (routeName === "home") home.setAttribute("aria-current", "page");
   if (routeName === "versus") versus.setAttribute("aria-current", "page");
-  nav.append(home, versus, method);
+  const repo = el("a", { href: REPO_URL, target: "_blank", rel: "noopener" }, ["GitHub ★"]);
+  nav.append(home, versus, method, repo);
   top.append(brand, nav);
   app.append(top, body, footer());
 }
@@ -444,6 +447,12 @@ function footer(): HTMLElement {
     el("p", {}, [
       el("a", { href: `${BASE}methodology.html` }, ["How the score is kept"]),
       " · Humor is about the stats. Party is only a label.",
+    ]),
+    el("p", {}, [
+      "Built by ",
+      el("a", { href: PROFILE_URL, target: "_blank", rel: "noopener" }, ["Bernhard Brugger"]),
+      " · ",
+      el("a", { href: REPO_URL, target: "_blank", rel: "noopener" }, ["Source on GitHub"]),
     ]),
   );
   return node;
