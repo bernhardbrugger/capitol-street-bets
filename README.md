@@ -7,18 +7,11 @@ The only league where everyone files late.
 ## Current standings
 
 <!-- LEADERBOARD:START -->
-_Preseason: no member has enough priced trades to be ranked yet. The board fills up with every refresh._
+**Top 1, last 12 months** (as of 2026-11-10)
 
-**Latest disclosures**
-
-| Filed | Member | | Ticker | Amount | Filed after |
-|---|---|:---:|---|---:|---:|
-| 2026-10-22 | [Alan Armstrong](https://bernhardbrugger.github.io/capitol-street-bets/#/member/A000383) | 🔴 Sell | **WMB** | $250K–$500K | 44 days |
-| 2026-09-17 | [Alan Armstrong](https://bernhardbrugger.github.io/capitol-street-bets/#/member/A000383) | 🟢 Buy | **WMB** | $15K–$50K | 28 days |
-| 2026-05-22 | [Jake Auchincloss](https://bernhardbrugger.github.io/capitol-street-bets/#/member/A000148) | 🔴 Sell | **STT** | $15K–$50K | 4 days |
-| 2026-03-31 | [Mark Alford](https://bernhardbrugger.github.io/capitol-street-bets/#/member/A000379) | 🔴 Sell | **SPYB** | $1K–$15K | 15 days |
-| 2026-03-31 | [Mark Alford](https://bernhardbrugger.github.io/capitol-street-bets/#/member/A000379) | 🔴 Sell | **PYPL** | $1K–$15K | 15 days |
-| 2026-02-19 | [Jake Auchincloss](https://bernhardbrugger.github.io/capitol-street-bets/#/member/A000148) | 🔴 Sell | **STT** | $15K–$50K | 2 days |
+| # | | Member | Seat | Return | Alpha vs S&P | Copycat | Trades |
+|---:|:---:|---|---|---:|---:|---:|---:|
+| 1 | 🆕 | [Alan Armstrong](https://bernhardbrugger.github.io/capitol-street-bets/#/member/A000383) | R-OK · S | +19.5% | **+0.7%** | +2.0% | 322 |
 
 Members loaded so far: **12 of 537** seated. Updated 2026-11-10. [Full board →](https://bernhardbrugger.github.io/capitol-street-bets/)
 <!-- LEADERBOARD:END -->

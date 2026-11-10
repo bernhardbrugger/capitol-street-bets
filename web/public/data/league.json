@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-10T10:59:38+00:00",
+  "generated_at": "2026-11-10T12:52:13+00:00",
   "as_of": "2026-11-10",
   "sample": false,
-  "price_mode": "unadjusted",
+  "price_mode": "adjusted",
   "min_trades": 3,
   "late_days": 45,
   "attribution": "Data: Alpha Vantage",
@@ -10,7 +10,7 @@
   "notes": [
     "Position size is the midpoint of the disclosed range.",
     "Alpha compares each holding period with SPY over those same dates.",
-    "Closes are raw TIME_SERIES_DAILY prints. Split-adjusted history needs a premium plan."
+    "Daily closes from Massive (formerly Polygon.io), split-adjusted."
   ],
   "windows": {
     "30d": {
@@ -432,22 +432,38 @@
           "elevator": false,
           "elevator_drop": 5,
           "benched": true,
-          "return": null,
-          "alpha": null,
-          "benchmark": null,
-          "copycat_return": null,
-          "copycat_alpha": null,
+          "return": -0.011846,
+          "alpha": 0.021394,
+          "benchmark": -0.03324,
+          "copycat_return": 0.007733,
+          "copycat_alpha": 0.040973,
           "trades": 0,
-          "avg_hold_days": null,
+          "avg_hold_days": 227.3,
           "avg_filing_lag": null,
           "late_filings": 0,
           "filings": 0,
           "excluded_options": 4,
           "excluded_non_stock": 0,
-          "excluded_unknown": 704,
-          "unmatched_sells": 0,
+          "excluded_unknown": 382,
+          "unmatched_sells": 38,
           "uncopyable": 0,
-          "badges": [],
+          "badges": [
+            {
+              "id": "beat_the_market",
+              "name": "Beat the Market",
+              "blurb": "Positive alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "diamond_hands",
+              "name": "Diamond Hands",
+              "blurb": "Longest average holding period on the board."
+            },
+            {
+              "id": "paper_hands",
+              "name": "Paper Hands",
+              "blurb": "Shortest average holding period on the board."
+            }
+          ],
           "top_ticker": null
         },
         {
@@ -7068,8 +7084,8 @@
           "filings": 0,
           "excluded_options": 0,
           "excluded_non_stock": 1,
-          "excluded_unknown": 9,
-          "unmatched_sells": 0,
+          "excluded_unknown": 1,
+          "unmatched_sells": 8,
           "uncopyable": 0,
           "badges": [],
           "top_ticker": null
@@ -11712,8 +11728,8 @@
           "filings": 0,
           "excluded_options": 0,
           "excluded_non_stock": 1,
-          "excluded_unknown": 8,
-          "unmatched_sells": 0,
+          "excluded_unknown": 3,
+          "unmatched_sells": 5,
           "uncopyable": 0,
           "badges": [],
           "top_ticker": null
@@ -15240,8 +15256,8 @@
           "filings": 0,
           "excluded_options": 0,
           "excluded_non_stock": 0,
-          "excluded_unknown": 3,
-          "unmatched_sells": 0,
+          "excluded_unknown": 2,
+          "unmatched_sells": 1,
           "uncopyable": 0,
           "badges": [],
           "top_ticker": null
@@ -19364,17 +19380,86 @@
         "Robert B. Aderholt sold GSK ($1K\u2013$15K), filed 44 days later.",
         "Robert B. Aderholt sold TSLA ($1K\u2013$15K), filed 8 days later.",
         "Scoreboard check. 0 members have positive alpha over 30d.",
-        "Bench note: Aaron Bean is listed, not ranked. 0 trades so far.",
-        "SPY is on the field too. Nobody gets a custom benchmark.",
-        "Buys open the lot. Sales close it FIFO. Leftovers get marked to today.",
-        "Options and mystery tickers sit out and get counted. The scoreboard likes a paper trail.",
+        "Alan Armstrong averaged 227 days in the trade. The FIFO ledger approves of patience.",
+        "Average hold for Alan Armstrong: 227 days. The lots were not in a hurry.",
+        "Aaron Bean has 0 qualifying trades in this window. The lineup wants 3.",
+        "The 30d window is selected. Arrows compare it with the previous snapshot.",
+        "Welcome back to the only league where the lineup files the box score later.",
         "0 beat the S&P over 30d. The holding periods were matched on purpose."
       ]
     },
     "ytd": {
       "as_of": "2026-11-10",
       "previous_date": "2026-11-06",
-      "ranked": [],
+      "ranked": [
+        {
+          "bioguide_id": "A000383",
+          "name": "Alan Armstrong",
+          "initials": "AA",
+          "chamber": "Senate",
+          "party": "R",
+          "state": "OK",
+          "district": null,
+          "years_in_service": 0.6,
+          "rank": 1,
+          "previous_rank": null,
+          "rank_change": null,
+          "streak": 0,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": 0.194609,
+          "alpha": 0.006971,
+          "benchmark": 0.187638,
+          "copycat_return": 0.020213,
+          "copycat_alpha": 0.014267,
+          "trades": 322,
+          "avg_hold_days": 226.9,
+          "avg_filing_lag": 115.0,
+          "late_filings": 389,
+          "filings": 391,
+          "excluded_options": 4,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 382,
+          "unmatched_sells": 38,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "beat_the_market",
+              "name": "Beat the Market",
+              "blurb": "Positive alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "diamond_hands",
+              "name": "Diamond Hands",
+              "blurb": "Longest average holding period on the board."
+            },
+            {
+              "id": "paper_hands",
+              "name": "Paper Hands",
+              "blurb": "Shortest average holding period on the board."
+            },
+            {
+              "id": "fashionably_late",
+              "name": "Fashionably Late",
+              "blurb": "Highest average gap between the trade and the filing."
+            },
+            {
+              "id": "buy_high_sell_low",
+              "name": "Buy High Sell Low",
+              "blurb": "Worst capital-weighted return on positions that were closed."
+            }
+          ],
+          "top_ticker": "WMB"
+        }
+      ],
       "benched": [
         {
           "bioguide_id": "B001314",
@@ -19771,48 +19856,6 @@
           "uncopyable": 0,
           "badges": [],
           "top_ticker": null
-        },
-        {
-          "bioguide_id": "A000383",
-          "name": "Alan Armstrong",
-          "initials": "AA",
-          "chamber": "Senate",
-          "party": "R",
-          "state": "OK",
-          "district": null,
-          "years_in_service": 0.6,
-          "rank": null,
-          "previous_rank": null,
-          "rank_change": null,
-          "streak": 0,
-          "on_fire": false,
-          "took_first": false,
-          "elevator": false,
-          "elevator_drop": 5,
-          "benched": true,
-          "return": null,
-          "alpha": null,
-          "benchmark": null,
-          "copycat_return": null,
-          "copycat_alpha": null,
-          "trades": 0,
-          "avg_hold_days": null,
-          "avg_filing_lag": 115.0,
-          "late_filings": 389,
-          "filings": 391,
-          "excluded_options": 4,
-          "excluded_non_stock": 0,
-          "excluded_unknown": 704,
-          "unmatched_sells": 0,
-          "uncopyable": 0,
-          "badges": [
-            {
-              "id": "fashionably_late",
-              "name": "Fashionably Late",
-              "blurb": "Highest average gap between the trade and the filing."
-            }
-          ],
-          "top_ticker": "WMB"
         },
         {
           "bioguide_id": "P000145",
@@ -26425,15 +26468,15 @@
           "benchmark": null,
           "copycat_return": null,
           "copycat_alpha": null,
-          "trades": 0,
+          "trades": 3,
           "avg_hold_days": null,
           "avg_filing_lag": 3.3,
           "late_filings": 0,
           "filings": 3,
           "excluded_options": 0,
           "excluded_non_stock": 1,
-          "excluded_unknown": 9,
-          "unmatched_sells": 0,
+          "excluded_unknown": 1,
+          "unmatched_sells": 8,
           "uncopyable": 0,
           "badges": [],
           "top_ticker": "STT"
@@ -31069,15 +31112,15 @@
           "benchmark": null,
           "copycat_return": null,
           "copycat_alpha": null,
-          "trades": 0,
+          "trades": 5,
           "avg_hold_days": null,
           "avg_filing_lag": 15.0,
           "late_filings": 0,
           "filings": 7,
           "excluded_options": 0,
           "excluded_non_stock": 1,
-          "excluded_unknown": 8,
-          "unmatched_sells": 0,
+          "excluded_unknown": 3,
+          "unmatched_sells": 5,
           "uncopyable": 0,
           "badges": [],
           "top_ticker": "SPYB"
@@ -34604,8 +34647,8 @@
           "filings": 0,
           "excluded_options": 0,
           "excluded_non_stock": 0,
-          "excluded_unknown": 3,
-          "unmatched_sells": 0,
+          "excluded_unknown": 2,
+          "unmatched_sells": 1,
           "uncopyable": 0,
           "badges": [],
           "top_ticker": null
@@ -38715,30 +38758,93 @@
           "top_ticker": null
         }
       ],
-      "beat_market": 0,
-      "field_size": 0,
-      "benched_size": 537,
+      "beat_market": 1,
+      "field_size": 1,
+      "benched_size": 536,
       "ticker_tape": [
-        "Alan Armstrong sold WMB ($250K\u2013$500K), filed 44 days later.",
-        "Alan Armstrong bought WMB ($15K\u2013$50K), filed 28 days later.",
-        "Jake Auchincloss sold STT ($15K\u2013$50K), filed 4 days later.",
-        "Mark Alford sold SPYB ($1K\u2013$15K), filed 15 days later.",
-        "Mark Alford sold PYPL ($1K\u2013$15K), filed 15 days later.",
-        "Jake Auchincloss sold STT ($15K\u2013$50K), filed 2 days later.",
-        "Robert B. Aderholt sold GSK ($1K\u2013$15K), filed 44 days later.",
-        "Robert B. Aderholt sold TSLA ($1K\u2013$15K), filed 8 days later.",
         "Late slip of 115 days for Alan Armstrong. The disclosure still counts. The timing is the bit.",
-        "The S&P gave up 0 wins in the ytd view. It will want a rematch.",
-        "No rank yet for Aaron Bean. 0 of 3 priced equity trades in the window.",
+        "The S&P gave up 1 wins in the ytd view. It will want a rematch.",
+        "Alan Armstrong held about 227 days on average. Diamond hands, or a very calm inbox.",
+        "Alan Armstrong let positions sit 227 days. The badge committee is watching.",
+        "Aaron Bean is warming up on the bench. Trade count: 0.",
+        "Alan Armstrong rank 1. Alpha +0.7%. The footnote is the methodology page.",
+        "Update on Alan Armstrong: alpha +0.7%, hold about 227 days.",
         "Unmatched sales stay unmatched. This board does not invent a position it cannot see.",
-        "Welcome back to the only league where the lineup files the box score later.",
-        "0 beat the S&P over ytd. The holding periods were matched on purpose."
+        "Welcome back to the only league where the lineup files the box score later."
       ]
     },
     "12m": {
       "as_of": "2026-11-10",
       "previous_date": "2026-11-06",
-      "ranked": [],
+      "ranked": [
+        {
+          "bioguide_id": "A000383",
+          "name": "Alan Armstrong",
+          "initials": "AA",
+          "chamber": "Senate",
+          "party": "R",
+          "state": "OK",
+          "district": null,
+          "years_in_service": 0.6,
+          "rank": 1,
+          "previous_rank": null,
+          "rank_change": null,
+          "streak": 0,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": 0.194609,
+          "alpha": 0.006971,
+          "benchmark": 0.187638,
+          "copycat_return": 0.020213,
+          "copycat_alpha": 0.014267,
+          "trades": 322,
+          "avg_hold_days": 226.9,
+          "avg_filing_lag": 115.0,
+          "late_filings": 389,
+          "filings": 391,
+          "excluded_options": 4,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 382,
+          "unmatched_sells": 38,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "beat_the_market",
+              "name": "Beat the Market",
+              "blurb": "Positive alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "diamond_hands",
+              "name": "Diamond Hands",
+              "blurb": "Longest average holding period on the board."
+            },
+            {
+              "id": "paper_hands",
+              "name": "Paper Hands",
+              "blurb": "Shortest average holding period on the board."
+            },
+            {
+              "id": "fashionably_late",
+              "name": "Fashionably Late",
+              "blurb": "Highest average gap between the trade and the filing."
+            },
+            {
+              "id": "buy_high_sell_low",
+              "name": "Buy High Sell Low",
+              "blurb": "Worst capital-weighted return on positions that were closed."
+            }
+          ],
+          "top_ticker": "WMB"
+        }
+      ],
       "benched": [
         {
           "bioguide_id": "B001314",
@@ -39135,48 +39241,6 @@
           "uncopyable": 0,
           "badges": [],
           "top_ticker": null
-        },
-        {
-          "bioguide_id": "A000383",
-          "name": "Alan Armstrong",
-          "initials": "AA",
-          "chamber": "Senate",
-          "party": "R",
-          "state": "OK",
-          "district": null,
-          "years_in_service": 0.6,
-          "rank": null,
-          "previous_rank": null,
-          "rank_change": null,
-          "streak": 0,
-          "on_fire": false,
-          "took_first": false,
-          "elevator": false,
-          "elevator_drop": 5,
-          "benched": true,
-          "return": null,
-          "alpha": null,
-          "benchmark": null,
-          "copycat_return": null,
-          "copycat_alpha": null,
-          "trades": 0,
-          "avg_hold_days": null,
-          "avg_filing_lag": 115.0,
-          "late_filings": 389,
-          "filings": 391,
-          "excluded_options": 4,
-          "excluded_non_stock": 0,
-          "excluded_unknown": 704,
-          "unmatched_sells": 0,
-          "uncopyable": 0,
-          "badges": [
-            {
-              "id": "fashionably_late",
-              "name": "Fashionably Late",
-              "blurb": "Highest average gap between the trade and the filing."
-            }
-          ],
-          "top_ticker": "WMB"
         },
         {
           "bioguide_id": "P000145",
@@ -45789,15 +45853,15 @@
           "benchmark": null,
           "copycat_return": null,
           "copycat_alpha": null,
-          "trades": 0,
+          "trades": 4,
           "avg_hold_days": null,
           "avg_filing_lag": 2.8,
           "late_filings": 0,
           "filings": 4,
           "excluded_options": 0,
           "excluded_non_stock": 1,
-          "excluded_unknown": 9,
-          "unmatched_sells": 0,
+          "excluded_unknown": 1,
+          "unmatched_sells": 8,
           "uncopyable": 0,
           "badges": [],
           "top_ticker": "STT"
@@ -50433,15 +50497,15 @@
           "benchmark": null,
           "copycat_return": null,
           "copycat_alpha": null,
-          "trades": 0,
+          "trades": 5,
           "avg_hold_days": null,
           "avg_filing_lag": 15.0,
           "late_filings": 0,
           "filings": 7,
           "excluded_options": 0,
           "excluded_non_stock": 1,
-          "excluded_unknown": 8,
-          "unmatched_sells": 0,
+          "excluded_unknown": 3,
+          "unmatched_sells": 5,
           "uncopyable": 0,
           "badges": [],
           "top_ticker": "SPYB"
@@ -53968,8 +54032,8 @@
           "filings": 0,
           "excluded_options": 0,
           "excluded_non_stock": 0,
-          "excluded_unknown": 3,
-          "unmatched_sells": 0,
+          "excluded_unknown": 2,
+          "unmatched_sells": 1,
           "uncopyable": 0,
           "badges": [],
           "top_ticker": null
@@ -58079,30 +58143,93 @@
           "top_ticker": null
         }
       ],
-      "beat_market": 0,
-      "field_size": 0,
-      "benched_size": 537,
+      "beat_market": 1,
+      "field_size": 1,
+      "benched_size": 536,
       "ticker_tape": [
-        "Alan Armstrong sold WMB ($250K\u2013$500K), filed 44 days later.",
-        "Alan Armstrong bought WMB ($15K\u2013$50K), filed 28 days later.",
-        "Jake Auchincloss sold STT ($15K\u2013$50K), filed 4 days later.",
-        "Mark Alford sold SPYB ($1K\u2013$15K), filed 15 days later.",
-        "Mark Alford sold PYPL ($1K\u2013$15K), filed 15 days later.",
-        "Jake Auchincloss sold STT ($15K\u2013$50K), filed 2 days later.",
-        "Robert B. Aderholt sold GSK ($1K\u2013$15K), filed 44 days later.",
-        "Robert B. Aderholt sold TSLA ($1K\u2013$15K), filed 8 days later.",
         "Alan Armstrong filed 115 days late. The STOCK Act called. It wants its deadline back.",
-        "Congress versus the market, 12m: 0 ahead of SPY.",
-        "Bench note: Aaron Bean is listed, not ranked. 0 trades so far.",
-        "Rank needs 3 priced equity trades in the window. Otherwise: benched.",
-        "Late means more than 45 days from trade to filing. It is a timer, not a gavel.",
-        "0 beat the S&P over 12m. The holding periods were matched on purpose."
+        "Congress versus the market, 12m: 1 ahead of SPY.",
+        "Alan Armstrong averaged 227 days in the trade. The FIFO ledger approves of patience.",
+        "Alan Armstrong and the calendar spent 227 days together. One of them blinked.",
+        "Aaron Bean stays on the bench with 0 trades. The threshold is 3, not a vibe.",
+        "Alan Armstrong rank 1. Alpha +0.7%. The footnote is the methodology page.",
+        "Update on Alan Armstrong: alpha +0.7%, hold about 227 days.",
+        "Copycat mode starts on the disclosure date. If it was closed before that, you missed it.",
+        "Alpha is their return minus SPY over the same dates. Apples, meet apples."
       ]
     },
     "all": {
       "as_of": "2026-11-10",
       "previous_date": "2026-11-06",
-      "ranked": [],
+      "ranked": [
+        {
+          "bioguide_id": "A000383",
+          "name": "Alan Armstrong",
+          "initials": "AA",
+          "chamber": "Senate",
+          "party": "R",
+          "state": "OK",
+          "district": null,
+          "years_in_service": 0.6,
+          "rank": 1,
+          "previous_rank": null,
+          "rank_change": null,
+          "streak": 0,
+          "on_fire": false,
+          "took_first": false,
+          "elevator": false,
+          "elevator_drop": 5,
+          "benched": false,
+          "return": 0.194609,
+          "alpha": 0.006971,
+          "benchmark": 0.187638,
+          "copycat_return": 0.020213,
+          "copycat_alpha": 0.014267,
+          "trades": 322,
+          "avg_hold_days": 226.9,
+          "avg_filing_lag": 115.0,
+          "late_filings": 389,
+          "filings": 391,
+          "excluded_options": 4,
+          "excluded_non_stock": 0,
+          "excluded_unknown": 382,
+          "unmatched_sells": 38,
+          "uncopyable": 0,
+          "badges": [
+            {
+              "id": "beat_the_market",
+              "name": "Beat the Market",
+              "blurb": "Positive alpha versus SPY over the same holding periods."
+            },
+            {
+              "id": "index_hugger",
+              "name": "Index Hugger",
+              "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "diamond_hands",
+              "name": "Diamond Hands",
+              "blurb": "Longest average holding period on the board."
+            },
+            {
+              "id": "paper_hands",
+              "name": "Paper Hands",
+              "blurb": "Shortest average holding period on the board."
+            },
+            {
+              "id": "fashionably_late",
+              "name": "Fashionably Late",
+              "blurb": "Highest average gap between the trade and the filing."
+            },
+            {
+              "id": "buy_high_sell_low",
+              "name": "Buy High Sell Low",
+              "blurb": "Worst capital-weighted return on positions that were closed."
+            }
+          ],
+          "top_ticker": "WMB"
+        }
+      ],
       "benched": [
         {
           "bioguide_id": "B001314",
@@ -58499,48 +58626,6 @@
           "uncopyable": 0,
           "badges": [],
           "top_ticker": null
-        },
-        {
-          "bioguide_id": "A000383",
-          "name": "Alan Armstrong",
-          "initials": "AA",
-          "chamber": "Senate",
-          "party": "R",
-          "state": "OK",
-          "district": null,
-          "years_in_service": 0.6,
-          "rank": null,
-          "previous_rank": null,
-          "rank_change": null,
-          "streak": 0,
-          "on_fire": false,
-          "took_first": false,
-          "elevator": false,
-          "elevator_drop": 5,
-          "benched": true,
-          "return": null,
-          "alpha": null,
-          "benchmark": null,
-          "copycat_return": null,
-          "copycat_alpha": null,
-          "trades": 0,
-          "avg_hold_days": null,
-          "avg_filing_lag": 115.0,
-          "late_filings": 389,
-          "filings": 391,
-          "excluded_options": 4,
-          "excluded_non_stock": 0,
-          "excluded_unknown": 704,
-          "unmatched_sells": 0,
-          "uncopyable": 0,
-          "badges": [
-            {
-              "id": "fashionably_late",
-              "name": "Fashionably Late",
-              "blurb": "Highest average gap between the trade and the filing."
-            }
-          ],
-          "top_ticker": "WMB"
         },
         {
           "bioguide_id": "P000145",
@@ -65153,15 +65238,15 @@
           "benchmark": null,
           "copycat_return": null,
           "copycat_alpha": null,
-          "trades": 0,
+          "trades": 8,
           "avg_hold_days": null,
           "avg_filing_lag": 4.1,
           "late_filings": 0,
           "filings": 9,
           "excluded_options": 0,
           "excluded_non_stock": 1,
-          "excluded_unknown": 9,
-          "unmatched_sells": 0,
+          "excluded_unknown": 1,
+          "unmatched_sells": 8,
           "uncopyable": 0,
           "badges": [],
           "top_ticker": "STT"
@@ -69797,15 +69882,15 @@
           "benchmark": null,
           "copycat_return": null,
           "copycat_alpha": null,
-          "trades": 0,
+          "trades": 5,
           "avg_hold_days": null,
           "avg_filing_lag": 15.0,
           "late_filings": 0,
           "filings": 7,
           "excluded_options": 0,
           "excluded_non_stock": 1,
-          "excluded_unknown": 8,
-          "unmatched_sells": 0,
+          "excluded_unknown": 3,
+          "unmatched_sells": 5,
           "uncopyable": 0,
           "badges": [],
           "top_ticker": "SPYB"
@@ -73325,15 +73410,15 @@
           "benchmark": null,
           "copycat_return": null,
           "copycat_alpha": null,
-          "trades": 0,
+          "trades": 1,
           "avg_hold_days": null,
           "avg_filing_lag": 26.7,
           "late_filings": 0,
           "filings": 3,
           "excluded_options": 0,
           "excluded_non_stock": 0,
-          "excluded_unknown": 3,
-          "unmatched_sells": 0,
+          "excluded_unknown": 2,
+          "unmatched_sells": 1,
           "uncopyable": 0,
           "badges": [],
           "top_ticker": "TSLA"
@@ -77443,24 +77528,19 @@
           "top_ticker": null
         }
       ],
-      "beat_market": 0,
-      "field_size": 0,
-      "benched_size": 537,
+      "beat_market": 1,
+      "field_size": 1,
+      "benched_size": 536,
       "ticker_tape": [
-        "Alan Armstrong sold WMB ($250K\u2013$500K), filed 44 days later.",
-        "Alan Armstrong bought WMB ($15K\u2013$50K), filed 28 days later.",
-        "Jake Auchincloss sold STT ($15K\u2013$50K), filed 4 days later.",
-        "Mark Alford sold SPYB ($1K\u2013$15K), filed 15 days later.",
-        "Mark Alford sold PYPL ($1K\u2013$15K), filed 15 days later.",
-        "Jake Auchincloss sold STT ($15K\u2013$50K), filed 2 days later.",
-        "Robert B. Aderholt sold GSK ($1K\u2013$15K), filed 44 days later.",
-        "Robert B. Aderholt sold TSLA ($1K\u2013$15K), filed 8 days later.",
         "Alan Armstrong showed up 115 days after the trade. Fashionably is doing a lot of work there.",
-        "The S&P gave up 0 wins in the all view. It will want a rematch.",
-        "Aaron Bean stays on the bench with 0 trades. The threshold is 3, not a vibe.",
-        "Ranges, not receipts. Every dollar on this board is a midpoint with a straight face.",
-        "SPY is on the field too. Nobody gets a custom benchmark.",
-        "0 beat the S&P over all. The holding periods were matched on purpose."
+        "The S&P gave up 1 wins in the all view. It will want a rematch.",
+        "Short stay: Alan Armstrong at 227 days. Hello, goodbye, next disclosure.",
+        "Alan Armstrong held about 227 days on average. Diamond hands, or a very calm inbox.",
+        "Aaron Bean is benched until more priced equity trades show up. The minimum is 3.",
+        "Two clocks, one member. Alan Armstrong: +19.5% theirs, +2.0% for the copycats.",
+        "Alan Armstrong (Senate) sits at +19.5%. The copycat column says +2.0%.",
+        "Welcome back to the only league where the lineup files the box score later.",
+        "Ranges, not receipts. Every dollar on this board is a midpoint with a straight face."
       ]
     }
   },
@@ -77632,7 +77712,7 @@
     "members_loaded": 12,
     "members_seated": 537,
     "members_trading": 5,
-    "tickers_priced": 0,
+    "tickers_priced": 299,
     "tickers_total": 368
   }
 }
