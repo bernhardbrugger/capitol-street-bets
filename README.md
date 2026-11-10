@@ -14,7 +14,7 @@ Members loaded so far: **12 of 537** seated. Updated 2026-11-10. [Full board →
 
 A scoreboard of how members of Congress do with their **publicly disclosed** stock trades: rank arrows, badges, a daily ticker tape, and a head-to-head for anyone deciding who they would rather copy. The tone stays on the numbers. Party is a label on the card, not a punchline.
 
-![League table](docs/demo.gif)
+![Capitol Street Bets league table (fictional sample data)](docs/demo.gif)
 
 The repo ships with a **fictional sample league** so the site works before any API key is set. Those names and prices are made up. A real ingestion replaces `web/public/data`.
 
