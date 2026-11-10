@@ -11,7 +11,17 @@ The only league where everyone files late.
 
 | # | | Member | Seat | Return | Alpha vs S&P | Copycat | Trades |
 |---:|:---:|---|---|---:|---:|---:|---:|
-| 1 | 🆕 | [Alan Armstrong](https://bernhardbrugger.github.io/capitol-street-bets/#/member/A000383) | R-OK · S | +19.5% | **+0.7%** | +2.0% | 322 |
+| 1 | 🆕 | [Alan Armstrong](https://bernhardbrugger.github.io/capitol-street-bets/#/member/A000383) | R-OK · S | +19.7% | **+0.9%** | +2.3% | 391 |
+
+**Most traded stocks, last 12 months**
+
+| # | Ticker | Trades | Members | Buys / sells | Est. volume | Move |
+|---:|---|---:|---:|---:|---:|---:|
+| 1 | [**STT**](https://bernhardbrugger.github.io/capitol-street-bets/#/stocks?s=STT) | 4 | 1 | 0 / 4 | ~$130K | +42.8% |
+| 2 | [**AAPL**](https://bernhardbrugger.github.io/capitol-street-bets/#/stocks?s=AAPL) | 3 | 2 | 2 / 1 | ~$391K | +30.2% |
+| 3 | [**EA**](https://bernhardbrugger.github.io/capitol-street-bets/#/stocks?s=EA) | 3 | 1 | 2 / 1 | ~$24K | – |
+| 4 | [**BRK.B**](https://bernhardbrugger.github.io/capitol-street-bets/#/stocks?s=BRK.B) | 2 | 2 | 1 / 1 | ~$83K | +15.8% |
+| 5 | [**AMZN**](https://bernhardbrugger.github.io/capitol-street-bets/#/stocks?s=AMZN) | 2 | 2 | 1 / 1 | ~$41K | +7.5% |
 
 Members loaded so far: **12 of 537** seated. Updated 2026-11-10. [Full board →](https://bernhardbrugger.github.io/capitol-street-bets/)
 <!-- LEADERBOARD:END -->

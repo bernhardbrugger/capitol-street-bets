@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-11-10T12:52:13+00:00",
+  "generated_at": "2026-11-10T13:46:35+00:00",
   "as_of": "2026-11-10",
   "sample": false,
   "price_mode": "adjusted",
   "min_trades": 3,
   "late_days": 45,
-  "attribution": "Data: Alpha Vantage",
-  "disclaimer": "For entertainment. Based on public disclosures via Alpha Vantage. Amounts are estimated from disclosed ranges. Not financial advice.",
+  "attribution": "Data: Alpha Vantage (disclosures), Massive (prices)",
+  "disclaimer": "For entertainment. Based on public disclosures via Alpha Vantage, prices via Massive. Amounts are estimated from disclosed ranges. Not financial advice.",
   "notes": [
     "Position size is the midpoint of the disclosed range.",
     "Alpha compares each holding period with SPY over those same dates.",
@@ -432,20 +432,20 @@
           "elevator": false,
           "elevator_drop": 5,
           "benched": true,
-          "return": -0.011846,
-          "alpha": 0.021394,
+          "return": -0.004399,
+          "alpha": 0.028842,
           "benchmark": -0.03324,
-          "copycat_return": 0.007733,
-          "copycat_alpha": 0.040973,
+          "copycat_return": 0.015453,
+          "copycat_alpha": 0.048693,
           "trades": 0,
-          "avg_hold_days": 227.3,
+          "avg_hold_days": 227.2,
           "avg_filing_lag": null,
           "late_filings": 0,
           "filings": 0,
           "excluded_options": 4,
           "excluded_non_stock": 0,
-          "excluded_unknown": 382,
-          "unmatched_sells": 38,
+          "excluded_unknown": 313,
+          "unmatched_sells": 46,
           "uncopyable": 0,
           "badges": [
             {
@@ -19382,11 +19382,10 @@
         "Scoreboard check. 0 members have positive alpha over 30d.",
         "Alan Armstrong averaged 227 days in the trade. The FIFO ledger approves of patience.",
         "Average hold for Alan Armstrong: 227 days. The lots were not in a hurry.",
-        "Aaron Bean has 0 qualifying trades in this window. The lineup wants 3.",
         "The 30d window is selected. Arrows compare it with the previous snapshot.",
-        "Welcome back to the only league where the lineup files the box score later.",
-        "0 beat the S&P over 30d. The holding periods were matched on purpose."
-      ]
+        "Welcome back to the only league where the lineup files the box score later."
+      ],
+      "most_traded": []
     },
     "ytd": {
       "as_of": "2026-11-10",
@@ -19410,20 +19409,20 @@
           "elevator": false,
           "elevator_drop": 5,
           "benched": false,
-          "return": 0.194609,
-          "alpha": 0.006971,
-          "benchmark": 0.187638,
-          "copycat_return": 0.020213,
-          "copycat_alpha": 0.014267,
-          "trades": 322,
+          "return": 0.196836,
+          "alpha": 0.009035,
+          "benchmark": 0.187801,
+          "copycat_return": 0.022988,
+          "copycat_alpha": 0.01705,
+          "trades": 391,
           "avg_hold_days": 226.9,
           "avg_filing_lag": 115.0,
           "late_filings": 389,
           "filings": 391,
           "excluded_options": 4,
           "excluded_non_stock": 0,
-          "excluded_unknown": 382,
-          "unmatched_sells": 38,
+          "excluded_unknown": 313,
+          "unmatched_sells": 46,
           "uncopyable": 0,
           "badges": [
             {
@@ -19435,6 +19434,11 @@
               "id": "index_hugger",
               "name": "Index Hugger",
               "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "one_big_bet",
+              "name": "One Big Bet",
+              "blurb": "The largest one or two trades are at least 70% of the dollars."
             },
             {
               "id": "diamond_hands",
@@ -38767,10 +38771,1102 @@
         "Alan Armstrong held about 227 days on average. Diamond hands, or a very calm inbox.",
         "Alan Armstrong let positions sit 227 days. The badge committee is watching.",
         "Aaron Bean is warming up on the bench. Trade count: 0.",
-        "Alan Armstrong rank 1. Alpha +0.7%. The footnote is the methodology page.",
-        "Update on Alan Armstrong: alpha +0.7%, hold about 227 days.",
+        "Alan Armstrong rank 1. Alpha +0.9%. The footnote is the methodology page.",
+        "Update on Alan Armstrong: alpha +0.9%, hold about 227 days.",
         "Unmatched sales stay unmatched. This board does not invent a position it cannot see.",
         "Welcome back to the only league where the lineup files the box score later."
+      ],
+      "most_traded": [
+        {
+          "symbol": "AAPL",
+          "name": "Apple Inc. - Common Stock",
+          "trades": 3,
+          "buys": 2,
+          "sells": 1,
+          "members": 2,
+          "est_dollars": 391002,
+          "last_trade": "2026-03-30",
+          "price_change": 0.29,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            },
+            {
+              "bioguide_id": "A000379",
+              "name": "Mark Alford",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "STT",
+          "name": "State Street Corporation Common Stock (STT)",
+          "trades": 3,
+          "buys": 0,
+          "sells": 3,
+          "members": 1,
+          "est_dollars": 97502,
+          "last_trade": "2026-05-18",
+          "price_change": 0.3245,
+          "top_members": [
+            {
+              "bioguide_id": "A000148",
+              "name": "Jake Auchincloss",
+              "party": "D",
+              "trades": 3,
+              "buys": 0,
+              "sells": 3
+            }
+          ]
+        },
+        {
+          "symbol": "EA",
+          "name": "Electronic Arts Inc. - Common Stock",
+          "trades": 3,
+          "buys": 2,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 24002,
+          "last_trade": "2026-08-04",
+          "price_change": null,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 3,
+              "buys": 2,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "BRK.B",
+          "name": "Berkshire Hathaway Inc. New Common Stock (BRK.B)",
+          "trades": 2,
+          "buys": 1,
+          "sells": 1,
+          "members": 2,
+          "est_dollars": 83001,
+          "last_trade": "2026-03-27",
+          "price_change": 0.1444,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 1,
+              "sells": 0
+            },
+            {
+              "bioguide_id": "A000379",
+              "name": "Mark Alford",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "AMZN",
+          "name": "Amazon.com, Inc. - Common Stock (AMZN)",
+          "trades": 2,
+          "buys": 1,
+          "sells": 1,
+          "members": 2,
+          "est_dollars": 40501,
+          "last_trade": "2026-03-27",
+          "price_change": 0.1564,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 1,
+              "sells": 0
+            },
+            {
+              "bioguide_id": "A000379",
+              "name": "Mark Alford",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "T",
+          "name": "AT&T Inc. (T)",
+          "trades": 2,
+          "buys": 1,
+          "sells": 1,
+          "members": 2,
+          "est_dollars": 40501,
+          "last_trade": "2026-03-27",
+          "price_change": -0.1224,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 1,
+              "sells": 0
+            },
+            {
+              "bioguide_id": "A000379",
+              "name": "Mark Alford",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "PYPL",
+          "name": "PayPal Holdings, Inc. - Common Stock (PYPL)",
+          "trades": 2,
+          "buys": 1,
+          "sells": 1,
+          "members": 2,
+          "est_dollars": 16001,
+          "last_trade": "2026-03-27",
+          "price_change": 0.0286,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 1,
+              "sells": 0
+            },
+            {
+              "bioguide_id": "A000379",
+              "name": "Mark Alford",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "HD",
+          "name": "Home Depot, Inc. (The) Common Stock",
+          "trades": 2,
+          "buys": 0,
+          "sells": 2,
+          "members": 1,
+          "est_dollars": 107501,
+          "last_trade": "2026-03-27",
+          "price_change": 0.0271,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 0,
+              "sells": 2
+            }
+          ]
+        },
+        {
+          "symbol": "ASML",
+          "name": "ASML Holding N.V. - New York Registry Shares",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 83001,
+          "last_trade": "2026-03-31",
+          "price_change": 0.4144,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "FDX",
+          "name": "FedEx Corporation Common Stock",
+          "trades": 2,
+          "buys": 1,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 83001,
+          "last_trade": "2026-03-27",
+          "price_change": 0.1038,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 1,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "GOOG",
+          "name": "Alphabet Inc. - Class C Capital Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 83001,
+          "last_trade": "2026-03-30",
+          "price_change": -0.0886,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "HON",
+          "name": "Honeywell International Inc. - Common Stock",
+          "trades": 2,
+          "buys": 1,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 83001,
+          "last_trade": "2026-03-27",
+          "price_change": 0.1738,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 1,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "NVDA",
+          "name": "NVIDIA Corporation - Common Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 83001,
+          "last_trade": "2026-03-30",
+          "price_change": -0.042,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "RACE",
+          "name": "Ferrari N.V. Common Shares",
+          "trades": 2,
+          "buys": 1,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 83001,
+          "last_trade": "2026-03-30",
+          "price_change": 0.1335,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 1,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "AZN",
+          "name": "AstraZeneca PLC Ordinary Shares",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 40501,
+          "last_trade": "2026-03-31",
+          "price_change": 0.0301,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "BHP",
+          "name": "BHP Group Limited (BHP)",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 40501,
+          "last_trade": "2026-03-31",
+          "price_change": 0.3725,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "GS",
+          "name": "Goldman Sachs Group, Inc. (The) Common Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 40501,
+          "last_trade": "2026-03-30",
+          "price_change": 0.031,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "JNJ",
+          "name": "Johnson & Johnson Common Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 40501,
+          "last_trade": "2026-03-30",
+          "price_change": 0.3632,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "MSFT",
+          "name": "Microsoft Corporation - Common Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 40501,
+          "last_trade": "2026-03-30",
+          "price_change": 0.1273,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "NVS",
+          "name": "Novartis AG Common Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 40501,
+          "last_trade": "2026-03-31",
+          "price_change": 0.1873,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "SAN",
+          "name": "Banco Santander, S.A. Sponsored ADR (Spain)",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 40501,
+          "last_trade": "2026-03-31",
+          "price_change": 0.0622,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "SAP",
+          "name": "SAP SE Sponsored ADR (SAP)",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 40501,
+          "last_trade": "2026-03-31",
+          "price_change": -0.0226,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "TSLA",
+          "name": "Tesla, Inc. - Common Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 40501,
+          "last_trade": "2026-03-30",
+          "price_change": -0.1594,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "CIEN",
+          "name": "Ciena Corporation Common Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 16001,
+          "last_trade": "2026-03-30",
+          "price_change": 0.1516,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "DGX",
+          "name": "Quest Diagnostics Incorporated Common Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 16001,
+          "last_trade": "2026-03-30",
+          "price_change": 0.4964,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "LRCX",
+          "name": "Lam Research Corporation (LRCX)",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 16001,
+          "last_trade": "2026-03-30",
+          "price_change": 0.2928,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "ORLY",
+          "name": "O'Reilly Automotive, Inc. - Common Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 16001,
+          "last_trade": "2026-03-30",
+          "price_change": -0.0156,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "SCHW",
+          "name": "Charles Schwab Corporation (The) Common Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 16001,
+          "last_trade": "2026-03-30",
+          "price_change": -0.0719,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "SPYB",
+          "name": "SPDR S&P 500 Buyback ETF (SPYB)",
+          "trades": 2,
+          "buys": 0,
+          "sells": 2,
+          "members": 1,
+          "est_dollars": 16001,
+          "last_trade": "2026-03-16",
+          "price_change": null,
+          "top_members": [
+            {
+              "bioguide_id": "A000379",
+              "name": "Mark Alford",
+              "party": "R",
+              "trades": 2,
+              "buys": 0,
+              "sells": 2
+            }
+          ]
+        },
+        {
+          "symbol": "WELL",
+          "name": "Welltower Inc. Common Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 16001,
+          "last_trade": "2026-03-30",
+          "price_change": 0.3326,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "WMB",
+          "name": "Williams Companies, Inc. (The) Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 15000000,
+          "last_trade": "2026-06-24",
+          "price_change": 0.1055,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "GLW",
+          "name": "Corning Incorporated Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 175000,
+          "last_trade": "2026-03-27",
+          "price_change": 0.3242,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "CDNS",
+          "name": "Cadence Design Systems, Inc. - Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 75000,
+          "last_trade": "2026-03-27",
+          "price_change": 0.0766,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "DVN",
+          "name": "Devon Energy Corporation Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 75000,
+          "last_trade": "2026-03-24",
+          "price_change": 0.1575,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "NDAQ",
+          "name": "Nasdaq, Inc. - Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 75000,
+          "last_trade": "2026-03-27",
+          "price_change": 0.1171,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "NEE",
+          "name": "NextEra Energy, Inc. Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 75000,
+          "last_trade": "2026-03-27",
+          "price_change": 0.082,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "PFE",
+          "name": "Pfizer, Inc. Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 75000,
+          "last_trade": "2026-03-24",
+          "price_change": 0.1739,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "PNC",
+          "name": "PNC Financial Services Group, Inc. (The) Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 75000,
+          "last_trade": "2026-03-27",
+          "price_change": 0.1081,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "PSX",
+          "name": "Phillips 66 Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 75000,
+          "last_trade": "2026-03-27",
+          "price_change": 0.9608,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "TDY",
+          "name": "Teledyne Technologies Incorporated Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 75000,
+          "last_trade": "2026-03-27",
+          "price_change": 0.2596,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "ABBV",
+          "name": "AbbVie Inc. Common Stock",
+          "trades": 1,
+          "buys": 1,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 32500,
+          "last_trade": "2026-03-27",
+          "price_change": 0.2836,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 1,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "ABT",
+          "name": "Abbott Laboratories Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 32500,
+          "last_trade": "2026-03-27",
+          "price_change": -0.118,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "ACM",
+          "name": "AECOM Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 32500,
+          "last_trade": "2026-03-27",
+          "price_change": -0.2635,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "AMAT",
+          "name": "Applied Materials, Inc. - Common Stock",
+          "trades": 1,
+          "buys": 1,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 32500,
+          "last_trade": "2026-03-27",
+          "price_change": 0.4419,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 1,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "AMD",
+          "name": "Advanced Micro Devices, Inc. - Common Stock",
+          "trades": 1,
+          "buys": 1,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 32500,
+          "last_trade": "2026-03-27",
+          "price_change": 1.3748,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 1,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "AMGN",
+          "name": "Amgen Inc. - Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 32500,
+          "last_trade": "2026-03-27",
+          "price_change": 0.4214,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "AVGO",
+          "name": "Broadcom Inc. - Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 32500,
+          "last_trade": "2026-03-27",
+          "price_change": -0.0769,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "BAC",
+          "name": "Bank of America Corporation Common Stock",
+          "trades": 1,
+          "buys": 1,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 32500,
+          "last_trade": "2026-03-27",
+          "price_change": -0.0809,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 1,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "BBVA",
+          "name": "Banco Bilbao Vizcaya Argentaria S.A. Common Stock",
+          "trades": 1,
+          "buys": 1,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 32500,
+          "last_trade": "2026-03-30",
+          "price_change": 0.1343,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 1,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "BTI",
+          "name": "British American Tobacco Industries, p.l.c. Common Stock ADR",
+          "trades": 1,
+          "buys": 1,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 32500,
+          "last_trade": "2026-03-30",
+          "price_change": 0.0613,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 1,
+              "sells": 0
+            }
+          ]
+        }
       ]
     },
     "12m": {
@@ -38795,20 +39891,20 @@
           "elevator": false,
           "elevator_drop": 5,
           "benched": false,
-          "return": 0.194609,
-          "alpha": 0.006971,
-          "benchmark": 0.187638,
-          "copycat_return": 0.020213,
-          "copycat_alpha": 0.014267,
-          "trades": 322,
+          "return": 0.196836,
+          "alpha": 0.009035,
+          "benchmark": 0.187801,
+          "copycat_return": 0.022988,
+          "copycat_alpha": 0.01705,
+          "trades": 391,
           "avg_hold_days": 226.9,
           "avg_filing_lag": 115.0,
           "late_filings": 389,
           "filings": 391,
           "excluded_options": 4,
           "excluded_non_stock": 0,
-          "excluded_unknown": 382,
-          "unmatched_sells": 38,
+          "excluded_unknown": 313,
+          "unmatched_sells": 46,
           "uncopyable": 0,
           "badges": [
             {
@@ -38820,6 +39916,11 @@
               "id": "index_hugger",
               "name": "Index Hugger",
               "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "one_big_bet",
+              "name": "One Big Bet",
+              "blurb": "The largest one or two trades are at least 70% of the dollars."
             },
             {
               "id": "diamond_hands",
@@ -58152,10 +59253,1102 @@
         "Alan Armstrong averaged 227 days in the trade. The FIFO ledger approves of patience.",
         "Alan Armstrong and the calendar spent 227 days together. One of them blinked.",
         "Aaron Bean stays on the bench with 0 trades. The threshold is 3, not a vibe.",
-        "Alan Armstrong rank 1. Alpha +0.7%. The footnote is the methodology page.",
-        "Update on Alan Armstrong: alpha +0.7%, hold about 227 days.",
+        "Alan Armstrong rank 1. Alpha +0.9%. The footnote is the methodology page.",
+        "Update on Alan Armstrong: alpha +0.9%, hold about 227 days.",
         "Copycat mode starts on the disclosure date. If it was closed before that, you missed it.",
         "Alpha is their return minus SPY over the same dates. Apples, meet apples."
+      ],
+      "most_traded": [
+        {
+          "symbol": "STT",
+          "name": "State Street Corporation Common Stock (STT)",
+          "trades": 4,
+          "buys": 0,
+          "sells": 4,
+          "members": 1,
+          "est_dollars": 130002,
+          "last_trade": "2026-05-18",
+          "price_change": 0.4277,
+          "top_members": [
+            {
+              "bioguide_id": "A000148",
+              "name": "Jake Auchincloss",
+              "party": "D",
+              "trades": 4,
+              "buys": 0,
+              "sells": 4
+            }
+          ]
+        },
+        {
+          "symbol": "AAPL",
+          "name": "Apple Inc. - Common Stock",
+          "trades": 3,
+          "buys": 2,
+          "sells": 1,
+          "members": 2,
+          "est_dollars": 391002,
+          "last_trade": "2026-03-30",
+          "price_change": 0.3016,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            },
+            {
+              "bioguide_id": "A000379",
+              "name": "Mark Alford",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "EA",
+          "name": "Electronic Arts Inc. - Common Stock",
+          "trades": 3,
+          "buys": 2,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 24002,
+          "last_trade": "2026-08-04",
+          "price_change": null,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 3,
+              "buys": 2,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "BRK.B",
+          "name": "Berkshire Hathaway Inc. New Common Stock (BRK.B)",
+          "trades": 2,
+          "buys": 1,
+          "sells": 1,
+          "members": 2,
+          "est_dollars": 83001,
+          "last_trade": "2026-03-27",
+          "price_change": 0.1575,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 1,
+              "sells": 0
+            },
+            {
+              "bioguide_id": "A000379",
+              "name": "Mark Alford",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "AMZN",
+          "name": "Amazon.com, Inc. - Common Stock (AMZN)",
+          "trades": 2,
+          "buys": 1,
+          "sells": 1,
+          "members": 2,
+          "est_dollars": 40501,
+          "last_trade": "2026-03-27",
+          "price_change": 0.0746,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 1,
+              "sells": 0
+            },
+            {
+              "bioguide_id": "A000379",
+              "name": "Mark Alford",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "T",
+          "name": "AT&T Inc. (T)",
+          "trades": 2,
+          "buys": 1,
+          "sells": 1,
+          "members": 2,
+          "est_dollars": 40501,
+          "last_trade": "2026-03-27",
+          "price_change": -0.122,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 1,
+              "sells": 0
+            },
+            {
+              "bioguide_id": "A000379",
+              "name": "Mark Alford",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "PYPL",
+          "name": "PayPal Holdings, Inc. - Common Stock (PYPL)",
+          "trades": 2,
+          "buys": 1,
+          "sells": 1,
+          "members": 2,
+          "est_dollars": 16001,
+          "last_trade": "2026-03-27",
+          "price_change": -0.0936,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 1,
+              "sells": 0
+            },
+            {
+              "bioguide_id": "A000379",
+              "name": "Mark Alford",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "HD",
+          "name": "Home Depot, Inc. (The) Common Stock",
+          "trades": 2,
+          "buys": 0,
+          "sells": 2,
+          "members": 1,
+          "est_dollars": 107501,
+          "last_trade": "2026-03-27",
+          "price_change": -0.0459,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 0,
+              "sells": 2
+            }
+          ]
+        },
+        {
+          "symbol": "ASML",
+          "name": "ASML Holding N.V. - New York Registry Shares",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 83001,
+          "last_trade": "2026-03-31",
+          "price_change": 0.4567,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "FDX",
+          "name": "FedEx Corporation Common Stock",
+          "trades": 2,
+          "buys": 1,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 83001,
+          "last_trade": "2026-03-27",
+          "price_change": 0.2558,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 1,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "GOOG",
+          "name": "Alphabet Inc. - Class C Capital Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 83001,
+          "last_trade": "2026-03-30",
+          "price_change": -0.0158,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "HON",
+          "name": "Honeywell International Inc. - Common Stock",
+          "trades": 2,
+          "buys": 1,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 83001,
+          "last_trade": "2026-03-27",
+          "price_change": 0.168,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 1,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "NVDA",
+          "name": "NVIDIA Corporation - Common Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 83001,
+          "last_trade": "2026-03-30",
+          "price_change": -0.1024,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "RACE",
+          "name": "Ferrari N.V. Common Shares",
+          "trades": 2,
+          "buys": 1,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 83001,
+          "last_trade": "2026-03-30",
+          "price_change": 0.0182,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 1,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "AZN",
+          "name": "AstraZeneca PLC Ordinary Shares",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 40501,
+          "last_trade": "2026-03-31",
+          "price_change": 0.0825,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "BHP",
+          "name": "BHP Group Limited (BHP)",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 40501,
+          "last_trade": "2026-03-31",
+          "price_change": 0.4834,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "GS",
+          "name": "Goldman Sachs Group, Inc. (The) Common Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 40501,
+          "last_trade": "2026-03-30",
+          "price_change": 0.1368,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "JNJ",
+          "name": "Johnson & Johnson Common Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 40501,
+          "last_trade": "2026-03-30",
+          "price_change": 0.4973,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "MSFT",
+          "name": "Microsoft Corporation - Common Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 40501,
+          "last_trade": "2026-03-30",
+          "price_change": 0.0774,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "NVS",
+          "name": "Novartis AG Common Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 40501,
+          "last_trade": "2026-03-31",
+          "price_change": 0.2869,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "SAN",
+          "name": "Banco Santander, S.A. Sponsored ADR (Spain)",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 40501,
+          "last_trade": "2026-03-31",
+          "price_change": 0.17,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "SAP",
+          "name": "SAP SE Sponsored ADR (SAP)",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 40501,
+          "last_trade": "2026-03-31",
+          "price_change": -0.057,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "TSLA",
+          "name": "Tesla, Inc. - Common Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 40501,
+          "last_trade": "2026-03-30",
+          "price_change": -0.1509,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "CIEN",
+          "name": "Ciena Corporation Common Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 16001,
+          "last_trade": "2026-03-30",
+          "price_change": 0.2903,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "DGX",
+          "name": "Quest Diagnostics Incorporated Common Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 16001,
+          "last_trade": "2026-03-30",
+          "price_change": 0.4089,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "LRCX",
+          "name": "Lam Research Corporation (LRCX)",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 16001,
+          "last_trade": "2026-03-30",
+          "price_change": 0.3302,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "ORLY",
+          "name": "O'Reilly Automotive, Inc. - Common Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 16001,
+          "last_trade": "2026-03-30",
+          "price_change": -0.0847,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "SCHW",
+          "name": "Charles Schwab Corporation (The) Common Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 16001,
+          "last_trade": "2026-03-30",
+          "price_change": -0.0298,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "SPYB",
+          "name": "SPDR S&P 500 Buyback ETF (SPYB)",
+          "trades": 2,
+          "buys": 0,
+          "sells": 2,
+          "members": 1,
+          "est_dollars": 16001,
+          "last_trade": "2026-03-16",
+          "price_change": null,
+          "top_members": [
+            {
+              "bioguide_id": "A000379",
+              "name": "Mark Alford",
+              "party": "R",
+              "trades": 2,
+              "buys": 0,
+              "sells": 2
+            }
+          ]
+        },
+        {
+          "symbol": "WELL",
+          "name": "Welltower Inc. Common Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 16001,
+          "last_trade": "2026-03-30",
+          "price_change": 0.2946,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "WMB",
+          "name": "Williams Companies, Inc. (The) Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 15000000,
+          "last_trade": "2026-06-24",
+          "price_change": 0.0965,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "GLW",
+          "name": "Corning Incorporated Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 175000,
+          "last_trade": "2026-03-27",
+          "price_change": 0.3093,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "CDNS",
+          "name": "Cadence Design Systems, Inc. - Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 75000,
+          "last_trade": "2026-03-27",
+          "price_change": 0.0231,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "DVN",
+          "name": "Devon Energy Corporation Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 75000,
+          "last_trade": "2026-03-24",
+          "price_change": 0.25,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "NDAQ",
+          "name": "Nasdaq, Inc. - Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 75000,
+          "last_trade": "2026-03-27",
+          "price_change": 0.2355,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "NEE",
+          "name": "NextEra Energy, Inc. Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 75000,
+          "last_trade": "2026-03-27",
+          "price_change": 0.0247,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "PFE",
+          "name": "Pfizer, Inc. Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 75000,
+          "last_trade": "2026-03-24",
+          "price_change": 0.1984,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "PNC",
+          "name": "PNC Financial Services Group, Inc. (The) Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 75000,
+          "last_trade": "2026-03-27",
+          "price_change": 0.2497,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "PSX",
+          "name": "Phillips 66 Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 75000,
+          "last_trade": "2026-03-27",
+          "price_change": 0.8249,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "TDY",
+          "name": "Teledyne Technologies Incorporated Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 75000,
+          "last_trade": "2026-03-27",
+          "price_change": 0.2368,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "ABBV",
+          "name": "AbbVie Inc. Common Stock",
+          "trades": 1,
+          "buys": 1,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 32500,
+          "last_trade": "2026-03-27",
+          "price_change": 0.341,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 1,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "ABT",
+          "name": "Abbott Laboratories Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 32500,
+          "last_trade": "2026-03-27",
+          "price_change": -0.1222,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "ACM",
+          "name": "AECOM Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 32500,
+          "last_trade": "2026-03-27",
+          "price_change": -0.4627,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "AMAT",
+          "name": "Applied Materials, Inc. - Common Stock",
+          "trades": 1,
+          "buys": 1,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 32500,
+          "last_trade": "2026-03-27",
+          "price_change": 0.5763,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 1,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "AMD",
+          "name": "Advanced Micro Devices, Inc. - Common Stock",
+          "trades": 1,
+          "buys": 1,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 32500,
+          "last_trade": "2026-03-27",
+          "price_change": 1.0845,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 1,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "AMGN",
+          "name": "Amgen Inc. - Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 32500,
+          "last_trade": "2026-03-27",
+          "price_change": 0.4374,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "AVGO",
+          "name": "Broadcom Inc. - Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 32500,
+          "last_trade": "2026-03-27",
+          "price_change": -0.1086,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "BAC",
+          "name": "Bank of America Corporation Common Stock",
+          "trades": 1,
+          "buys": 1,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 32500,
+          "last_trade": "2026-03-27",
+          "price_change": -0.0537,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 1,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "BBVA",
+          "name": "Banco Bilbao Vizcaya Argentaria S.A. Common Stock",
+          "trades": 1,
+          "buys": 1,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 32500,
+          "last_trade": "2026-03-30",
+          "price_change": 0.2531,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 1,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "BTI",
+          "name": "British American Tobacco Industries, p.l.c. Common Stock ADR",
+          "trades": 1,
+          "buys": 1,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 32500,
+          "last_trade": "2026-03-30",
+          "price_change": 0.0843,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 1,
+              "sells": 0
+            }
+          ]
+        }
       ]
     },
     "all": {
@@ -58180,20 +60373,20 @@
           "elevator": false,
           "elevator_drop": 5,
           "benched": false,
-          "return": 0.194609,
-          "alpha": 0.006971,
-          "benchmark": 0.187638,
-          "copycat_return": 0.020213,
-          "copycat_alpha": 0.014267,
-          "trades": 322,
+          "return": 0.196836,
+          "alpha": 0.009035,
+          "benchmark": 0.187801,
+          "copycat_return": 0.022988,
+          "copycat_alpha": 0.01705,
+          "trades": 391,
           "avg_hold_days": 226.9,
           "avg_filing_lag": 115.0,
           "late_filings": 389,
           "filings": 391,
           "excluded_options": 4,
           "excluded_non_stock": 0,
-          "excluded_unknown": 382,
-          "unmatched_sells": 38,
+          "excluded_unknown": 313,
+          "unmatched_sells": 46,
           "uncopyable": 0,
           "badges": [
             {
@@ -58205,6 +60398,11 @@
               "id": "index_hugger",
               "name": "Index Hugger",
               "blurb": "Alpha landed within 2 percentage points of the S&P."
+            },
+            {
+              "id": "one_big_bet",
+              "name": "One Big Bet",
+              "blurb": "The largest one or two trades are at least 70% of the dollars."
             },
             {
               "id": "diamond_hands",
@@ -77537,10 +79735,1126 @@
         "Short stay: Alan Armstrong at 227 days. Hello, goodbye, next disclosure.",
         "Alan Armstrong held about 227 days on average. Diamond hands, or a very calm inbox.",
         "Aaron Bean is benched until more priced equity trades show up. The minimum is 3.",
-        "Two clocks, one member. Alan Armstrong: +19.5% theirs, +2.0% for the copycats.",
-        "Alan Armstrong (Senate) sits at +19.5%. The copycat column says +2.0%.",
+        "Two clocks, one member. Alan Armstrong: +19.7% theirs, +2.3% for the copycats.",
+        "Alan Armstrong (Senate) sits at +19.7%. The copycat column says +2.3%.",
         "Welcome back to the only league where the lineup files the box score later.",
         "Ranges, not receipts. Every dollar on this board is a midpoint with a straight face."
+      ],
+      "most_traded": [
+        {
+          "symbol": "STT",
+          "name": "State Street Corporation Common Stock (STT)",
+          "trades": 9,
+          "buys": 0,
+          "sells": 9,
+          "members": 1,
+          "est_dollars": 292504,
+          "last_trade": "2026-05-18",
+          "price_change": null,
+          "top_members": [
+            {
+              "bioguide_id": "A000148",
+              "name": "Jake Auchincloss",
+              "party": "D",
+              "trades": 9,
+              "buys": 0,
+              "sells": 9
+            }
+          ]
+        },
+        {
+          "symbol": "AAPL",
+          "name": "Apple Inc. - Common Stock",
+          "trades": 4,
+          "buys": 3,
+          "sells": 1,
+          "members": 3,
+          "est_dollars": 399002,
+          "last_trade": "2026-03-30",
+          "price_change": null,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            },
+            {
+              "bioguide_id": "A000379",
+              "name": "Mark Alford",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            },
+            {
+              "bioguide_id": "A000055",
+              "name": "Robert B. Aderholt",
+              "party": "R",
+              "trades": 1,
+              "buys": 1,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "TSLA",
+          "name": "Tesla, Inc. - Common Stock",
+          "trades": 3,
+          "buys": 2,
+          "sells": 1,
+          "members": 2,
+          "est_dollars": 48502,
+          "last_trade": "2026-03-30",
+          "price_change": null,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            },
+            {
+              "bioguide_id": "A000055",
+              "name": "Robert B. Aderholt",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "EA",
+          "name": "Electronic Arts Inc. - Common Stock",
+          "trades": 3,
+          "buys": 2,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 24002,
+          "last_trade": "2026-08-04",
+          "price_change": null,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 3,
+              "buys": 2,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "BRK.B",
+          "name": "Berkshire Hathaway Inc. New Common Stock (BRK.B)",
+          "trades": 2,
+          "buys": 1,
+          "sells": 1,
+          "members": 2,
+          "est_dollars": 83001,
+          "last_trade": "2026-03-27",
+          "price_change": 0.1687,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 1,
+              "sells": 0
+            },
+            {
+              "bioguide_id": "A000379",
+              "name": "Mark Alford",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "AMZN",
+          "name": "Amazon.com, Inc. - Common Stock (AMZN)",
+          "trades": 2,
+          "buys": 1,
+          "sells": 1,
+          "members": 2,
+          "est_dollars": 40501,
+          "last_trade": "2026-03-27",
+          "price_change": 0.2606,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 1,
+              "sells": 0
+            },
+            {
+              "bioguide_id": "A000379",
+              "name": "Mark Alford",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "GSK",
+          "name": "GSK plc American Depositary Shares (GSK)",
+          "trades": 2,
+          "buys": 1,
+          "sells": 1,
+          "members": 2,
+          "est_dollars": 40501,
+          "last_trade": "2026-03-30",
+          "price_change": 0.3762,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 1,
+              "sells": 0
+            },
+            {
+              "bioguide_id": "A000055",
+              "name": "Robert B. Aderholt",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "T",
+          "name": "AT&T Inc. (T)",
+          "trades": 2,
+          "buys": 1,
+          "sells": 1,
+          "members": 2,
+          "est_dollars": 40501,
+          "last_trade": "2026-03-27",
+          "price_change": -0.2138,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 1,
+              "sells": 0
+            },
+            {
+              "bioguide_id": "A000379",
+              "name": "Mark Alford",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "PYPL",
+          "name": "PayPal Holdings, Inc. - Common Stock (PYPL)",
+          "trades": 2,
+          "buys": 1,
+          "sells": 1,
+          "members": 2,
+          "est_dollars": 16001,
+          "last_trade": "2026-03-27",
+          "price_change": 0.3221,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 1,
+              "sells": 0
+            },
+            {
+              "bioguide_id": "A000379",
+              "name": "Mark Alford",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "HD",
+          "name": "Home Depot, Inc. (The) Common Stock",
+          "trades": 2,
+          "buys": 0,
+          "sells": 2,
+          "members": 1,
+          "est_dollars": 107501,
+          "last_trade": "2026-03-27",
+          "price_change": 0.068,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 0,
+              "sells": 2
+            }
+          ]
+        },
+        {
+          "symbol": "ASML",
+          "name": "ASML Holding N.V. - New York Registry Shares",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 83001,
+          "last_trade": "2026-03-31",
+          "price_change": 0.2068,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "FDX",
+          "name": "FedEx Corporation Common Stock",
+          "trades": 2,
+          "buys": 1,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 83001,
+          "last_trade": "2026-03-27",
+          "price_change": -0.1142,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 1,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "GOOG",
+          "name": "Alphabet Inc. - Class C Capital Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 83001,
+          "last_trade": "2026-03-30",
+          "price_change": 0.0447,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "HON",
+          "name": "Honeywell International Inc. - Common Stock",
+          "trades": 2,
+          "buys": 1,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 83001,
+          "last_trade": "2026-03-27",
+          "price_change": 0.0335,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 1,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "NVDA",
+          "name": "NVIDIA Corporation - Common Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 83001,
+          "last_trade": "2026-03-30",
+          "price_change": 0.0666,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "RACE",
+          "name": "Ferrari N.V. Common Shares",
+          "trades": 2,
+          "buys": 1,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 83001,
+          "last_trade": "2026-03-30",
+          "price_change": 0.3009,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 1,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "AZN",
+          "name": "AstraZeneca PLC Ordinary Shares",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 40501,
+          "last_trade": "2026-03-31",
+          "price_change": -0.0232,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "BHP",
+          "name": "BHP Group Limited (BHP)",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 40501,
+          "last_trade": "2026-03-31",
+          "price_change": 0.2005,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "GS",
+          "name": "Goldman Sachs Group, Inc. (The) Common Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 40501,
+          "last_trade": "2026-03-30",
+          "price_change": 0.1287,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "JNJ",
+          "name": "Johnson & Johnson Common Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 40501,
+          "last_trade": "2026-03-30",
+          "price_change": 0.1733,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "MSFT",
+          "name": "Microsoft Corporation - Common Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 40501,
+          "last_trade": "2026-03-30",
+          "price_change": 0.5281,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "NVS",
+          "name": "Novartis AG Common Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 40501,
+          "last_trade": "2026-03-31",
+          "price_change": 0.0887,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "SAN",
+          "name": "Banco Santander, S.A. Sponsored ADR (Spain)",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 40501,
+          "last_trade": "2026-03-31",
+          "price_change": 0.1645,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "SAP",
+          "name": "SAP SE Sponsored ADR (SAP)",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 40501,
+          "last_trade": "2026-03-31",
+          "price_change": 0.4108,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "CIEN",
+          "name": "Ciena Corporation Common Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 16001,
+          "last_trade": "2026-03-30",
+          "price_change": -0.3294,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "DGX",
+          "name": "Quest Diagnostics Incorporated Common Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 16001,
+          "last_trade": "2026-03-30",
+          "price_change": 0.3282,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "LRCX",
+          "name": "Lam Research Corporation (LRCX)",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 16001,
+          "last_trade": "2026-03-30",
+          "price_change": 0.0468,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "ORLY",
+          "name": "O'Reilly Automotive, Inc. - Common Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 16001,
+          "last_trade": "2026-03-30",
+          "price_change": -0.0036,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "SCHW",
+          "name": "Charles Schwab Corporation (The) Common Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 16001,
+          "last_trade": "2026-03-30",
+          "price_change": 0.004,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "SPYB",
+          "name": "SPDR S&P 500 Buyback ETF (SPYB)",
+          "trades": 2,
+          "buys": 0,
+          "sells": 2,
+          "members": 1,
+          "est_dollars": 16001,
+          "last_trade": "2026-03-16",
+          "price_change": null,
+          "top_members": [
+            {
+              "bioguide_id": "A000379",
+              "name": "Mark Alford",
+              "party": "R",
+              "trades": 2,
+              "buys": 0,
+              "sells": 2
+            }
+          ]
+        },
+        {
+          "symbol": "WELL",
+          "name": "Welltower Inc. Common Stock",
+          "trades": 2,
+          "buys": 2,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 16001,
+          "last_trade": "2026-03-30",
+          "price_change": 0.2635,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 2,
+              "buys": 2,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "WMB",
+          "name": "Williams Companies, Inc. (The) Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 15000000,
+          "last_trade": "2026-06-24",
+          "price_change": -0.1242,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "GLW",
+          "name": "Corning Incorporated Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 175000,
+          "last_trade": "2026-03-27",
+          "price_change": -0.1525,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "CDNS",
+          "name": "Cadence Design Systems, Inc. - Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 75000,
+          "last_trade": "2026-03-27",
+          "price_change": 0.2383,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "DVN",
+          "name": "Devon Energy Corporation Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 75000,
+          "last_trade": "2026-03-24",
+          "price_change": -0.1566,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "NDAQ",
+          "name": "Nasdaq, Inc. - Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 75000,
+          "last_trade": "2026-03-27",
+          "price_change": 0.3316,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "NEE",
+          "name": "NextEra Energy, Inc. Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 75000,
+          "last_trade": "2026-03-27",
+          "price_change": -0.0497,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "PFE",
+          "name": "Pfizer, Inc. Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 75000,
+          "last_trade": "2026-03-24",
+          "price_change": 0.0842,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "PNC",
+          "name": "PNC Financial Services Group, Inc. (The) Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 75000,
+          "last_trade": "2026-03-27",
+          "price_change": 0.1428,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "PSX",
+          "name": "Phillips 66 Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 75000,
+          "last_trade": "2026-03-27",
+          "price_change": 0.3438,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "TDY",
+          "name": "Teledyne Technologies Incorporated Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 75000,
+          "last_trade": "2026-03-27",
+          "price_change": 0.0843,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "ABBV",
+          "name": "AbbVie Inc. Common Stock",
+          "trades": 1,
+          "buys": 1,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 32500,
+          "last_trade": "2026-03-27",
+          "price_change": 0.4007,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 1,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "ABT",
+          "name": "Abbott Laboratories Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 32500,
+          "last_trade": "2026-03-27",
+          "price_change": 0.0627,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "ACM",
+          "name": "AECOM Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 32500,
+          "last_trade": "2026-03-27",
+          "price_change": -0.1784,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "AMAT",
+          "name": "Applied Materials, Inc. - Common Stock",
+          "trades": 1,
+          "buys": 1,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 32500,
+          "last_trade": "2026-03-27",
+          "price_change": 0.099,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 1,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "AMD",
+          "name": "Advanced Micro Devices, Inc. - Common Stock",
+          "trades": 1,
+          "buys": 1,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 32500,
+          "last_trade": "2026-03-27",
+          "price_change": 1.5178,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 1,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "AMGN",
+          "name": "Amgen Inc. - Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 32500,
+          "last_trade": "2026-03-27",
+          "price_change": 0.3339,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "AVGO",
+          "name": "Broadcom Inc. - Common Stock",
+          "trades": 1,
+          "buys": 0,
+          "sells": 1,
+          "members": 1,
+          "est_dollars": 32500,
+          "last_trade": "2026-03-27",
+          "price_change": 0.0625,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 0,
+              "sells": 1
+            }
+          ]
+        },
+        {
+          "symbol": "BAC",
+          "name": "Bank of America Corporation Common Stock",
+          "trades": 1,
+          "buys": 1,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 32500,
+          "last_trade": "2026-03-27",
+          "price_change": 0.0762,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 1,
+              "sells": 0
+            }
+          ]
+        },
+        {
+          "symbol": "BBVA",
+          "name": "Banco Bilbao Vizcaya Argentaria S.A. Common Stock",
+          "trades": 1,
+          "buys": 1,
+          "sells": 0,
+          "members": 1,
+          "est_dollars": 32500,
+          "last_trade": "2026-03-30",
+          "price_change": 0.3005,
+          "top_members": [
+            {
+              "bioguide_id": "A000383",
+              "name": "Alan Armstrong",
+              "party": "R",
+              "trades": 1,
+              "buys": 1,
+              "sells": 0
+            }
+          ]
+        }
       ]
     }
   },
@@ -77712,7 +81026,7 @@
     "members_loaded": 12,
     "members_seated": 537,
     "members_trading": 5,
-    "tickers_priced": 299,
+    "tickers_priced": 368,
     "tickers_total": 368
   }
 }
