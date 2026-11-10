@@ -48,6 +48,19 @@ type WindowBoard = {
   beat_market: number;
   field_size: number;
   ticker_tape: string[];
+  most_traded?: Stock[];
+};
+type Stock = {
+  symbol: string;
+  name: string;
+  trades: number;
+  buys: number;
+  sells: number;
+  members: number;
+  est_dollars: number;
+  last_trade: string;
+  price_change: number | null;
+  top_members: { bioguide_id: string; name: string; party: string; trades: number; buys: number; sells: number }[];
 };
 type League = {
   sample: boolean;
@@ -451,12 +464,14 @@ function shell(body: HTMLElement): void {
   const nav = el("nav", { class: "nav" });
   const home = el("a", { href: "#/" }, ["League"]);
   const versus = el("a", { href: "#/versus" }, ["Head to head"]);
+  const stocksLink = el("a", { href: "#/stocks" }, ["Stocks"]);
   const method = el("a", { href: `${BASE}methodology.html` }, ["Methodology"]);
   const routeName = parseRoute().name;
   if (routeName === "home") home.setAttribute("aria-current", "page");
   if (routeName === "versus") versus.setAttribute("aria-current", "page");
+  if (routeName === "stocks") stocksLink.setAttribute("aria-current", "page");
   const repo = el("a", { href: REPO_URL, target: "_blank", rel: "noopener" }, ["GitHub ★"]);
-  nav.append(home, versus, method, repo);
+  nav.append(home, versus, stocksLink, method, repo);
   top.append(brand, nav);
   app.append(top, body, footer());
 }
@@ -526,6 +541,107 @@ function paintBoard(host: HTMLElement, rows: Row[]): void {
     details.append(stack);
     host.append(details);
   }
+}
+
+function compactMoney(value: number): string {
+  if (value >= 1e9) return `$${(value / 1e9).toFixed(1)}B`;
+  if (value >= 1e6) return `$${(value / 1e6).toFixed(1)}M`;
+  if (value >= 1e3) return `$${Math.round(value / 1e3)}K`;
+  return `$${Math.round(value)}`;
+}
+
+function splitBar(stock: Stock): HTMLElement {
+  const total = Math.max(1, stock.buys + stock.sells);
+  return el("div", { class: "split", title: `${stock.buys} buys · ${stock.sells} sells` }, [
+    el("span", { class: "buy", style: `width:${((stock.buys / total) * 100).toFixed(1)}%` }),
+    el("span", { class: "sell", style: `width:${((stock.sells / total) * 100).toFixed(1)}%` }),
+  ]);
+}
+
+function windowLabel(id: string): string {
+  return { "30d": "last 30 days", ytd: "this year", "12m": "last 12 months", all: "all time" }[id] ?? id;
+}
+
+function stockStrip(): HTMLElement | null {
+  const items = currentBoard().most_traded ?? [];
+  if (!items.length) return null;
+  const section = el("section", { class: "stocks-strip", "aria-label": "Most traded stocks" });
+  section.append(
+    el("div", { class: "strip-head" }, [
+      el("h2", { class: "feed-title" }, [`Most traded stocks · ${windowLabel(state.window)}`]),
+      el("a", { class: "more", href: "#/stocks" }, ["All stocks →"]),
+    ]),
+  );
+  const grid = el("div", { class: "stock-grid" });
+  items.slice(0, 8).forEach((stock, index) => {
+    grid.append(
+      el("a", { class: "stock-card", href: `#/stocks?s=${encodeURIComponent(stock.symbol)}` }, [
+        el("div", { class: "stock-top" }, [
+          el("span", { class: "stock-rank" }, [String(index + 1)]),
+          el("strong", { class: "sym" }, [stock.symbol]),
+          el("span", { class: `move ${tone(stock.price_change)}` }, [pct(stock.price_change)]),
+        ]),
+        el("div", { class: "stock-name" }, [stock.name || "\u00a0"]),
+        splitBar(stock),
+        el("div", { class: "stock-meta" }, [
+          `${stock.trades} trades · ${stock.members} member${stock.members === 1 ? "" : "s"} · ~${compactMoney(stock.est_dollars)}`,
+        ]),
+      ]),
+    );
+  });
+  section.append(grid);
+  return section;
+}
+
+function renderStocks(): void {
+  stopConfetti();
+  const focus = decodeURIComponent((location.hash.split("?s=")[1] || "").toUpperCase());
+  const items = currentBoard().most_traded ?? [];
+  const page = el("main", { class: "wrap" });
+  page.append(
+    el("h2", { class: "section-title" }, ["Most traded stocks"]),
+    el("p", { class: "muted" }, [
+      "Stock trades disclosed by members of Congress, by number of trades in the window. Buy/sell split in green and red, dollar volume estimated from the disclosed ranges, move is the stock's price change over the window.",
+    ]),
+    el("div", { class: "toolbar" }, [windowBar()]),
+  );
+  if (!items.length) {
+    page.append(el("div", { class: "callout" }, ["No stock trades in this window yet. Try YTD or ALL."]));
+    shell(page);
+    return;
+  }
+  const table = el("div", { class: "stock-table", role: "table" });
+  table.append(
+    el("div", { class: "stock-row head", role: "row" }, [
+      el("span", {}, ["#"]),
+      el("span", {}, ["Stock"]),
+      el("span", {}, ["Trades"]),
+      el("span", {}, ["Buy / sell"]),
+      el("span", {}, ["Est. volume"]),
+      el("span", {}, ["Move"]),
+      el("span", {}, ["Who traded it"]),
+    ]),
+  );
+  items.forEach((stock, index) => {
+    const who = el("span", { class: "traders" });
+    for (const m of stock.top_members.slice(0, 3)) {
+      who.append(el("span", {}, [el("a", { href: `#/member/${m.bioguide_id}` }, [m.name]), el("small", {}, [`${m.trades}×`])]));
+    }
+    if (stock.members > 3) who.append(el("small", {}, [`+${stock.members - 3} more`]));
+    const row = el("div", { class: `stock-row${stock.symbol === focus ? " focus" : ""}`, role: "row", id: `stock-${stock.symbol}` }, [
+      el("span", { class: "stock-rank" }, [String(index + 1)]),
+      el("span", { class: "stock-id" }, [el("strong", { class: "sym" }, [stock.symbol]), el("small", {}, [stock.name])]),
+      el("span", {}, [`${stock.trades}`, el("small", {}, [` · ${stock.members} member${stock.members === 1 ? "" : "s"}`])]),
+      el("span", { class: "split-cell" }, [splitBar(stock), el("small", {}, [`${stock.buys} / ${stock.sells}`])]),
+      el("span", {}, [`~${compactMoney(stock.est_dollars)}`]),
+      el("span", { class: `move ${tone(stock.price_change)}` }, [pct(stock.price_change)]),
+      who,
+    ]);
+    table.append(row);
+  });
+  page.append(table);
+  shell(page);
+  if (focus) document.getElementById(`stock-${focus}`)?.scrollIntoView({ block: "center" });
 }
 
 function progress(label: string, done: number, total: number, note: string): HTMLElement {
@@ -653,6 +769,8 @@ function renderHome(): void {
     feed.classList.add("after-board");
     page.append(feed);
   }
+  const hot = stockStrip();
+  if (hot) page.append(hot);
   shell(page);
 
   const visible = sorted(allRows().filter(matches));
@@ -940,11 +1058,12 @@ function verdict(rows: Row[]): HTMLElement {
   return box;
 }
 
-function parseRoute(): { name: "home" } | { name: "member"; id: string } | { name: "versus" } {
+function parseRoute(): { name: "home" } | { name: "member"; id: string } | { name: "versus" } | { name: "stocks" } {
   const hash = location.hash.replace(/^#/, "") || "/";
   const member = hash.match(/^\/member\/([A-Za-z0-9]+)$/);
   if (member) return { name: "member", id: member[1] };
   if (hash.startsWith("/versus")) return { name: "versus" };
+  if (hash.startsWith("/stocks")) return { name: "stocks" };
   return { name: "home" };
 }
 
@@ -957,6 +1076,10 @@ function render(): void {
   }
   if (route.name === "versus") {
     renderVersus();
+    return;
+  }
+  if (route.name === "stocks") {
+    renderStocks();
     return;
   }
   renderHome();

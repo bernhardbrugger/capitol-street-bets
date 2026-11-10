@@ -21,6 +21,14 @@ def _pct(value) -> str:
     return f"{value * 100:+.1f}%"
 
 
+def _money(value: float) -> str:
+    if value >= 1e6:
+        return f"${value / 1e6:.1f}M"
+    if value >= 1e3:
+        return f"${round(value / 1e3)}K"
+    return f"${round(value)}"
+
+
 def _arrow(row: dict) -> str:
     change = row.get("rank_change")
     if row.get("previous_rank") is None:
@@ -90,6 +98,27 @@ def render(league: dict, site_url: str, top: int = 10) -> str:
                     alpha=_pct(row.get("alpha")),
                     copy=_pct(row.get("copycat_return")),
                     trades=row.get("trades", ""),
+                )
+            )
+    stock_key = next((k for k in WINDOW_ORDER if windows.get(k, {}).get("most_traded")), None)
+    if stock_key:
+        lines.append("")
+        lines.append(f"**Most traded stocks, {WINDOW_LABEL[stock_key]}**")
+        lines.append("")
+        lines.append("| # | Ticker | Trades | Members | Buys / sells | Est. volume | Move |")
+        lines.append("|---:|---|---:|---:|---:|---:|---:|")
+        for index, stock in enumerate(windows[stock_key]["most_traded"][:5], start=1):
+            lines.append(
+                "| {i} | [**{sym}**]({url}#/stocks?s={sym}) | {t} | {m} | {b} / {sl} | ~{vol} | {mv} |".format(
+                    i=index,
+                    sym=stock["symbol"],
+                    url=site_url,
+                    t=stock["trades"],
+                    m=stock["members"],
+                    b=stock["buys"],
+                    sl=stock["sells"],
+                    vol=_money(stock.get("est_dollars") or 0),
+                    mv=_pct(stock.get("price_change")),
                 )
             )
     coverage = league.get("coverage")

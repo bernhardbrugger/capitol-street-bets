@@ -286,7 +286,7 @@ button { cursor: pointer; }
 .section-title { margin: 22px 0 8px; font-family: "Teko", sans-serif; font-size: 36px; font-weight: 500; }
 
 .footer {
-  margin: 28px 0 40px;
+  margin: 28px auto 40px;
   color: var(--muted);
   display: grid;
   gap: 8px;
@@ -413,3 +413,60 @@ table.trades th { color: var(--muted); font-weight: 600; }
 }
 
 .versus-note { font-size: 13px; margin: 10px 0 0; }
+
+/* Most traded stocks */
+.stocks-strip { margin: 34px 0 10px; }
+.strip-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.strip-head .more { color: var(--gold); text-decoration: none; font-weight: 700; white-space: nowrap; }
+.stock-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 10px; }
+.stock-card {
+  display: block; text-decoration: none; color: var(--text);
+  background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+.stock-card:hover { transform: translateY(-2px); border-color: rgba(240, 193, 74, 0.5); }
+.stock-top { display: flex; align-items: center; gap: 8px; }
+.stock-top .sym { font-family: "Teko", sans-serif; font-size: 28px; line-height: 1; }
+.stock-rank { font-family: "Teko", sans-serif; color: var(--muted); font-size: 20px; min-width: 18px; }
+.move { margin-left: auto; font-weight: 700; font-size: 14px; color: var(--muted); }
+.move.up { color: var(--up); }
+.move.down { color: var(--down); }
+.stock-name { color: var(--muted); font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin: 2px 0 8px; }
+.split { display: flex; height: 6px; border-radius: 99px; overflow: hidden; background: rgba(255, 255, 255, 0.06); }
+.split .buy { background: var(--up); }
+.split .sell { background: var(--down); }
+.stock-meta { color: var(--muted); font-size: 12px; margin-top: 7px; }
+
+.stock-table { display: grid; gap: 6px; margin-top: 12px; }
+.stock-row {
+  display: grid; grid-template-columns: 36px minmax(150px, 1.6fr) 1fr 1.2fr 0.9fr 0.8fr 2.2fr;
+  gap: 12px; align-items: center; padding: 10px 14px;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
+}
+.stock-row.head { background: none; border: none; padding-top: 0; padding-bottom: 0; color: var(--muted); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; }
+.stock-row.focus { border-color: var(--gold); box-shadow: 0 0 0 1px var(--gold) inset; }
+.stock-row small { color: var(--muted); }
+.stock-id { display: flex; flex-direction: column; min-width: 0; }
+.stock-id .sym { font-family: "Teko", sans-serif; font-size: 26px; line-height: 1; }
+.stock-id small { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.split-cell { display: grid; gap: 4px; }
+.stock-row .move { margin-left: 0; }
+.traders { display: flex; flex-wrap: wrap; gap: 2px 14px; min-width: 0; }
+.traders a { color: var(--text); font-weight: 600; text-decoration: none; }
+.traders a:hover { color: var(--gold); }
+.traders small { color: var(--muted); margin-left: 4px; }
+
+@media (max-width: 860px) {
+  .stock-row { grid-template-columns: 30px 1fr auto; grid-template-areas: "rank id move" "rank split vol" "rank trades trades" "rank who who"; row-gap: 6px; }
+  .stock-row.head { display: none; }
+  .stock-row > :nth-child(1) { grid-area: rank; align-self: start; }
+  .stock-row > :nth-child(2) { grid-area: id; }
+  .stock-row > :nth-child(3) { grid-area: trades; font-size: 13px; }
+  .stock-row > :nth-child(4) { grid-area: split; }
+  .stock-row > :nth-child(5) { grid-area: vol; font-size: 13px; }
+  .stock-row > :nth-child(6) { grid-area: move; }
+  .stock-row > :nth-child(7) { grid-area: who; font-size: 13px; }
+}
+@media (max-width: 600px) {
+  .stock-card:nth-child(n + 5) { display: none; }
+}

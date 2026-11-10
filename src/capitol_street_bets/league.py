@@ -23,10 +23,10 @@ from capitol_street_bets.returns import (
 )
 
 DISCLAIMER = (
-    "For entertainment. Based on public disclosures via Alpha Vantage. "
+    "For entertainment. Based on public disclosures via Alpha Vantage, prices via Massive. "
     "Amounts are estimated from disclosed ranges. Not financial advice."
 )
-ATTRIBUTION = "Data: Alpha Vantage"
+ATTRIBUTION = "Data: Alpha Vantage (disclosures), Massive (prices)"
 
 HOUSE_PORTAL = "https://disclosures-clerk.house.gov/FinancialDisclosure"
 SENATE_PORTAL = "https://efdsearch.senate.gov/search/"
@@ -331,6 +331,7 @@ def assemble_league(
         )
         if prior:
             body["previous_date"] = prior[-1].get("as_of")
+        body["most_traded"] = most_traded(politicians, trades_by_member, book, name, as_of)
         windows[name] = body
         curves_by_window[name] = curves
         today_ranks = {
@@ -519,8 +520,8 @@ def recent_disclosures(
             filed = trade.filed_date or trade.notification_date
             if filed is None or filed > as_of or not trade.symbol:
                 continue
-            side = (trade.transaction_type or "").upper()
-            if side not in {"BUY", "SELL"}:
+            side = side_of(trade.transaction_type or "")
+            if side is None:
                 continue
             lag = (filed - trade.transaction_date).days if trade.transaction_date else None
             rows.append(
@@ -530,7 +531,7 @@ def recent_disclosures(
                     "chamber": person.chamber,
                     "party": person.party,
                     "state": person.state,
-                    "side": side.lower(),
+                    "side": side,
                     "symbol": trade.symbol.upper(),
                     "asset_name": trade.asset_name,
                     "amount": f"{_short_money(trade.amount_min)}–{_short_money(trade.amount_max)}",
@@ -565,3 +566,78 @@ def disclosure_line(item: dict) -> str:
     if lag is not None:
         timing = f", filed {lag} days later" + (" (late)" if item.get("late") else "")
     return f"{item['name']} {verb} {item['symbol']} ({item['amount']}){timing}."
+
+
+def _clean_asset_name(name: str | None) -> str:
+    text = (name or "").strip()
+    for tag in (" [ST]", " [OP]", " [ETF]", " [EF]"):
+        text = text.replace(tag, "")
+    return text[:60]
+
+
+def most_traded(
+    politicians: list[Politician],
+    trades_by_member: dict[str, list[Trade]],
+    book: PriceBook,
+    window_name: str,
+    as_of: date,
+    limit: int = 50,
+) -> list[dict]:
+    """Stocks Congress traded most in the window: count, members, buy/sell
+    split, estimated dollars, and how the stock moved over the window."""
+    start, end = window_bounds(window_name, as_of)
+    people = {person.bioguide_id: person for person in politicians}
+    stocks: dict[str, dict] = {}
+    for bioguide_id, trades in trades_by_member.items():
+        person = people.get(bioguide_id)
+        if person is None:
+            continue
+        for trade in trades:
+            day = trade.transaction_date
+            if day is None or not (start <= day <= end) or not trade.symbol:
+                continue
+            side = side_of(trade.transaction_type or "")
+            if side is None or classify_asset(trade) != "equity":
+                continue
+            symbol = trade.symbol.strip().upper()
+            item = stocks.setdefault(
+                symbol,
+                {"symbol": symbol, "names": {}, "trades": 0, "buys": 0, "sells": 0, "dollars": 0.0,
+                 "first": day, "last": day, "members": {}},
+            )
+            item["trades"] += 1
+            item["buys" if side == "buy" else "sells"] += 1
+            dollars, _ = midpoint(trade.amount_min, trade.amount_max)
+            item["dollars"] += dollars or 0.0
+            item["first"] = min(item["first"], day)
+            item["last"] = max(item["last"], day)
+            name = _clean_asset_name(trade.asset_name)
+            if name:
+                item["names"][name] = item["names"].get(name, 0) + 1
+            who = item["members"].setdefault(bioguide_id, {"bioguide_id": bioguide_id, "name": person.name, "party": person.party, "trades": 0, "buys": 0, "sells": 0})
+            who["trades"] += 1
+            who["buys" if side == "buy" else "sells"] += 1
+    ranked = sorted(stocks.values(), key=lambda s: (-s["trades"], -len(s["members"]), -s["dollars"], s["symbol"]))[:limit]
+    out = []
+    for item in ranked:
+        # Move over the window; for "all" from the first trade in it.
+        base_day = item["first"] if window_name == "all" else start
+        p0 = book.on_or_before(item["symbol"], base_day)
+        p1 = book.on_or_before(item["symbol"], end)
+        change = (p1 / p0 - 1.0) if p0 and p1 else None
+        members = sorted(item["members"].values(), key=lambda m: (-m["trades"], m["name"]))
+        out.append(
+            {
+                "symbol": item["symbol"],
+                "name": max(item["names"], key=item["names"].get) if item["names"] else "",
+                "trades": item["trades"],
+                "buys": item["buys"],
+                "sells": item["sells"],
+                "members": len(members),
+                "est_dollars": round(item["dollars"]),
+                "last_trade": item["last"].isoformat(),
+                "price_change": None if change is None else round(change, 4),
+                "top_members": members[:5],
+            }
+        )
+    return out

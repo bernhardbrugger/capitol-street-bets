@@ -35,6 +35,15 @@ test("scoreboard, sort, member card, and head to head", async ({ page }) => {
   await page.screenshot({ path: "test-results/versus-desktop.png", fullPage: true });
 });
 
+test("most traded stocks", async ({ page }) => {
+  await page.goto("/");
+  await page.waitForSelector("#board[data-settled=true]");
+  await expect(page.getByRole("region", { name: "Most traded stocks" }).locator("a.stock-card").first()).toBeVisible();
+  await page.getByRole("link", { name: "Stocks", exact: true }).click();
+  await expect(page.getByRole("heading", { name: "Most traded stocks" })).toBeVisible();
+  await expect(page.locator("#stock-NVDA")).toContainText("NVDA");
+});
+
 test("mobile league stacks into cards", async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto("/");
