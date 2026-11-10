@@ -1,6 +1,6 @@
 # Methodology
 
-Capitol Gains turns public trade **ranges** into a league table. The math is
+Capitol Street Bets turns public trade **ranges** into a league table. The math is
 deliberately simple. It is a size-weighted average of holding-period returns,
 not a broker statement and not a claim about what anyone actually earned.
 

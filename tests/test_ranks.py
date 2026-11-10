@@ -1,7 +1,7 @@
 """Rank arrows and streaks across two snapshots, plus one longer run."""
 
-from capitol_gains.models import BoardRow, MemberStats
-from capitol_gains.ranks import apply_history, order_rows, streak_length
+from capitol_street_bets.models import BoardRow, MemberStats
+from capitol_street_bets.ranks import apply_history, order_rows, streak_length
 
 
 def _row(bioguide: str, name: str, alpha: float, trades: int = 3) -> BoardRow:

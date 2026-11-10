@@ -1,11 +1,13 @@
 import json
 
-from capitol_gains.readme_board import END, START, render, update_readme
+from capitol_street_bets.readme_board import END, START, render, update_readme
 from pathlib import Path
 
 
 def test_render_marks_sample_and_links_members(tmp_path):
-    league = json.loads((Path(__file__).parents[1] / "web/public/data/league.json").read_text())
+    from capitol_street_bets.sample_league import write_sample
+
+    league = write_sample(tmp_path)
     text = render(league, "https://example.test/board/")
     assert "Sample data" in text
     assert "https://example.test/board/#/member/" in text

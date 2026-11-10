@@ -4,9 +4,9 @@ from datetime import date
 
 import pytest
 
-from capitol_gains.models import Trade
-from capitol_gains.prices import PriceBook
-from capitol_gains.returns import midpoint, score_member
+from capitol_street_bets.models import Trade
+from capitol_street_bets.prices import PriceBook
+from capitol_street_bets.returns import midpoint, score_member
 
 AS_OF = date(2024, 3, 1)
 
@@ -152,7 +152,7 @@ def test_window_clips_to_the_same_span_as_spy():
     # Use the public window named by passing as_of and relying on 30d? 30d
     # from Mar 1 starts Jan 31, and the sale is Feb 1, so the open lots clip
     # to Jan 31, not Feb 1. Assert the Feb 1 clip through measure() directly.
-    from capitol_gains.returns import build_slices, measure
+    from capitol_street_bets.returns import build_slices, measure
 
     slices, _counts = build_slices(trades, _book())
     perf = measure(slices, _book(), date(2024, 2, 1), date(2024, 3, 1), "their")
@@ -223,7 +223,7 @@ def test_late_filing_flag_uses_45_days():
 
 
 def test_source_url_is_kept_when_the_feed_has_one():
-    from capitol_gains.returns import trade_from_api
+    from capitol_street_bets.returns import trade_from_api
 
     trade = trade_from_api(
         {

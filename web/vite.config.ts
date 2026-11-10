@@ -1,6 +1,6 @@
 import { defineConfig } from "vite";
 
-// GitHub project pages live at /capitol-gains/. Local and other hosts use /.
+// GitHub project pages live at /capitol-street-bets/. Local and other hosts use /.
 export default defineConfig({
   base: process.env.VITE_BASE || "/",
   server: {

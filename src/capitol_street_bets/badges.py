@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from capitol_gains.models import BoardRow
+from capitol_street_bets.models import BoardRow
 
 BADGE_COPY = {
     "beat_the_market": {

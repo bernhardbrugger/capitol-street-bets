@@ -8,9 +8,9 @@ from __future__ import annotations
 
 from datetime import date, timedelta
 
-from capitol_gains.league import assemble_league, empty_history_from_snapshots, write_site
-from capitol_gains.models import Politician, Trade
-from capitol_gains.prices import PriceBook
+from capitol_street_bets.league import assemble_league, empty_history_from_snapshots, write_site
+from capitol_street_bets.models import Politician, Trade
+from capitol_street_bets.prices import PriceBook
 
 AS_OF = date(2026, 11, 6)
 START = date(2025, 6, 2)
@@ -279,7 +279,7 @@ def build_sample(as_of: date = AS_OF):
     history = empty_history_from_snapshots(people, grouped, book, history_days, min_trades=3, late_days=45)
     notes = [
         "Sample league: fictional members and simulated prices, not live disclosures.",
-        "Run `python -m capitol_gains run` with ALPHAVANTAGE_API_KEY set to replace this board.",
+        "Run `python -m capitol_street_bets run` with ALPHAVANTAGE_API_KEY set to replace this board.",
         "Position size is the midpoint of the disclosed range.",
     ]
     return assemble_league(

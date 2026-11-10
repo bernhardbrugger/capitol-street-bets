@@ -1,4 +1,4 @@
-# Capitol Gains
+# Capitol Street Bets
 
 The only league where everyone files late.
 
@@ -51,7 +51,7 @@ The dev server prints a local URL. The sample board is already in `web/public/da
 Regenerate that sample:
 
 ```bash
-PYTHONPATH=src python -m capitol_gains sample
+PYTHONPATH=src python -m capitol_street_bets sample
 ```
 
 ## Use a real Alpha Vantage key
@@ -59,7 +59,7 @@ PYTHONPATH=src python -m capitol_gains sample
 ```bash
 cp .env.example .env
 # set ALPHAVANTAGE_API_KEY
-PYTHONPATH=src python -m capitol_gains run
+PYTHONPATH=src python -m capitol_street_bets run
 ```
 
 The key is read from the environment and is not written into the repo, the logs, or the JSON.
@@ -132,5 +132,5 @@ Until the secret exists, the daily job leaves the sample JSON in place and still
 Regenerate the standings block locally:
 
 ```bash
-PYTHONPATH=src python -m capitol_gains readme
+PYTHONPATH=src python -m capitol_street_bets readme
 ```

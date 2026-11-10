@@ -1,8 +1,8 @@
 """The shipped sample league has to be fun, and obviously fictional."""
 
-from capitol_gains.commentary import banned_hits
-from capitol_gains.league import DISCLAIMER, ATTRIBUTION
-from capitol_gains.sample_league import build_sample
+from capitol_street_bets.commentary import banned_hits
+from capitol_street_bets.league import DISCLAIMER, ATTRIBUTION
+from capitol_street_bets.sample_league import build_sample
 
 
 def test_sample_board_has_the_set_pieces():

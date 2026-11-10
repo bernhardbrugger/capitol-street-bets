@@ -422,7 +422,7 @@ function shell(body: HTMLElement): void {
   const brand = el("div", { class: "brand" });
   brand.append(
     el("p", { class: "kicker" }, ["PUBLIC DISCLOSURES"]),
-    el("h1", { class: "wordmark" }, ["CAPITOL GAINS"]),
+    el("h1", { class: "wordmark" }, ["CAPITOL STREET BETS"]),
     el("p", { class: "tagline" }, ["The only league where everyone files late."]),
   );
   const nav = el("nav", { class: "nav" });

@@ -7,8 +7,8 @@ import os
 from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 from pathlib import Path
 
-from capitol_gains.config import ROOT, load_settings
-from capitol_gains.db import connect
+from capitol_street_bets.config import ROOT, load_settings
+from capitol_street_bets.db import connect
 
 
 def _load_env_file() -> None:
@@ -27,7 +27,7 @@ def _load_env_file() -> None:
 
 def main(argv: list[str] | None = None) -> None:
     _load_env_file()
-    parser = argparse.ArgumentParser(prog="capitol-gains")
+    parser = argparse.ArgumentParser(prog="capitol-street-bets")
     sub = parser.add_subparsers(dest="command", required=True)
 
     sub.add_parser("sample", help="Write the fictional sample league into the site data folder")
@@ -46,7 +46,7 @@ def main(argv: list[str] | None = None) -> None:
     settings = load_settings()
 
     if args.command == "sample":
-        from capitol_gains.sample_league import summarize, write_sample
+        from capitol_street_bets.sample_league import summarize, write_sample
 
         league = write_sample(settings.site_data)
         print(summarize(league))
@@ -54,7 +54,7 @@ def main(argv: list[str] | None = None) -> None:
         return
 
     if args.command == "readme":
-        from capitol_gains.readme_board import update_readme
+        from capitol_street_bets.readme_board import update_readme
 
         changed = update_readme(ROOT / "README.md", settings.site_data / "league.json", args.url, args.top)
         print("README standings updated" if changed else "README standings unchanged")
@@ -71,9 +71,9 @@ def main(argv: list[str] | None = None) -> None:
     try:
         if args.command in {"ingest", "run"}:
             if not settings.api_key:
-                raise SystemExit("ALPHAVANTAGE_API_KEY is not set. Copy .env.example to .env or run `python -m capitol_gains sample`.")
-            from capitol_gains.av import AlphaVantageClient
-            from capitol_gains.ingest import ingest
+                raise SystemExit("ALPHAVANTAGE_API_KEY is not set. Copy .env.example to .env or run `python -m capitol_street_bets sample`.")
+            from capitol_street_bets.av import AlphaVantageClient
+            from capitol_street_bets.ingest import ingest
 
             client = AlphaVantageClient(settings, conn)
             report = ingest(settings, conn, client)
@@ -88,7 +88,7 @@ def main(argv: list[str] | None = None) -> None:
             for item in report.get("member_errors", []) + report.get("price_errors", []):
                 print(f"skipped {item.get('bioguide_id') or item.get('symbol')}: {item['error']}")
         if args.command in {"compute", "run"}:
-            from capitol_gains.ingest import compute_site
+            from capitol_street_bets.ingest import compute_site
 
             result = compute_site(settings, conn)
             print(f"computed {result['members']} members as of {result['as_of']}")

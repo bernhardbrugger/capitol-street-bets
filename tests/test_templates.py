@@ -1,6 +1,6 @@
 """Every ticker-tape line has to render, and none of them use a banned word."""
 
-from capitol_gains.commentary import (
+from capitol_street_bets.commentary import (
     BANNED_WORDS,
     PLACEHOLDERS,
     TEMPLATES,

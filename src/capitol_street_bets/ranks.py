@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from capitol_gains.models import BoardRow
+from capitol_street_bets.models import BoardRow
 
 ON_FIRE_DAYS = 3
 ELEVATOR_DROP = 5

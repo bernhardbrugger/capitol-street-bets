@@ -2,7 +2,7 @@ import { expect, test } from "@playwright/test";
 
 test("scoreboard, sort, member card, and head to head", async ({ page }) => {
   await page.goto("/");
-  await expect(page.getByRole("heading", { name: "CAPITOL GAINS" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "CAPITOL STREET BETS" })).toBeVisible();
   await expect(page.locator("[data-sample=true]")).toContainText("fictional");
   await expect(page.getByText("Data: Alpha Vantage")).toBeVisible();
   await expect(page.getByText(/For entertainment/)).toBeVisible();

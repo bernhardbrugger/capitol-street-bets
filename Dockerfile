@@ -16,4 +16,4 @@ ENV PYTHONUNBUFFERED=1
 ENV CAPITOL_SITE_DATA=/app/site/data
 ENV CAPITOL_DATA_DIR=/app/data
 EXPOSE 8080
-CMD ["python", "-m", "capitol_gains", "serve", "--site", "/app/site", "--host", "0.0.0.0", "--port", "8080"]
+CMD ["python", "-m", "capitol_street_bets", "serve", "--site", "/app/site", "--host", "0.0.0.0", "--port", "8080"]

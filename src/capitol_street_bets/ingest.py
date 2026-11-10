@@ -14,7 +14,7 @@ import json
 from collections import defaultdict
 from datetime import date, datetime, timedelta, timezone
 
-from capitol_gains.av import (
+from capitol_street_bets.av import (
     AVError,
     AlphaVantageClient,
     DailyBudgetSpent,
@@ -22,8 +22,8 @@ from capitol_gains.av import (
     last_expected_session,
     parse_daily_series,
 )
-from capitol_gains.config import Settings
-from capitol_gains.db import (
+from capitol_street_bets.config import Settings
+from capitol_street_bets.db import (
     distinct_trade_symbols,
     get_meta,
     iter_trades,
@@ -37,16 +37,16 @@ from capitol_gains.db import (
     store_prices,
     upsert_politicians,
 )
-from capitol_gains.league import (
+from capitol_street_bets.league import (
     assemble_league,
     is_current,
     load_history,
     politician_from_api,
     write_site,
 )
-from capitol_gains.models import Trade
-from capitol_gains.prices import PriceBook
-from capitol_gains.returns import classify_asset, trade_from_api
+from capitol_street_bets.models import Trade
+from capitol_street_bets.prices import PriceBook
+from capitol_street_bets.returns import classify_asset, trade_from_api
 
 
 def vendor_symbol(symbol: str) -> str:
@@ -106,7 +106,9 @@ def budget_plan(
     else:
         # Keep a member slot whenever the room is tight so a small daily
         # budget cannot spend its last call on a price and stall the roster.
-        price_slots = min(prices_waiting, int(round(rest * price_share)))
+        # Reserve the share even when no ticker is known yet: on a fresh cache
+        # the trades (and so the tickers) only arrive during this run.
+        price_slots = int(round(rest * price_share))
         if rest - price_slots < 1:
             price_slots = 0 if rest == 1 else rest - 1
     member_slots = min(members_waiting, rest - price_slots)
@@ -148,7 +150,17 @@ def _price_queue(conn, today: date, limit: int) -> list[str]:
     if limit <= 0:
         return []
     expected = last_expected_session(today).isoformat()
-    symbols = ["SPY", *distinct_trade_symbols(conn)]
+    # Only tickers that appear in at least one scoreable equity trade. Options,
+    # funds, bonds and mystery tickers would spend a call and never score.
+    counts: dict[str, int] = defaultdict(int)
+    for bioguide_id, payload in iter_trades(conn):
+        try:
+            trade = trade_from_api(payload, bioguide_id)
+        except Exception:
+            continue
+        if classify_asset(trade) == "equity" and trade.symbol:
+            counts[trade.symbol.strip().upper()] += 1
+    symbols = ["SPY", *sorted(counts)]
     seen = set()
     ordered = []
     for symbol in symbols:
@@ -162,8 +174,18 @@ def _price_queue(conn, today: date, limit: int) -> list[str]:
         if last is not None and last >= expected:
             continue
         stale.append(symbol)
-    # SPY first, then the rest of the stale list, which is already stable.
-    stale.sort(key=lambda symbol: (symbol != "SPY", last_bar(conn, symbol) or "", symbol))
+    # SPY first, then never-priced tickers by how many trades they unlock,
+    # then the stalest of the rest. On a small daily budget this ranks members
+    # as early as possible.
+    stale.sort(
+        key=lambda symbol: (
+            symbol != "SPY",
+            last_bar(conn, symbol) is not None,
+            -counts.get(symbol, 0),
+            last_bar(conn, symbol) or "",
+            symbol,
+        )
+    )
     return stale[:limit]
 
 
@@ -195,7 +217,7 @@ def ingest(settings: Settings, conn, client: AlphaVantageClient, today: date | N
         spent = 0
         room = settings.max_requests_per_run
     else:
-        from capitol_gains.db import requests_today
+        from capitol_street_bets.db import requests_today
 
         spent = requests_today(conn, today)
         room = max(0, settings.requests_per_day - spent)
@@ -228,7 +250,7 @@ def ingest(settings: Settings, conn, client: AlphaVantageClient, today: date | N
             report["metadata"] = True
             members_waiting, prices_waiting = _waiting_counts(conn, today)
             # Room left after the metadata call.
-            from capitol_gains.db import requests_today as _count
+            from capitol_street_bets.db import requests_today as _count
 
             used_now = _count(conn, today)
             if settings.daily_unlimited:
@@ -266,7 +288,12 @@ def ingest(settings: Settings, conn, client: AlphaVantageClient, today: date | N
         # Prices depend on tickers we just stored. Recompute the stale set,
         # still capped by the original price allotment. One bad symbol does
         # not cancel the rest of the run.
-        price_limit = plan["prices"]
+        # Whatever the member loop left over also goes to prices.
+        from capitol_street_bets.db import requests_today as _spent
+
+        used = _spent(conn, today)
+        cap = settings.max_requests_per_run if settings.daily_unlimited else settings.requests_per_day
+        price_limit = max(plan["prices"], cap - used if not settings.daily_unlimited else plan["prices"])
         for symbol in _price_queue(conn, today, price_limit):
             try:
                 _pull_price(client, conn, symbol, today)

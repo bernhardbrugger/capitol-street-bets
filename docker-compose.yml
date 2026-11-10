@@ -1,7 +1,7 @@
 # Serves the scoreboard on http://localhost:8088
 # Refresh with: docker compose --profile refresh run --rm refresh
 services:
-  capitol-gains:
+  capitol-street-bets:
     build: .
     ports:
       - "8088:8080"
@@ -24,7 +24,7 @@ services:
     volumes:
       - av-cache:/app/data
       - ./web/public/data:/app/site/data
-    command: ["python", "-m", "capitol_gains", "run"]
+    command: ["python", "-m", "capitol_street_bets", "run"]
 
 volumes:
   av-cache:

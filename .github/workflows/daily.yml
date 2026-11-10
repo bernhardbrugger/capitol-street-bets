@@ -61,7 +61,7 @@ jobs:
             echo "ALPHAVANTAGE_API_KEY is not set. Keeping the JSON already in the repo."
             exit 0
           fi
-          PYTHONPATH=src python -m capitol_gains run
+          PYTHONPATH=src python -m capitol_street_bets run
 
       # Saved even when a later step fails, so spent API calls are never lost.
       - uses: actions/cache/save@v4
@@ -72,12 +72,12 @@ jobs:
 
       - name: Write current standings into README
         if: github.event_name != 'push'
-        run: PYTHONPATH=src python -m capitol_gains readme --url "$SITE_URL"
+        run: PYTHONPATH=src python -m capitol_street_bets readme --url "$SITE_URL"
 
       - name: Commit refreshed data and README
         if: github.event_name != 'push'
         run: |
-          git config user.name "capitol-gains-bot"
+          git config user.name "capitol-street-bets-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add web/public/data README.md
           if git diff --staged --quiet; then

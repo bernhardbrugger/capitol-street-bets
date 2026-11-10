@@ -9,7 +9,7 @@ from __future__ import annotations
 import re
 from datetime import date, timedelta
 
-from capitol_gains.models import (
+from capitol_street_bets.models import (
     HoldingSlice,
     MeasuredLot,
     MemberStats,
@@ -18,8 +18,8 @@ from capitol_gains.models import (
     parse_amount,
     parse_date,
 )
-from capitol_gains.prices import PriceBook
-from capitol_gains.sectors import is_tech
+from capitol_street_bets.prices import PriceBook
+from capitol_street_bets.sectors import is_tech
 
 EQUITY_CODES = {"st", "stock", "etf", "etn"}
 OPTION_CODES = {"op", "opt", "option", "stock option"}

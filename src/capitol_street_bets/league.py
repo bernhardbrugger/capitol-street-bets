@@ -6,12 +6,12 @@ import json
 from datetime import date, datetime, timezone
 from pathlib import Path
 
-from capitol_gains.badges import BADGE_COPY, assign_badges
-from capitol_gains.commentary import build_tape
-from capitol_gains.models import BoardRow, Politician, Trade
-from capitol_gains.prices import PriceBook
-from capitol_gains.ranks import ELEVATOR_DROP, apply_history, is_elevator, order_rows
-from capitol_gains.returns import (
+from capitol_street_bets.badges import BADGE_COPY, assign_badges
+from capitol_street_bets.commentary import build_tape
+from capitol_street_bets.models import BoardRow, Politician, Trade
+from capitol_street_bets.prices import PriceBook
+from capitol_street_bets.ranks import ELEVATOR_DROP, apply_history, is_elevator, order_rows
+from capitol_street_bets.returns import (
     WINDOWS,
     classify_asset,
     filing_lag_days,

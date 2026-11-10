@@ -27,6 +27,13 @@ jobs:
           node-version: "22"
           cache: npm
           cache-dependency-path: web/package-lock.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      # The repo holds live data; the browser tests check the fictional sample.
+      - name: Swap in the sample league
+        working-directory: .
+        run: PYTHONPATH=src python -m capitol_street_bets sample
       - run: npm ci
       - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e

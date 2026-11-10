@@ -3,10 +3,10 @@
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from capitol_gains.av import AlphaVantageClient, parse_limits
-from capitol_gains.config import Settings
-from capitol_gains.db import connect, get_meta
-from capitol_gains.ingest import ingest
+from capitol_street_bets.av import AlphaVantageClient, parse_limits
+from capitol_street_bets.config import Settings
+from capitol_street_bets.db import connect, get_meta
+from capitol_street_bets.ingest import ingest
 
 SECRET = "SUPERSECRETKEY"
 
@@ -244,8 +244,8 @@ def test_adjusted_endpoint_falls_back_when_the_plan_says_premium(tmp_path: Path)
 
 
 def test_identical_trade_rows_are_kept_as_separate_transactions(tmp_path):
-    from capitol_gains.db import connect, iter_trades
-    from capitol_gains.ingest import _pull_member
+    from capitol_street_bets.db import connect, iter_trades
+    from capitol_street_bets.ingest import _pull_member
 
     row = {
         "bioguide_id": "X000001", "symbol": "NVDA", "transaction_type": "BUY",

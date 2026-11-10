@@ -16,8 +16,8 @@ from collections.abc import Callable
 from dataclasses import dataclass
 from datetime import date, datetime, timedelta, timezone
 
-from capitol_gains.config import Settings
-from capitol_gains.db import (
+from capitol_street_bets.config import Settings
+from capitol_street_bets.db import (
     connect,
     get_meta,
     log_request,
@@ -60,7 +60,7 @@ def urllib_transport(base_url: str, timeout: float = 45.0) -> Transport:
         query = urllib.parse.urlencode(params)
         request = urllib.request.Request(
             f"{base_url}?{query}",
-            headers={"User-Agent": "capitol-gains/0.1"},
+            headers={"User-Agent": "capitol-street-bets/0.1"},
         )
         try:
             with urllib.request.urlopen(request, timeout=timeout) as response:

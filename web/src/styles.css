@@ -63,7 +63,7 @@ button { cursor: pointer; }
   margin: 0;
   font-family: "Teko", sans-serif;
   font-weight: 600;
-  font-size: clamp(56px, 8vw, 84px);
+  font-size: clamp(44px, 6.4vw, 78px);
   line-height: 0.8;
   letter-spacing: 0.02em;
 }
