@@ -7,24 +7,9 @@ The only league where everyone files late.
 ## Current standings
 
 <!-- LEADERBOARD:START -->
-> ⚠️ **Sample data.** These names and numbers are fictional. The board switches to live disclosures after the first successful data refresh.
+_No member has enough priced trades to be ranked yet. The board fills up with every refresh._
 
-**Top 10, last 12 months** (as of 2026-11-06)
-
-| # | | Member | Seat | Return | Alpha vs S&P | Copycat | Trades |
-|---:|:---:|---|---|---:|---:|---:|---:|
-| 1 | ▲5 | [Jordan Hale](https://bernhardbrugger.github.io/capitol-street-bets/#/member/CG0001) | D-CA · H | +16.6% | **+16.1%** | +16.4% | 3 |
-| 2 | ▲1 | [Casey Nguyen](https://bernhardbrugger.github.io/capitol-street-bets/#/member/CG0002) | R-WA · S | +2.1% | **+1.6%** | +1.9% | 3 |
-| 3 | ▼1 | [Avery Shah](https://bernhardbrugger.github.io/capitol-street-bets/#/member/CG0005) | R-TX · H | +2.0% | **+1.4%** | +1.1% | 3 |
-| 4 | ▬ | [Reese Dalton](https://bernhardbrugger.github.io/capitol-street-bets/#/member/CG0010) | D-WA · H | +0.9% | **+0.4%** | +0.6% | 3 |
-| 5 | ▬ | [Parker Singh](https://bernhardbrugger.github.io/capitol-street-bets/#/member/CG0007) | R-OH · S | +0.3% | **+0.2%** | +0.1% | 10 |
-| 6 | ▲1 | [Morgan Ellis](https://bernhardbrugger.github.io/capitol-street-bets/#/member/CG0004) | I-ME · S | +0.5% | **+0.0%** | +0.4% | 4 |
-| 7 | ▲1 | [Skyler Brooks](https://bernhardbrugger.github.io/capitol-street-bets/#/member/CG0009) | D-HI · S | +0.3% | **-0.4%** | +0.2% | 3 |
-| 8 | ▲1 | [Rowan Blake](https://bernhardbrugger.github.io/capitol-street-bets/#/member/CG0013) | R-MI · H | -0.4% | **-0.9%** | -0.3% | 3 |
-| 9 | ▲1 | [Jamie Ortiz](https://bernhardbrugger.github.io/capitol-street-bets/#/member/CG0011) | R-AZ · H | -2.1% | **-2.8%** | -1.4% | 6 |
-| 10 | ▲1 | [Drew Coleman](https://bernhardbrugger.github.io/capitol-street-bets/#/member/CG0008) | R-FL · H | -1.9% | **-4.1%** | -0.2% | 3 |
-
-Updated 2026-11-06. [Full board →](https://bernhardbrugger.github.io/capitol-street-bets/)
+Members loaded so far: **12 of 537** seated. Updated 2026-11-10. [Full board →](https://bernhardbrugger.github.io/capitol-street-bets/)
 <!-- LEADERBOARD:END -->
 
 A scoreboard of how members of Congress do with their **publicly disclosed** stock trades: rank arrows, badges, a daily ticker tape, and a head-to-head for anyone deciding who they would rather copy. The tone stays on the numbers. Party is a label on the card, not a punchline.
