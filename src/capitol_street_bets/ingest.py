@@ -591,7 +591,9 @@ def ingest_massive_prices(settings: Settings, conn, client, today: date | None =
 
         known = {symbol: last_bar(conn, symbol) for symbol in symbols}
         known = {symbol: last for symbol, last in known.items() if last}
-        floor = (target - timedelta(days=45)).isoformat()
+        # A ticker more than a week behind is halted or delisted; chasing it
+        # would cost a grouped call per missing day, every day.
+        floor = (target - timedelta(days=7)).isoformat()
         behind = [last for last in known.values() if floor <= last < target.isoformat()]
         if behind and not report["stopped"]:
             for day in sessions_between(date.fromisoformat(min(behind)), target):

@@ -92,3 +92,20 @@ def test_alpha_vantage_skips_prices_when_massive_is_on(tmp_path: Path):
 
     plan = budget_plan(25, False, 500, 0, 0.0, False)
     assert plan["prices"] == 0 and plan["members"] == 25
+
+
+def test_delisted_ticker_does_not_drag_catch_up(tmp_path: Path):
+    from capitol_street_bets.db import mark_price_sync, store_prices
+
+    settings = replace(_settings(tmp_path), massive_api_key=KEY)
+    conn = connect(settings.db_path)
+    _seed_trades(conn, ["NVDA", "DEAD"])
+    for symbol, last in (("SPY", "2026-11-06"), ("NVDA", "2026-11-06"), ("DEAD", "2026-09-15")):
+        store_prices(conn, symbol, {last: (10.0, 10.0)})
+        mark_price_sync(conn, symbol, last, "MASSIVE")
+    conn.commit()
+    fake = FakeMassive()
+    fake.throttle_once = False
+    client = MassiveClient(KEY, per_minute=1000, transport=fake, sleep=lambda _: None)
+    report = ingest_massive_prices(settings, conn, client, today=date(2026, 11, 10))
+    assert report["sessions"] == ["2026-11-09"]
