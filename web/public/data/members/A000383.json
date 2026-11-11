@@ -13999,13 +13999,13 @@
       "streak": 0,
       "on_fire": false,
       "benched": true,
-      "return": -0.004399,
-      "alpha": 0.028842,
-      "benchmark": -0.03324,
-      "copycat_return": 0.015453,
-      "copycat_alpha": 0.048693,
+      "return": -0.003491,
+      "alpha": 0.029166,
+      "benchmark": -0.032656,
+      "copycat_return": 0.014729,
+      "copycat_alpha": 0.047385,
       "trades": 0,
-      "avg_hold_days": 227.2,
+      "avg_hold_days": 228.2,
       "avg_filing_lag": null,
       "late_filings": 0,
       "filings": 0,
@@ -14014,16 +14014,6 @@
           "id": "beat_the_market",
           "name": "Beat the Market",
           "blurb": "Positive alpha versus SPY over the same holding periods."
-        },
-        {
-          "id": "diamond_hands",
-          "name": "Diamond Hands",
-          "blurb": "Longest average holding period on the board."
-        },
-        {
-          "id": "paper_hands",
-          "name": "Paper Hands",
-          "blurb": "Shortest average holding period on the board."
         }
       ],
       "excluded_options": 4,
@@ -14033,9 +14023,9 @@
       "uncopyable": 0
     },
     "ytd": {
-      "rank": 1,
-      "previous_rank": null,
-      "rank_change": null,
+      "rank": 2,
+      "previous_rank": 1,
+      "rank_change": -1,
       "streak": 0,
       "on_fire": false,
       "benched": false,
@@ -14045,7 +14035,7 @@
       "copycat_return": 0.022988,
       "copycat_alpha": 0.01705,
       "trades": 391,
-      "avg_hold_days": 226.9,
+      "avg_hold_days": 227.9,
       "avg_filing_lag": 115.0,
       "late_filings": 389,
       "filings": 391,
@@ -14066,24 +14056,9 @@
           "blurb": "The largest one or two trades are at least 70% of the dollars."
         },
         {
-          "id": "diamond_hands",
-          "name": "Diamond Hands",
-          "blurb": "Longest average holding period on the board."
-        },
-        {
-          "id": "paper_hands",
-          "name": "Paper Hands",
-          "blurb": "Shortest average holding period on the board."
-        },
-        {
           "id": "fashionably_late",
           "name": "Fashionably Late",
           "blurb": "Highest average gap between the trade and the filing."
-        },
-        {
-          "id": "buy_high_sell_low",
-          "name": "Buy High Sell Low",
-          "blurb": "Worst capital-weighted return on positions that were closed."
         }
       ],
       "excluded_options": 4,
@@ -14093,9 +14068,9 @@
       "uncopyable": 0
     },
     "12m": {
-      "rank": 1,
-      "previous_rank": null,
-      "rank_change": null,
+      "rank": 2,
+      "previous_rank": 1,
+      "rank_change": -1,
       "streak": 0,
       "on_fire": false,
       "benched": false,
@@ -14105,7 +14080,7 @@
       "copycat_return": 0.022988,
       "copycat_alpha": 0.01705,
       "trades": 391,
-      "avg_hold_days": 226.9,
+      "avg_hold_days": 227.9,
       "avg_filing_lag": 115.0,
       "late_filings": 389,
       "filings": 391,
@@ -14126,24 +14101,9 @@
           "blurb": "The largest one or two trades are at least 70% of the dollars."
         },
         {
-          "id": "diamond_hands",
-          "name": "Diamond Hands",
-          "blurb": "Longest average holding period on the board."
-        },
-        {
-          "id": "paper_hands",
-          "name": "Paper Hands",
-          "blurb": "Shortest average holding period on the board."
-        },
-        {
           "id": "fashionably_late",
           "name": "Fashionably Late",
           "blurb": "Highest average gap between the trade and the filing."
-        },
-        {
-          "id": "buy_high_sell_low",
-          "name": "Buy High Sell Low",
-          "blurb": "Worst capital-weighted return on positions that were closed."
         }
       ],
       "excluded_options": 4,
@@ -14153,9 +14113,9 @@
       "uncopyable": 0
     },
     "all": {
-      "rank": 1,
-      "previous_rank": null,
-      "rank_change": null,
+      "rank": 3,
+      "previous_rank": 1,
+      "rank_change": -2,
       "streak": 0,
       "on_fire": false,
       "benched": false,
@@ -14165,7 +14125,7 @@
       "copycat_return": 0.022988,
       "copycat_alpha": 0.01705,
       "trades": 391,
-      "avg_hold_days": 226.9,
+      "avg_hold_days": 227.9,
       "avg_filing_lag": 115.0,
       "late_filings": 389,
       "filings": 391,
@@ -14186,24 +14146,9 @@
           "blurb": "The largest one or two trades are at least 70% of the dollars."
         },
         {
-          "id": "diamond_hands",
-          "name": "Diamond Hands",
-          "blurb": "Longest average holding period on the board."
-        },
-        {
-          "id": "paper_hands",
-          "name": "Paper Hands",
-          "blurb": "Shortest average holding period on the board."
-        },
-        {
           "id": "fashionably_late",
           "name": "Fashionably Late",
           "blurb": "Highest average gap between the trade and the filing."
-        },
-        {
-          "id": "buy_high_sell_low",
-          "name": "Buy High Sell Low",
-          "blurb": "Worst capital-weighted return on positions that were closed."
         }
       ],
       "excluded_options": 4,

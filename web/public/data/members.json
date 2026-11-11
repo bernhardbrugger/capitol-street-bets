@@ -3758,6 +3758,13 @@
       "chamber": "House",
       "party": "D",
       "state": "CA"
+    },
+    {
+      "bioguide_id": "G000596",
+      "name": "Marjorie Taylor Greene",
+      "chamber": "House",
+      "party": "R",
+      "state": "GA"
     }
   ]
 }
