@@ -10,29 +10,29 @@
   "curves": {
     "30d": [
       {
-        "date": "2026-10-12",
+        "date": "2026-10-13",
         "member": 100.0,
         "spy": 100.0
       },
       {
-        "date": "2026-10-19",
-        "member": 98.8652,
-        "spy": 98.5066
+        "date": "2026-10-20",
+        "member": 99.6044,
+        "spy": 98.8483
       },
       {
-        "date": "2026-10-26",
-        "member": 99.4308,
-        "spy": 98.364
+        "date": "2026-10-27",
+        "member": 100.1552,
+        "spy": 98.9267
       },
       {
-        "date": "2026-11-02",
-        "member": 98.6357,
-        "spy": 96.6585
+        "date": "2026-11-03",
+        "member": 98.7,
+        "spy": 96.9589
       },
       {
         "date": "2026-11-09",
-        "member": 99.6662,
-        "spy": 96.7344
+        "member": 99.9022,
+        "spy": 96.7455
       }
     ],
     "ytd": [
@@ -13999,13 +13999,13 @@
       "streak": 0,
       "on_fire": false,
       "benched": true,
-      "return": -0.003491,
-      "alpha": 0.029166,
-      "benchmark": -0.032656,
-      "copycat_return": 0.014729,
-      "copycat_alpha": 0.047385,
+      "return": -0.001136,
+      "alpha": 0.031408,
+      "benchmark": -0.032545,
+      "copycat_return": 0.016392,
+      "copycat_alpha": 0.048937,
       "trades": 0,
-      "avg_hold_days": 228.2,
+      "avg_hold_days": 229.2,
       "avg_filing_lag": null,
       "late_filings": 0,
       "filings": 0,
@@ -14023,9 +14023,9 @@
       "uncopyable": 0
     },
     "ytd": {
-      "rank": 2,
-      "previous_rank": 1,
-      "rank_change": -1,
+      "rank": 6,
+      "previous_rank": 2,
+      "rank_change": -4,
       "streak": 0,
       "on_fire": false,
       "benched": false,
@@ -14035,7 +14035,7 @@
       "copycat_return": 0.022988,
       "copycat_alpha": 0.01705,
       "trades": 391,
-      "avg_hold_days": 227.9,
+      "avg_hold_days": 228.9,
       "avg_filing_lag": 115.0,
       "late_filings": 389,
       "filings": 391,
@@ -14054,11 +14054,6 @@
           "id": "one_big_bet",
           "name": "One Big Bet",
           "blurb": "The largest one or two trades are at least 70% of the dollars."
-        },
-        {
-          "id": "fashionably_late",
-          "name": "Fashionably Late",
-          "blurb": "Highest average gap between the trade and the filing."
         }
       ],
       "excluded_options": 4,
@@ -14068,9 +14063,9 @@
       "uncopyable": 0
     },
     "12m": {
-      "rank": 2,
-      "previous_rank": 1,
-      "rank_change": -1,
+      "rank": 6,
+      "previous_rank": 2,
+      "rank_change": -4,
       "streak": 0,
       "on_fire": false,
       "benched": false,
@@ -14080,7 +14075,7 @@
       "copycat_return": 0.022988,
       "copycat_alpha": 0.01705,
       "trades": 391,
-      "avg_hold_days": 227.9,
+      "avg_hold_days": 228.9,
       "avg_filing_lag": 115.0,
       "late_filings": 389,
       "filings": 391,
@@ -14099,11 +14094,6 @@
           "id": "one_big_bet",
           "name": "One Big Bet",
           "blurb": "The largest one or two trades are at least 70% of the dollars."
-        },
-        {
-          "id": "fashionably_late",
-          "name": "Fashionably Late",
-          "blurb": "Highest average gap between the trade and the filing."
         }
       ],
       "excluded_options": 4,
@@ -14113,9 +14103,9 @@
       "uncopyable": 0
     },
     "all": {
-      "rank": 3,
-      "previous_rank": 1,
-      "rank_change": -2,
+      "rank": 7,
+      "previous_rank": 3,
+      "rank_change": -4,
       "streak": 0,
       "on_fire": false,
       "benched": false,
@@ -14125,7 +14115,7 @@
       "copycat_return": 0.022988,
       "copycat_alpha": 0.01705,
       "trades": 391,
-      "avg_hold_days": 227.9,
+      "avg_hold_days": 228.9,
       "avg_filing_lag": 115.0,
       "late_filings": 389,
       "filings": 391,
@@ -14144,11 +14134,6 @@
           "id": "one_big_bet",
           "name": "One Big Bet",
           "blurb": "The largest one or two trades are at least 70% of the dollars."
-        },
-        {
-          "id": "fashionably_late",
-          "name": "Fashionably Late",
-          "blurb": "Highest average gap between the trade and the filing."
         }
       ],
       "excluded_options": 4,
