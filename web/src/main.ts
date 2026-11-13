@@ -843,6 +843,13 @@ function statusLine(board: WindowBoard): HTMLElement {
   return el("p", { class: "status" }, [el("i", { class: "dot" }), parts.join("")]);
 }
 
+function lastName(name: string): string {
+  const parts = name.replace(/,/g, " ").split(/\s+/).filter(Boolean);
+  const suffix = /^(jr\.?|sr\.?|ii|iii|iv|v)$/i;
+  while (parts.length > 1 && suffix.test(parts[parts.length - 1])) parts.pop();
+  return parts[parts.length - 1] ?? name;
+}
+
 const LINE_COLORS = ["#5aa9ff", "#3ee0a2", "#ff8a5c", "#c792ea", "#ffd166", "#ff6b9a"];
 
 function perfChart(chart: Chart | undefined): HTMLElement | null {
@@ -862,7 +869,7 @@ function perfChart(chart: Chart | undefined): HTMLElement | null {
   ];
   if (chart.congress.length) series.push({ id: "congress", label: "All Congress", initials: "ALL", color: "#f0c14a", points: chart.congress, bold: true });
   chart.members.forEach((m, i) =>
-    series.push({ id: m.bioguide_id, label: m.name.split(" ").slice(-1)[0], initials: m.initials, color: LINE_COLORS[i % LINE_COLORS.length], points: m.points }),
+    series.push({ id: m.bioguide_id, label: lastName(m.name), initials: m.initials, color: LINE_COLORS[i % LINE_COLORS.length], points: m.points }),
   );
   const chips = el("div", { class: "chips" });
   for (const item of series) {
