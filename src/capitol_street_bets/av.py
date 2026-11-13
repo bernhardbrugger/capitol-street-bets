@@ -195,6 +195,16 @@ class AlphaVantageClient:
             if message and is_throttle(payload):
                 detected = parse_limits(message)
                 self._remember_limits(detected)
+                lowered = message.lower()
+                # The minute note names both caps ("5 per minute and 25 per
+                # day"); the daily one only names the day.
+                if (detected.per_day and not detected.per_minute) or (
+                    "per day" in lowered and "minute" not in lowered and "frequency" not in lowered
+                ):
+                    # Retrying a daily cap only burns local budget. Stop for today.
+                    set_meta(self.conn, "av_last_limit_message", message[:300])
+                    self.conn.commit()
+                    raise DailyBudgetSpent("Alpha Vantage says the daily limit is reached: " + message[:200])
                 last_error = RateLimitError(message, detected.per_minute, detected.per_day)
                 self.sleep(min(8.0, 0.5 * (2**attempt)))
                 continue

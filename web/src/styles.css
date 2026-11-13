@@ -78,7 +78,7 @@ button { cursor: pointer; }
   gap: 8px;
   justify-content: flex-end;
 }
-.nav a, .windows button, .ghost, .primary {
+.nav a, .ghost, .primary {
   border: 1px solid var(--line);
   background: rgba(8, 16, 24, 0.45);
   color: var(--text);
@@ -86,7 +86,7 @@ button { cursor: pointer; }
   border-radius: 999px;
   padding: 8px 14px;
 }
-.nav a[aria-current="page"], .windows button[aria-pressed="true"], .primary {
+.nav a[aria-current="page"], .primary {
   background: var(--gold);
   color: #1a1404;
   border-color: transparent;
@@ -469,4 +469,102 @@ table.trades th { color: var(--muted); font-weight: 600; }
 }
 @media (max-width: 600px) {
   .stock-card:nth-child(n + 5) { display: none; }
+}
+
+
+/* ---- Leaderboard layout (tabs, hero, controls, chart) ---- */
+.tabs {
+  display: flex; gap: 4px; border-bottom: 1px solid var(--line);
+  margin: 6px 0 22px; overflow-x: auto; scrollbar-width: none;
+}
+.tabs a {
+  color: var(--muted); text-decoration: none; font-weight: 700; padding: 12px 16px 11px;
+  border-bottom: 2px solid transparent; white-space: nowrap;
+}
+.tabs a small { font-weight: 500; font-size: 12px; margin-left: 8px; color: var(--muted); }
+.tabs a:hover { color: var(--text); }
+.tabs a[aria-current="page"] { color: var(--text); border-bottom-color: var(--gold); }
+
+.hero { margin: 4px 0 22px; }
+.hero h2 { font-family: "Barlow", system-ui, sans-serif; font-size: clamp(20px, 2.2vw, 27px); line-height: 1.35; margin: 0 0 10px; font-weight: 700; letter-spacing: 0; max-width: 46ch; }
+.hero .hl { color: var(--up); text-decoration: none; }
+.hero .hl.down { color: var(--down); }
+.hero a.hl:hover { text-decoration: underline; }
+.hero p { max-width: 75ch; margin: 0; }
+
+.controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 0 0 10px; }
+.controls .search { margin-left: auto; }
+.seg, .seg.windows {
+  flex-wrap: nowrap;
+  display: inline-flex; align-items: stretch; border: 1px solid var(--line); border-radius: 10px;
+  overflow: hidden; background: rgba(8, 16, 24, 0.45);
+}
+.seg-label {
+  padding: 8px 12px; color: var(--muted); font-size: 13px; border-right: 1px solid var(--line);
+  display: flex; align-items: center; background: rgba(255, 255, 255, 0.02);
+}
+.seg button {
+  background: none; border: 0; border-right: 1px solid var(--line); color: var(--text);
+  padding: 8px 14px; font-size: 14px; cursor: pointer;
+}
+.seg button:last-child { border-right: 0; }
+.seg button:hover { background: rgba(255, 255, 255, 0.04); }
+.seg button[aria-pressed="true"] { background: rgba(240, 193, 74, 0.16); color: var(--gold-2); font-weight: 700; }
+.filter {
+  background: rgba(8, 16, 24, 0.45); color: var(--text); border: 1px solid var(--line);
+  border-radius: 10px; padding: 9px 12px; font: inherit; font-size: 14px;
+}
+.status {
+  border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; margin: 6px 0 18px;
+  color: var(--muted); font-size: 13px; display: flex; gap: 10px; align-items: baseline;
+}
+.status .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--up); flex: none; box-shadow: 0 0 8px var(--up); transform: translateY(-1px); }
+
+.perf {
+  border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px 12px; margin: 0 0 22px;
+  background: linear-gradient(180deg, rgba(20, 34, 51, 0.7), rgba(12, 22, 34, 0.7));
+}
+.perf h2 { margin: 0 0 4px; font-size: 18px; }
+.perf .small { font-size: 13px; margin: 0 0 14px; }
+.chips { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 8px; }
+.chip { background: none; border: 0; color: var(--text); display: grid; justify-items: center; gap: 4px; cursor: pointer; padding: 0; }
+.chip .ring {
+  width: 42px; height: 42px; border-radius: 50%; border: 2.5px solid; display: grid; place-items: center;
+  font-family: "Teko", sans-serif; font-size: 17px; background: #0f1b29;
+}
+.chip small { font-size: 11px; color: var(--muted); max-width: 72px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.chip.off { opacity: 0.35; }
+.perf-svg { width: 100%; height: auto; display: block; }
+.perf-svg .grid { stroke: rgba(214, 226, 242, 0.07); }
+.perf-svg .zero { stroke: rgba(214, 226, 242, 0.35); stroke-dasharray: 2 3; }
+.perf-svg .tick { fill: var(--muted); font-size: 11px; }
+.perf-svg .endlabel { fill: #0b1420; font-size: 10.5px; font-weight: 700; text-anchor: middle; }
+
+.filings { display: grid; gap: 4px; }
+.filing {
+  display: grid; grid-template-columns: 96px minmax(170px, 1.4fr) 60px minmax(150px, 1.3fr) 110px 96px 110px;
+  gap: 12px; align-items: center; padding: 9px 14px; border: 1px solid var(--line); border-radius: 10px;
+  background: var(--panel); font-size: 14px;
+}
+.filing.head { background: none; border: 0; color: var(--muted); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; padding-top: 0; padding-bottom: 0; }
+.filing .member, .filing .stock { display: flex; flex-direction: column; min-width: 0; }
+.filing a { color: var(--text); text-decoration: none; font-weight: 700; }
+.filing a:hover { color: var(--gold); }
+.filing small { color: var(--muted); font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.filing .sym { font-family: "Teko", sans-serif; font-size: 21px; line-height: 1; font-weight: 500; }
+.filing .date { color: var(--muted); font-variant-numeric: tabular-nums; }
+.filing .side { font-size: 11px; font-weight: 800; letter-spacing: 0.08em; padding: 2px 6px; border-radius: 6px; }
+.filing .late { color: var(--down); font-weight: 700; }
+
+@media (max-width: 860px) {
+  .controls .search { margin-left: 0; width: 100%; }
+  .seg { max-width: 100%; overflow-x: auto; }
+  .seg button { padding: 8px 10px; white-space: nowrap; }
+  .filing { grid-template-columns: 1fr auto; grid-template-areas: "member stock" "meta side"; row-gap: 4px; }
+  .filing.head { display: none; }
+  .filing > :nth-child(1), .filing > :nth-child(6), .filing > :nth-child(7) { display: none; }
+  .filing > :nth-child(2) { grid-area: member; }
+  .filing > :nth-child(4) { grid-area: stock; text-align: right; align-items: flex-end; }
+  .filing > :nth-child(3) { grid-area: side; justify-self: end; }
+  .filing > :nth-child(5) { grid-area: meta; color: var(--muted); font-size: 13px; }
 }

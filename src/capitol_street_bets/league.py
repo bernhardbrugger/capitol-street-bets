@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import json
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 from capitol_street_bets.badges import BADGE_COPY, assign_badges
@@ -343,6 +343,11 @@ def assemble_league(
         updated_history[name] = updated[-40:]
 
     recent = recent_disclosures(politicians, trades_by_member, as_of, late_days)
+    filings_list = [
+        item
+        for item in recent_disclosures(politicians, trades_by_member, as_of, late_days, limit=500, per_member_cap=10**6)
+        if item["filed_date"] >= (as_of - timedelta(days=60)).isoformat()
+    ]
     for name, body in windows.items():
         tape = [
             line
@@ -366,7 +371,11 @@ def assemble_league(
         "windows": windows,
         "badges": BADGE_COPY,
         "recent_disclosures": recent,
+        "filings": filings_list,
+        "filings_7d": sum(1 for item in filings_list if item["filed_date"] >= (as_of - timedelta(days=7)).isoformat()),
     }
+    for name in WINDOWS:
+        windows[name]["chart"] = performance_chart(windows[name], curves_by_window[name], book, name, as_of)
     members = {}
     for person in politicians:
         per_window = {name: curves_by_window[name].get(person.bioguide_id, []) for name in WINDOWS}
@@ -641,3 +650,47 @@ def most_traded(
             }
         )
     return out
+
+
+def performance_chart(window: dict, curves: dict[str, list], book: PriceBook, name: str, as_of: date, top: int = 6) -> dict:
+    """Weekly lines for the top of the table, an equal-weight 'All Congress'
+    line over every ranked member, and SPY, all rebased to 100."""
+    start, end = window_bounds(name, as_of)
+    ranked = window.get("ranked") or []
+    lines = []
+    for row in ranked[:top]:
+        points = curves.get(row["bioguide_id"]) or []
+        if len(points) >= 2:
+            lines.append(
+                {
+                    "bioguide_id": row["bioguide_id"],
+                    "name": row["name"],
+                    "initials": row.get("initials", ""),
+                    "party": row.get("party", ""),
+                    "points": [[p["date"], round(p["member"], 2)] for p in points],
+                }
+            )
+    # All Congress: mean of every ranked member's index on each date.
+    sums: dict[str, list[float]] = {}
+    for row in ranked:
+        for p in curves.get(row["bioguide_id"]) or []:
+            sums.setdefault(p["date"], []).append(p["member"])
+    congress = [[day, round(sum(vals) / len(vals), 2)] for day, vals in sorted(sums.items()) if len(vals) >= max(1, len(ranked) // 4)]
+    # SPY from the window start (or first member date for "all").
+    days = sorted(sums)
+    first = date.fromisoformat(days[0]) if days else start
+    if name != "all":
+        first = max(first, start)
+    base = book.on_or_before("SPY", first)
+    spy = []
+    if base:
+        cursor = first
+        while cursor <= end:
+            price = book.on_or_before("SPY", cursor)
+            if price:
+                spy.append([cursor.isoformat(), round(price / base * 100.0, 2)])
+            cursor += timedelta(days=7)
+        last = book.on_or_before("SPY", end)
+        if last and (not spy or spy[-1][0] != end.isoformat()):
+            spy.append([end.isoformat(), round(last / base * 100.0, 2)])
+    return {"members": lines, "congress": congress if len(ranked) >= 2 else [], "spy": spy}

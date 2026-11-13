@@ -330,6 +330,10 @@ def measure(
 def window_bounds(name: str, as_of: date) -> tuple[date, date]:
     if name == "30d":
         return as_of - timedelta(days=30), as_of
+    if name == "90d":
+        return as_of - timedelta(days=90), as_of
+    if name == "6m":
+        return as_of - timedelta(days=182), as_of
     if name == "ytd":
         return date(as_of.year, 1, 1), as_of
     if name == "12m":
@@ -339,7 +343,7 @@ def window_bounds(name: str, as_of: date) -> tuple[date, date]:
     raise KeyError(name)
 
 
-WINDOWS = ("30d", "ytd", "12m", "all")
+WINDOWS = ("30d", "90d", "6m", "12m", "all")
 
 
 def _in_window(day: date | None, start: date, end: date) -> bool:

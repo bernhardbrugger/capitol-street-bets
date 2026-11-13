@@ -49,6 +49,12 @@ type WindowBoard = {
   field_size: number;
   ticker_tape: string[];
   most_traded?: Stock[];
+  chart?: Chart;
+};
+type Chart = {
+  members: { bioguide_id: string; name: string; initials: string; party: string; points: [string, number][] }[];
+  congress: [string, number][];
+  spy: [string, number][];
 };
 type Stock = {
   symbol: string;
@@ -80,6 +86,8 @@ type League = {
     tickers_total?: number;
   };
   recent_disclosures?: Disclosure[];
+  filings?: Disclosure[];
+  filings_7d?: number;
 };
 type Disclosure = {
   bioguide_id: string;
@@ -125,10 +133,11 @@ type MemberFile = {
 };
 
 const WINDOWS: { id: string; label: string }[] = [
-  { id: "30d", label: "30D" },
-  { id: "ytd", label: "YTD" },
-  { id: "12m", label: "1Y" },
-  { id: "all", label: "ALL" },
+  { id: "30d", label: "30 days" },
+  { id: "90d", label: "90 days" },
+  { id: "6m", label: "6 months" },
+  { id: "12m", label: "1 year" },
+  { id: "all", label: "All" },
 ];
 const HUES = [28, 46, 78, 152, 168, 188, 262, 282, 314, 332];
 const BASE = import.meta.env.BASE_URL;
@@ -136,8 +145,25 @@ const REPO_URL = "https://github.com/bernhardbrugger/capitol-street-bets";
 const PROFILE_URL = "https://github.com/bernhardbrugger";
 
 type SortKey = "rank" | "return" | "alpha" | "trades" | "copycat" | "name";
-const state: { window: string; sort: SortKey; dir: "asc" | "desc"; query: string; left: string; right: string } = {
-  window: "30d",
+const state: {
+  window: string;
+  sort: SortKey;
+  dir: "asc" | "desc";
+  query: string;
+  left: string;
+  right: string;
+  rankBy: "member" | "copycat";
+  chamber: string;
+  party: string;
+  side: string;
+  hidden: Set<string>;
+} = {
+  rankBy: "member",
+  chamber: "all",
+  party: "all",
+  side: "all",
+  hidden: new Set<string>(),
+  window: "90d",
   sort: "rank",
   dir: "asc",
   query: "",
@@ -209,7 +235,13 @@ function allRows(): Row[] {
   const board = currentBoard();
   return [...board.ranked, ...board.benched];
 }
+function passesFilters(item: { chamber: string; party: string }): boolean {
+  if (state.chamber !== "all" && item.chamber !== state.chamber) return false;
+  if (state.party !== "all" && (item.party || "").toUpperCase().charAt(0) !== state.party) return false;
+  return true;
+}
 function matches(row: Row): boolean {
+  if (!passesFilters(row)) return false;
   const needle = state.query.trim().toLowerCase();
   if (!needle) return true;
   return `${row.name} ${row.state} ${row.chamber}`.toLowerCase().includes(needle);
@@ -225,6 +257,8 @@ function sorted(rows: Row[]): Row[] {
     if (state.sort === "alpha") return row.alpha ?? -999;
     if (state.sort === "trades") return row.trades;
     if (state.sort === "copycat") return row.copycat_return ?? -999;
+    // "Rank by copy-trading" re-orders the ranked rows by copycat alpha.
+    if (state.rankBy === "copycat") return -(row.copycat_alpha ?? -999);
     return row.rank ?? 999;
   };
   ranked.sort((a, b) => {
@@ -297,7 +331,7 @@ function badgeList(badges: Badge[], onFire: boolean): HTMLElement {
   return wrap;
 }
 
-function rowView(row: Row): HTMLAnchorElement {
+function rowView(row: Row, shown?: number): HTMLAnchorElement {
   const link = el("a", {
     class: `row${row.rank === 1 ? " leader" : ""}${row.elevator ? " elevator" : ""}`,
     href: `#/member/${row.bioguide_id}`,
@@ -305,7 +339,7 @@ function rowView(row: Row): HTMLAnchorElement {
     "data-elevator": row.elevator ? "true" : "false",
     "data-on-fire": row.on_fire ? "true" : "false",
   });
-  const rank = el("div", { class: "rank" }, [row.benched || row.rank == null ? "—" : String(row.rank)]);
+  const rank = el("div", { class: "rank" }, [row.benched || row.rank == null ? "—" : String(shown ?? row.rank)]);
   const avatar = el("div", { class: "avatar" }, [row.initials]);
   avatar.style.background = `hsl(${hue(row.bioguide_id)} 42% 36%)`;
   const who = el("div", { class: "who" }, [
@@ -320,7 +354,8 @@ function rowView(row: Row): HTMLAnchorElement {
   const alpha = el("div", { class: `num desk ${tone(row.alpha)}` }, [pct(row.alpha)]);
   const trades = el("div", { class: "desk" }, [String(row.trades)]);
   const copy = el("div", { class: `num desk ${tone(row.copycat_return)}` }, [pct(row.copycat_return)]);
-  link.append(rank, changeNode(row), who, chamber, ret, alpha, trades, copy, badgeList(row.badges, row.on_fire));
+  const change = state.rankBy === "copycat" && !row.benched ? el("div", { class: "chg flat" }, ["·"]) : changeNode(row);
+  link.append(rank, change, who, chamber, ret, alpha, trades, copy, badgeList(row.badges, row.on_fire));
   // Mobile keeps return and alpha visible under the name via a second line of badges area.
   const mobileNums = el("div", { class: "mobile-stats" });
   mobileNums.append(
@@ -462,18 +497,63 @@ function shell(body: HTMLElement): void {
     el("p", { class: "tagline" }, ["The only league where everyone files late."]),
   );
   const nav = el("nav", { class: "nav" });
-  const home = el("a", { href: "#/" }, ["League"]);
-  const versus = el("a", { href: "#/versus" }, ["Head to head"]);
-  const stocksLink = el("a", { href: "#/stocks" }, ["Stocks"]);
   const method = el("a", { href: `${BASE}methodology.html` }, ["Methodology"]);
-  const routeName = parseRoute().name;
-  if (routeName === "home") home.setAttribute("aria-current", "page");
-  if (routeName === "versus") versus.setAttribute("aria-current", "page");
-  if (routeName === "stocks") stocksLink.setAttribute("aria-current", "page");
   const repo = el("a", { href: REPO_URL, target: "_blank", rel: "noopener" }, ["GitHub ★"]);
-  nav.append(home, versus, stocksLink, method, repo);
+  nav.append(method, repo);
   top.append(brand, nav);
-  app.append(top, body, footer());
+  const routeName = parseRoute().name;
+  // Outside the page body: some pages rebuild their body after loading.
+  app.append(top, el("div", { class: "wrap" }, [tabs(routeName)]), body, footer());
+}
+
+function tabs(current: string): HTMLElement {
+  const bar = el("nav", { class: "tabs", "aria-label": "Sections" });
+  const items: [string, string, string, string?][] = [
+    ["home", "#/", "Leaderboard"],
+    ["filings", "#/filings", "Filings", league?.filings_7d != null ? `${league.filings_7d} in last 7d` : undefined],
+    ["stocks", "#/stocks", "Stocks"],
+    ["versus", "#/versus", "Head to head"],
+  ];
+  for (const [id, href, label, note] of items) {
+    const link = el("a", { href }, [label, note ? el("small", {}, [note]) : ""]);
+    if (id === current) link.setAttribute("aria-current", "page");
+    bar.append(link);
+  }
+  return bar;
+}
+
+function select(label: string, value: string, options: [string, string][], onChange: (v: string) => void): HTMLElement {
+  const node = el("select", { class: "filter", "aria-label": label }) as HTMLSelectElement;
+  for (const [v, text] of options) {
+    const option = el("option", { value: v }, [text]) as HTMLOptionElement;
+    if (v === value) option.selected = true;
+    node.append(option);
+  }
+  node.addEventListener("change", () => onChange(node.value));
+  return node;
+}
+
+function segmented(label: string, value: string, options: [string, string][], onChange: (v: string) => void): HTMLElement {
+  const wrap = el("div", { class: "seg", role: "group", "aria-label": label }, [el("span", { class: "seg-label" }, [label])]);
+  for (const [v, text] of options) {
+    const button = el("button", { type: "button", "aria-pressed": v === value ? "true" : "false" }, [text]);
+    button.addEventListener("click", () => onChange(v));
+    wrap.append(button);
+  }
+  return wrap;
+}
+
+function filterSelects(): HTMLElement[] {
+  return [
+    select("Chamber", state.chamber, [["all", "House and Senate"], ["House", "House"], ["Senate", "Senate"]], (v) => {
+      state.chamber = v;
+      render();
+    }),
+    select("Party", state.party, [["all", "All parties"], ["D", "Democrats"], ["R", "Republicans"], ["I", "Independents"]], (v) => {
+      state.party = v;
+      render();
+    }),
+  ];
 }
 
 function footer(): HTMLElement {
@@ -497,15 +577,11 @@ function footer(): HTMLElement {
 }
 
 function windowBar(): HTMLElement {
-  const bar = el("div", { class: "windows" });
-  for (const item of WINDOWS) {
-    const button = el("button", { type: "button", "aria-pressed": state.window === item.id ? "true" : "false" }, [item.label]);
-    button.addEventListener("click", () => {
-      state.window = item.id;
-      render();
-    });
-    bar.append(button);
-  }
+  const bar = segmented("Period", state.window, WINDOWS.map((w) => [w.id, w.label] as [string, string]), (v) => {
+    state.window = v;
+    render();
+  });
+  bar.classList.add("windows");
   return bar;
 }
 
@@ -513,33 +589,29 @@ function paintBoard(host: HTMLElement, rows: Row[]): void {
   host.replaceChildren(headerCells());
   const ranked = rows.filter((row) => !row.benched);
   const benched = rows.filter((row) => row.benched);
-  if (!ranked.length && !benched.length) {
-    host.append(el("p", { class: "empty" }, ["No one on the roster matches that."]));
+  const searching = state.query.trim().length > 0;
+  // Only members who traded in the period are on this page; the rest of the
+  // roster shows up when you search for them.
+  const active = benched.filter((row) => row.filings > 0);
+  const quiet = searching ? benched.filter((row) => row.filings <= 0) : [];
+  if (!ranked.length && !active.length && !quiet.length) {
+    host.append(el("p", { class: "empty" }, [searching ? "No one on the roster matches that." : "Nobody matching these filters has enough priced trades in this period. Try a longer period."]));
     return;
   }
-  for (const row of ranked) host.append(rowView(row));
-  // Members with filings in this window sit on the bench; the rest of the
-  // roster has nothing to show yet and stays folded away.
-  const active = benched.filter((row) => row.filings > 0);
-  const quiet = benched.filter((row) => row.filings <= 0);
-  const searching = state.query.trim().length > 0;
+  ranked.forEach((row, index) => host.append(rowView(row, index + 1)));
   if (active.length) {
     const details = el("details", { class: "bench" });
-    details.open = searching || ranked.length < 12;
-    details.append(el("summary", {}, [`Benched · ${active.length} with filings but under ${league?.min_trades ?? 3} priced equity trades`]));
+    details.open = searching || ranked.length < 8;
+    details.append(el("summary", {}, [`Traded, not ranked yet · ${active.length} with fewer than ${league?.min_trades ?? 3} priced stock trades`]));
     const stack = el("div", { class: "board" });
     for (const row of active) stack.append(rowView(row));
     details.append(stack);
     host.append(details);
   }
   if (quiet.length) {
-    const details = el("details", { class: "bench quiet" });
-    details.open = searching;
-    details.append(el("summary", {}, [`${quiet.length} members with no disclosed trades in this window`]));
     const stack = el("div", { class: "board" });
     for (const row of quiet) stack.append(rowView(row));
-    details.append(stack);
-    host.append(details);
+    host.append(el("p", { class: "meta-line" }, ["No trades in this period:"]), stack);
   }
 }
 
@@ -559,7 +631,7 @@ function splitBar(stock: Stock): HTMLElement {
 }
 
 function windowLabel(id: string): string {
-  return { "30d": "last 30 days", ytd: "this year", "12m": "last 12 months", all: "all time" }[id] ?? id;
+  return { "30d": "last 30 days", "90d": "last 90 days", "6m": "last 6 months", "12m": "last 12 months", all: "all time" }[id] ?? id;
 }
 
 function stockStrip(): HTMLElement | null {
@@ -591,6 +663,80 @@ function stockStrip(): HTMLElement | null {
   });
   section.append(grid);
   return section;
+}
+
+function renderFilings(): void {
+  stopConfetti();
+  const page = el("main", { class: "wrap" });
+  const all = (league?.filings ?? []).filter(passesFilters);
+  const needle = state.query.trim().toLowerCase();
+  const items = all.filter(
+    (item) =>
+      (state.side === "all" || item.side === state.side) &&
+      (!needle || `${item.name} ${item.symbol} ${item.asset_name}`.toLowerCase().includes(needle)),
+  );
+  const search = el("input", { class: "search", type: "search", placeholder: "Search members or stocks", value: state.query, "aria-label": "Search filings" }) as HTMLInputElement;
+  search.addEventListener("input", () => {
+    state.query = search.value;
+    render();
+    const next = document.querySelector<HTMLInputElement>(".search");
+    next?.focus();
+    const pos = next?.value.length ?? 0;
+    next?.setSelectionRange(pos, pos);
+  });
+  page.append(
+    el("h2", { class: "section-title" }, ["Filings"]),
+    el("p", { class: "muted" }, [
+      `Stock trades disclosed in the last 60 days, newest filing first. "Filed after" is the gap between the trade and the disclosure; over ${league?.late_days ?? 45} days counts as late.`,
+    ]),
+    el("div", { class: "controls" }, [
+      segmented("Show", state.side, [["all", "All"], ["buy", "Buys"], ["sell", "Sells"]], (v) => {
+        state.side = v;
+        render();
+      }),
+      ...filterSelects(),
+      search,
+    ]),
+    el("p", { class: "status" }, [el("i", { class: "dot" }), `${items.length} filing${items.length === 1 ? "" : "s"} shown · ${league?.filings_7d ?? 0} filed in the last 7 days.`]),
+  );
+  if (!items.length) {
+    page.append(el("div", { class: "callout" }, ["No filings match these filters yet."]));
+    shell(page);
+    return;
+  }
+  const table = el("div", { class: "filings", role: "table" });
+  table.append(
+    el("div", { class: "filing head", role: "row" }, [
+      el("span", {}, ["Filed"]),
+      el("span", {}, ["Member"]),
+      el("span", {}, [""]),
+      el("span", {}, ["Stock"]),
+      el("span", {}, ["Amount"]),
+      el("span", {}, ["Traded"]),
+      el("span", {}, ["Filed after"]),
+    ]),
+  );
+  for (const item of items.slice(0, 300)) {
+    table.append(
+      el("div", { class: "filing", role: "row" }, [
+        el("span", { class: "date" }, [item.filed_date]),
+        el("span", { class: "member" }, [
+          el("a", { href: `#/member/${item.bioguide_id}` }, [item.name]),
+          el("small", {}, [`${item.chamber} · ${item.state} · ${item.party}`]),
+        ]),
+        el("span", {}, [el("span", { class: `side ${item.side}` }, [item.side === "buy" ? "BUY" : "SELL"])]),
+        el("span", { class: "stock" }, [
+          el("a", { href: `#/stocks?s=${encodeURIComponent(item.symbol)}`, class: "sym" }, [item.symbol]),
+          el("small", {}, [item.asset_name.replace(/\s*\[[A-Z]+\]\s*$/, "").slice(0, 48)]),
+        ]),
+        el("span", {}, [item.amount]),
+        el("span", { class: "date" }, [item.transaction_date ?? "—"]),
+        el("span", { class: item.late ? "late" : "" }, [item.lag_days == null ? "—" : `${item.lag_days} days${item.late ? " · late" : ""}`]),
+      ]),
+    );
+  }
+  page.append(table);
+  shell(page);
 }
 
 function renderStocks(): void {
@@ -644,67 +790,190 @@ function renderStocks(): void {
   if (focus) document.getElementById(`stock-${focus}`)?.scrollIntoView({ block: "center" });
 }
 
-function progress(label: string, done: number, total: number, note: string): HTMLElement {
-  const share = total > 0 ? Math.min(1, done / total) : 0;
-  const bar = el("div", { class: "bar" }, [el("span", { style: `width:${(share * 100).toFixed(1)}%` })]);
-  return el("div", { class: "progress" }, [
-    el("div", { class: "progress-head" }, [el("span", {}, [label]), el("strong", {}, [`${done} / ${total}`])]),
-    bar,
-    el("p", {}, [note]),
-  ]);
+function windowPhrase(id: string): string {
+  return { "30d": "in the last 30 days", "90d": "in the last 90 days", "6m": "in the last 6 months", "12m": "in the last 12 months", all: "on record" }[id] ?? "";
 }
 
-function warmup(): HTMLElement {
-  const cov = league?.coverage;
-  const box = el("section", { class: "warmup", "data-warmup": "true" });
-  box.append(
-    el("div", { class: "warmup-head" }, [
-      el("div", { class: "label" }, ["PRESEASON"]),
-      el("h2", {}, ["The league is warming up"]),
-      el("p", {}, [
-        "Filings are pulled a little every day on a free data plan. Members get ranked once they have ",
-        el("strong", {}, [`${league?.min_trades ?? 3} priced stock trades`]),
-        ". Until then, here is what they have been filing.",
+function hero(board: WindowBoard): HTMLElement {
+  const box = el("section", { class: "hero" });
+  const ranked = board.ranked.filter((row) => row.copycat_alpha != null);
+  const star = [...ranked].sort((a, b) => (b.copycat_alpha ?? -9) - (a.copycat_alpha ?? -9))[0];
+  if (star) {
+    const ahead = (star.copycat_alpha ?? 0) >= 0;
+    box.append(
+      el("h2", {}, [
+        el("a", { href: `#/member/${star.bioguide_id}`, class: "hl" }, [star.name]),
+        " made ",
+        el("span", { class: "hl" }, [`${star.trades} stock trades`]),
+        ` ${windowPhrase(state.window)}.`,
+        el("br"),
+        "Copying them when the filings went public would have ",
+        el("span", { class: ahead ? "hl" : "hl down" }, [ahead ? "beaten" : "trailed"]),
+        " the S&P 500 by ",
+        el("span", { class: ahead ? "hl" : "hl down" }, [`${Math.abs((star.copycat_alpha ?? 0) * 100).toFixed(1)} points`]),
+        ".",
       ]),
+    );
+  } else {
+    box.append(el("h2", {}, ["Who in Congress beats the S&P 500 with their own stock trades?"]));
+  }
+  box.append(
+    el("p", { class: "muted" }, [
+      `Members of Congress must disclose stock trades over $1,000 within 45 days. This board prices every disclosed stock trade and compares it with the S&P 500 over the same holding period.`,
     ]),
   );
-  if (cov) {
-    const grid = el("div", { class: "progress-grid" });
-    grid.append(progress("Members loaded", cov.members_loaded, cov.members_seated, `${cov.members_trading ?? 0} of them have disclosed trades`));
-    if (cov.tickers_total != null) {
-      grid.append(progress("Tickers priced", cov.tickers_priced ?? 0, cov.tickers_total, "Most-traded names go first"));
-    }
-    box.append(grid);
-  }
   return box;
 }
 
-function disclosureFeed(): HTMLElement | null {
-  const items = league?.recent_disclosures ?? [];
-  if (!items.length) return null;
-  const section = el("section", { class: "feed", "aria-label": "Latest disclosures" });
-  section.append(el("h2", { class: "feed-title" }, ["Latest disclosures"]));
-  const grid = el("div", { class: "feed-grid" });
-  for (const item of items.slice(0, 6)) {
-    const lag = item.lag_days == null ? "" : `filed after ${item.lag_days} days`;
-    grid.append(
-      el("a", { class: `feed-card ${item.side}`, href: `#/member/${item.bioguide_id}` }, [
-        el("div", { class: "feed-top" }, [
-          el("span", { class: `side ${item.side}` }, [item.side === "buy" ? "BUY" : "SELL"]),
-          el("strong", { class: "sym" }, [item.symbol]),
-          el("span", { class: "amt" }, [item.amount]),
-        ]),
-        el("div", { class: "feed-name" }, [item.name]),
-        el("div", { class: "feed-meta" }, [
-          `${item.chamber} · ${item.state} · ${item.party} · ${item.filed_date}`,
-          lag ? " · " : "",
-          lag ? el("span", { class: item.late ? "late" : "" }, [item.late ? `${lag} (late)` : lag]) : "",
-        ]),
-      ]),
-    );
+function statusLine(board: WindowBoard): HTMLElement {
+  const rows = [...board.ranked, ...board.benched].filter(passesFilters);
+  const traded = rows.filter((row) => row.filings > 0).length;
+  const ranked = board.ranked.filter(passesFilters).length;
+  const cov = league?.coverage;
+  const parts = [
+    `Updated ${league?.as_of ?? board.as_of}.`,
+    ` ${traded} member${traded === 1 ? "" : "s"} traded in this period; ${ranked} ${ranked === 1 ? "has" : "have"} enough priced trades to rank.`,
+  ];
+  if (cov && cov.members_loaded < cov.members_seated) {
+    parts.push(` Trade history loaded for ${cov.members_loaded} of ${cov.members_seated} seated members so far, more every day, busiest traders first.`);
   }
-  section.append(grid);
-  return section;
+  return el("p", { class: "status" }, [el("i", { class: "dot" }), parts.join("")]);
+}
+
+const LINE_COLORS = ["#5aa9ff", "#3ee0a2", "#ff8a5c", "#c792ea", "#ffd166", "#ff6b9a"];
+
+function perfChart(chart: Chart | undefined): HTMLElement | null {
+  if (!chart || (!chart.members.length && !chart.spy.length)) return null;
+  const card = el("section", { class: "perf" });
+  card.append(
+    el("h2", {}, ["Performance over time"]),
+    el("p", { class: "muted small" }, [
+      state.rankBy === "copycat"
+        ? "Lines show each member's own disclosed trades from their trade dates. Dashed line: S&P 500."
+        : "How each member's disclosed stock trades performed from their trade dates, larger trades counting more. Dashed line: S&P 500.",
+    ]),
+  );
+  type Series = { id: string; label: string; initials: string; color: string; points: [string, number][]; dashed?: boolean; bold?: boolean };
+  const series: Series[] = [
+    { id: "spy", label: "S&P 500", initials: "S&P", color: "#9fb0c5", points: chart.spy, dashed: true },
+  ];
+  if (chart.congress.length) series.push({ id: "congress", label: "All Congress", initials: "ALL", color: "#f0c14a", points: chart.congress, bold: true });
+  chart.members.forEach((m, i) =>
+    series.push({ id: m.bioguide_id, label: m.name.split(" ").slice(-1)[0], initials: m.initials, color: LINE_COLORS[i % LINE_COLORS.length], points: m.points }),
+  );
+  const chips = el("div", { class: "chips" });
+  for (const item of series) {
+    const off = state.hidden.has(item.id);
+    const chip = el("button", { type: "button", class: `chip${off ? " off" : ""}`, "aria-pressed": off ? "false" : "true", title: off ? `Show ${item.label}` : `Hide ${item.label}` }, [
+      el("span", { class: "ring", style: `border-color:${item.color};${item.dashed ? "border-style:dashed;" : ""}` }, [item.initials]),
+      el("small", {}, [item.label]),
+    ]);
+    chip.addEventListener("click", () => {
+      if (state.hidden.has(item.id)) state.hidden.delete(item.id);
+      else state.hidden.add(item.id);
+      render();
+    });
+    chips.append(chip);
+  }
+  card.append(chips);
+  const visible = series.filter((item) => !state.hidden.has(item.id) && item.points.length >= 2);
+  if (!visible.length) {
+    card.append(el("p", { class: "empty" }, ["Pick a line above."]));
+    return card;
+  }
+  // Narrow screens get a taller, tighter canvas so labels stay readable.
+  const narrow = window.innerWidth < 640;
+  const W = narrow ? 560 : 1100;
+  const H = narrow ? 380 : 320;
+  const L = 12;
+  const R = 70;
+  const T = 14;
+  const B = 30;
+  const toTime = (d: string) => new Date(`${d}T00:00:00Z`).getTime();
+  const all = visible.flatMap((item) => item.points);
+  const t0 = Math.min(...all.map((p) => toTime(p[0])));
+  const t1 = Math.max(...all.map((p) => toTime(p[0])));
+  const vals = all.map((p) => p[1] - 100);
+  let lo = Math.min(0, ...vals);
+  let hi = Math.max(0, ...vals);
+  const padV = (hi - lo) * 0.08 || 2;
+  lo -= padV;
+  hi += padV;
+  const x = (d: string) => L + ((toTime(d) - t0) / Math.max(1, t1 - t0)) * (W - L - R);
+  const y = (v: number) => T + ((hi - (v - 100)) / (hi - lo)) * (H - T - B);
+  const NS = "http://www.w3.org/2000/svg";
+  const svg = document.createElementNS(NS, "svg");
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+  svg.setAttribute("class", "perf-svg");
+  svg.setAttribute("role", "img");
+  svg.setAttribute("aria-label", "Indexed performance of the top members, all ranked members and the S&P 500");
+  const step = [1, 2, 5, 10, 20, 25, 50, 100].find((s) => (hi - lo) / s <= 6) ?? 100;
+  for (let v = Math.ceil(lo / step) * step; v <= hi; v += step) {
+    const g = document.createElementNS(NS, "line");
+    g.setAttribute("x1", String(L));
+    g.setAttribute("x2", String(W - R));
+    g.setAttribute("y1", String(y(v + 100)));
+    g.setAttribute("y2", String(y(v + 100)));
+    g.setAttribute("class", v === 0 ? "zero" : "grid");
+    const t = document.createElementNS(NS, "text");
+    t.setAttribute("x", String(W - R + 6));
+    t.setAttribute("y", String(y(v + 100) + 4));
+    t.setAttribute("class", "tick");
+    t.textContent = `${v > 0 ? "+" : ""}${v}%`;
+    svg.append(g, t);
+  }
+  // Month ticks along the bottom.
+  const months = new Set<string>();
+  for (const p of all) months.add(p[0].slice(0, 7));
+  const monthList = [...months].sort();
+  const every = Math.max(1, Math.ceil(monthList.length / 8));
+  monthList.forEach((m, i) => {
+    if (i % every) return;
+    const d = `${m}-01`;
+    if (toTime(d) < t0) return;
+    const t = document.createElementNS(NS, "text");
+    t.setAttribute("x", String(x(d)));
+    t.setAttribute("y", String(H - 8));
+    t.setAttribute("class", "tick");
+    t.textContent = new Date(`${d}T00:00:00Z`).toLocaleDateString("en-US", { month: "short", year: monthList.length > 12 ? "2-digit" : undefined, timeZone: "UTC" });
+    svg.append(t);
+  });
+  const labels: { y: number; text: string; color: string }[] = [];
+  for (const item of visible) {
+    const line = document.createElementNS(NS, "polyline");
+    line.setAttribute("fill", "none");
+    line.setAttribute("stroke", item.color);
+    line.setAttribute("stroke-width", item.bold ? "3.2" : "2");
+    line.setAttribute("stroke-linejoin", "round");
+    if (item.dashed) line.setAttribute("stroke-dasharray", "5 5");
+    line.setAttribute("points", item.points.map((p) => `${x(p[0]).toFixed(1)},${y(p[1]).toFixed(1)}`).join(" "));
+    const title = document.createElementNS(NS, "title");
+    title.textContent = item.label;
+    line.append(title);
+    svg.append(line);
+    const last = item.points[item.points.length - 1];
+    labels.push({ y: y(last[1]), text: `${last[1] - 100 >= 0 ? "+" : ""}${(last[1] - 100).toFixed(1)}%`, color: item.color });
+  }
+  // End labels, nudged apart so they do not overlap.
+  labels.sort((a, b) => a.y - b.y);
+  for (let i = 1; i < labels.length; i++) if (labels[i].y - labels[i - 1].y < 15) labels[i].y = labels[i - 1].y + 15;
+  for (const label of labels) {
+    const r = document.createElementNS(NS, "rect");
+    r.setAttribute("x", String(W - R + 2));
+    r.setAttribute("y", String(label.y - 8));
+    r.setAttribute("width", "58");
+    r.setAttribute("height", "15");
+    r.setAttribute("rx", "3");
+    r.setAttribute("fill", label.color);
+    const t = document.createElementNS(NS, "text");
+    t.setAttribute("x", String(W - R + 31));
+    t.setAttribute("y", String(label.y + 3.5));
+    t.setAttribute("class", "endlabel");
+    t.textContent = label.text;
+    svg.append(r, t);
+  }
+  card.append(svg);
+  return card;
 }
 
 function renderHome(): void {
@@ -713,40 +982,12 @@ function renderHome(): void {
   if (league?.sample) {
     page.append(
       el("div", { class: "banner", "data-sample": "true" }, [
-        "Sample league. These members and prices are fictional, so you can click around before a real ingestion. Live disclosures replace this board once an Alpha Vantage key is configured.",
+        "Sample league. These members and prices are fictional, so you can click around before a real ingestion.",
       ]),
     );
   }
-  const tapeText = board.ticker_tape.length ? board.ticker_tape : ["The tape is quiet. Check back after the next snapshot."];
-  const doubled = [...tapeText, ...tapeText];
-  const track = el("div", { class: "tape-track" });
-  for (const line of doubled) track.append(el("span", {}, [line]));
-  page.append(el("div", { class: "tape", "aria-label": "Daily ticker tape" }, [track]));
-
-  const behind = board.ranked.filter((row) => (row.alpha ?? 0) < -0.0001).length;
-  const score = el("section", { class: "scorebug", "data-scorebug": "true" });
-  score.append(
-    el("div", { class: "team ahead" }, [
-      el("div", { class: "label" }, ["CONGRESS"]),
-      el("strong", { "data-beat": String(board.beat_market) }, [String(board.beat_market)]),
-      el("em", {}, ["members ahead of SPY"]),
-    ]),
-    el("div", { class: "versus" }, ["VS"]),
-    el("div", { class: "team behind" }, [
-      el("div", { class: "label" }, ["THE MARKET"]),
-      el("strong", {}, [String(behind)]),
-      el("em", {}, ["members the S&P is ahead of"]),
-    ]),
-  );
-  const anyRanked = Object.values(league?.windows ?? {}).some((item) => item.ranked.length > 0);
-  const warming = !league?.sample && !anyRanked;
-  page.append(warming ? warmup() : score);
-  // While nobody is ranked the filings are the show; afterwards the table is.
-  const feed = disclosureFeed();
-  if (feed && warming) page.append(feed);
-
-  const tools = el("div", { class: "toolbar" });
-  const search = el("input", { class: "search", type: "search", placeholder: "Find a member", value: state.query, "aria-label": "Find a member" }) as HTMLInputElement;
+  page.append(hero(board));
+  const search = el("input", { class: "search", type: "search", placeholder: "Search members", value: state.query, "aria-label": "Find a member" }) as HTMLInputElement;
   search.addEventListener("input", () => {
     state.query = search.value;
     render();
@@ -755,20 +996,28 @@ function renderHome(): void {
     const pos = next?.value.length ?? 0;
     next?.setSelectionRange(pos, pos);
   });
-  tools.append(windowBar(), search);
-  page.append(tools);
+  page.append(
+    el("div", { class: "controls" }, [
+      segmented("Rank by", state.rankBy, [["member", "Member's return"], ["copycat", "Copy-trading"]], (v) => {
+        state.rankBy = v as "member" | "copycat";
+        render();
+      }),
+      ...filterSelects(),
+    ]),
+    el("div", { class: "controls" }, [windowBar(), search]),
+    statusLine(board),
+  );
+  const chart = perfChart(board.chart);
+  if (chart) page.append(chart);
+  const host = el("section", { class: "board", id: "board" });
   page.append(
     el("p", { class: "meta-line" }, [
-      `Scored ${board.as_of}. Arrows versus ${board.previous_date ?? "no prior snapshot"}. Ranked on alpha. Minimum ${league?.min_trades ?? 3} trades.`,
+      state.rankBy === "copycat"
+        ? `Ranked by copy-trading: buying on the day each trade was disclosed, versus the S&P 500. Minimum ${league?.min_trades ?? 3} priced stock trades.`
+        : `Ranked by alpha: the member's own trade-date returns versus the S&P 500 over the same days. Minimum ${league?.min_trades ?? 3} priced stock trades. Arrows versus ${board.previous_date ?? "the first snapshot"}.`,
     ]),
+    host,
   );
-
-  const host = el("section", { class: "board", id: "board" });
-  page.append(host);
-  if (feed && !warming) {
-    feed.classList.add("after-board");
-    page.append(feed);
-  }
   const hot = stockStrip();
   if (hot) page.append(hot);
   shell(page);
@@ -1058,12 +1307,13 @@ function verdict(rows: Row[]): HTMLElement {
   return box;
 }
 
-function parseRoute(): { name: "home" } | { name: "member"; id: string } | { name: "versus" } | { name: "stocks" } {
+function parseRoute(): { name: "home" } | { name: "member"; id: string } | { name: "versus" } | { name: "stocks" } | { name: "filings" } {
   const hash = location.hash.replace(/^#/, "") || "/";
   const member = hash.match(/^\/member\/([A-Za-z0-9]+)$/);
   if (member) return { name: "member", id: member[1] };
   if (hash.startsWith("/versus")) return { name: "versus" };
   if (hash.startsWith("/stocks")) return { name: "stocks" };
+  if (hash.startsWith("/filings")) return { name: "filings" };
   return { name: "home" };
 }
 
@@ -1080,6 +1330,10 @@ function render(): void {
   }
   if (route.name === "stocks") {
     renderStocks();
+    return;
+  }
+  if (route.name === "filings") {
+    renderFilings();
     return;
   }
   renderHome();
@@ -1105,7 +1359,7 @@ async function boot(): Promise<void> {
   }
   // Open on the window with the most ranked members, so an early board
   // does not look empty just because the last 30 days are quiet.
-  const counts = (["30d", "ytd", "12m", "all"] as const).map((id) => [id, league?.windows?.[id]?.ranked?.length ?? 0] as const);
+  const counts = (["90d", "6m", "12m", "30d", "all"] as const).map((id) => [id, league?.windows?.[id]?.ranked?.length ?? 0] as const);
   const best = counts.reduce((a, b) => (b[1] > a[1] ? b : a));
   if ((league?.windows?.[state.window]?.ranked?.length ?? 0) === 0 && best[1] > 0) state.window = best[0];
   render();

@@ -297,3 +297,19 @@ def test_discovery_puts_active_traders_first(tmp_path: Path):
     before = len(calls)
     ingest(settings, conn, client, today=clock.now.date())
     assert all(c.get("symbol") != "NVDA" or c["function"] != "CONGRESS_TRADES" for c in calls[before:])
+
+
+def test_daily_cap_message_stops_without_retrying(tmp_path: Path):
+    calls: list[str] = []
+
+    def transport(params: dict) -> dict:
+        calls.append(params["function"])
+        return {"Information": "We have detected your API key as XYZ and our standard API rate limit is 25 requests per day. Please subscribe to any of the premium plans."}
+
+    clock = Clock(datetime(2026, 11, 6, 15, tzinfo=timezone.utc))
+    settings = _settings(tmp_path, requests_per_day=25)
+    conn = connect(settings.db_path)
+    client = AlphaVantageClient(settings, conn, transport=transport, sleep=clock.sleep, clock=clock)
+    report = ingest(settings, conn, client, today=clock.now.date())
+    assert len(calls) == 1
+    assert "daily limit" in report["stopped"]

@@ -42,14 +42,16 @@
       <h2>Alpha versus the S&amp;P 500</h2>
       <p>For each lot, weight is shares times the price at the start of the measured span. Dollar P&amp;L is the change in that price. SPY is measured from the same start date to the same end date. Member return is total P&amp;L divided by total weight. Alpha is that return minus the weight-matched SPY return. Overlapping lots are not a time-weighted portfolio, and there are no commissions.</p>
       <p>The chart chains those same period returns. Both lines start at 100. A flat stretch means there was no open position, so the benchmark is flat too.</p>
+      <p>On the leaderboard, "All Congress" is the equal-weight average of every ranked member's line on each date. "Rank by copy-trading" orders members by copycat alpha: buying on the day each trade became public instead of the trade date.</p>
 
       <h2>Windows</h2>
       <table>
         <tr><th>Window</th><th>Start</th></tr>
-        <tr><td>30D</td><td>Scoreboard date minus 30 calendar days</td></tr>
-        <tr><td>YTD</td><td>January 1</td></tr>
-        <tr><td>1Y</td><td>Scoreboard date minus 365 days</td></tr>
-        <tr><td>ALL</td><td>First priced lot in the cache</td></tr>
+        <tr><td>30 days</td><td>Scoreboard date minus 30 calendar days</td></tr>
+        <tr><td>90 days</td><td>Scoreboard date minus 90 calendar days</td></tr>
+        <tr><td>6 months</td><td>Scoreboard date minus 182 calendar days</td></tr>
+        <tr><td>1 year</td><td>Scoreboard date minus 365 days</td></tr>
+        <tr><td>All</td><td>First priced lot in the cache (prices reach back two years)</td></tr>
       </table>
       <p>A lot is measured from the later of its entry and the window start, through the earlier of its exit and the window end. The span has to cover at least one day. Trade counts use the transaction date. Filing lag uses the disclosure date.</p>
 

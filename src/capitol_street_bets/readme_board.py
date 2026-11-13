@@ -11,8 +11,15 @@ from pathlib import Path
 
 START = "<!-- LEADERBOARD:START -->"
 END = "<!-- LEADERBOARD:END -->"
-WINDOW_ORDER = ("12m", "ytd", "all", "30d")
-WINDOW_LABEL = {"12m": "last 12 months", "ytd": "year to date", "all": "all time", "30d": "last 30 days"}
+WINDOW_ORDER = ("12m", "6m", "90d", "all", "30d")
+WINDOW_LABEL = {
+    "12m": "last 12 months",
+    "6m": "last 6 months",
+    "90d": "last 90 days",
+    "ytd": "year to date",
+    "all": "all time",
+    "30d": "last 30 days",
+}
 
 
 def _pct(value) -> str:
