@@ -313,3 +313,30 @@ def test_daily_cap_message_stops_without_retrying(tmp_path: Path):
     report = ingest(settings, conn, client, today=clock.now.date())
     assert len(calls) == 1
     assert "daily limit" in report["stopped"]
+
+
+def test_calls_are_spaced_and_burst_note_is_not_a_daily_stop(tmp_path: Path):
+    calls: list[str] = []
+    state = {"n": 0}
+
+    def transport(params: dict) -> dict:
+        calls.append(params["function"])
+        state["n"] += 1
+        if state["n"] == 2:
+            return {"Information": "Thank you for using Alpha Vantage! Please consider spreading out your free API requests more sparingly (1 request per second). You may subscribe to any of the premium plans to lift the free key rate limit (25 requests per day)."}
+        if params["function"] == "POLITICIAN_METADATA":
+            return {"politicians": [_person("A000001", "Alex Adey"), _person("B000002", "Bea Bay")]}
+        if params["function"].startswith("TIME_SERIES"):
+            return _series(params["symbol"])
+        return {"trades": [_trade(params["bioguide_id"])]}
+
+    clock = Clock(datetime(2026, 11, 6, 15, tzinfo=timezone.utc))
+    settings = _settings(tmp_path, requests_per_day=25, requests_per_minute=5)
+    conn = connect(settings.db_path)
+    client = AlphaVantageClient(settings, conn, transport=transport, sleep=clock.sleep, clock=clock)
+    report = ingest(settings, conn, client, today=clock.now.date())
+    assert report["stopped"] is None or "daily limit" not in report["stopped"]
+    assert len(report["members"]) >= 1
+    stamps = sorted(r[0] for r in conn.execute("SELECT ts FROM request_log"))
+    gaps = [(datetime.fromisoformat(b) - datetime.fromisoformat(a)).total_seconds() for a, b in zip(stamps, stamps[1:])]
+    assert gaps and min(gaps) >= 11.9

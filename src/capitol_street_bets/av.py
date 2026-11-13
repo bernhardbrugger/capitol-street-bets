@@ -164,6 +164,18 @@ class AlphaVantageClient:
                 f"daily budget of {daily} Alpha Vantage requests is spent"
             )
         per_minute = self.settings.requests_per_minute
+        # Spread calls evenly instead of bursting the minute's allowance:
+        # the free plan rejects more than one request per second, and a
+        # rejected call still counts against the day.
+        gap = max(1.5, 60.0 / max(1, per_minute))
+        stamps = recent_request_times(self.conn)
+        if stamps:
+            last = max(datetime.fromisoformat(stamp) for stamp in stamps)
+            if last.tzinfo is None:
+                last = last.replace(tzinfo=timezone.utc)
+            wait = (last + timedelta(seconds=gap) - self.clock()).total_seconds()
+            if wait > 0:
+                self.sleep(wait)
         while True:
             now = self.clock()
             cutoff = now - timedelta(seconds=60)
@@ -179,7 +191,7 @@ class AlphaVantageClient:
             oldest = min(recent)
             wait = (oldest + timedelta(seconds=60) - now).total_seconds()
             self.sleep(max(0.05, wait))
-        log_request(self.conn, day, function_name, "sent")
+        log_request(self.conn, day, function_name, "sent", ts=self.clock().isoformat())
         self.conn.commit()
 
     def call(self, function_name: str, **params: str) -> dict:
@@ -198,15 +210,18 @@ class AlphaVantageClient:
                 lowered = message.lower()
                 # The minute note names both caps ("5 per minute and 25 per
                 # day"); the daily one only names the day.
-                if (detected.per_day and not detected.per_minute) or (
-                    "per day" in lowered and "minute" not in lowered and "frequency" not in lowered
+                burst = "per second" in lowered or "sparingly" in lowered
+                if not burst and (
+                    (detected.per_day and not detected.per_minute)
+                    or ("per day" in lowered and "minute" not in lowered and "frequency" not in lowered)
                 ):
                     # Retrying a daily cap only burns local budget. Stop for today.
                     set_meta(self.conn, "av_last_limit_message", message[:300])
                     self.conn.commit()
                     raise DailyBudgetSpent("Alpha Vantage says the daily limit is reached: " + message[:200])
                 last_error = RateLimitError(message, detected.per_minute, detected.per_day)
-                self.sleep(min(8.0, 0.5 * (2**attempt)))
+                # The free plan also allows only one request per second.
+                self.sleep(max(2.0, min(8.0, 0.5 * (2**attempt))))
                 continue
             if message and parse_limits(message).premium_price_blocked and function_name.endswith("ADJUSTED"):
                 set_meta(self.conn, "price_function", "TIME_SERIES_DAILY")

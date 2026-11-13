@@ -106,10 +106,10 @@ def recent_request_times(conn: sqlite3.Connection) -> list[str]:
     return [row["ts"] for row in rows]
 
 
-def log_request(conn: sqlite3.Connection, day: date, function_name: str, status: str) -> None:
+def log_request(conn: sqlite3.Connection, day: date, function_name: str, status: str, ts: str | None = None) -> None:
     conn.execute(
         "INSERT INTO request_log (ts, day, function_name, status) VALUES (?, ?, ?, ?)",
-        (utcnow(), day.isoformat(), function_name, status),
+        (ts or utcnow(), day.isoformat(), function_name, status),
     )
 
 
