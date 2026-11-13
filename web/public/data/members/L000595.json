@@ -30,9 +30,14 @@
         "spy": 99.6375
       },
       {
-        "date": "2026-11-09",
-        "member": 95.228,
-        "spy": 97.8028
+        "date": "2026-11-11",
+        "member": 98.3952,
+        "spy": 98.7279
+      },
+      {
+        "date": "2026-11-12",
+        "member": 98.1646,
+        "spy": 98.3784
       }
     ],
     "90d": [
@@ -97,9 +102,14 @@
         "spy": 97.629
       },
       {
-        "date": "2026-11-09",
-        "member": 93.9729,
-        "spy": 97.4142
+        "date": "2026-11-10",
+        "member": 94.0332,
+        "spy": 97.0557
+      },
+      {
+        "date": "2026-11-12",
+        "member": 96.8708,
+        "spy": 97.9875
       }
     ],
     "6m": [
@@ -229,9 +239,9 @@
         "spy": 99.1653
       },
       {
-        "date": "2026-11-09",
-        "member": 104.7551,
-        "spy": 101.8291
+        "date": "2026-11-12",
+        "member": 107.9854,
+        "spy": 102.4284
       }
     ],
     "12m": [
@@ -486,9 +496,9 @@
         "spy": 109.2578
       },
       {
-        "date": "2026-11-09",
-        "member": 123.8964,
-        "spy": 112.1928
+        "date": "2026-11-12",
+        "member": 127.717,
+        "spy": 112.8531
       }
     ],
     "all": [
@@ -988,9 +998,14 @@
         "spy": 129.2175
       },
       {
-        "date": "2026-11-09",
-        "member": 131.3759,
-        "spy": 126.8381
+        "date": "2026-11-11",
+        "member": 135.7453,
+        "spy": 128.038
+      },
+      {
+        "date": "2026-11-12",
+        "member": 135.4271,
+        "spy": 127.5847
       }
     ]
   },
@@ -5887,11 +5902,11 @@
       "streak": 0,
       "on_fire": false,
       "benched": true,
-      "return": -0.048183,
-      "alpha": -0.02621,
-      "benchmark": -0.021972,
-      "copycat_return": -0.014718,
-      "copycat_alpha": 0.007255,
+      "return": -0.018354,
+      "alpha": -0.002138,
+      "benchmark": -0.016216,
+      "copycat_return": 0.006718,
+      "copycat_alpha": 0.022935,
       "trades": 0,
       "avg_hold_days": 409.2,
       "avg_filing_lag": null,
@@ -5902,6 +5917,11 @@
           "id": "market_beat_you",
           "name": "The Market Beat You",
           "blurb": "Negative alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "index_hugger",
+          "name": "Index Hugger",
+          "blurb": "Alpha landed within 2 percentage points of the S&P."
         }
       ],
       "excluded_options": 0,
@@ -5917,11 +5937,11 @@
       "streak": 0,
       "on_fire": false,
       "benched": true,
-      "return": -0.057364,
-      "alpha": -0.0269,
-      "benchmark": -0.030463,
-      "copycat_return": -0.017681,
-      "copycat_alpha": 0.012782,
+      "return": -0.027823,
+      "alpha": -0.003066,
+      "benchmark": -0.024757,
+      "copycat_return": 0.00369,
+      "copycat_alpha": 0.028448,
       "trades": 0,
       "avg_hold_days": 409.2,
       "avg_filing_lag": null,
@@ -5932,6 +5952,11 @@
           "id": "market_beat_you",
           "name": "The Market Beat You",
           "blurb": "Negative alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "index_hugger",
+          "name": "Index Hugger",
+          "blurb": "Alpha landed within 2 percentage points of the S&P."
         }
       ],
       "excluded_options": 0,
@@ -5947,11 +5972,11 @@
       "streak": 0,
       "on_fire": false,
       "benched": true,
-      "return": 0.047042,
-      "alpha": 0.028751,
-      "benchmark": 0.018291,
-      "copycat_return": 0.060912,
-      "copycat_alpha": 0.042621,
+      "return": 0.079854,
+      "alpha": 0.05557,
+      "benchmark": 0.024284,
+      "copycat_return": 0.083993,
+      "copycat_alpha": 0.059709,
       "trades": 0,
       "avg_hold_days": 409.2,
       "avg_filing_lag": null,
@@ -5971,17 +5996,17 @@
       "uncopyable": 32
     },
     "12m": {
-      "rank": 3,
+      "rank": 2,
       "previous_rank": 1,
-      "rank_change": -2,
+      "rank_change": -1,
       "streak": 0,
       "on_fire": false,
       "benched": false,
-      "return": 0.187752,
-      "alpha": 0.093122,
-      "benchmark": 0.09463,
-      "copycat_return": 0.095232,
-      "copycat_alpha": 0.007544,
+      "return": 0.220166,
+      "alpha": 0.120121,
+      "benchmark": 0.100045,
+      "copycat_return": 0.116967,
+      "copycat_alpha": 0.023573,
       "trades": 45,
       "avg_hold_days": 375.1,
       "avg_filing_lag": 249.6,
@@ -6001,17 +6026,17 @@
       "uncopyable": 32
     },
     "all": {
-      "rank": 8,
+      "rank": 7,
       "previous_rank": 2,
-      "rank_change": -6,
+      "rank_change": -5,
       "streak": 0,
       "on_fire": false,
       "benched": false,
-      "return": 0.18834,
-      "alpha": 0.068838,
-      "benchmark": 0.119501,
-      "copycat_return": 0.095232,
-      "copycat_alpha": 0.007544,
+      "return": 0.213358,
+      "alpha": 0.089961,
+      "benchmark": 0.123396,
+      "copycat_return": 0.116967,
+      "copycat_alpha": 0.023573,
       "trades": 168,
       "avg_hold_days": 298.2,
       "avg_filing_lag": 249.6,

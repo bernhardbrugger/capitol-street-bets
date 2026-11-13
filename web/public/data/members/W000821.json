@@ -30,9 +30,14 @@
         "spy": 99.6375
       },
       {
-        "date": "2026-11-09",
-        "member": 95.6565,
-        "spy": 97.8028
+        "date": "2026-11-11",
+        "member": 96.2487,
+        "spy": 98.7279
+      },
+      {
+        "date": "2026-11-12",
+        "member": 96.2392,
+        "spy": 98.3784
       }
     ],
     "90d": [
@@ -97,9 +102,14 @@
         "spy": 97.629
       },
       {
-        "date": "2026-11-09",
-        "member": 91.5335,
-        "spy": 97.4142
+        "date": "2026-11-10",
+        "member": 91.3862,
+        "spy": 97.0557
+      },
+      {
+        "date": "2026-11-12",
+        "member": 92.0911,
+        "spy": 97.9875
       }
     ],
     "6m": [
@@ -229,9 +239,9 @@
         "spy": 99.1653
       },
       {
-        "date": "2026-11-09",
-        "member": 93.997,
-        "spy": 101.8291
+        "date": "2026-11-12",
+        "member": 94.5696,
+        "spy": 102.4284
       }
     ],
     "12m": [
@@ -486,9 +496,9 @@
         "spy": 109.0709
       },
       {
-        "date": "2026-11-09",
-        "member": 112.3007,
-        "spy": 112.0008
+        "date": "2026-11-12",
+        "member": 112.9848,
+        "spy": 112.66
       }
     ],
     "all": [
@@ -921,6 +931,11 @@
         "date": "2026-11-09",
         "member": 138.0983,
         "spy": 126.1363
+      },
+      {
+        "date": "2026-11-12",
+        "member": 138.9396,
+        "spy": 126.8787
       }
     ]
   },
@@ -4981,11 +4996,11 @@
       "streak": 0,
       "on_fire": false,
       "benched": true,
-      "return": -0.046849,
-      "alpha": -0.024876,
-      "benchmark": -0.021972,
-      "copycat_return": -0.046011,
-      "copycat_alpha": -0.024038,
+      "return": -0.037608,
+      "alpha": -0.021391,
+      "benchmark": -0.016216,
+      "copycat_return": -0.036686,
+      "copycat_alpha": -0.02047,
       "trades": 0,
       "avg_hold_days": 605.7,
       "avg_filing_lag": null,
@@ -5011,11 +5026,11 @@
       "streak": 0,
       "on_fire": false,
       "benched": true,
-      "return": -0.087721,
-      "alpha": -0.057257,
-      "benchmark": -0.030463,
-      "copycat_return": -0.081679,
-      "copycat_alpha": -0.051215,
+      "return": -0.078876,
+      "alpha": -0.054119,
+      "benchmark": -0.024757,
+      "copycat_return": -0.072703,
+      "copycat_alpha": -0.047946,
       "trades": 0,
       "avg_hold_days": 605.7,
       "avg_filing_lag": null,
@@ -5041,11 +5056,11 @@
       "streak": 0,
       "on_fire": false,
       "benched": true,
-      "return": -0.063385,
-      "alpha": -0.081676,
-      "benchmark": 0.018291,
-      "copycat_return": -0.059184,
-      "copycat_alpha": -0.077475,
+      "return": -0.054304,
+      "alpha": -0.078588,
+      "benchmark": 0.024284,
+      "copycat_return": -0.049989,
+      "copycat_alpha": -0.074273,
       "trades": 0,
       "avg_hold_days": 605.7,
       "avg_filing_lag": null,
@@ -5071,11 +5086,11 @@
       "streak": 0,
       "on_fire": false,
       "benched": true,
-      "return": 0.118999,
-      "alpha": -0.001009,
-      "benchmark": 0.120008,
-      "copycat_return": 0.120454,
-      "copycat_alpha": 0.000446,
+      "return": 0.129848,
+      "alpha": 0.003248,
+      "benchmark": 0.1266,
+      "copycat_return": 0.131405,
+      "copycat_alpha": 0.004805,
       "trades": 0,
       "avg_hold_days": 605.7,
       "avg_filing_lag": null,
@@ -5083,9 +5098,9 @@
       "filings": 0,
       "badges": [
         {
-          "id": "market_beat_you",
-          "name": "The Market Beat You",
-          "blurb": "Negative alpha versus SPY over the same holding periods."
+          "id": "beat_the_market",
+          "name": "Beat the Market",
+          "blurb": "Positive alpha versus SPY over the same holding periods."
         },
         {
           "id": "index_hugger",
@@ -5100,17 +5115,17 @@
       "uncopyable": 18
     },
     "all": {
-      "rank": 16,
+      "rank": 17,
       "previous_rank": null,
       "rank_change": null,
       "streak": 0,
       "on_fire": false,
       "benched": false,
-      "return": -0.033425,
-      "alpha": 0.023083,
-      "benchmark": -0.056508,
-      "copycat_return": 0.047333,
-      "copycat_alpha": 0.022115,
+      "return": -0.032011,
+      "alpha": 0.0237,
+      "benchmark": -0.055711,
+      "copycat_return": 0.049004,
+      "copycat_alpha": 0.022851,
       "trades": 213,
       "avg_hold_days": 142.7,
       "avg_filing_lag": 31.4,
