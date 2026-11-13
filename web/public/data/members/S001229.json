@@ -13042,8 +13042,8 @@
       ],
       "excluded_options": 0,
       "excluded_non_stock": 9,
-      "excluded_unknown": 78,
-      "unmatched_sells": 257,
+      "excluded_unknown": 70,
+      "unmatched_sells": 265,
       "uncopyable": 46
     },
     "90d": {
@@ -13072,8 +13072,8 @@
       ],
       "excluded_options": 0,
       "excluded_non_stock": 9,
-      "excluded_unknown": 78,
-      "unmatched_sells": 257,
+      "excluded_unknown": 70,
+      "unmatched_sells": 265,
       "uncopyable": 46
     },
     "6m": {
@@ -13102,8 +13102,8 @@
       ],
       "excluded_options": 0,
       "excluded_non_stock": 9,
-      "excluded_unknown": 78,
-      "unmatched_sells": 257,
+      "excluded_unknown": 70,
+      "unmatched_sells": 265,
       "uncopyable": 46
     },
     "12m": {
@@ -13132,14 +13132,14 @@
       ],
       "excluded_options": 0,
       "excluded_non_stock": 9,
-      "excluded_unknown": 78,
-      "unmatched_sells": 257,
+      "excluded_unknown": 70,
+      "unmatched_sells": 265,
       "uncopyable": 46
     },
     "all": {
-      "rank": 11,
+      "rank": 23,
       "previous_rank": 11,
-      "rank_change": 0,
+      "rank_change": -12,
       "streak": 0,
       "on_fire": false,
       "benched": false,
@@ -13148,7 +13148,7 @@
       "benchmark": 0.069158,
       "copycat_return": 0.04551,
       "copycat_alpha": -0.02036,
-      "trades": 547,
+      "trades": 555,
       "avg_hold_days": 198.7,
       "avg_filing_lag": 45.0,
       "late_filings": 2,
@@ -13167,8 +13167,8 @@
       ],
       "excluded_options": 0,
       "excluded_non_stock": 9,
-      "excluded_unknown": 78,
-      "unmatched_sells": 257,
+      "excluded_unknown": 70,
+      "unmatched_sells": 265,
       "uncopyable": 46
     }
   }

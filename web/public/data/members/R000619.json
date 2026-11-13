@@ -1763,7 +1763,7 @@
       "uncopyable": 7
     },
     "90d": {
-      "rank": 7,
+      "rank": 12,
       "previous_rank": null,
       "rank_change": null,
       "streak": 0,
@@ -1808,7 +1808,7 @@
       "uncopyable": 7
     },
     "6m": {
-      "rank": 9,
+      "rank": 16,
       "previous_rank": null,
       "rank_change": null,
       "streak": 0,
@@ -1843,10 +1843,10 @@
       "uncopyable": 7
     },
     "12m": {
-      "rank": 12,
+      "rank": 25,
       "previous_rank": 13,
-      "rank_change": 1,
-      "streak": 1,
+      "rank_change": -12,
+      "streak": 0,
       "on_fire": false,
       "benched": false,
       "return": -0.086224,
@@ -1878,9 +1878,9 @@
       "uncopyable": 7
     },
     "all": {
-      "rank": 17,
+      "rank": 33,
       "previous_rank": 16,
-      "rank_change": -1,
+      "rank_change": -17,
       "streak": 0,
       "on_fire": false,
       "benched": false,

@@ -16529,7 +16529,7 @@
       "uncopyable": 0
     },
     "90d": {
-      "rank": 10,
+      "rank": 16,
       "previous_rank": null,
       "rank_change": null,
       "streak": 0,
@@ -16564,7 +16564,7 @@
       "uncopyable": 0
     },
     "6m": {
-      "rank": 12,
+      "rank": 21,
       "previous_rank": null,
       "rank_change": null,
       "streak": 0,
@@ -16604,9 +16604,9 @@
       "uncopyable": 0
     },
     "12m": {
-      "rank": 14,
+      "rank": 28,
       "previous_rank": 14,
-      "rank_change": 0,
+      "rank_change": -14,
       "streak": 0,
       "on_fire": false,
       "benched": false,
@@ -16644,9 +16644,9 @@
       "uncopyable": 0
     },
     "all": {
-      "rank": 19,
+      "rank": 37,
       "previous_rank": 18,
-      "rank_change": -1,
+      "rank_change": -19,
       "streak": 0,
       "on_fire": false,
       "benched": false,

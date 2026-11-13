@@ -3765,6 +3765,13 @@
       "chamber": "House",
       "party": "R",
       "state": "GA"
+    },
+    {
+      "bioguide_id": "M001190",
+      "name": "Markwayne Mullin",
+      "chamber": "Senate",
+      "party": "R",
+      "state": "OK"
     }
   ]
 }

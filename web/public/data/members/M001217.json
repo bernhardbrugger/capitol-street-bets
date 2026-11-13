@@ -9882,7 +9882,7 @@
       "uncopyable": 1
     },
     "6m": {
-      "rank": 2,
+      "rank": 7,
       "previous_rank": null,
       "rank_change": null,
       "streak": 0,
@@ -9917,9 +9917,9 @@
       "uncopyable": 1
     },
     "12m": {
-      "rank": 2,
+      "rank": 7,
       "previous_rank": 2,
-      "rank_change": 0,
+      "rank_change": -5,
       "streak": 0,
       "on_fire": false,
       "benched": false,
@@ -9952,9 +9952,9 @@
       "uncopyable": 1
     },
     "all": {
-      "rank": 4,
+      "rank": 10,
       "previous_rank": 4,
-      "rank_change": 0,
+      "rank_change": -6,
       "streak": 0,
       "on_fire": false,
       "benched": false,

@@ -12155,9 +12155,9 @@
   ],
   "windows": {
     "30d": {
-      "rank": 2,
+      "rank": 3,
       "previous_rank": 2,
-      "rank_change": 0,
+      "rank_change": -1,
       "streak": 0,
       "on_fire": false,
       "benched": false,
@@ -12200,7 +12200,7 @@
       "uncopyable": 0
     },
     "90d": {
-      "rank": 4,
+      "rank": 7,
       "previous_rank": null,
       "rank_change": null,
       "streak": 0,
@@ -12245,7 +12245,7 @@
       "uncopyable": 0
     },
     "6m": {
-      "rank": 6,
+      "rank": 12,
       "previous_rank": null,
       "rank_change": null,
       "streak": 0,
@@ -12285,9 +12285,9 @@
       "uncopyable": 0
     },
     "12m": {
-      "rank": 11,
+      "rank": 22,
       "previous_rank": 10,
-      "rank_change": -1,
+      "rank_change": -12,
       "streak": 0,
       "on_fire": false,
       "benched": false,
@@ -12325,9 +12325,9 @@
       "uncopyable": 0
     },
     "all": {
-      "rank": 6,
+      "rank": 14,
       "previous_rank": 6,
-      "rank_change": 0,
+      "rank_change": -8,
       "streak": 0,
       "on_fire": false,
       "benched": false,

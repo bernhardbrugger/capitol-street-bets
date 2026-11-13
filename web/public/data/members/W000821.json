@@ -4996,11 +4996,6 @@
           "id": "market_beat_you",
           "name": "The Market Beat You",
           "blurb": "Negative alpha versus SPY over the same holding periods."
-        },
-        {
-          "id": "diamond_hands",
-          "name": "Diamond Hands",
-          "blurb": "Longest average holding period on the board."
         }
       ],
       "excluded_options": 0,
@@ -5031,11 +5026,6 @@
           "id": "market_beat_you",
           "name": "The Market Beat You",
           "blurb": "Negative alpha versus SPY over the same holding periods."
-        },
-        {
-          "id": "diamond_hands",
-          "name": "Diamond Hands",
-          "blurb": "Longest average holding period on the board."
         }
       ],
       "excluded_options": 0,
@@ -5066,11 +5056,6 @@
           "id": "market_beat_you",
           "name": "The Market Beat You",
           "blurb": "Negative alpha versus SPY over the same holding periods."
-        },
-        {
-          "id": "diamond_hands",
-          "name": "Diamond Hands",
-          "blurb": "Longest average holding period on the board."
         }
       ],
       "excluded_options": 0,
@@ -5106,11 +5091,6 @@
           "id": "index_hugger",
           "name": "Index Hugger",
           "blurb": "Alpha landed within 2 percentage points of the S&P."
-        },
-        {
-          "id": "diamond_hands",
-          "name": "Diamond Hands",
-          "blurb": "Longest average holding period on the board."
         }
       ],
       "excluded_options": 0,
@@ -5120,7 +5100,7 @@
       "uncopyable": 18
     },
     "all": {
-      "rank": 7,
+      "rank": 16,
       "previous_rank": null,
       "rank_change": null,
       "streak": 0,

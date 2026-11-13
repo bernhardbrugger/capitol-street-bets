@@ -57684,21 +57684,16 @@
           "id": "punctual_pro",
           "name": "Punctual Pro",
           "blurb": "Every filing in this window landed inside 45 days."
-        },
-        {
-          "id": "paper_hands",
-          "name": "Paper Hands",
-          "blurb": "Shortest average holding period on the board."
         }
       ],
       "excluded_options": 0,
       "excluded_non_stock": 2461,
-      "excluded_unknown": 493,
-      "unmatched_sells": 13,
+      "excluded_unknown": 492,
+      "unmatched_sells": 14,
       "uncopyable": 5
     },
     "90d": {
-      "rank": 6,
+      "rank": 11,
       "previous_rank": null,
       "rank_change": null,
       "streak": 0,
@@ -57733,12 +57728,12 @@
       ],
       "excluded_options": 0,
       "excluded_non_stock": 2461,
-      "excluded_unknown": 493,
-      "unmatched_sells": 13,
+      "excluded_unknown": 492,
+      "unmatched_sells": 14,
       "uncopyable": 5
     },
     "6m": {
-      "rank": 8,
+      "rank": 15,
       "previous_rank": null,
       "rank_change": null,
       "streak": 0,
@@ -57773,14 +57768,14 @@
       ],
       "excluded_options": 0,
       "excluded_non_stock": 2461,
-      "excluded_unknown": 493,
-      "unmatched_sells": 13,
+      "excluded_unknown": 492,
+      "unmatched_sells": 14,
       "uncopyable": 5
     },
     "12m": {
-      "rank": 13,
+      "rank": 27,
       "previous_rank": 12,
-      "rank_change": -1,
+      "rank_change": -15,
       "streak": 0,
       "on_fire": false,
       "benched": false,
@@ -57789,7 +57784,7 @@
       "benchmark": 0.070055,
       "copycat_return": -0.09551,
       "copycat_alpha": -0.171733,
-      "trades": 46,
+      "trades": 47,
       "avg_hold_days": 89.3,
       "avg_filing_lag": 23.0,
       "late_filings": 0,
@@ -57813,14 +57808,14 @@
       ],
       "excluded_options": 0,
       "excluded_non_stock": 2461,
-      "excluded_unknown": 493,
-      "unmatched_sells": 13,
+      "excluded_unknown": 492,
+      "unmatched_sells": 14,
       "uncopyable": 5
     },
     "all": {
-      "rank": 18,
+      "rank": 35,
       "previous_rank": 17,
-      "rank_change": -1,
+      "rank_change": -18,
       "streak": 0,
       "on_fire": false,
       "benched": false,
@@ -57829,7 +57824,7 @@
       "benchmark": 0.070055,
       "copycat_return": -0.09551,
       "copycat_alpha": -0.171733,
-      "trades": 46,
+      "trades": 47,
       "avg_hold_days": 89.3,
       "avg_filing_lag": 23.0,
       "late_filings": 0,
@@ -57853,8 +57848,8 @@
       ],
       "excluded_options": 0,
       "excluded_non_stock": 2461,
-      "excluded_unknown": 493,
-      "unmatched_sells": 13,
+      "excluded_unknown": 492,
+      "unmatched_sells": 14,
       "uncopyable": 5
     }
   }

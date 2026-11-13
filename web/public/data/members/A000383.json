@@ -14125,10 +14125,10 @@
       "uncopyable": 0
     },
     "12m": {
-      "rank": 5,
+      "rank": 13,
       "previous_rank": 6,
-      "rank_change": 1,
-      "streak": 1,
+      "rank_change": -7,
+      "streak": 0,
       "on_fire": false,
       "benched": false,
       "return": 0.196836,
@@ -14165,9 +14165,9 @@
       "uncopyable": 0
     },
     "all": {
-      "rank": 8,
+      "rank": 18,
       "previous_rank": 7,
-      "rank_change": -1,
+      "rank_change": -11,
       "streak": 0,
       "on_fire": false,
       "benched": false,
