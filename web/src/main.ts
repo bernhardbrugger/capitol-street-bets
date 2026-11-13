@@ -229,6 +229,8 @@ function reduceMotion(): boolean {
 
 function currentBoard(): WindowBoard {
   if (!league) throw new Error("league not loaded");
+  // Older data files may not have every period yet.
+  if (!league.windows[state.window]) state.window = Object.keys(league.windows)[0];
   return league.windows[state.window];
 }
 function allRows(): Row[] {
@@ -577,7 +579,8 @@ function footer(): HTMLElement {
 }
 
 function windowBar(): HTMLElement {
-  const bar = segmented("Period", state.window, WINDOWS.map((w) => [w.id, w.label] as [string, string]), (v) => {
+  const present = WINDOWS.filter((w) => !league || league.windows[w.id]);
+  const bar = segmented("Period", state.window, present.map((w) => [w.id, w.label] as [string, string]), (v) => {
     state.window = v;
     render();
   });
@@ -1359,6 +1362,7 @@ async function boot(): Promise<void> {
   }
   // Open on the window with the most ranked members, so an early board
   // does not look empty just because the last 30 days are quiet.
+  if (league && !league.windows[state.window]) state.window = Object.keys(league.windows)[0];
   const counts = (["90d", "6m", "12m", "30d", "all"] as const).map((id) => [id, league?.windows?.[id]?.ranked?.length ?? 0] as const);
   const best = counts.reduce((a, b) => (b[1] > a[1] ? b : a));
   if ((league?.windows?.[state.window]?.ranked?.length ?? 0) === 0 && best[1] > 0) state.window = best[0];
