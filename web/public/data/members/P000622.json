@@ -9,7 +9,8 @@
   "years_in_service": 1.6,
   "curves": {
     "30d": [],
-    "ytd": [],
+    "90d": [],
+    "6m": [],
     "12m": [],
     "all": []
   },
@@ -39,7 +40,31 @@
       "unmatched_sells": 0,
       "uncopyable": 0
     },
-    "ytd": {
+    "90d": {
+      "rank": null,
+      "previous_rank": null,
+      "rank_change": null,
+      "streak": 0,
+      "on_fire": false,
+      "benched": true,
+      "return": null,
+      "alpha": null,
+      "benchmark": null,
+      "copycat_return": null,
+      "copycat_alpha": null,
+      "trades": 0,
+      "avg_hold_days": null,
+      "avg_filing_lag": null,
+      "late_filings": 0,
+      "filings": 0,
+      "badges": [],
+      "excluded_options": 0,
+      "excluded_non_stock": 0,
+      "excluded_unknown": 0,
+      "unmatched_sells": 0,
+      "uncopyable": 0
+    },
+    "6m": {
       "rank": null,
       "previous_rank": null,
       "rank_change": null,
