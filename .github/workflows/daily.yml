@@ -1,12 +1,17 @@
 name: Refresh and deploy
 
 # Alpha Vantage is called at most once a day (the scheduled run, or a manual
-# "Run workflow"). A push to main only rebuilds and redeploys the site from the
-# JSON already in the repo, so code changes never spend API budget.
+# "Run workflow"). A push to main only rebuilds and redeploys the site, so
+# code changes never spend API budget.
+#
+# Two jobs on purpose: the data refresh can take an hour while Massive
+# backfills prices, and a site deploy should never wait behind it or ship
+# older data than what is on main.
 
 on:
   schedule:
     # Every day at 05:17 UTC, after the US close and the overnight filings.
+    # GitHub may start scheduled runs hours late; nothing depends on the time.
     - cron: "17 5 * * *"
   workflow_dispatch:
   push:
@@ -21,33 +26,27 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: pages
-  cancel-in-progress: false
-
 jobs:
   refresh:
+    if: github.event_name != 'push'
     runs-on: ubuntu-latest
     # The first Massive backfill pulls two years for every ticker at five
     # calls a minute; later runs take a few minutes.
-    timeout-minutes: 90
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    timeout-minutes: 100
+    concurrency:
+      group: data-refresh
+      cancel-in-progress: false
     env:
       SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-python@v5
-        if: github.event_name != 'push'
         with:
           python-version: "3.12"
 
       # The SQLite cache holds the roster, trades and price history between runs.
-      # Daily runs keep it from expiring.
       - uses: actions/cache/restore@v4
-        if: github.event_name != 'push'
         with:
           path: data/cache
           key: capitol-cache-${{ github.run_id }}
@@ -55,9 +54,8 @@ jobs:
             capitol-cache-
 
       - name: Ingest what the plan allows, then score
-        if: github.event_name != 'push'
         env:
-          # Only ever read from the repository secret. Never echoed, never written to disk.
+          # Only ever read from the repository secrets. Never echoed, never written to disk.
           ALPHAVANTAGE_API_KEY: ${{ secrets.ALPHAVANTAGE_API_KEY }}
           # Optional. With it, prices come from Massive and Alpha Vantage
           # spends its whole budget on member filings.
@@ -71,19 +69,17 @@ jobs:
 
       # Saved even when a later step fails, so spent API calls are never lost.
       - uses: actions/cache/save@v4
-        if: always() && github.event_name != 'push' && hashFiles('data/cache/*.sqlite') != ''
+        if: always() && hashFiles('data/cache/*.sqlite') != ''
         with:
           path: data/cache
           key: capitol-cache-${{ github.run_id }}
 
       - name: Write current standings into README
-        if: github.event_name != 'push'
         run: PYTHONPATH=src python -m capitol_street_bets readme --url "$SITE_URL"
 
       - name: Commit refreshed data and README
-        if: github.event_name != 'push'
         run: |
-          git config user.name "capitol-street-bets-bot"
+          git config user.name "capitol-gains-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add web/public/data README.md
           if git diff --staged --quiet; then
@@ -94,6 +90,23 @@ jobs:
             git push
           fi
 
+  deploy:
+    needs: refresh
+    # Runs after a refresh, and on its own for pushes (refresh is skipped).
+    if: ${{ always() && needs.refresh.result != 'cancelled' }}
+    runs-on: ubuntu-latest
+    concurrency:
+      group: pages-deploy
+      cancel-in-progress: true
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      # Always the newest main, so a deploy never ships older data than the
+      # last refresh committed.
+      - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
@@ -106,9 +119,8 @@ jobs:
           # Project pages live at /<repo-name>/.
           VITE_BASE: /${{ github.event.repository.name }}/
         run: npm run build
-      # Pages needs a public repo on a free plan. If the repo is private the
-      # deploy fails quietly; data and README still refresh.
-      # (github.event.repository is empty on scheduled runs, so no condition.)
+      # Pages needs a public repo on a free plan. If the repo is ever private,
+      # the deploy fails quietly; data and README still refresh.
       - uses: actions/upload-pages-artifact@v3
         continue-on-error: true
         with:
