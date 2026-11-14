@@ -10,34 +10,34 @@
   "curves": {
     "30d": [
       {
-        "date": "2026-10-14",
+        "date": "2026-10-15",
         "member": 100.0,
         "spy": 100.0
       },
       {
-        "date": "2026-10-21",
-        "member": 104.699,
-        "spy": 100.4535
+        "date": "2026-10-22",
+        "member": 97.396,
+        "spy": 98.9855
       },
       {
-        "date": "2026-10-28",
-        "member": 95.4456,
-        "spy": 100.3521
+        "date": "2026-10-29",
+        "member": 96.8174,
+        "spy": 99.6851
       },
       {
-        "date": "2026-11-04",
-        "member": 89.327,
-        "spy": 99.6375
-      },
-      {
-        "date": "2026-11-11",
-        "member": 91.8441,
-        "spy": 98.7279
+        "date": "2026-11-05",
+        "member": 83.1786,
+        "spy": 94.974
       },
       {
         "date": "2026-11-12",
-        "member": 91.969,
-        "spy": 98.3784
+        "member": 94.1596,
+        "spy": 98.0992
+      },
+      {
+        "date": "2026-11-13",
+        "member": 93.6011,
+        "spy": 97.7429
       }
     ],
     "90d": [
@@ -107,9 +107,9 @@
         "spy": 97.0557
       },
       {
-        "date": "2026-11-12",
-        "member": 95.6986,
-        "spy": 97.9875
+        "date": "2026-11-13",
+        "member": 95.131,
+        "spy": 97.6316
       }
     ],
     "6m": [
@@ -222,6 +222,11 @@
         "date": "2026-11-12",
         "member": 72.6961,
         "spy": 100.3034
+      },
+      {
+        "date": "2026-11-13",
+        "member": 72.2649,
+        "spy": 99.9391
       }
     ],
     "12m": [
@@ -334,6 +339,11 @@
         "date": "2026-11-12",
         "member": 72.6961,
         "spy": 100.3034
+      },
+      {
+        "date": "2026-11-13",
+        "member": 72.2649,
+        "spy": 99.9391
       }
     ],
     "all": [
@@ -446,6 +456,11 @@
         "date": "2026-11-12",
         "member": 72.6961,
         "spy": 100.3034
+      },
+      {
+        "date": "2026-11-13",
+        "member": 72.2649,
+        "spy": 99.9391
       }
     ]
   },
@@ -2036,16 +2051,16 @@
       "streak": 0,
       "on_fire": false,
       "benched": true,
-      "return": -0.08031,
-      "alpha": -0.064094,
-      "benchmark": -0.016216,
-      "copycat_return": -0.08031,
-      "copycat_alpha": -0.064094,
+      "return": -0.063989,
+      "alpha": -0.041418,
+      "benchmark": -0.022571,
+      "copycat_return": -0.063989,
+      "copycat_alpha": -0.041418,
       "trades": 0,
-      "avg_hold_days": 151.0,
-      "avg_filing_lag": 42.5,
+      "avg_hold_days": 152.0,
+      "avg_filing_lag": 41.0,
       "late_filings": 0,
-      "filings": 2,
+      "filings": 1,
       "badges": [
         {
           "id": "market_beat_you",
@@ -2056,11 +2071,6 @@
           "id": "punctual_pro",
           "name": "Punctual Pro",
           "blurb": "Every filing in this window landed inside 45 days."
-        },
-        {
-          "id": "paper_hands",
-          "name": "Paper Hands",
-          "blurb": "Shortest average holding period on the board."
         },
         {
           "id": "fashionably_late",
@@ -2081,13 +2091,13 @@
       "streak": 0,
       "on_fire": false,
       "benched": true,
-      "return": -0.000429,
-      "alpha": 0.024329,
-      "benchmark": -0.024757,
-      "copycat_return": -0.000429,
-      "copycat_alpha": 0.024329,
+      "return": -0.006357,
+      "alpha": 0.021942,
+      "benchmark": -0.028299,
+      "copycat_return": -0.006357,
+      "copycat_alpha": 0.021942,
       "trades": 2,
-      "avg_hold_days": 151.0,
+      "avg_hold_days": 152.0,
       "avg_filing_lag": 42.5,
       "late_filings": 0,
       "filings": 2,
@@ -2115,19 +2125,19 @@
       "uncopyable": 0
     },
     "6m": {
-      "rank": 23,
-      "previous_rank": null,
-      "rank_change": null,
+      "rank": 27,
+      "previous_rank": 23,
+      "rank_change": -4,
       "streak": 0,
       "on_fire": false,
       "benched": false,
-      "return": -0.273039,
-      "alpha": -0.276073,
-      "benchmark": 0.003034,
-      "copycat_return": -0.136173,
-      "copycat_alpha": -0.152741,
+      "return": -0.277351,
+      "alpha": -0.276741,
+      "benchmark": -0.000609,
+      "copycat_return": -0.141296,
+      "copycat_alpha": -0.154173,
       "trades": 4,
-      "avg_hold_days": 151.0,
+      "avg_hold_days": 152.0,
       "avg_filing_lag": 33.0,
       "late_filings": 0,
       "filings": 5,
@@ -2155,19 +2165,19 @@
       "uncopyable": 0
     },
     "12m": {
-      "rank": 30,
-      "previous_rank": null,
-      "rank_change": null,
+      "rank": 36,
+      "previous_rank": 30,
+      "rank_change": -6,
       "streak": 0,
       "on_fire": false,
       "benched": false,
-      "return": -0.273039,
-      "alpha": -0.276073,
-      "benchmark": 0.003034,
-      "copycat_return": -0.136173,
-      "copycat_alpha": -0.152741,
+      "return": -0.277351,
+      "alpha": -0.276741,
+      "benchmark": -0.000609,
+      "copycat_return": -0.141296,
+      "copycat_alpha": -0.154173,
       "trades": 9,
-      "avg_hold_days": 151.0,
+      "avg_hold_days": 152.0,
       "avg_filing_lag": 31.2,
       "late_filings": 0,
       "filings": 9,
@@ -2195,19 +2205,19 @@
       "uncopyable": 0
     },
     "all": {
-      "rank": 39,
-      "previous_rank": null,
-      "rank_change": null,
+      "rank": 51,
+      "previous_rank": 39,
+      "rank_change": -12,
       "streak": 0,
       "on_fire": false,
       "benched": false,
-      "return": -0.273039,
-      "alpha": -0.276073,
-      "benchmark": 0.003034,
-      "copycat_return": -0.136173,
-      "copycat_alpha": -0.152741,
+      "return": -0.277351,
+      "alpha": -0.276741,
+      "benchmark": -0.000609,
+      "copycat_return": -0.141296,
+      "copycat_alpha": -0.154173,
       "trades": 18,
-      "avg_hold_days": 151.0,
+      "avg_hold_days": 152.0,
       "avg_filing_lag": 312.4,
       "late_filings": 57,
       "filings": 79,
@@ -2221,11 +2231,6 @@
           "id": "tech_bro",
           "name": "Tech Bro",
           "blurb": "At least half the midpoint dollars sit in the technology list."
-        },
-        {
-          "id": "fashionably_late",
-          "name": "Fashionably Late",
-          "blurb": "Highest average gap between the trade and the filing."
         }
       ],
       "excluded_options": 0,

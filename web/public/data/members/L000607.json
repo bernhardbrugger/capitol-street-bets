@@ -14,7 +14,27 @@
     "12m": [],
     "all": []
   },
-  "trades": [],
+  "trades": [
+    {
+      "transaction_date": "2026-07-21",
+      "filed_date": "2026-07-27",
+      "lag_days": 6,
+      "late": false,
+      "side": "sell",
+      "symbol": "NVDA",
+      "asset_name": "NVIDIA Corporation - Common Stock (NVDA) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    }
+  ],
   "windows": {
     "30d": {
       "rank": null,
@@ -37,7 +57,7 @@
       "excluded_options": 0,
       "excluded_non_stock": 0,
       "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "unmatched_sells": 1,
       "uncopyable": 0
     },
     "90d": {
@@ -61,7 +81,7 @@
       "excluded_options": 0,
       "excluded_non_stock": 0,
       "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "unmatched_sells": 1,
       "uncopyable": 0
     },
     "6m": {
@@ -76,16 +96,16 @@
       "benchmark": null,
       "copycat_return": null,
       "copycat_alpha": null,
-      "trades": 0,
+      "trades": 1,
       "avg_hold_days": null,
-      "avg_filing_lag": null,
+      "avg_filing_lag": 6.0,
       "late_filings": 0,
-      "filings": 0,
+      "filings": 1,
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
       "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "unmatched_sells": 1,
       "uncopyable": 0
     },
     "12m": {
@@ -100,16 +120,16 @@
       "benchmark": null,
       "copycat_return": null,
       "copycat_alpha": null,
-      "trades": 0,
+      "trades": 1,
       "avg_hold_days": null,
-      "avg_filing_lag": null,
+      "avg_filing_lag": 6.0,
       "late_filings": 0,
-      "filings": 0,
+      "filings": 1,
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
       "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "unmatched_sells": 1,
       "uncopyable": 0
     },
     "all": {
@@ -124,16 +144,16 @@
       "benchmark": null,
       "copycat_return": null,
       "copycat_alpha": null,
-      "trades": 0,
+      "trades": 1,
       "avg_hold_days": null,
-      "avg_filing_lag": null,
+      "avg_filing_lag": 6.0,
       "late_filings": 0,
-      "filings": 0,
+      "filings": 1,
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
       "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "unmatched_sells": 1,
       "uncopyable": 0
     }
   }

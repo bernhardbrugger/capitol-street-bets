@@ -8,13 +8,2694 @@
   "district": null,
   "years_in_service": 3.9,
   "curves": {
-    "30d": [],
-    "90d": [],
-    "6m": [],
-    "12m": [],
-    "all": []
+    "30d": [
+      {
+        "date": "2026-10-15",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-22",
+        "member": 96.4505,
+        "spy": 98.9855
+      },
+      {
+        "date": "2026-10-29",
+        "member": 95.1459,
+        "spy": 99.6851
+      },
+      {
+        "date": "2026-11-05",
+        "member": 91.3797,
+        "spy": 94.974
+      },
+      {
+        "date": "2026-11-12",
+        "member": 94.6602,
+        "spy": 98.0992
+      },
+      {
+        "date": "2026-11-13",
+        "member": 94.2573,
+        "spy": 97.7429
+      }
+    ],
+    "90d": [
+      {
+        "date": "2026-08-17",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-08-24",
+        "member": 99.4329,
+        "spy": 98.8093
+      },
+      {
+        "date": "2026-08-31",
+        "member": 99.8671,
+        "spy": 99.2727
+      },
+      {
+        "date": "2026-09-08",
+        "member": 99.3888,
+        "spy": 99.1316
+      },
+      {
+        "date": "2026-09-15",
+        "member": 98.3265,
+        "spy": 98.0224
+      },
+      {
+        "date": "2026-09-22",
+        "member": 102.2282,
+        "spy": 100.0919
+      },
+      {
+        "date": "2026-09-29",
+        "member": 100.0437,
+        "spy": 98.9038
+      },
+      {
+        "date": "2026-10-06",
+        "member": 101.4704,
+        "spy": 100.8309
+      },
+      {
+        "date": "2026-10-13",
+        "member": 100.7781,
+        "spy": 100.6911
+      },
+      {
+        "date": "2026-10-20",
+        "member": 98.9668,
+        "spy": 99.5315
+      },
+      {
+        "date": "2026-10-27",
+        "member": 97.9156,
+        "spy": 99.6104
+      },
+      {
+        "date": "2026-11-03",
+        "member": 94.0148,
+        "spy": 97.629
+      },
+      {
+        "date": "2026-11-10",
+        "member": 92.8028,
+        "spy": 97.0557
+      },
+      {
+        "date": "2026-11-13",
+        "member": 94.3094,
+        "spy": 97.6316
+      }
+    ],
+    "6m": [
+      {
+        "date": "2026-05-18",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-05-26",
+        "member": 104.8875,
+        "spy": 101.6165
+      },
+      {
+        "date": "2026-06-02",
+        "member": 106.9566,
+        "spy": 102.8322
+      },
+      {
+        "date": "2026-06-09",
+        "member": 102.9221,
+        "spy": 99.7834
+      },
+      {
+        "date": "2026-06-16",
+        "member": 105.3743,
+        "spy": 101.5813
+      },
+      {
+        "date": "2026-06-24",
+        "member": 102.2968,
+        "spy": 99.2676
+      },
+      {
+        "date": "2026-07-01",
+        "member": 105.6031,
+        "spy": 100.9626
+      },
+      {
+        "date": "2026-07-09",
+        "member": 104.4904,
+        "spy": 101.7681
+      },
+      {
+        "date": "2026-07-16",
+        "member": 99.8976,
+        "spy": 101.6341
+      },
+      {
+        "date": "2026-07-23",
+        "member": 98.1318,
+        "spy": 99.9364
+      },
+      {
+        "date": "2026-07-30",
+        "member": 101.143,
+        "spy": 100.4116
+      },
+      {
+        "date": "2026-08-06",
+        "member": 108.7198,
+        "spy": 104.0493
+      },
+      {
+        "date": "2026-08-13",
+        "member": 109.172,
+        "spy": 105.311
+      },
+      {
+        "date": "2026-08-20",
+        "member": 108.8255,
+        "spy": 103.2424
+      },
+      {
+        "date": "2026-08-27",
+        "member": 108.5226,
+        "spy": 104.3931
+      },
+      {
+        "date": "2026-09-03",
+        "member": 109.5436,
+        "spy": 104.6734
+      },
+      {
+        "date": "2026-09-11",
+        "member": 107.9445,
+        "spy": 103.4712
+      },
+      {
+        "date": "2026-09-18",
+        "member": 109.1552,
+        "spy": 103.1192
+      },
+      {
+        "date": "2026-09-25",
+        "member": 110.4392,
+        "spy": 104.427
+      },
+      {
+        "date": "2026-10-02",
+        "member": 110.1967,
+        "spy": 104.1955
+      },
+      {
+        "date": "2026-10-09",
+        "member": 110.9874,
+        "spy": 105.4045
+      },
+      {
+        "date": "2026-10-16",
+        "member": 106.6917,
+        "spy": 103.3304
+      },
+      {
+        "date": "2026-10-23",
+        "member": 105.3831,
+        "spy": 102.8863
+      },
+      {
+        "date": "2026-10-30",
+        "member": 102.3651,
+        "spy": 102.311
+      },
+      {
+        "date": "2026-11-06",
+        "member": 99.6427,
+        "spy": 99.5451
+      },
+      {
+        "date": "2026-11-13",
+        "member": 102.8829,
+        "spy": 102.1282
+      }
+    ],
+    "12m": [
+      {
+        "date": "2025-11-14",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2025-11-21",
+        "member": 108.1847,
+        "spy": 98.0802
+      },
+      {
+        "date": "2025-12-01",
+        "member": 113.7699,
+        "spy": 101.2412
+      },
+      {
+        "date": "2025-12-08",
+        "member": 113.5281,
+        "spy": 101.7413
+      },
+      {
+        "date": "2025-12-15",
+        "member": 111.6759,
+        "spy": 101.3097
+      },
+      {
+        "date": "2025-12-22",
+        "member": 112.4016,
+        "spy": 101.9198
+      },
+      {
+        "date": "2025-12-30",
+        "member": 113.5642,
+        "spy": 102.2443
+      },
+      {
+        "date": "2026-01-07",
+        "member": 116.4091,
+        "spy": 102.6268
+      },
+      {
+        "date": "2026-01-14",
+        "member": 121.4203,
+        "spy": 102.7428
+      },
+      {
+        "date": "2026-01-22",
+        "member": 119.4454,
+        "spy": 102.5375
+      },
+      {
+        "date": "2026-01-29",
+        "member": 122.2688,
+        "spy": 103.2905
+      },
+      {
+        "date": "2026-02-05",
+        "member": 119.6224,
+        "spy": 100.8468
+      },
+      {
+        "date": "2026-02-12",
+        "member": 111.694,
+        "spy": 101.39
+      },
+      {
+        "date": "2026-02-20",
+        "member": 113.6905,
+        "spy": 102.6044
+      },
+      {
+        "date": "2026-02-27",
+        "member": 112.4377,
+        "spy": 102.0925
+      },
+      {
+        "date": "2026-03-06",
+        "member": 107.6973,
+        "spy": 100.067
+      },
+      {
+        "date": "2026-03-13",
+        "member": 108.8382,
+        "spy": 98.5653
+      },
+      {
+        "date": "2026-03-20",
+        "member": 107.8742,
+        "spy": 96.5234
+      },
+      {
+        "date": "2026-03-27",
+        "member": 98.8375,
+        "spy": 94.3685
+      },
+      {
+        "date": "2026-04-06",
+        "member": 106.0599,
+        "spy": 98.2553
+      },
+      {
+        "date": "2026-04-13",
+        "member": 113.1043,
+        "spy": 102.3067
+      },
+      {
+        "date": "2026-04-20",
+        "member": 117.5863,
+        "spy": 105.6797
+      },
+      {
+        "date": "2026-04-27",
+        "member": 120.8087,
+        "spy": 106.6415
+      },
+      {
+        "date": "2026-05-04",
+        "member": 124.0836,
+        "spy": 107.0649
+      },
+      {
+        "date": "2026-05-11",
+        "member": 133.0079,
+        "spy": 110.2396
+      },
+      {
+        "date": "2026-05-18",
+        "member": 130.5455,
+        "spy": 110.1426
+      },
+      {
+        "date": "2026-05-26",
+        "member": 136.9258,
+        "spy": 111.9231
+      },
+      {
+        "date": "2026-06-02",
+        "member": 139.627,
+        "spy": 113.2621
+      },
+      {
+        "date": "2026-06-09",
+        "member": 134.3602,
+        "spy": 109.9041
+      },
+      {
+        "date": "2026-06-16",
+        "member": 137.5615,
+        "spy": 111.8843
+      },
+      {
+        "date": "2026-06-24",
+        "member": 133.5438,
+        "spy": 109.3359
+      },
+      {
+        "date": "2026-07-01",
+        "member": 137.86,
+        "spy": 111.2028
+      },
+      {
+        "date": "2026-07-09",
+        "member": 136.4075,
+        "spy": 112.0901
+      },
+      {
+        "date": "2026-07-16",
+        "member": 130.4118,
+        "spy": 111.9424
+      },
+      {
+        "date": "2026-07-23",
+        "member": 128.1066,
+        "spy": 110.0726
+      },
+      {
+        "date": "2026-07-30",
+        "member": 132.0377,
+        "spy": 110.5959
+      },
+      {
+        "date": "2026-08-06",
+        "member": 141.9287,
+        "spy": 114.6026
+      },
+      {
+        "date": "2026-08-13",
+        "member": 142.5191,
+        "spy": 115.9924
+      },
+      {
+        "date": "2026-08-20",
+        "member": 142.0668,
+        "spy": 113.7139
+      },
+      {
+        "date": "2026-08-27",
+        "member": 141.6714,
+        "spy": 114.9814
+      },
+      {
+        "date": "2026-09-03",
+        "member": 143.0043,
+        "spy": 115.29
+      },
+      {
+        "date": "2026-09-11",
+        "member": 140.9167,
+        "spy": 113.9659
+      },
+      {
+        "date": "2026-09-18",
+        "member": 142.4972,
+        "spy": 113.5782
+      },
+      {
+        "date": "2026-09-25",
+        "member": 144.1735,
+        "spy": 115.0186
+      },
+      {
+        "date": "2026-10-02",
+        "member": 143.8568,
+        "spy": 114.7637
+      },
+      {
+        "date": "2026-10-09",
+        "member": 144.889,
+        "spy": 116.0952
+      },
+      {
+        "date": "2026-10-16",
+        "member": 139.2812,
+        "spy": 113.8108
+      },
+      {
+        "date": "2026-10-23",
+        "member": 137.5729,
+        "spy": 113.3217
+      },
+      {
+        "date": "2026-10-30",
+        "member": 133.6331,
+        "spy": 112.688
+      },
+      {
+        "date": "2026-11-06",
+        "member": 130.0791,
+        "spy": 109.6416
+      },
+      {
+        "date": "2026-11-13",
+        "member": 134.309,
+        "spy": 112.4867
+      }
+    ],
+    "all": [
+      {
+        "date": "2025-05-15",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2025-05-22",
+        "member": 103.9782,
+        "spy": 98.7518
+      },
+      {
+        "date": "2025-05-30",
+        "member": 104.5042,
+        "spy": 99.8188
+      },
+      {
+        "date": "2025-06-06",
+        "member": 105.7557,
+        "spy": 101.47
+      },
+      {
+        "date": "2025-06-13",
+        "member": 106.3362,
+        "spy": 101.1076
+      },
+      {
+        "date": "2025-06-23",
+        "member": 100.3688,
+        "spy": 101.6411
+      },
+      {
+        "date": "2025-06-30",
+        "member": 107.2491,
+        "spy": 104.6388
+      },
+      {
+        "date": "2025-07-08",
+        "member": 105.9008,
+        "spy": 105.0605
+      },
+      {
+        "date": "2025-07-15",
+        "member": 110.7013,
+        "spy": 105.3653
+      },
+      {
+        "date": "2025-07-22",
+        "member": 116.1487,
+        "spy": 106.5034
+      },
+      {
+        "date": "2025-07-29",
+        "member": 118.7606,
+        "spy": 107.5873
+      },
+      {
+        "date": "2025-08-05",
+        "member": 118.0895,
+        "spy": 106.3527
+      },
+      {
+        "date": "2025-08-12",
+        "member": 123.4341,
+        "spy": 108.8456
+      },
+      {
+        "date": "2025-08-19",
+        "member": 122.4244,
+        "spy": 108.3579
+      },
+      {
+        "date": "2025-08-26",
+        "member": 125.7255,
+        "spy": 109.264
+      },
+      {
+        "date": "2025-09-03",
+        "member": 139.7219,
+        "spy": 109.0235
+      },
+      {
+        "date": "2025-09-10",
+        "member": 144.8368,
+        "spy": 110.4579
+      },
+      {
+        "date": "2025-09-17",
+        "member": 151.058,
+        "spy": 111.6384
+      },
+      {
+        "date": "2025-09-24",
+        "member": 149.8368,
+        "spy": 111.9636
+      },
+      {
+        "date": "2025-10-01",
+        "member": 148.4522,
+        "spy": 113.2083
+      },
+      {
+        "date": "2025-10-08",
+        "member": 148.4039,
+        "spy": 113.9976
+      },
+      {
+        "date": "2025-10-15",
+        "member": 152.1826,
+        "spy": 112.6528
+      },
+      {
+        "date": "2025-10-22",
+        "member": 152.6784,
+        "spy": 113.0983
+      },
+      {
+        "date": "2025-10-29",
+        "member": 166.3664,
+        "spy": 116.416
+      },
+      {
+        "date": "2025-11-05",
+        "member": 172.1584,
+        "spy": 114.7546
+      },
+      {
+        "date": "2025-11-12",
+        "member": 173.7787,
+        "spy": 115.7369
+      },
+      {
+        "date": "2025-11-19",
+        "member": 177.1403,
+        "spy": 112.2227
+      },
+      {
+        "date": "2025-11-26",
+        "member": 193.6397,
+        "spy": 115.1103
+      },
+      {
+        "date": "2025-12-04",
+        "member": 192.497,
+        "spy": 115.9079
+      },
+      {
+        "date": "2025-12-11",
+        "member": 189.6614,
+        "spy": 116.7175
+      },
+      {
+        "date": "2025-12-18",
+        "member": 183.6457,
+        "spy": 114.5666
+      },
+      {
+        "date": "2025-12-26",
+        "member": 190.4232,
+        "spy": 116.9105
+      },
+      {
+        "date": "2026-01-05",
+        "member": 191.8501,
+        "spy": 116.4719
+      },
+      {
+        "date": "2026-01-12",
+        "member": 201.1669,
+        "spy": 117.7319
+      },
+      {
+        "date": "2026-01-20",
+        "member": 194.7763,
+        "spy": 114.7546
+      },
+      {
+        "date": "2026-01-27",
+        "member": 202.5393,
+        "spy": 117.7878
+      },
+      {
+        "date": "2026-02-03",
+        "member": 205.9855,
+        "spy": 116.7784
+      },
+      {
+        "date": "2026-02-10",
+        "member": 192.6421,
+        "spy": 117.2171
+      },
+      {
+        "date": "2026-02-18",
+        "member": 183.7606,
+        "spy": 116.2297
+      },
+      {
+        "date": "2026-02-25",
+        "member": 189.2563,
+        "spy": 117.3915
+      },
+      {
+        "date": "2026-03-04",
+        "member": 183.4643,
+        "spy": 116.0333
+      },
+      {
+        "date": "2026-03-11",
+        "member": 186.4692,
+        "spy": 114.5429
+      },
+      {
+        "date": "2026-03-18",
+        "member": 185.1874,
+        "spy": 112.0194
+      },
+      {
+        "date": "2026-03-25",
+        "member": 175.0846,
+        "spy": 111.2387
+      },
+      {
+        "date": "2026-04-01",
+        "member": 182.8564,
+        "spy": 114.3735
+      },
+      {
+        "date": "2026-04-09",
+        "member": 194.7542,
+        "spy": 118.6797
+      },
+      {
+        "date": "2026-04-16",
+        "member": 204.4183,
+        "spy": 122.4762
+      },
+      {
+        "date": "2026-04-23",
+        "member": 208.1889,
+        "spy": 123.6614
+      },
+      {
+        "date": "2026-04-30",
+        "member": 214.1699,
+        "spy": 125.4436
+      },
+      {
+        "date": "2026-05-07",
+        "member": 226.5183,
+        "spy": 127.6988
+      },
+      {
+        "date": "2026-05-14",
+        "member": 232.701,
+        "spy": 130.5946
+      },
+      {
+        "date": "2026-05-21",
+        "member": 232.249,
+        "spy": 129.6433
+      },
+      {
+        "date": "2026-05-29",
+        "member": 245.6608,
+        "spy": 132.0451
+      },
+      {
+        "date": "2026-06-05",
+        "member": 233.0494,
+        "spy": 128.7409
+      },
+      {
+        "date": "2026-06-12",
+        "member": 235.1508,
+        "spy": 129.474
+      },
+      {
+        "date": "2026-06-22",
+        "member": 241.9654,
+        "spy": 129.9348
+      },
+      {
+        "date": "2026-06-29",
+        "member": 243.445,
+        "spy": 129.3431
+      },
+      {
+        "date": "2026-07-07",
+        "member": 238.914,
+        "spy": 130.5143
+      },
+      {
+        "date": "2026-07-14",
+        "member": 237.2562,
+        "spy": 131.2335
+      },
+      {
+        "date": "2026-07-21",
+        "member": 232.0585,
+        "spy": 130.6138
+      },
+      {
+        "date": "2026-07-28",
+        "member": 222.2784,
+        "spy": 129.3186
+      },
+      {
+        "date": "2026-08-04",
+        "member": 251.1675,
+        "spy": 134.6372
+      },
+      {
+        "date": "2026-08-11",
+        "member": 246.0833,
+        "spy": 134.5028
+      },
+      {
+        "date": "2026-08-18",
+        "member": 246.5349,
+        "spy": 133.96
+      },
+      {
+        "date": "2026-08-25",
+        "member": 247.9067,
+        "spy": 133.6912
+      },
+      {
+        "date": "2026-09-01",
+        "member": 245.8596,
+        "spy": 132.9703
+      },
+      {
+        "date": "2026-09-09",
+        "member": 247.7095,
+        "spy": 133.0785
+      },
+      {
+        "date": "2026-09-16",
+        "member": 243.0431,
+        "spy": 131.621
+      },
+      {
+        "date": "2026-09-23",
+        "member": 249.4646,
+        "spy": 134.0228
+      },
+      {
+        "date": "2026-09-30",
+        "member": 250.4429,
+        "spy": 133.1186
+      },
+      {
+        "date": "2026-10-07",
+        "member": 255.8854,
+        "spy": 135.6653
+      },
+      {
+        "date": "2026-10-14",
+        "member": 246.2312,
+        "spy": 134.3352
+      },
+      {
+        "date": "2026-10-21",
+        "member": 246.7727,
+        "spy": 134.9444
+      },
+      {
+        "date": "2026-10-28",
+        "member": 248.7191,
+        "spy": 134.8083
+      },
+      {
+        "date": "2026-11-04",
+        "member": 239.7193,
+        "spy": 133.8482
+      },
+      {
+        "date": "2026-11-11",
+        "member": 236.2279,
+        "spy": 132.6264
+      },
+      {
+        "date": "2026-11-13",
+        "member": 235.3182,
+        "spy": 131.6768
+      }
+    ]
   },
-  "trades": [],
+  "trades": [
+    {
+      "transaction_date": "2026-09-16",
+      "filed_date": "2026-10-07",
+      "lag_days": 21,
+      "late": false,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "DELL INTL LLC/EMC CORP Rate/Coupon: 5.6% Matures: 2033-09-15",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2026-09-15",
+      "filed_date": "2026-10-07",
+      "lag_days": 22,
+      "late": false,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "DELL INTL LLC/EMC CORP Rate/Coupon: 5.6% Matures: 2033-09-15",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2026-08-18",
+      "filed_date": "2026-09-09",
+      "lag_days": 22,
+      "late": false,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "TRANSCANADA PIPELINES LTD SER 2026-A Rate/Coupon: 6.125% Matures: 2056-10-17",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2026-07-24",
+      "filed_date": "2026-08-10",
+      "lag_days": 17,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "Hasbro Inc Note Rate/Coupon: 3.55% Matures: 2026-11-19",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2026-07-24",
+      "filed_date": "2026-08-10",
+      "lag_days": 17,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "Freeport McMoran Rate/Coupon: 9.5% Matures: 2031-06-01",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2026-07-07",
+      "filed_date": "2026-08-10",
+      "lag_days": 34,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "Venus Tex Independent Sch Dist Rate/Coupon: 5.25% Matures: 2055-08-15",
+      "asset_type_code": "Municipal Security",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2026-06-24",
+      "filed_date": "2026-07-09",
+      "lag_days": 15,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "Cheniere Energy Partners L P Note Rate/Coupon: 4.5% Matures: 2029-10-01",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2026-06-16",
+      "filed_date": "2026-07-09",
+      "lag_days": 23,
+      "late": false,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "EVERSOURCE ENERGY SER A NOTE Rate/Coupon: 6.1% Matures: 2056-08-15",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2026-06-16",
+      "filed_date": "2026-07-09",
+      "lag_days": 23,
+      "late": false,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "NISOURCE INC NOTE Rate/Coupon: 6.95% Matures: 2054-11-30",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2026-05-06",
+      "filed_date": "2026-06-12",
+      "lag_days": 37,
+      "late": false,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "EXPEDIA GROUP INC NOTE Rate/Coupon: 5.5% Matures: 2036-04-15",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2026-04-13",
+      "filed_date": "2026-05-06",
+      "lag_days": 23,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "BLACKSTONE SECD LENDING FD NOTE Rate/Coupon: 5.35% Matures: 2038-04-13",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2026-04-10",
+      "filed_date": "2026-05-06",
+      "lag_days": 26,
+      "late": false,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "ATHENE HOLDING LTD BOND Rate/Coupon: 6.875% Matures: 2055-06-28",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2026-04-10",
+      "filed_date": "2026-05-06",
+      "lag_days": 26,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "Nationwide Finl Svcs Inc Note Rate/Coupon: 6.75% Matures: 2087-05-15",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2026-03-30",
+      "filed_date": "2026-04-03",
+      "lag_days": 4,
+      "late": false,
+      "side": "buy",
+      "symbol": "MU",
+      "asset_name": "Micron Technology, Inc. - Common Stock",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2026-03-30",
+      "filed_date": "2026-04-03",
+      "lag_days": 4,
+      "late": false,
+      "side": "buy",
+      "symbol": "MSFT",
+      "asset_name": "Microsoft Corporation - Common Stock",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2026-03-30",
+      "filed_date": "2026-04-03",
+      "lag_days": 4,
+      "late": false,
+      "side": "buy",
+      "symbol": "GOOG",
+      "asset_name": "Alphabet Inc. - Class C Capital Stock",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2026-03-30",
+      "filed_date": "2026-04-03",
+      "lag_days": 4,
+      "late": false,
+      "side": "buy",
+      "symbol": "ERIE",
+      "asset_name": "Erie Indemnity Company - Class A Common Stock",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2026-03-30",
+      "filed_date": "2026-04-03",
+      "lag_days": 4,
+      "late": false,
+      "side": "buy",
+      "symbol": "AMZN",
+      "asset_name": "Amazon.com, Inc. - Common Stock",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2026-03-27",
+      "filed_date": "2026-04-03",
+      "lag_days": 7,
+      "late": false,
+      "side": "sell",
+      "symbol": "T",
+      "asset_name": "AT&T Inc.",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2026-03-27",
+      "filed_date": "2026-04-03",
+      "lag_days": 7,
+      "late": false,
+      "side": "buy",
+      "symbol": "MSFT",
+      "asset_name": "Microsoft Corporation - Common Stock",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2026-03-27",
+      "filed_date": "2026-04-03",
+      "lag_days": 7,
+      "late": false,
+      "side": "buy",
+      "symbol": "ERIE",
+      "asset_name": "Erie Indemnity Company - Class A Common Stock",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2026-03-11",
+      "filed_date": "2026-04-03",
+      "lag_days": 23,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "Concentrix Corp Note Rate/Coupon: 6.85% Matures: 2033-08-02",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2026-02-18",
+      "filed_date": "2026-03-05",
+      "lag_days": 15,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "PARAMOUNT GLOBAL BOND Rate/Coupon: 6.875% Matures: 04/30/2036",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2026-02-04",
+      "filed_date": "2026-03-05",
+      "lag_days": 29,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "Celanese US Hldgs LLC Note Rate/Coupon: 7.33% Matures: 07/15/2029",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2026-02-03",
+      "filed_date": "2026-03-05",
+      "lag_days": 30,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "V F CORP NOTE CALL MAKE WHOLE Rate/Coupon: 2.95% Matures: 04/23/2030",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-12-22",
+      "filed_date": "2026-01-06",
+      "lag_days": 15,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "Steel Dynamics Inc Ser B Note Rate/Coupon: 5.0% Matures: 12/15/2026",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-11-18",
+      "filed_date": "2025-12-12",
+      "lag_days": 24,
+      "late": false,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "GXO LOGISTICS INCORPORATED Rate/Coupon: 6.25% Matures: 05/06/2029",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-09-19",
+      "filed_date": "2025-10-07",
+      "lag_days": 18,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "ELEVANCE HEALTH INC NOTE Rate/Coupon: 4.9% Matures: 02/08/2026",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-09-09",
+      "filed_date": "2025-10-07",
+      "lag_days": 28,
+      "late": false,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "ARES CAPITAL CORP NOTE Rate/Coupon: 5.8% Matures: 03/08/2032",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-09-04",
+      "filed_date": "2025-10-07",
+      "lag_days": 33,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "ARES CAPITAL CORP NOTE Rate/Coupon: 2.15% Matures: 07/15/2026",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-08-27",
+      "filed_date": "2025-09-04",
+      "lag_days": 8,
+      "late": false,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "VENUS TEX INDPT SCH DIST Rate/Coupon: 5.25% Matures: 08/15/2055",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-08-26",
+      "filed_date": "2025-09-04",
+      "lag_days": 9,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "Dell Inc Note Rate/Coupon: 6.5% Matures: 04/15/2038",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-08-26",
+      "filed_date": "2025-09-04",
+      "lag_days": 9,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "Leidos Inc Note Rate/Coupon: 5.75% Matures: 03/15/2033",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-06-17",
+      "filed_date": "2026-05-15",
+      "lag_days": 332,
+      "late": true,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "JPMORGAN CHASE & CO",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-05-15",
+      "filed_date": "2025-06-09",
+      "lag_days": 25,
+      "late": false,
+      "side": "buy",
+      "symbol": "GOOG",
+      "asset_name": "Alphabet Inc. - Class C Capital Stock",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-05-05",
+      "filed_date": "2025-06-09",
+      "lag_days": 35,
+      "late": false,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "HASBRO INC NOTE Rate/Coupon: 3.55% Matures: 11/19/2026",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-04-24",
+      "filed_date": "2026-05-15",
+      "lag_days": 386,
+      "late": true,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "BAKER HUGHES HLDGS LLC Rate/Coupon: 4.486% Matures: 2030-05-01",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-04-24",
+      "filed_date": "2026-05-15",
+      "lag_days": 386,
+      "late": true,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "FIRST CTZNS BANCSHARES INC N C Rate/Coupon: 6.76428% Matures: 2030-03-15",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-04-23",
+      "filed_date": "2025-05-15",
+      "lag_days": 22,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "Nokia Corp Note Rate/Coupon: 6.625% Matures: 05/15/2039",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-04-22",
+      "filed_date": "2025-05-15",
+      "lag_days": 23,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "Florida Pwr & Lt Co Bond Rate/Coupon: 3.8% Matures: 12/15/2042",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-04-22",
+      "filed_date": "2025-05-15",
+      "lag_days": 23,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "Kinder Morgan Inc Rate/Coupon: 5.55% Matures: 06/01/2045",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-04-22",
+      "filed_date": "2025-05-15",
+      "lag_days": 23,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "Viatris Inc Ser B Note Rate/Coupon: 3.85% Matures: 06/22/2040",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-02-18",
+      "filed_date": "2025-03-12",
+      "lag_days": 22,
+      "late": false,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "ARES CAPITAL CORP NOTE Rate/Coupon: 2.15% Matures: 07/15/2026",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-02-18",
+      "filed_date": "2025-03-12",
+      "lag_days": 22,
+      "late": false,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "TRANSCANADA TRUST SER 2016-A Rate/Coupon: 5.875% Matures: 08/15/2076",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-02-06",
+      "filed_date": "2025-03-12",
+      "lag_days": 34,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "National Fin Auth N H Fed Lease Rate/Coupon: 3.25% Matures: 04/01/2028",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-01-29",
+      "filed_date": "2025-02-07",
+      "lag_days": 9,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "ENSTAR FINANCE LLC NOTE Rate/Coupon: 5.5% Matures: 01/15/2042",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-01-13",
+      "filed_date": "2025-02-07",
+      "lag_days": 25,
+      "late": false,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "BANK NEW YORK MELLON CORP BOND Rate/Coupon: 3.75% Matures: 12/20/2026",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-01-13",
+      "filed_date": "2025-02-07",
+      "lag_days": 25,
+      "late": false,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "CELANESE US HLDGS LLC NOTE Rate/Coupon: 6.33% Matures: 07/15/2029",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-01-13",
+      "filed_date": "2025-02-07",
+      "lag_days": 25,
+      "late": false,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "ELEVANCE HEALTH INC NOTE Rate/Coupon: 4.9% Matures: 02/08/2026",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-01-13",
+      "filed_date": "2025-02-07",
+      "lag_days": 25,
+      "late": false,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "SEMPRA NOTE Rate/Coupon: 4.125% Matures: 04/01/2052",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-01-13",
+      "filed_date": "2025-02-07",
+      "lag_days": 25,
+      "late": false,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "PARAMOUNT GLOBAL BOND Rate/Coupon: 6.875% Matures: 04/30/2036",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2024-11-21",
+      "filed_date": "2024-12-03",
+      "lag_days": 12,
+      "late": false,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "IKON OFFICE SOLUTIONS INC BOND Rate/Coupon: 6.75% Matures: 12/01/2025",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2024-10-25",
+      "filed_date": "2024-11-12",
+      "lag_days": 18,
+      "late": false,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "Kyndryl Hldgs Inc. Ser B Note Rate/Coupon: 4.1% Matures: 10/15/2041",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2024-10-25",
+      "filed_date": "2024-11-12",
+      "lag_days": 18,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "Kyndryl Hldgs Inc Ser B Note Rate/Coupon: 2.7% Matures: 10/15/2028",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2024-10-24",
+      "filed_date": "2024-11-12",
+      "lag_days": 19,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "Kyndryl Holdings Inc. Note Rate/Coupon: 6.35% Matures: 02/20/2034",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2024-10-24",
+      "filed_date": "2024-11-12",
+      "lag_days": 19,
+      "late": false,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "V F Corp Note Call Make Whole Rate/Coupon: 2.95% Matures: 04/23/2030",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2024-10-17",
+      "filed_date": "2024-11-12",
+      "lag_days": 26,
+      "late": false,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "General Motors Company Note Rate/Coupon: 6.6% Matures: 04/01/2036",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2024-10-17",
+      "filed_date": "2024-11-12",
+      "lag_days": 26,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "Yamana Gold Inc Ser B Note Rate/Coupon: 2.63% Matures: 08/15/2031",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2024-10-17",
+      "filed_date": "2024-11-12",
+      "lag_days": 26,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "Autodesk Inc Note Rate/Coupon: 2.4% Matures: 12/15/2031",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2024-10-17",
+      "filed_date": "2024-11-12",
+      "lag_days": 26,
+      "late": false,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "Enstar Finance LLC Rate/Coupon: 5.5% Matures: 01/15/2042",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2024-10-15",
+      "filed_date": "2024-11-12",
+      "lag_days": 28,
+      "late": false,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "Blackstone Secd Lending FD Note Rate/Coupon: 5.35% Matures: 04/13/2028",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2024-10-15",
+      "filed_date": "2024-11-12",
+      "lag_days": 28,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "First Horizon Corporation Note Rate/Coupon: 4.0% Matures: 05/26/2025",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2024-07-19",
+      "filed_date": "2024-08-15",
+      "lag_days": 27,
+      "late": false,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "CONCENTRIX CORP NOTE Rate/Coupon: 6.85% Matures: 08/02/2033",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2024-07-19",
+      "filed_date": "2024-08-15",
+      "lag_days": 27,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "CONCENTRIX CORP NOTE Rate/Coupon: 6.6% Matures: 08/02/2028",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-11-30",
+      "filed_date": "2024-08-13",
+      "lag_days": 257,
+      "late": true,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "Viatris Inc Ser B Note Rate/Coupon: 3.850% Matures: 6/22/2040",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-11-27",
+      "filed_date": "2024-08-13",
+      "lag_days": 260,
+      "late": true,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "Duke Energy Corp New Bond Rate/Coupon: 4.875% Matures: 9/16/2024",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-11-20",
+      "filed_date": "2024-08-13",
+      "lag_days": 267,
+      "late": true,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "JPMorgan Chase & Co Bond Rate/Coupon: 4.6% Matures: 2/1/2025",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-11-20",
+      "filed_date": "2024-08-13",
+      "lag_days": 267,
+      "late": true,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "Wells Fargo & CO Bond Rate/Coupon: 5.9% Matures: 6/15/2024",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-11-20",
+      "filed_date": "2024-08-13",
+      "lag_days": 267,
+      "late": true,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "First Horizon Corporation Note Rate/Coupon: 4.0% Matures: 5/26/2025",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-11-20",
+      "filed_date": "2024-08-13",
+      "lag_days": 267,
+      "late": true,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "Autodesk Inc Note Rate/Coupon: 2.4% Matures: 12/15/2031",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-10-26",
+      "filed_date": "2024-08-13",
+      "lag_days": 292,
+      "late": true,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "Barclays Bank PLC Index-Linked Rate/Coupon: 0% Matures: 10/29/2027",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-10-26",
+      "filed_date": "2024-08-13",
+      "lag_days": 292,
+      "late": true,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "Barclays Bank PLC Index-Linked Rate/Coupon: 0% Matures: 10/29/2027",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-09-27",
+      "filed_date": "2024-08-13",
+      "lag_days": 321,
+      "late": true,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "Paramount Global Note Rate/Coupon: 4.95% Matures: 1/15/2031",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-09-15",
+      "filed_date": "2024-08-13",
+      "lag_days": 333,
+      "late": true,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "General Electric Co Bond Rate/Coupon: 4.2% Matures: 09/15/2023",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-09-01",
+      "filed_date": "2024-08-13",
+      "lag_days": 347,
+      "late": true,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "Concentrix Corp Note Rate/Coupon: 6.6% Matures: 8/2/2028",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-06-22",
+      "filed_date": "2024-08-13",
+      "lag_days": 418,
+      "late": true,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "Phillips 66 Partners LP Note Rate/Coupon: 3.15% Matures: 12/15/2029",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-05-30",
+      "filed_date": "2024-08-13",
+      "lag_days": 441,
+      "late": true,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "National Fin Auth N H Fed Lease Rate/Coupon: 3.25% Matures: 4/1/2028",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-05-25",
+      "filed_date": "2024-08-13",
+      "lag_days": 446,
+      "late": true,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "Bank of America Corp Bond Rate/Coupon: 5.875% Matures: 3/15/2028",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-05-25",
+      "filed_date": "2024-08-13",
+      "lag_days": 446,
+      "late": true,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "JPMorgan Chase & Co Note Rate/Coupon: 0.563% Matures: 02/16/2025",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-05-25",
+      "filed_date": "2024-08-13",
+      "lag_days": 446,
+      "late": true,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "Verisign Inc Ser B Note Rate/Coupon: 4.75% Matures: 7/15/2027",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-05-25",
+      "filed_date": "2024-08-13",
+      "lag_days": 446,
+      "late": true,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "Nationwide Finl Svcs Inc Note Rate/Coupon: 6.75% Matures: 5/15/2087",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-05-11",
+      "filed_date": "2024-08-13",
+      "lag_days": 460,
+      "late": true,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "Cheniere Energy Partners L P Note Rate/Coupon: 4.5% Matures: 10/1/2029",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-05-11",
+      "filed_date": "2024-08-13",
+      "lag_days": 460,
+      "late": true,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "General Electric Co Bond Rate/Coupon: 4.2% Matures: 09/15/2023",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-05-10",
+      "filed_date": "2024-08-13",
+      "lag_days": 461,
+      "late": true,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "Western Digital Corp Bond Rate/Coupon: 1.5% Matures: 2/1/2024",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-05-10",
+      "filed_date": "2024-08-13",
+      "lag_days": 461,
+      "late": true,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "Dell Inc Note Rate/Coupon: 6.5% Matures: 4/15/2038",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-05-10",
+      "filed_date": "2024-08-13",
+      "lag_days": 461,
+      "late": true,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "Florida Pwr & Lt Co Bond Rate/Coupon: 3.8% Matures: 12/15/2042",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-05-10",
+      "filed_date": "2024-08-13",
+      "lag_days": 461,
+      "late": true,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "Kinder Morgan Inc Del Note Rate/Coupon: 5.5% Matures: 6/1/2045",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-05-04",
+      "filed_date": "2024-08-13",
+      "lag_days": 467,
+      "late": true,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "Duke Energy Corp New Bond Rate/Coupon: 4.875% Matures: 9/16/2024",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-05-04",
+      "filed_date": "2024-08-13",
+      "lag_days": 467,
+      "late": true,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "Kyndryl Hldgs Inc Ser B Note Rate/Coupon: 2.7% Matures: 10/15/2028",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-05-04",
+      "filed_date": "2024-08-13",
+      "lag_days": 467,
+      "late": true,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "Ford Mtr Co DEL Note Rate/Coupon: 3.25% Matures: 2/12/2032",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-05-02",
+      "filed_date": "2024-08-13",
+      "lag_days": 469,
+      "late": true,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "Steel Dynamics Inc Ser B Note Rate/Coupon: 5.0% Matures: 12/15/2026",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-05-02",
+      "filed_date": "2024-08-13",
+      "lag_days": 469,
+      "late": true,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "Celanese US Hldgs LLC Note Rate/Coupon: 6.33% Matures: 7/15/2029",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-05-02",
+      "filed_date": "2024-08-13",
+      "lag_days": 469,
+      "late": true,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "Yamana Gold Inc Ser B Note Rate/Coupon: 2.63% Matures: 8/15/2031",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-05-02",
+      "filed_date": "2024-08-13",
+      "lag_days": 469,
+      "late": true,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "Leidos Inc Note Rate/Coupon: 5.75% Matures: 3/15/2033",
+      "asset_type_code": "Corporate Bond",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-01-24",
+      "filed_date": "2024-08-13",
+      "lag_days": 567,
+      "late": true,
+      "side": "sell",
+      "symbol": "MRO",
+      "asset_name": "Marathon Oil Corp",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    }
+  ],
   "windows": {
     "30d": {
       "rank": null,
@@ -23,21 +2704,27 @@
       "streak": 0,
       "on_fire": false,
       "benched": true,
-      "return": null,
-      "alpha": null,
-      "benchmark": null,
-      "copycat_return": null,
-      "copycat_alpha": null,
+      "return": -0.057427,
+      "alpha": -0.034857,
+      "benchmark": -0.022571,
+      "copycat_return": -0.053814,
+      "copycat_alpha": -0.031243,
       "trades": 0,
-      "avg_hold_days": null,
+      "avg_hold_days": 269.6,
       "avg_filing_lag": null,
       "late_filings": 0,
       "filings": 0,
-      "badges": [],
+      "badges": [
+        {
+          "id": "market_beat_you",
+          "name": "The Market Beat You",
+          "blurb": "Negative alpha versus SPY over the same holding periods."
+        }
+      ],
       "excluded_options": 0,
-      "excluded_non_stock": 0,
-      "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "excluded_non_stock": 68,
+      "excluded_unknown": 18,
+      "unmatched_sells": 1,
       "uncopyable": 0
     },
     "90d": {
@@ -47,21 +2734,27 @@
       "streak": 0,
       "on_fire": false,
       "benched": true,
-      "return": null,
-      "alpha": null,
-      "benchmark": null,
-      "copycat_return": null,
-      "copycat_alpha": null,
+      "return": -0.060966,
+      "alpha": -0.032667,
+      "benchmark": -0.028299,
+      "copycat_return": -0.05692,
+      "copycat_alpha": -0.02862,
       "trades": 0,
-      "avg_hold_days": null,
+      "avg_hold_days": 269.6,
       "avg_filing_lag": null,
       "late_filings": 0,
       "filings": 0,
-      "badges": [],
+      "badges": [
+        {
+          "id": "market_beat_you",
+          "name": "The Market Beat You",
+          "blurb": "Negative alpha versus SPY over the same holding periods."
+        }
+      ],
       "excluded_options": 0,
-      "excluded_non_stock": 0,
-      "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "excluded_non_stock": 68,
+      "excluded_unknown": 18,
+      "unmatched_sells": 1,
       "uncopyable": 0
     },
     "6m": {
@@ -71,69 +2764,107 @@
       "streak": 0,
       "on_fire": false,
       "benched": true,
-      "return": null,
-      "alpha": null,
-      "benchmark": null,
-      "copycat_return": null,
-      "copycat_alpha": null,
+      "return": 0.023978,
+      "alpha": 0.003414,
+      "benchmark": 0.020564,
+      "copycat_return": 0.026885,
+      "copycat_alpha": 0.006321,
       "trades": 0,
-      "avg_hold_days": null,
+      "avg_hold_days": 269.6,
       "avg_filing_lag": null,
       "late_filings": 0,
       "filings": 0,
-      "badges": [],
+      "badges": [
+        {
+          "id": "beat_the_market",
+          "name": "Beat the Market",
+          "blurb": "Positive alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "index_hugger",
+          "name": "Index Hugger",
+          "blurb": "Alpha landed within 2 percentage points of the S&P."
+        }
+      ],
       "excluded_options": 0,
-      "excluded_non_stock": 0,
-      "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "excluded_non_stock": 68,
+      "excluded_unknown": 18,
+      "unmatched_sells": 1,
       "uncopyable": 0
     },
     "12m": {
-      "rank": null,
+      "rank": 2,
       "previous_rank": null,
       "rank_change": null,
       "streak": 0,
       "on_fire": false,
-      "benched": true,
-      "return": null,
-      "alpha": null,
-      "benchmark": null,
-      "copycat_return": null,
-      "copycat_alpha": null,
-      "trades": 0,
-      "avg_hold_days": null,
-      "avg_filing_lag": null,
+      "benched": false,
+      "return": 0.355838,
+      "alpha": 0.176782,
+      "benchmark": 0.179056,
+      "copycat_return": 0.29032,
+      "copycat_alpha": 0.145089,
+      "trades": 8,
+      "avg_hold_days": 269.6,
+      "avg_filing_lag": 5.1,
       "late_filings": 0,
-      "filings": 0,
-      "badges": [],
+      "filings": 8,
+      "badges": [
+        {
+          "id": "beat_the_market",
+          "name": "Beat the Market",
+          "blurb": "Positive alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "tech_bro",
+          "name": "Tech Bro",
+          "blurb": "At least half the midpoint dollars sit in the technology list."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        }
+      ],
       "excluded_options": 0,
-      "excluded_non_stock": 0,
-      "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "excluded_non_stock": 68,
+      "excluded_unknown": 18,
+      "unmatched_sells": 1,
       "uncopyable": 0
     },
     "all": {
-      "rank": null,
+      "rank": 3,
       "previous_rank": null,
       "rank_change": null,
       "streak": 0,
       "on_fire": false,
-      "benched": true,
-      "return": null,
-      "alpha": null,
-      "benchmark": null,
-      "copycat_return": null,
-      "copycat_alpha": null,
-      "trades": 0,
-      "avg_hold_days": null,
-      "avg_filing_lag": null,
-      "late_filings": 0,
-      "filings": 0,
-      "badges": [],
+      "benched": false,
+      "return": 0.47017,
+      "alpha": 0.266998,
+      "benchmark": 0.203172,
+      "copycat_return": 0.380531,
+      "copycat_alpha": 0.216816,
+      "trades": 9,
+      "avg_hold_days": 269.6,
+      "avg_filing_lag": 63.3,
+      "late_filings": 1,
+      "filings": 10,
+      "badges": [
+        {
+          "id": "beat_the_market",
+          "name": "Beat the Market",
+          "blurb": "Positive alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "tech_bro",
+          "name": "Tech Bro",
+          "blurb": "At least half the midpoint dollars sit in the technology list."
+        }
+      ],
       "excluded_options": 0,
-      "excluded_non_stock": 0,
-      "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "excluded_non_stock": 68,
+      "excluded_unknown": 18,
+      "unmatched_sells": 1,
       "uncopyable": 0
     }
   }

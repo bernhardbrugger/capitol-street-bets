@@ -3760,6 +3760,13 @@
       "state": "CA"
     },
     {
+      "bioguide_id": "M001244",
+      "name": "Ashley Moody",
+      "chamber": "Senate",
+      "party": "R",
+      "state": "FL"
+    },
+    {
       "bioguide_id": "G000596",
       "name": "Marjorie Taylor Greene",
       "chamber": "House",

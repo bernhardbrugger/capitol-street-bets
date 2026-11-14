@@ -14,7 +14,65 @@
     "12m": [],
     "all": []
   },
-  "trades": [],
+  "trades": [
+    {
+      "transaction_date": "2025-09-22",
+      "filed_date": "2025-09-30",
+      "lag_days": 8,
+      "late": false,
+      "side": "sell",
+      "symbol": "AAPL",
+      "asset_name": "Apple Inc",
+      "asset_type_code": "Stock",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2020-07-06",
+      "filed_date": "2020-07-09",
+      "lag_days": 3,
+      "late": false,
+      "side": "sell",
+      "symbol": "AAPL",
+      "asset_name": "Apple Inc",
+      "asset_type_code": null,
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2020-01-02",
+      "filed_date": "2020-01-08",
+      "lag_days": 6,
+      "late": false,
+      "side": "sell",
+      "symbol": "AAPL",
+      "asset_name": "Apple Inc",
+      "asset_type_code": null,
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    }
+  ],
   "windows": {
     "30d": {
       "rank": null,
@@ -35,9 +93,9 @@
       "filings": 0,
       "badges": [],
       "excluded_options": 0,
-      "excluded_non_stock": 0,
+      "excluded_non_stock": 2,
       "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "unmatched_sells": 1,
       "uncopyable": 0
     },
     "90d": {
@@ -59,9 +117,9 @@
       "filings": 0,
       "badges": [],
       "excluded_options": 0,
-      "excluded_non_stock": 0,
+      "excluded_non_stock": 2,
       "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "unmatched_sells": 1,
       "uncopyable": 0
     },
     "6m": {
@@ -83,9 +141,9 @@
       "filings": 0,
       "badges": [],
       "excluded_options": 0,
-      "excluded_non_stock": 0,
+      "excluded_non_stock": 2,
       "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "unmatched_sells": 1,
       "uncopyable": 0
     },
     "12m": {
@@ -107,9 +165,9 @@
       "filings": 0,
       "badges": [],
       "excluded_options": 0,
-      "excluded_non_stock": 0,
+      "excluded_non_stock": 2,
       "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "unmatched_sells": 1,
       "uncopyable": 0
     },
     "all": {
@@ -124,16 +182,16 @@
       "benchmark": null,
       "copycat_return": null,
       "copycat_alpha": null,
-      "trades": 0,
+      "trades": 1,
       "avg_hold_days": null,
-      "avg_filing_lag": null,
+      "avg_filing_lag": 8.0,
       "late_filings": 0,
-      "filings": 0,
+      "filings": 1,
       "badges": [],
       "excluded_options": 0,
-      "excluded_non_stock": 0,
+      "excluded_non_stock": 2,
       "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "unmatched_sells": 1,
       "uncopyable": 0
     }
   }

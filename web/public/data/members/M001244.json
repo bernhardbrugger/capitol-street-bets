@@ -1,0 +1,2219 @@
+{
+  "bioguide_id": "M001244",
+  "name": "Ashley Moody",
+  "initials": "AM",
+  "chamber": "Senate",
+  "party": "R",
+  "state": "FL",
+  "district": null,
+  "years_in_service": 1.8,
+  "curves": {
+    "30d": [
+      {
+        "date": "2026-10-15",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-22",
+        "member": 91.9397,
+        "spy": 98.9855
+      },
+      {
+        "date": "2026-10-29",
+        "member": 100.0237,
+        "spy": 99.6851
+      },
+      {
+        "date": "2026-11-05",
+        "member": 77.7081,
+        "spy": 94.974
+      },
+      {
+        "date": "2026-11-12",
+        "member": 92.3592,
+        "spy": 98.0992
+      },
+      {
+        "date": "2026-11-13",
+        "member": 89.0307,
+        "spy": 97.7429
+      }
+    ],
+    "90d": [
+      {
+        "date": "2026-08-17",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-08-24",
+        "member": 91.8259,
+        "spy": 98.8093
+      },
+      {
+        "date": "2026-08-31",
+        "member": 91.5187,
+        "spy": 99.2727
+      },
+      {
+        "date": "2026-09-08",
+        "member": 94.9016,
+        "spy": 99.1316
+      },
+      {
+        "date": "2026-09-15",
+        "member": 88.7374,
+        "spy": 98.0224
+      },
+      {
+        "date": "2026-09-22",
+        "member": 101.2148,
+        "spy": 100.0919
+      },
+      {
+        "date": "2026-09-29",
+        "member": 102.8703,
+        "spy": 98.9038
+      },
+      {
+        "date": "2026-10-06",
+        "member": 106.0021,
+        "spy": 100.8309
+      },
+      {
+        "date": "2026-10-13",
+        "member": 97.1747,
+        "spy": 100.6911
+      },
+      {
+        "date": "2026-10-20",
+        "member": 88.6683,
+        "spy": 99.5315
+      },
+      {
+        "date": "2026-10-27",
+        "member": 89.8045,
+        "spy": 99.6104
+      },
+      {
+        "date": "2026-11-03",
+        "member": 84.5245,
+        "spy": 97.629
+      },
+      {
+        "date": "2026-11-10",
+        "member": 81.0021,
+        "spy": 97.0557
+      },
+      {
+        "date": "2026-11-13",
+        "member": 82.1455,
+        "spy": 97.6316
+      }
+    ],
+    "6m": [
+      {
+        "date": "2026-05-18",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-05-26",
+        "member": 113.1568,
+        "spy": 101.6165
+      },
+      {
+        "date": "2026-06-02",
+        "member": 122.5551,
+        "spy": 102.8322
+      },
+      {
+        "date": "2026-06-09",
+        "member": 117.2989,
+        "spy": 99.7834
+      },
+      {
+        "date": "2026-06-16",
+        "member": 124.9899,
+        "spy": 101.5813
+      },
+      {
+        "date": "2026-06-24",
+        "member": 127.6297,
+        "spy": 99.2676
+      },
+      {
+        "date": "2026-07-01",
+        "member": 133.4366,
+        "spy": 100.9626
+      },
+      {
+        "date": "2026-07-09",
+        "member": 128.1725,
+        "spy": 101.7681
+      },
+      {
+        "date": "2026-07-16",
+        "member": 120.3812,
+        "spy": 101.6341
+      },
+      {
+        "date": "2026-07-23",
+        "member": 126.4027,
+        "spy": 99.9364
+      },
+      {
+        "date": "2026-07-30",
+        "member": 114.5057,
+        "spy": 100.4116
+      },
+      {
+        "date": "2026-08-06",
+        "member": 119.0196,
+        "spy": 104.0493
+      },
+      {
+        "date": "2026-08-13",
+        "member": 122.8105,
+        "spy": 105.311
+      },
+      {
+        "date": "2026-08-20",
+        "member": 118.4693,
+        "spy": 103.2424
+      },
+      {
+        "date": "2026-08-27",
+        "member": 117.239,
+        "spy": 104.3931
+      },
+      {
+        "date": "2026-09-03",
+        "member": 112.4129,
+        "spy": 104.6734
+      },
+      {
+        "date": "2026-09-11",
+        "member": 116.6851,
+        "spy": 103.4712
+      },
+      {
+        "date": "2026-09-18",
+        "member": 118.7483,
+        "spy": 103.1192
+      },
+      {
+        "date": "2026-09-25",
+        "member": 127.8613,
+        "spy": 104.427
+      },
+      {
+        "date": "2026-10-02",
+        "member": 133.0349,
+        "spy": 104.1955
+      },
+      {
+        "date": "2026-10-09",
+        "member": 127.5299,
+        "spy": 105.4045
+      },
+      {
+        "date": "2026-10-16",
+        "member": 110.4422,
+        "spy": 103.3304
+      },
+      {
+        "date": "2026-10-23",
+        "member": 106.7157,
+        "spy": 102.8863
+      },
+      {
+        "date": "2026-10-30",
+        "member": 108.0252,
+        "spy": 102.311
+      },
+      {
+        "date": "2026-11-06",
+        "member": 94.2687,
+        "spy": 99.5451
+      },
+      {
+        "date": "2026-11-13",
+        "member": 102.7627,
+        "spy": 102.1282
+      }
+    ],
+    "12m": [
+      {
+        "date": "2025-11-14",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2025-11-21",
+        "member": 93.4441,
+        "spy": 98.0802
+      },
+      {
+        "date": "2025-12-01",
+        "member": 100.7463,
+        "spy": 101.2412
+      },
+      {
+        "date": "2025-12-08",
+        "member": 103.2607,
+        "spy": 101.7413
+      },
+      {
+        "date": "2025-12-15",
+        "member": 99.9543,
+        "spy": 101.3097
+      },
+      {
+        "date": "2025-12-22",
+        "member": 102.0943,
+        "spy": 101.9198
+      },
+      {
+        "date": "2025-12-30",
+        "member": 102.9529,
+        "spy": 102.2443
+      },
+      {
+        "date": "2026-01-07",
+        "member": 109.3857,
+        "spy": 102.6268
+      },
+      {
+        "date": "2026-01-14",
+        "member": 110.6,
+        "spy": 102.7428
+      },
+      {
+        "date": "2026-01-22",
+        "member": 118.7257,
+        "spy": 102.5375
+      },
+      {
+        "date": "2026-01-29",
+        "member": 122.4713,
+        "spy": 103.2905
+      },
+      {
+        "date": "2026-02-05",
+        "member": 109.2871,
+        "spy": 100.8468
+      },
+      {
+        "date": "2026-02-12",
+        "member": 116.446,
+        "spy": 101.39
+      },
+      {
+        "date": "2026-02-20",
+        "member": 123.4732,
+        "spy": 102.6044
+      },
+      {
+        "date": "2026-02-27",
+        "member": 121.7831,
+        "spy": 102.0925
+      },
+      {
+        "date": "2026-03-06",
+        "member": 112.0198,
+        "spy": 100.067
+      },
+      {
+        "date": "2026-03-13",
+        "member": 116.0062,
+        "spy": 98.5653
+      },
+      {
+        "date": "2026-03-20",
+        "member": 114.9858,
+        "spy": 96.5234
+      },
+      {
+        "date": "2026-03-27",
+        "member": 109.8896,
+        "spy": 94.3685
+      },
+      {
+        "date": "2026-04-06",
+        "member": 115.3611,
+        "spy": 98.0653
+      },
+      {
+        "date": "2026-04-13",
+        "member": 127.4648,
+        "spy": 102.1089
+      },
+      {
+        "date": "2026-04-20",
+        "member": 131.2302,
+        "spy": 105.4753
+      },
+      {
+        "date": "2026-04-27",
+        "member": 139.8222,
+        "spy": 106.4352
+      },
+      {
+        "date": "2026-05-04",
+        "member": 139.5365,
+        "spy": 106.8579
+      },
+      {
+        "date": "2026-05-11",
+        "member": 165.8532,
+        "spy": 110.0263
+      },
+      {
+        "date": "2026-05-18",
+        "member": 154.8957,
+        "spy": 109.9296
+      },
+      {
+        "date": "2026-05-26",
+        "member": 175.2751,
+        "spy": 111.7066
+      },
+      {
+        "date": "2026-06-02",
+        "member": 189.8326,
+        "spy": 113.043
+      },
+      {
+        "date": "2026-06-09",
+        "member": 181.691,
+        "spy": 109.6915
+      },
+      {
+        "date": "2026-06-16",
+        "member": 193.6039,
+        "spy": 111.6679
+      },
+      {
+        "date": "2026-06-24",
+        "member": 197.6929,
+        "spy": 109.1245
+      },
+      {
+        "date": "2026-07-01",
+        "member": 206.6876,
+        "spy": 110.9878
+      },
+      {
+        "date": "2026-07-09",
+        "member": 198.5337,
+        "spy": 111.8733
+      },
+      {
+        "date": "2026-07-16",
+        "member": 186.4653,
+        "spy": 111.7259
+      },
+      {
+        "date": "2026-07-23",
+        "member": 195.7923,
+        "spy": 109.8597
+      },
+      {
+        "date": "2026-07-30",
+        "member": 177.3644,
+        "spy": 110.382
+      },
+      {
+        "date": "2026-08-06",
+        "member": 184.3562,
+        "spy": 114.381
+      },
+      {
+        "date": "2026-08-13",
+        "member": 190.2282,
+        "spy": 115.768
+      },
+      {
+        "date": "2026-08-20",
+        "member": 183.5039,
+        "spy": 113.494
+      },
+      {
+        "date": "2026-08-27",
+        "member": 181.5982,
+        "spy": 114.759
+      },
+      {
+        "date": "2026-09-03",
+        "member": 174.1227,
+        "spy": 115.067
+      },
+      {
+        "date": "2026-09-11",
+        "member": 180.7401,
+        "spy": 113.7455
+      },
+      {
+        "date": "2026-09-18",
+        "member": 183.936,
+        "spy": 113.3585
+      },
+      {
+        "date": "2026-09-25",
+        "member": 198.0516,
+        "spy": 114.7962
+      },
+      {
+        "date": "2026-10-02",
+        "member": 206.0654,
+        "spy": 114.5417
+      },
+      {
+        "date": "2026-10-09",
+        "member": 197.5383,
+        "spy": 115.8707
+      },
+      {
+        "date": "2026-10-16",
+        "member": 171.0702,
+        "spy": 113.5907
+      },
+      {
+        "date": "2026-10-23",
+        "member": 165.2981,
+        "spy": 113.1026
+      },
+      {
+        "date": "2026-10-30",
+        "member": 167.3264,
+        "spy": 112.47
+      },
+      {
+        "date": "2026-11-06",
+        "member": 146.0181,
+        "spy": 109.4296
+      },
+      {
+        "date": "2026-11-13",
+        "member": 159.1749,
+        "spy": 112.2691
+      }
+    ],
+    "all": [
+      {
+        "date": "2025-01-21",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2025-01-28",
+        "member": 91.8881,
+        "spy": 100.1335
+      },
+      {
+        "date": "2025-02-04",
+        "member": 94.4245,
+        "spy": 99.6797
+      },
+      {
+        "date": "2025-02-11",
+        "member": 97.0372,
+        "spy": 100.2644
+      },
+      {
+        "date": "2025-02-19",
+        "member": 95.1679,
+        "spy": 101.5266
+      },
+      {
+        "date": "2025-02-26",
+        "member": 91.9737,
+        "spy": 99.2629
+      },
+      {
+        "date": "2025-03-05",
+        "member": 86.8655,
+        "spy": 97.3462
+      },
+      {
+        "date": "2025-03-12",
+        "member": 83.1554,
+        "spy": 93.6262
+      },
+      {
+        "date": "2025-03-19",
+        "member": 86.4162,
+        "spy": 95.0099
+      },
+      {
+        "date": "2025-03-26",
+        "member": 83.8542,
+        "spy": 95.1198
+      },
+      {
+        "date": "2025-04-02",
+        "member": 81.0477,
+        "spy": 94.4389
+      },
+      {
+        "date": "2025-04-09",
+        "member": 81.1479,
+        "spy": 92.8131
+      },
+      {
+        "date": "2025-04-16",
+        "member": 75.0867,
+        "spy": 88.9288
+      },
+      {
+        "date": "2025-04-24",
+        "member": 81.436,
+        "spy": 92.4866
+      },
+      {
+        "date": "2025-05-01",
+        "member": 80.4984,
+        "spy": 94.4795
+      },
+      {
+        "date": "2025-05-08",
+        "member": 83.0488,
+        "spy": 95.5943
+      },
+      {
+        "date": "2025-05-15",
+        "member": 93.2258,
+        "spy": 99.8914
+      },
+      {
+        "date": "2025-05-22",
+        "member": 89.123,
+        "spy": 98.6446
+      },
+      {
+        "date": "2025-05-30",
+        "member": 88.7594,
+        "spy": 99.7104
+      },
+      {
+        "date": "2025-06-06",
+        "member": 93.2809,
+        "spy": 101.3598
+      },
+      {
+        "date": "2025-06-13",
+        "member": 94.7769,
+        "spy": 100.9978
+      },
+      {
+        "date": "2025-06-23",
+        "member": 96.3011,
+        "spy": 101.5307
+      },
+      {
+        "date": "2025-06-30",
+        "member": 103.6333,
+        "spy": 104.5251
+      },
+      {
+        "date": "2025-07-08",
+        "member": 105.2803,
+        "spy": 104.9464
+      },
+      {
+        "date": "2025-07-15",
+        "member": 109.9555,
+        "spy": 105.2509
+      },
+      {
+        "date": "2025-07-22",
+        "member": 105.5093,
+        "spy": 106.3877
+      },
+      {
+        "date": "2025-07-29",
+        "member": 111.3068,
+        "spy": 107.4705
+      },
+      {
+        "date": "2025-08-05",
+        "member": 108.9452,
+        "spy": 106.2372
+      },
+      {
+        "date": "2025-08-12",
+        "member": 107.9535,
+        "spy": 108.7274
+      },
+      {
+        "date": "2025-08-19",
+        "member": 101.4249,
+        "spy": 108.2402
+      },
+      {
+        "date": "2025-08-26",
+        "member": 103.2018,
+        "spy": 109.1453
+      },
+      {
+        "date": "2025-09-03",
+        "member": 99.0476,
+        "spy": 108.9051
+      },
+      {
+        "date": "2025-09-10",
+        "member": 103.2367,
+        "spy": 110.338
+      },
+      {
+        "date": "2025-09-17",
+        "member": 106.5646,
+        "spy": 111.5172
+      },
+      {
+        "date": "2025-09-24",
+        "member": 112.0708,
+        "spy": 111.842
+      },
+      {
+        "date": "2025-10-01",
+        "member": 119.8574,
+        "spy": 113.0854
+      },
+      {
+        "date": "2025-10-08",
+        "member": 129.091,
+        "spy": 113.8738
+      },
+      {
+        "date": "2025-10-15",
+        "member": 128.7198,
+        "spy": 112.5305
+      },
+      {
+        "date": "2025-10-22",
+        "member": 126.3642,
+        "spy": 112.9754
+      },
+      {
+        "date": "2025-10-29",
+        "member": 137.0044,
+        "spy": 116.2896
+      },
+      {
+        "date": "2025-11-05",
+        "member": 134.7155,
+        "spy": 114.63
+      },
+      {
+        "date": "2025-11-12",
+        "member": 133.3467,
+        "spy": 115.6112
+      },
+      {
+        "date": "2025-11-19",
+        "member": 128.073,
+        "spy": 112.1008
+      },
+      {
+        "date": "2025-11-26",
+        "member": 129.7758,
+        "spy": 114.9852
+      },
+      {
+        "date": "2025-12-04",
+        "member": 133.2334,
+        "spy": 115.7821
+      },
+      {
+        "date": "2025-12-11",
+        "member": 134.8347,
+        "spy": 116.5907
+      },
+      {
+        "date": "2025-12-18",
+        "member": 127.6517,
+        "spy": 114.4422
+      },
+      {
+        "date": "2025-12-26",
+        "member": 134.8099,
+        "spy": 116.7836
+      },
+      {
+        "date": "2026-01-05",
+        "member": 140.6071,
+        "spy": 116.3454
+      },
+      {
+        "date": "2026-01-12",
+        "member": 145.0574,
+        "spy": 117.6041
+      },
+      {
+        "date": "2026-01-20",
+        "member": 149.2914,
+        "spy": 114.63
+      },
+      {
+        "date": "2026-01-27",
+        "member": 157.2495,
+        "spy": 117.6599
+      },
+      {
+        "date": "2026-02-03",
+        "member": 152.2493,
+        "spy": 116.6516
+      },
+      {
+        "date": "2026-02-10",
+        "member": 151.6578,
+        "spy": 117.0898
+      },
+      {
+        "date": "2026-02-18",
+        "member": 158.7698,
+        "spy": 116.1035
+      },
+      {
+        "date": "2026-02-25",
+        "member": 166.7937,
+        "spy": 117.264
+      },
+      {
+        "date": "2026-03-04",
+        "member": 155.8656,
+        "spy": 115.9073
+      },
+      {
+        "date": "2026-03-11",
+        "member": 155.346,
+        "spy": 114.4185
+      },
+      {
+        "date": "2026-03-18",
+        "member": 154.0028,
+        "spy": 111.8978
+      },
+      {
+        "date": "2026-03-25",
+        "member": 154.587,
+        "spy": 111.1179
+      },
+      {
+        "date": "2026-04-01",
+        "member": 149.8424,
+        "spy": 110.8506
+      },
+      {
+        "date": "2026-04-09",
+        "member": 164.0202,
+        "spy": 115.0242
+      },
+      {
+        "date": "2026-04-16",
+        "member": 170.197,
+        "spy": 118.7037
+      },
+      {
+        "date": "2026-04-23",
+        "member": 176.0787,
+        "spy": 119.8524
+      },
+      {
+        "date": "2026-04-30",
+        "member": 181.342,
+        "spy": 121.5797
+      },
+      {
+        "date": "2026-05-07",
+        "member": 198.8526,
+        "spy": 123.7655
+      },
+      {
+        "date": "2026-05-14",
+        "member": 216.3303,
+        "spy": 126.5721
+      },
+      {
+        "date": "2026-05-21",
+        "member": 212.164,
+        "spy": 125.6501
+      },
+      {
+        "date": "2026-05-29",
+        "member": 234.1699,
+        "spy": 127.9779
+      },
+      {
+        "date": "2026-06-05",
+        "member": 224.157,
+        "spy": 124.7754
+      },
+      {
+        "date": "2026-06-12",
+        "member": 251.4402,
+        "spy": 125.486
+      },
+      {
+        "date": "2026-06-22",
+        "member": 278.9071,
+        "spy": 125.9326
+      },
+      {
+        "date": "2026-06-29",
+        "member": 281.902,
+        "spy": 125.3591
+      },
+      {
+        "date": "2026-07-07",
+        "member": 246.8316,
+        "spy": 126.4943
+      },
+      {
+        "date": "2026-07-14",
+        "member": 259.9617,
+        "spy": 127.1913
+      },
+      {
+        "date": "2026-07-21",
+        "member": 253.3662,
+        "spy": 126.5907
+      },
+      {
+        "date": "2026-07-28",
+        "member": 222.8141,
+        "spy": 125.3354
+      },
+      {
+        "date": "2026-08-04",
+        "member": 245.9197,
+        "spy": 130.4902
+      },
+      {
+        "date": "2026-08-11",
+        "member": 239.3253,
+        "spy": 130.3599
+      },
+      {
+        "date": "2026-08-18",
+        "member": 243.5054,
+        "spy": 129.8338
+      },
+      {
+        "date": "2026-08-25",
+        "member": 235.6408,
+        "spy": 129.5733
+      },
+      {
+        "date": "2026-09-01",
+        "member": 225.8471,
+        "spy": 128.8746
+      },
+      {
+        "date": "2026-09-09",
+        "member": 241.0303,
+        "spy": 128.9795
+      },
+      {
+        "date": "2026-09-16",
+        "member": 224.6016,
+        "spy": 127.5668
+      },
+      {
+        "date": "2026-09-23",
+        "member": 253.6126,
+        "spy": 129.8947
+      },
+      {
+        "date": "2026-09-30",
+        "member": 259.7388,
+        "spy": 129.0184
+      },
+      {
+        "date": "2026-10-07",
+        "member": 267.8029,
+        "spy": 131.4866
+      },
+      {
+        "date": "2026-10-14",
+        "member": 236.0884,
+        "spy": 130.1975
+      },
+      {
+        "date": "2026-10-21",
+        "member": 228.6841,
+        "spy": 130.7879
+      },
+      {
+        "date": "2026-10-28",
+        "member": 234.5951,
+        "spy": 130.656
+      },
+      {
+        "date": "2026-11-04",
+        "member": 208.0311,
+        "spy": 129.7255
+      },
+      {
+        "date": "2026-11-11",
+        "member": 217.1956,
+        "spy": 128.5413
+      },
+      {
+        "date": "2026-11-13",
+        "member": 207.5773,
+        "spy": 127.621
+      }
+    ]
+  },
+  "trades": [
+    {
+      "transaction_date": "2025-04-04",
+      "filed_date": "2025-05-13",
+      "lag_days": 39,
+      "late": false,
+      "side": "buy",
+      "symbol": "JPM",
+      "asset_name": "JPM",
+      "asset_type_code": "Stock",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-04-04",
+      "filed_date": "2025-05-13",
+      "lag_days": 39,
+      "late": false,
+      "side": "buy",
+      "symbol": "HWM",
+      "asset_name": "HWM",
+      "asset_type_code": "Stock",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-04-04",
+      "filed_date": "2025-05-13",
+      "lag_days": 39,
+      "late": false,
+      "side": "buy",
+      "symbol": "ET",
+      "asset_name": "ET",
+      "asset_type_code": "Stock",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-04-04",
+      "filed_date": "2025-05-13",
+      "lag_days": 39,
+      "late": false,
+      "side": "buy",
+      "symbol": "ARCC",
+      "asset_name": "ARCC",
+      "asset_type_code": "Stock",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-03-25",
+      "filed_date": "2025-04-20",
+      "lag_days": 26,
+      "late": false,
+      "side": "buy",
+      "symbol": "SMCI",
+      "asset_name": "SMCI",
+      "asset_type_code": "Stock",
+      "amount_min": 100001.0,
+      "amount_max": 250000.0,
+      "midpoint": 175000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-03-25",
+      "filed_date": "2025-04-20",
+      "lag_days": 26,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "NVDA CALL",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-03-25",
+      "filed_date": "2025-04-20",
+      "lag_days": 26,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "SMCI CALL",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-03-25",
+      "filed_date": "2025-04-20",
+      "lag_days": 26,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "SMCI CALL",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-03-25",
+      "filed_date": "2025-04-20",
+      "lag_days": 26,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "SMCI CALL",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-03-25",
+      "filed_date": "2025-04-20",
+      "lag_days": 26,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "SMCI PUT",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-03-24",
+      "filed_date": "2025-04-20",
+      "lag_days": 27,
+      "late": false,
+      "side": "sell",
+      "symbol": "SMCI",
+      "asset_name": "SMCI",
+      "asset_type_code": "Stock",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-03-21",
+      "filed_date": "2025-04-20",
+      "lag_days": 30,
+      "late": false,
+      "side": "buy",
+      "symbol": "NVDA",
+      "asset_name": "NVDA",
+      "asset_type_code": "Stock",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-03-20",
+      "filed_date": "2025-04-20",
+      "lag_days": 31,
+      "late": false,
+      "side": "buy",
+      "symbol": "NVDA",
+      "asset_name": "NVDA",
+      "asset_type_code": "Stock",
+      "amount_min": 100001.0,
+      "amount_max": 250000.0,
+      "midpoint": 175000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-03-06",
+      "filed_date": "2025-03-22",
+      "lag_days": 16,
+      "late": false,
+      "side": "buy",
+      "symbol": "LLY",
+      "asset_name": "LLY",
+      "asset_type_code": "Stock",
+      "amount_min": 100001.0,
+      "amount_max": 250000.0,
+      "midpoint": 175000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-02-24",
+      "filed_date": "2025-03-22",
+      "lag_days": 26,
+      "late": false,
+      "side": "sell",
+      "symbol": "SMCI",
+      "asset_name": "SMCI",
+      "asset_type_code": "Stock",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-02-24",
+      "filed_date": "2025-03-22",
+      "lag_days": 26,
+      "late": false,
+      "side": "sell",
+      "symbol": "SMCI",
+      "asset_name": "SMCI",
+      "asset_type_code": "Stock",
+      "amount_min": 50001.0,
+      "amount_max": 100000.0,
+      "midpoint": 75000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-02-24",
+      "filed_date": "2025-03-22",
+      "lag_days": 26,
+      "late": false,
+      "side": "sell",
+      "symbol": "HWM",
+      "asset_name": "HWM",
+      "asset_type_code": "Stock",
+      "amount_min": 50001.0,
+      "amount_max": 100000.0,
+      "midpoint": 75000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-02-24",
+      "filed_date": "2025-03-22",
+      "lag_days": 26,
+      "late": false,
+      "side": "buy",
+      "symbol": "GENI",
+      "asset_name": "GENI",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-02-24",
+      "filed_date": "2025-03-22",
+      "lag_days": 26,
+      "late": false,
+      "side": "buy",
+      "symbol": "ASML",
+      "asset_name": "ASML",
+      "asset_type_code": "Stock",
+      "amount_min": 50001.0,
+      "amount_max": 100000.0,
+      "midpoint": 75000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-02-24",
+      "filed_date": "2025-03-22",
+      "lag_days": 26,
+      "late": false,
+      "side": "buy",
+      "symbol": "AMD",
+      "asset_name": "AMD",
+      "asset_type_code": "Stock",
+      "amount_min": 100001.0,
+      "amount_max": 250000.0,
+      "midpoint": 175000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-02-24",
+      "filed_date": "2025-03-22",
+      "lag_days": 26,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "WYNN CALL",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-02-24",
+      "filed_date": "2025-03-22",
+      "lag_days": 26,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "TFC CALL",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-02-24",
+      "filed_date": "2025-03-22",
+      "lag_days": 26,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "SYM CALL",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-02-24",
+      "filed_date": "2025-03-22",
+      "lag_days": 26,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "SYM CALL",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-02-24",
+      "filed_date": "2025-03-22",
+      "lag_days": 26,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "QQQ M CALL",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-02-24",
+      "filed_date": "2025-03-22",
+      "lag_days": 26,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "NCLH CALL",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-02-24",
+      "filed_date": "2025-03-22",
+      "lag_days": 26,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "NCLH CALL",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-02-24",
+      "filed_date": "2025-03-22",
+      "lag_days": 26,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "ARDX CALL",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-02-24",
+      "filed_date": "2025-03-22",
+      "lag_days": 26,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "CRSP CALL",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-02-24",
+      "filed_date": "2025-03-22",
+      "lag_days": 26,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "ASML CALL",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-02-24",
+      "filed_date": "2025-03-22",
+      "lag_days": 26,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "AMAT CALL",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-02-24",
+      "filed_date": "2025-03-22",
+      "lag_days": 26,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "OKTA PUT",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-02-24",
+      "filed_date": "2025-03-22",
+      "lag_days": 26,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "CCL PUT",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-02-24",
+      "filed_date": "2025-03-22",
+      "lag_days": 26,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "CRWD PUT",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-02-20",
+      "filed_date": "2025-03-22",
+      "lag_days": 30,
+      "late": false,
+      "side": "sell",
+      "symbol": "KPTI",
+      "asset_name": "KPTI",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-02-20",
+      "filed_date": "2025-03-22",
+      "lag_days": 30,
+      "late": false,
+      "side": "sell",
+      "symbol": "DM",
+      "asset_name": "DM",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-02-20",
+      "filed_date": "2025-03-22",
+      "lag_days": 30,
+      "late": false,
+      "side": "sell",
+      "symbol": "ADCT",
+      "asset_name": "ADCT",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-01-27",
+      "filed_date": "2025-02-21",
+      "lag_days": 25,
+      "late": false,
+      "side": "buy",
+      "symbol": "AMAT",
+      "asset_name": "AMAT",
+      "asset_type_code": "Stock",
+      "amount_min": 100001.0,
+      "amount_max": 250000.0,
+      "midpoint": 175000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-01-27",
+      "filed_date": "2025-02-21",
+      "lag_days": 25,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "AMAT CALL",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-01-27",
+      "filed_date": "2025-02-21",
+      "lag_days": 25,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "NCLH CALL",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-01-27",
+      "filed_date": "2025-02-21",
+      "lag_days": 25,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "AMAT PUT",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-01-27",
+      "filed_date": "2025-02-21",
+      "lag_days": 25,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "NVDA PUT",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-01-23",
+      "filed_date": "2025-02-21",
+      "lag_days": 29,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "DELL CALL",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-01-22",
+      "filed_date": "2025-02-21",
+      "lag_days": 30,
+      "late": false,
+      "side": "buy",
+      "symbol": "MU",
+      "asset_name": "Micron Technology",
+      "asset_type_code": "Stock",
+      "amount_min": 50001.0,
+      "amount_max": 100000.0,
+      "midpoint": 75000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-01-22",
+      "filed_date": "2025-02-21",
+      "lag_days": 30,
+      "late": false,
+      "side": "buy",
+      "symbol": "HWM",
+      "asset_name": "Howmet Aerospace Inc",
+      "asset_type_code": "Stock",
+      "amount_min": 50001.0,
+      "amount_max": 100000.0,
+      "midpoint": 75000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-01-22",
+      "filed_date": "2025-02-21",
+      "lag_days": 30,
+      "late": false,
+      "side": "buy",
+      "symbol": "AMAT",
+      "asset_name": "Applied Materials",
+      "asset_type_code": "Stock",
+      "amount_min": 100001.0,
+      "amount_max": 250000.0,
+      "midpoint": 175000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-01-22",
+      "filed_date": "2025-02-21",
+      "lag_days": 30,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "HWM CALL",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-01-22",
+      "filed_date": "2025-02-21",
+      "lag_days": 30,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "SMCI CALL",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-01-22",
+      "filed_date": "2025-02-21",
+      "lag_days": 30,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "SMCI CALL",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-01-22",
+      "filed_date": "2025-02-21",
+      "lag_days": 30,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "MU CALL",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-01-22",
+      "filed_date": "2025-02-21",
+      "lag_days": 30,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "CCL CALL",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-01-22",
+      "filed_date": "2025-02-21",
+      "lag_days": 30,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "AMD CALL",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-01-22",
+      "filed_date": "2025-02-21",
+      "lag_days": 30,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "AMAT CALL",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-01-22",
+      "filed_date": "2025-02-21",
+      "lag_days": 30,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "NVDA PUT",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-01-22",
+      "filed_date": "2025-02-21",
+      "lag_days": 30,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "SMCI PUT",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-01-21",
+      "filed_date": "2025-02-21",
+      "lag_days": 31,
+      "late": false,
+      "side": "sell",
+      "symbol": "OKTA",
+      "asset_name": "Okta Inc Cl A",
+      "asset_type_code": "Stock",
+      "amount_min": 50001.0,
+      "amount_max": 100000.0,
+      "midpoint": 75000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-01-21",
+      "filed_date": "2025-02-21",
+      "lag_days": 31,
+      "late": false,
+      "side": "buy",
+      "symbol": "AMAT",
+      "asset_name": "AMAT",
+      "asset_type_code": "Stock",
+      "amount_min": 100001.0,
+      "amount_max": 250000.0,
+      "midpoint": 175000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    }
+  ],
+  "windows": {
+    "30d": {
+      "rank": null,
+      "previous_rank": null,
+      "rank_change": null,
+      "streak": 0,
+      "on_fire": false,
+      "benched": true,
+      "return": -0.109693,
+      "alpha": -0.087122,
+      "benchmark": -0.022571,
+      "copycat_return": -0.114208,
+      "copycat_alpha": -0.091637,
+      "trades": 0,
+      "avg_hold_days": 622.8,
+      "avg_filing_lag": null,
+      "late_filings": 0,
+      "filings": 0,
+      "badges": [
+        {
+          "id": "market_beat_you",
+          "name": "The Market Beat You",
+          "blurb": "Negative alpha versus SPY over the same holding periods."
+        }
+      ],
+      "excluded_options": 0,
+      "excluded_non_stock": 0,
+      "excluded_unknown": 33,
+      "unmatched_sells": 7,
+      "uncopyable": 0
+    },
+    "90d": {
+      "rank": null,
+      "previous_rank": null,
+      "rank_change": null,
+      "streak": 0,
+      "on_fire": false,
+      "benched": true,
+      "return": -0.160847,
+      "alpha": -0.132547,
+      "benchmark": -0.028299,
+      "copycat_return": -0.16579,
+      "copycat_alpha": -0.137491,
+      "trades": 0,
+      "avg_hold_days": 622.8,
+      "avg_filing_lag": null,
+      "late_filings": 0,
+      "filings": 0,
+      "badges": [
+        {
+          "id": "market_beat_you",
+          "name": "The Market Beat You",
+          "blurb": "Negative alpha versus SPY over the same holding periods."
+        }
+      ],
+      "excluded_options": 0,
+      "excluded_non_stock": 0,
+      "excluded_unknown": 33,
+      "unmatched_sells": 7,
+      "uncopyable": 0
+    },
+    "6m": {
+      "rank": null,
+      "previous_rank": null,
+      "rank_change": null,
+      "streak": 0,
+      "on_fire": false,
+      "benched": true,
+      "return": -0.005274,
+      "alpha": -0.025838,
+      "benchmark": 0.020564,
+      "copycat_return": -0.011321,
+      "copycat_alpha": -0.031884,
+      "trades": 0,
+      "avg_hold_days": 622.8,
+      "avg_filing_lag": null,
+      "late_filings": 0,
+      "filings": 0,
+      "badges": [
+        {
+          "id": "market_beat_you",
+          "name": "The Market Beat You",
+          "blurb": "Negative alpha versus SPY over the same holding periods."
+        }
+      ],
+      "excluded_options": 0,
+      "excluded_non_stock": 0,
+      "excluded_unknown": 33,
+      "unmatched_sells": 7,
+      "uncopyable": 0
+    },
+    "12m": {
+      "rank": null,
+      "previous_rank": null,
+      "rank_change": null,
+      "streak": 0,
+      "on_fire": false,
+      "benched": true,
+      "return": 0.591749,
+      "alpha": 0.469058,
+      "benchmark": 0.122691,
+      "copycat_return": 0.578286,
+      "copycat_alpha": 0.455595,
+      "trades": 0,
+      "avg_hold_days": 622.8,
+      "avg_filing_lag": null,
+      "late_filings": 0,
+      "filings": 0,
+      "badges": [
+        {
+          "id": "beat_the_market",
+          "name": "Beat the Market",
+          "blurb": "Positive alpha versus SPY over the same holding periods."
+        }
+      ],
+      "excluded_options": 0,
+      "excluded_non_stock": 0,
+      "excluded_unknown": 33,
+      "unmatched_sells": 7,
+      "uncopyable": 0
+    },
+    "all": {
+      "rank": 1,
+      "previous_rank": null,
+      "rank_change": null,
+      "streak": 0,
+      "on_fire": false,
+      "benched": false,
+      "return": 1.184232,
+      "alpha": 0.899902,
+      "benchmark": 0.284331,
+      "copycat_return": 1.328027,
+      "copycat_alpha": 1.017344,
+      "trades": 24,
+      "avg_hold_days": 588.1,
+      "avg_filing_lag": 29.5,
+      "late_filings": 0,
+      "filings": 24,
+      "badges": [
+        {
+          "id": "beat_the_market",
+          "name": "Beat the Market",
+          "blurb": "Positive alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "tech_bro",
+          "name": "Tech Bro",
+          "blurb": "At least half the midpoint dollars sit in the technology list."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        }
+      ],
+      "excluded_options": 0,
+      "excluded_non_stock": 0,
+      "excluded_unknown": 33,
+      "unmatched_sells": 7,
+      "uncopyable": 0
+    }
+  }
+}
