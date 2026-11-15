@@ -10,34 +10,29 @@
   "curves": {
     "30d": [
       {
-        "date": "2026-10-15",
+        "date": "2026-10-16",
         "member": 100.0,
         "spy": 100.0
       },
       {
-        "date": "2026-10-22",
-        "member": 93.8218,
-        "spy": 98.9855
+        "date": "2026-10-23",
+        "member": 97.6342,
+        "spy": 99.5703
       },
       {
-        "date": "2026-10-29",
-        "member": 100.2771,
-        "spy": 99.6851
+        "date": "2026-10-30",
+        "member": 99.1956,
+        "spy": 99.0134
       },
       {
-        "date": "2026-11-05",
-        "member": 84.9787,
-        "spy": 94.974
-      },
-      {
-        "date": "2026-11-12",
-        "member": 95.7289,
-        "spy": 98.0992
+        "date": "2026-11-06",
+        "member": 91.6301,
+        "spy": 96.3367
       },
       {
         "date": "2026-11-13",
-        "member": 93.5112,
-        "spy": 97.7429
+        "member": 96.9872,
+        "spy": 98.8366
       }
     ],
     "90d": [
@@ -16510,13 +16505,13 @@
       "streak": 0,
       "on_fire": false,
       "benched": true,
-      "return": -0.064888,
-      "alpha": -0.042317,
-      "benchmark": -0.022571,
-      "copycat_return": -0.072969,
-      "copycat_alpha": -0.050398,
-      "trades": 2,
-      "avg_hold_days": 271.6,
+      "return": -0.030128,
+      "alpha": -0.018494,
+      "benchmark": -0.011634,
+      "copycat_return": -0.034997,
+      "copycat_alpha": -0.023362,
+      "trades": 0,
+      "avg_hold_days": 272.6,
       "avg_filing_lag": 18.0,
       "late_filings": 0,
       "filings": 2,
@@ -16525,6 +16520,11 @@
           "id": "market_beat_you",
           "name": "The Market Beat You",
           "blurb": "Negative alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "index_hugger",
+          "name": "Index Hugger",
+          "blurb": "Alpha landed within 2 percentage points of the S&P."
         },
         {
           "id": "punctual_pro",
@@ -16539,19 +16539,19 @@
       "uncopyable": 0
     },
     "90d": {
-      "rank": 17,
-      "previous_rank": 14,
-      "rank_change": -3,
+      "rank": 18,
+      "previous_rank": 17,
+      "rank_change": -1,
       "streak": 0,
       "on_fire": false,
       "benched": false,
-      "return": -0.152686,
-      "alpha": -0.124386,
-      "benchmark": -0.028299,
-      "copycat_return": -0.171678,
-      "copycat_alpha": -0.143379,
+      "return": -0.184486,
+      "alpha": -0.160802,
+      "benchmark": -0.023684,
+      "copycat_return": -0.205804,
+      "copycat_alpha": -0.18212,
       "trades": 7,
-      "avg_hold_days": 271.6,
+      "avg_hold_days": 272.6,
       "avg_filing_lag": 22.9,
       "late_filings": 0,
       "filings": 11,
@@ -16575,8 +16575,8 @@
     },
     "6m": {
       "rank": 26,
-      "previous_rank": 22,
-      "rank_change": -4,
+      "previous_rank": 26,
+      "rank_change": 0,
       "streak": 0,
       "on_fire": false,
       "benched": false,
@@ -16586,7 +16586,7 @@
       "copycat_return": -0.088883,
       "copycat_alpha": -0.104114,
       "trades": 18,
-      "avg_hold_days": 271.6,
+      "avg_hold_days": 272.6,
       "avg_filing_lag": 19.9,
       "late_filings": 0,
       "filings": 21,
@@ -16615,8 +16615,8 @@
     },
     "12m": {
       "rank": 35,
-      "previous_rank": 29,
-      "rank_change": -6,
+      "previous_rank": 35,
+      "rank_change": 0,
       "streak": 0,
       "on_fire": false,
       "benched": false,
@@ -16626,7 +16626,7 @@
       "copycat_return": -0.084854,
       "copycat_alpha": -0.132942,
       "trades": 37,
-      "avg_hold_days": 271.6,
+      "avg_hold_days": 272.6,
       "avg_filing_lag": 18.6,
       "late_filings": 0,
       "filings": 37,
@@ -16655,8 +16655,8 @@
     },
     "all": {
       "rank": 50,
-      "previous_rank": 38,
-      "rank_change": -12,
+      "previous_rank": 50,
+      "rank_change": 0,
       "streak": 0,
       "on_fire": false,
       "benched": false,
@@ -16666,7 +16666,7 @@
       "copycat_return": -0.084854,
       "copycat_alpha": -0.132942,
       "trades": 64,
-      "avg_hold_days": 271.6,
+      "avg_hold_days": 272.6,
       "avg_filing_lag": 64.4,
       "late_filings": 106,
       "filings": 638,

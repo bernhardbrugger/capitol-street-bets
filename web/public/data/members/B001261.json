@@ -14,7 +14,27 @@
     "12m": [],
     "all": []
   },
-  "trades": [],
+  "trades": [
+    {
+      "transaction_date": "2018-05-01",
+      "filed_date": "2018-05-24",
+      "lag_days": 23,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "Undeveloped Land-TOPOL Company: Wyoming Orthopaedics Institute, LLC (Casper, WY) Description: Real Estate Partnership",
+      "asset_type_code": "Other",
+      "amount_min": 50001.0,
+      "amount_max": 100000.0,
+      "midpoint": 75000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    }
+  ],
   "windows": {
     "30d": {
       "rank": null,
@@ -35,7 +55,7 @@
       "filings": 0,
       "badges": [],
       "excluded_options": 0,
-      "excluded_non_stock": 0,
+      "excluded_non_stock": 1,
       "excluded_unknown": 0,
       "unmatched_sells": 0,
       "uncopyable": 0
@@ -59,7 +79,7 @@
       "filings": 0,
       "badges": [],
       "excluded_options": 0,
-      "excluded_non_stock": 0,
+      "excluded_non_stock": 1,
       "excluded_unknown": 0,
       "unmatched_sells": 0,
       "uncopyable": 0
@@ -83,7 +103,7 @@
       "filings": 0,
       "badges": [],
       "excluded_options": 0,
-      "excluded_non_stock": 0,
+      "excluded_non_stock": 1,
       "excluded_unknown": 0,
       "unmatched_sells": 0,
       "uncopyable": 0
@@ -107,7 +127,7 @@
       "filings": 0,
       "badges": [],
       "excluded_options": 0,
-      "excluded_non_stock": 0,
+      "excluded_non_stock": 1,
       "excluded_unknown": 0,
       "unmatched_sells": 0,
       "uncopyable": 0
@@ -131,7 +151,7 @@
       "filings": 0,
       "badges": [],
       "excluded_options": 0,
-      "excluded_non_stock": 0,
+      "excluded_non_stock": 1,
       "excluded_unknown": 0,
       "unmatched_sells": 0,
       "uncopyable": 0
