@@ -14,7 +14,46 @@
     "12m": [],
     "all": []
   },
-  "trades": [],
+  "trades": [
+    {
+      "transaction_date": "2023-07-15",
+      "filed_date": "2023-08-10",
+      "lag_days": 26,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "Cole, Hargrave, Snodgrass, and Associates, Inc. common stock",
+      "asset_type_code": null,
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2022-01-10",
+      "filed_date": "2022-01-19",
+      "lag_days": 9,
+      "late": false,
+      "side": "sell",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo Common Stock",
+      "asset_type_code": null,
+      "amount_min": 500001.0,
+      "amount_max": 1000000.0,
+      "midpoint": 750000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "JOINT",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    }
+  ],
   "windows": {
     "30d": {
       "rank": null,
@@ -36,7 +75,7 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 2,
       "unmatched_sells": 0,
       "uncopyable": 0
     },
@@ -60,7 +99,7 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 2,
       "unmatched_sells": 0,
       "uncopyable": 0
     },
@@ -84,7 +123,7 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 2,
       "unmatched_sells": 0,
       "uncopyable": 0
     },
@@ -108,7 +147,7 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 2,
       "unmatched_sells": 0,
       "uncopyable": 0
     },
@@ -126,13 +165,13 @@
       "copycat_alpha": null,
       "trades": 0,
       "avg_hold_days": null,
-      "avg_filing_lag": null,
+      "avg_filing_lag": 9.0,
       "late_filings": 0,
-      "filings": 0,
+      "filings": 1,
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 2,
       "unmatched_sells": 0,
       "uncopyable": 0
     }

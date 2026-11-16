@@ -7,7 +7,7 @@ The only league where everyone files late.
 ## Current standings
 
 <!-- LEADERBOARD:START -->
-**Top 10, last 12 months** (as of 2026-11-15)
+**Top 10, last 12 months** (as of 2026-11-16)
 
 | # | | Member | Seat | Return | Alpha vs S&P | Copycat | Trades |
 |---:|:---:|---|---|---:|---:|---:|---:|
@@ -32,7 +32,7 @@ The only league where everyone files late.
 | 4 | [**GOOGL**](https://bernhardbrugger.github.io/capitol-street-bets/#/stocks?s=GOOGL) | 36 | 13 | 17 / 19 | ~$4.9M | +7.0% |
 | 5 | [**HD**](https://bernhardbrugger.github.io/capitol-street-bets/#/stocks?s=HD) | 35 | 12 | 14 / 21 | ~$586K | -3.8% |
 
-Members loaded so far: **100 of 537** seated. Updated 2026-11-15. [Full board →](https://bernhardbrugger.github.io/capitol-street-bets/)
+Members loaded so far: **125 of 537** seated. Updated 2026-11-16. [Full board →](https://bernhardbrugger.github.io/capitol-street-bets/)
 <!-- LEADERBOARD:END -->
 
 A scoreboard of how members of Congress do with their **publicly disclosed** stock trades: rank arrows, badges, a daily ticker tape, and a head-to-head for anyone deciding who they would rather copy. The tone stays on the numbers. Party is a label on the card, not a punchline.

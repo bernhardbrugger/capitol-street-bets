@@ -14,7 +14,27 @@
     "12m": [],
     "all": []
   },
-  "trades": [],
+  "trades": [
+    {
+      "transaction_date": "2020-02-12",
+      "filed_date": "2020-02-26",
+      "lag_days": 14,
+      "late": false,
+      "side": "OTHER",
+      "symbol": "DENN",
+      "asset_name": "Denny's Corporation (DENN) [sT]",
+      "asset_type_code": "sT",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    }
+  ],
   "windows": {
     "30d": {
       "rank": null,

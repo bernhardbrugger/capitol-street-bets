@@ -14,7 +14,46 @@
     "12m": [],
     "all": []
   },
-  "trades": [],
+  "trades": [
+    {
+      "transaction_date": "2017-02-01",
+      "filed_date": "2017-02-24",
+      "lag_days": 23,
+      "late": false,
+      "side": "sell",
+      "symbol": "AAPL",
+      "asset_name": "Apple Inc.",
+      "asset_type_code": "Stock",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2015-08-21",
+      "filed_date": "2015-09-21",
+      "lag_days": 31,
+      "late": false,
+      "side": "buy",
+      "symbol": "AAPL",
+      "asset_name": "Apple Inc. (NASDAQ)",
+      "asset_type_code": "Stock",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    }
+  ],
   "windows": {
     "30d": {
       "rank": null,
@@ -36,7 +75,7 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 2,
       "unmatched_sells": 0,
       "uncopyable": 0
     },
@@ -60,7 +99,7 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 2,
       "unmatched_sells": 0,
       "uncopyable": 0
     },
@@ -84,7 +123,7 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 2,
       "unmatched_sells": 0,
       "uncopyable": 0
     },
@@ -108,7 +147,7 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 2,
       "unmatched_sells": 0,
       "uncopyable": 0
     },
@@ -126,13 +165,13 @@
       "copycat_alpha": null,
       "trades": 0,
       "avg_hold_days": null,
-      "avg_filing_lag": null,
+      "avg_filing_lag": 27.0,
       "late_filings": 0,
-      "filings": 0,
+      "filings": 2,
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 2,
       "unmatched_sells": 0,
       "uncopyable": 0
     }

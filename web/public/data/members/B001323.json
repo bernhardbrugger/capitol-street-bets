@@ -14,7 +14,46 @@
     "12m": [],
     "all": []
   },
-  "trades": [],
+  "trades": [
+    {
+      "transaction_date": "2026-06-07",
+      "filed_date": "2026-07-07",
+      "lag_days": 30,
+      "late": false,
+      "side": "OTHER",
+      "symbol": "",
+      "asset_name": "Physical Superintelligence, Inc. [PS]",
+      "asset_type_code": "PS",
+      "amount_min": 100001.0,
+      "amount_max": 250000.0,
+      "midpoint": 175000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2026-05-13",
+      "filed_date": "2026-06-12",
+      "lag_days": 30,
+      "late": false,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "Listen Ventures IV, LP [HN]",
+      "asset_type_code": "HN",
+      "amount_min": 250001.0,
+      "amount_max": 500000.0,
+      "midpoint": 375000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    }
+  ],
   "windows": {
     "30d": {
       "rank": null,
@@ -36,7 +75,7 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 2,
       "unmatched_sells": 0,
       "uncopyable": 0
     },
@@ -60,7 +99,7 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 2,
       "unmatched_sells": 0,
       "uncopyable": 0
     },
@@ -84,7 +123,7 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 2,
       "unmatched_sells": 0,
       "uncopyable": 0
     },
@@ -108,7 +147,7 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 2,
       "unmatched_sells": 0,
       "uncopyable": 0
     },
@@ -132,7 +171,7 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 2,
       "unmatched_sells": 0,
       "uncopyable": 0
     }

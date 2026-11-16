@@ -10,101 +10,101 @@
   "curves": {
     "30d": [
       {
-        "date": "2026-10-16",
+        "date": "2026-10-19",
         "member": 100.0,
         "spy": 100.0
       },
       {
-        "date": "2026-10-23",
-        "member": 98.7327,
-        "spy": 99.5703
+        "date": "2026-10-26",
+        "member": 99.2293,
+        "spy": 99.8552
       },
       {
-        "date": "2026-10-30",
-        "member": 100.1917,
-        "spy": 99.0134
+        "date": "2026-11-02",
+        "member": 102.5797,
+        "spy": 98.1239
       },
       {
-        "date": "2026-11-06",
-        "member": 101.885,
-        "spy": 96.3367
+        "date": "2026-11-09",
+        "member": 102.7938,
+        "spy": 98.2009
       },
       {
         "date": "2026-11-13",
-        "member": 105.6976,
-        "spy": 98.8366
+        "member": 106.2406,
+        "spy": 98.4201
       }
     ],
     "90d": [
       {
-        "date": "2026-08-17",
+        "date": "2026-08-18",
         "member": 100.0,
         "spy": 100.0
       },
       {
-        "date": "2026-08-24",
-        "member": 101.6041,
-        "spy": 98.8093
+        "date": "2026-08-25",
+        "member": 97.0283,
+        "spy": 99.7993
       },
       {
-        "date": "2026-08-31",
-        "member": 99.6841,
-        "spy": 99.2727
+        "date": "2026-09-01",
+        "member": 96.9039,
+        "spy": 99.4609
       },
       {
-        "date": "2026-09-08",
-        "member": 99.2214,
-        "spy": 99.1316
+        "date": "2026-09-09",
+        "member": 96.4963,
+        "spy": 99.5418
       },
       {
-        "date": "2026-09-15",
-        "member": 100.1865,
-        "spy": 98.0224
+        "date": "2026-09-16",
+        "member": 97.2333,
+        "spy": 98.4516
       },
       {
-        "date": "2026-09-22",
-        "member": 99.2338,
-        "spy": 100.0919
+        "date": "2026-09-23",
+        "member": 96.4463,
+        "spy": 100.2482
       },
       {
-        "date": "2026-09-29",
-        "member": 98.1565,
-        "spy": 99.1365
+        "date": "2026-09-30",
+        "member": 94.2456,
+        "spy": 99.5718
       },
       {
-        "date": "2026-10-06",
-        "member": 97.3992,
-        "spy": 101.0681
+        "date": "2026-10-07",
+        "member": 93.961,
+        "spy": 101.4768
       },
       {
-        "date": "2026-10-13",
-        "member": 101.8526,
-        "spy": 100.928
+        "date": "2026-10-14",
+        "member": 100.4864,
+        "spy": 100.4819
       },
       {
-        "date": "2026-10-20",
-        "member": 105.6731,
-        "spy": 99.7657
+        "date": "2026-10-21",
+        "member": 101.4717,
+        "spy": 100.9375
       },
       {
-        "date": "2026-10-27",
-        "member": 103.062,
-        "spy": 99.8448
+        "date": "2026-10-28",
+        "member": 100.4316,
+        "spy": 100.8357
       },
       {
-        "date": "2026-11-03",
-        "member": 107.1538,
-        "spy": 97.8587
+        "date": "2026-11-04",
+        "member": 104.8877,
+        "spy": 100.1176
       },
       {
-        "date": "2026-11-10",
-        "member": 109.5387,
-        "spy": 97.284
+        "date": "2026-11-11",
+        "member": 106.8256,
+        "spy": 99.2036
       },
       {
         "date": "2026-11-13",
-        "member": 112.1837,
-        "spy": 97.8613
+        "member": 108.665,
+        "spy": 98.4934
       }
     ],
     "6m": [
@@ -18390,7 +18390,7 @@
       "copycat_return": 0.056976,
       "copycat_alpha": 0.06861,
       "trades": 2,
-      "avg_hold_days": 76.0,
+      "avg_hold_days": 77.0,
       "avg_filing_lag": 8.0,
       "late_filings": 0,
       "filings": 3,
@@ -18423,19 +18423,19 @@
       "uncopyable": 1
     },
     "90d": {
-      "rank": 3,
+      "rank": 4,
       "previous_rank": 3,
-      "rank_change": 0,
+      "rank_change": -1,
       "streak": 0,
       "on_fire": false,
       "benched": false,
-      "return": 0.030521,
-      "alpha": 0.038084,
-      "benchmark": -0.007563,
-      "copycat_return": 0.051352,
-      "copycat_alpha": 0.064647,
+      "return": 0.019713,
+      "alpha": 0.024412,
+      "benchmark": -0.0047,
+      "copycat_return": 0.035795,
+      "copycat_alpha": 0.044966,
       "trades": 120,
-      "avg_hold_days": 242.7,
+      "avg_hold_days": 243.0,
       "avg_filing_lag": 19.7,
       "late_filings": 0,
       "filings": 136,
@@ -18458,19 +18458,19 @@
       "uncopyable": 1
     },
     "6m": {
-      "rank": 7,
+      "rank": 10,
       "previous_rank": 7,
-      "rank_change": 0,
+      "rank_change": -3,
       "streak": 0,
       "on_fire": false,
       "benched": false,
-      "return": 0.04004,
-      "alpha": 0.029067,
-      "benchmark": 0.010973,
-      "copycat_return": 0.065166,
-      "copycat_alpha": 0.052169,
+      "return": 0.033112,
+      "alpha": 0.021657,
+      "benchmark": 0.011455,
+      "copycat_return": 0.055102,
+      "copycat_alpha": 0.04144,
       "trades": 145,
-      "avg_hold_days": 242.7,
+      "avg_hold_days": 243.0,
       "avg_filing_lag": 18.9,
       "late_filings": 0,
       "filings": 145,
@@ -18505,7 +18505,7 @@
       "copycat_return": 0.243447,
       "copycat_alpha": 0.180916,
       "trades": 162,
-      "avg_hold_days": 242.7,
+      "avg_hold_days": 243.0,
       "avg_filing_lag": 19.1,
       "late_filings": 0,
       "filings": 173,
@@ -18540,7 +18540,7 @@
       "copycat_return": 0.1945,
       "copycat_alpha": 0.065019,
       "trades": 185,
-      "avg_hold_days": 254.0,
+      "avg_hold_days": 254.2,
       "avg_filing_lag": 24.8,
       "late_filings": 31,
       "filings": 642,
