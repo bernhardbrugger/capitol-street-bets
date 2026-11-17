@@ -8,13 +8,933 @@
   "district": "28",
   "years_in_service": 17.3,
   "curves": {
-    "30d": [],
-    "90d": [],
-    "6m": [],
-    "12m": [],
-    "all": []
+    "30d": [
+      {
+        "date": "2026-10-19",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-26",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-11-02",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-11-09",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-11-16",
+        "member": 100.0,
+        "spy": 100.0
+      }
+    ],
+    "90d": [
+      {
+        "date": "2026-08-19",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-08-26",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-09-02",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-09-10",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-09-17",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-09-24",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-01",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-08",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-15",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-22",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-29",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-11-05",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-11-12",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-11-16",
+        "member": 100.0,
+        "spy": 100.0
+      }
+    ],
+    "6m": [
+      {
+        "date": "2026-05-19",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-05-27",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-06-03",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-06-10",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-06-17",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-06-25",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-07-02",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-07-10",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-07-17",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-07-24",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-07-31",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-08-07",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-08-14",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-08-21",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-08-28",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-09-04",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-09-14",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-09-21",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-09-28",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-05",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-12",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-19",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-26",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-11-02",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-11-09",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-11-16",
+        "member": 100.0,
+        "spy": 100.0
+      }
+    ],
+    "12m": [
+      {
+        "date": "2025-11-17",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2025-11-24",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2025-12-02",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2025-12-09",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2025-12-16",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2025-12-23",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2025-12-31",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-01-08",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-01-15",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-01-23",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-01-30",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-02-06",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-02-13",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-02-23",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-03-02",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-03-09",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-03-16",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-03-23",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-03-30",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-04-07",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-04-14",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-04-21",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-04-28",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-05-05",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-05-12",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-05-19",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-05-27",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-06-03",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-06-10",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-06-17",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-06-25",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-07-02",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-07-10",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-07-17",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-07-24",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-07-31",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-08-07",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-08-14",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-08-21",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-08-28",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-09-04",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-09-14",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-09-21",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-09-28",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-05",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-12",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-19",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-26",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-11-02",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-11-09",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-11-16",
+        "member": 100.0,
+        "spy": 100.0
+      }
+    ],
+    "all": [
+      {
+        "date": "2025-08-19",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2025-08-26",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2025-09-03",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2025-09-10",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2025-09-17",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2025-09-24",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2025-10-01",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2025-10-08",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2025-10-15",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2025-10-22",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2025-10-29",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2025-11-05",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2025-11-12",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2025-11-19",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2025-11-26",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2025-12-04",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2025-12-11",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2025-12-18",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2025-12-26",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-01-05",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-01-12",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-01-20",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-01-27",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-02-03",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-02-10",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-02-18",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-02-25",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-03-04",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-03-11",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-03-18",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-03-25",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-04-01",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-04-09",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-04-16",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-04-23",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-04-30",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-05-07",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-05-14",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-05-21",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-05-29",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-06-05",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-06-12",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-06-22",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-06-29",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-07-07",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-07-14",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-07-21",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-07-28",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-08-04",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-08-11",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-08-18",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-08-25",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-09-01",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-09-09",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-09-16",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-09-23",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-09-30",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-07",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-14",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-21",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-28",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-11-04",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-11-11",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-11-16",
+        "member": 100.0,
+        "spy": 100.0
+      }
+    ]
   },
-  "trades": [],
+  "trades": [
+    {
+      "transaction_date": "2025-08-19",
+      "filed_date": "2025-08-30",
+      "lag_days": 11,
+      "late": false,
+      "side": "sell",
+      "symbol": "ASTH",
+      "asset_name": "Astrana Health Inc. - Common Stock (ASTH) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 100001.0,
+      "amount_max": 250000.0,
+      "midpoint": 175000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2025-08-19",
+      "filed_date": "2025-08-30",
+      "lag_days": 11,
+      "late": false,
+      "side": "buy",
+      "symbol": "ASTH",
+      "asset_name": "Astrana Health Inc. - Common Stock (ASTH) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 100001.0,
+      "amount_max": 250000.0,
+      "midpoint": 175000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2024-01-10",
+      "filed_date": "2024-01-21",
+      "lag_days": 11,
+      "late": false,
+      "side": "sell",
+      "symbol": "AMEH",
+      "asset_name": "Apollo Medical Holdings, Inc. (AMEH) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 100001.0,
+      "amount_max": 250000.0,
+      "midpoint": 175000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2024-01-10",
+      "filed_date": "2024-01-21",
+      "lag_days": 11,
+      "late": false,
+      "side": "buy",
+      "symbol": "AMEH",
+      "asset_name": "Apollo Medical Holdings, Inc. (AMEH) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 100001.0,
+      "amount_max": 250000.0,
+      "midpoint": 175000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2022-01-26",
+      "filed_date": "2022-01-29",
+      "lag_days": 3,
+      "late": false,
+      "side": "sell",
+      "symbol": "ALL",
+      "asset_name": "Allstate Corporation (All) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2020-12-23",
+      "filed_date": "2020-12-30",
+      "lag_days": 7,
+      "late": false,
+      "side": "sell",
+      "symbol": "ALL",
+      "asset_name": "Allstate Corporation (ALL) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    }
+  ],
   "windows": {
     "30d": {
       "rank": null,
@@ -36,9 +956,9 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 4,
       "unmatched_sells": 0,
-      "uncopyable": 0
+      "uncopyable": 1
     },
     "90d": {
       "rank": null,
@@ -60,9 +980,9 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 4,
       "unmatched_sells": 0,
-      "uncopyable": 0
+      "uncopyable": 1
     },
     "6m": {
       "rank": null,
@@ -84,9 +1004,9 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 4,
       "unmatched_sells": 0,
-      "uncopyable": 0
+      "uncopyable": 1
     },
     "12m": {
       "rank": null,
@@ -108,9 +1028,9 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 4,
       "unmatched_sells": 0,
-      "uncopyable": 0
+      "uncopyable": 1
     },
     "all": {
       "rank": null,
@@ -124,17 +1044,17 @@
       "benchmark": null,
       "copycat_return": null,
       "copycat_alpha": null,
-      "trades": 0,
+      "trades": 2,
       "avg_hold_days": null,
-      "avg_filing_lag": null,
+      "avg_filing_lag": 9.0,
       "late_filings": 0,
-      "filings": 0,
+      "filings": 6,
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 4,
       "unmatched_sells": 0,
-      "uncopyable": 0
+      "uncopyable": 1
     }
   }
 }

@@ -30,213 +30,213 @@
         "spy": 98.2009
       },
       {
-        "date": "2026-11-13",
-        "member": 95.805,
-        "spy": 98.4201
+        "date": "2026-11-16",
+        "member": 93.3003,
+        "spy": 96.5387
       }
     ],
     "90d": [
       {
-        "date": "2026-08-18",
+        "date": "2026-08-19",
         "member": 100.0,
         "spy": 100.0
       },
       {
-        "date": "2026-08-25",
-        "member": 100.5673,
-        "spy": 99.7993
+        "date": "2026-08-26",
+        "member": 101.1871,
+        "spy": 99.6125
       },
       {
-        "date": "2026-09-01",
-        "member": 98.2084,
-        "spy": 99.2612
+        "date": "2026-09-02",
+        "member": 97.549,
+        "spy": 99.4929
       },
       {
-        "date": "2026-09-09",
-        "member": 97.6412,
-        "spy": 99.342
+        "date": "2026-09-10",
+        "member": 96.5888,
+        "spy": 98.5398
       },
       {
-        "date": "2026-09-16",
-        "member": 96.2769,
-        "spy": 98.254
+        "date": "2026-09-17",
+        "member": 96.8365,
+        "spy": 99.16
       },
       {
-        "date": "2026-09-23",
-        "member": 98.8541,
-        "spy": 100.0469
+        "date": "2026-09-24",
+        "member": 99.0049,
+        "spy": 99.7555
       },
       {
-        "date": "2026-09-30",
-        "member": 99.7706,
-        "spy": 99.3719
+        "date": "2026-10-01",
+        "member": 100.6169,
+        "spy": 99.3408
       },
       {
-        "date": "2026-10-07",
-        "member": 103.9383,
-        "spy": 101.273
+        "date": "2026-10-08",
+        "member": 102.9688,
+        "spy": 100.6332
       },
       {
-        "date": "2026-10-14",
-        "member": 99.5852,
-        "spy": 100.2801
+        "date": "2026-10-15",
+        "member": 99.7068,
+        "spy": 100.355
       },
       {
-        "date": "2026-10-21",
-        "member": 98.786,
-        "spy": 100.7349
+        "date": "2026-10-22",
+        "member": 96.293,
+        "spy": 99.3369
       },
       {
-        "date": "2026-10-28",
-        "member": 98.7006,
-        "spy": 100.6333
+        "date": "2026-10-29",
+        "member": 95.6093,
+        "spy": 100.039
       },
       {
-        "date": "2026-11-04",
-        "member": 94.3957,
-        "spy": 99.9166
+        "date": "2026-11-05",
+        "member": 88.2664,
+        "spy": 95.3112
       },
       {
-        "date": "2026-11-11",
-        "member": 95.4725,
-        "spy": 99.0045
+        "date": "2026-11-12",
+        "member": 95.4761,
+        "spy": 98.4475
       },
       {
-        "date": "2026-11-13",
-        "member": 94.4292,
-        "spy": 98.2957
+        "date": "2026-11-16",
+        "member": 91.9724,
+        "spy": 96.2149
       }
     ],
     "6m": [
       {
-        "date": "2026-05-18",
+        "date": "2026-05-19",
         "member": 100.0,
         "spy": 100.0
       },
       {
-        "date": "2026-05-26",
-        "member": 105.1442,
-        "spy": 101.6165
+        "date": "2026-05-27",
+        "member": 105.1707,
+        "spy": 102.2801
       },
       {
-        "date": "2026-06-02",
-        "member": 112.1111,
-        "spy": 102.8322
+        "date": "2026-06-03",
+        "member": 112.3211,
+        "spy": 102.7953
       },
       {
-        "date": "2026-06-09",
-        "member": 107.0097,
-        "spy": 99.7834
+        "date": "2026-06-10",
+        "member": 105.5622,
+        "spy": 98.9454
       },
       {
-        "date": "2026-06-16",
-        "member": 110.3831,
-        "spy": 101.5813
+        "date": "2026-06-17",
+        "member": 110.8756,
+        "spy": 101.0636
       },
       {
-        "date": "2026-06-24",
-        "member": 109.4175,
-        "spy": 99.2676
+        "date": "2026-06-25",
+        "member": 111.4646,
+        "spy": 100.1553
       },
       {
-        "date": "2026-07-01",
-        "member": 112.1818,
-        "spy": 100.9626
+        "date": "2026-07-02",
+        "member": 110.2502,
+        "spy": 101.5847
       },
       {
-        "date": "2026-07-09",
-        "member": 110.9984,
-        "spy": 101.7681
+        "date": "2026-07-10",
+        "member": 111.0622,
+        "spy": 102.9718
       },
       {
-        "date": "2026-07-16",
-        "member": 106.5843,
-        "spy": 101.6341
+        "date": "2026-07-17",
+        "member": 106.5067,
+        "spy": 101.3814
       },
       {
-        "date": "2026-07-23",
-        "member": 106.3828,
-        "spy": 99.9364
+        "date": "2026-07-24",
+        "member": 106.1582,
+        "spy": 100.7868
       },
       {
-        "date": "2026-07-30",
-        "member": 106.3564,
-        "spy": 100.4116
+        "date": "2026-07-31",
+        "member": 108.632,
+        "spy": 101.8916
       },
       {
-        "date": "2026-08-06",
-        "member": 112.0898,
-        "spy": 104.0493
+        "date": "2026-08-07",
+        "member": 113.3071,
+        "spy": 105.4692
       },
       {
-        "date": "2026-08-13",
-        "member": 114.7348,
-        "spy": 105.2939
+        "date": "2026-08-14",
+        "member": 114.3203,
+        "spy": 105.8927
       },
       {
-        "date": "2026-08-20",
-        "member": 111.3574,
-        "spy": 103.2256
+        "date": "2026-08-21",
+        "member": 112.7531,
+        "spy": 104.4441
       },
       {
-        "date": "2026-08-27",
-        "member": 113.6719,
-        "spy": 104.3762
+        "date": "2026-08-28",
+        "member": 112.1074,
+        "spy": 104.9393
       },
       {
-        "date": "2026-09-03",
-        "member": 109.9131,
-        "spy": 104.6564
+        "date": "2026-09-04",
+        "member": 111.0274,
+        "spy": 105.0538
       },
       {
-        "date": "2026-09-11",
-        "member": 109.4555,
-        "spy": 103.4544
+        "date": "2026-09-14",
+        "member": 108.9192,
+        "spy": 103.7839
       },
       {
-        "date": "2026-09-18",
-        "member": 108.4072,
-        "spy": 103.1024
+        "date": "2026-09-21",
+        "member": 111.7594,
+        "spy": 105.5053
       },
       {
-        "date": "2026-09-25",
-        "member": 110.9588,
-        "spy": 104.41
+        "date": "2026-09-28",
+        "member": 111.211,
+        "spy": 104.4291
       },
       {
-        "date": "2026-10-02",
-        "member": 113.1666,
-        "spy": 104.1785
+        "date": "2026-10-05",
+        "member": 115.1374,
+        "spy": 105.6867
       },
       {
-        "date": "2026-10-09",
-        "member": 115.9639,
-        "spy": 105.3873
+        "date": "2026-10-12",
+        "member": 115.6017,
+        "spy": 106.1328
       },
       {
-        "date": "2026-10-16",
-        "member": 108.2517,
-        "spy": 103.3136
+        "date": "2026-10-19",
+        "member": 110.7782,
+        "spy": 104.5478
       },
       {
-        "date": "2026-10-23",
-        "member": 106.9211,
-        "spy": 102.8696
+        "date": "2026-10-26",
+        "member": 108.9212,
+        "spy": 104.3964
       },
       {
-        "date": "2026-10-30",
-        "member": 103.7917,
-        "spy": 102.2943
+        "date": "2026-11-02",
+        "member": 104.3422,
+        "spy": 102.5864
       },
       {
-        "date": "2026-11-06",
-        "member": 99.4114,
-        "spy": 99.5289
+        "date": "2026-11-09",
+        "member": 104.7632,
+        "spy": 102.6668
       },
       {
-        "date": "2026-11-13",
-        "member": 105.2358,
-        "spy": 102.1116
+        "date": "2026-11-16",
+        "member": 103.3564,
+        "spy": 100.9291
       }
     ],
     "12m": [
@@ -491,9 +491,9 @@
         "spy": 113.0979
       },
       {
-        "date": "2026-11-13",
-        "member": 116.314,
-        "spy": 113.3504
+        "date": "2026-11-16",
+        "member": 113.2731,
+        "spy": 111.1836
       }
     ],
     "all": [
@@ -958,9 +958,9 @@
         "spy": 124.8565
       },
       {
-        "date": "2026-11-13",
-        "member": 106.6979,
-        "spy": 125.1352
+        "date": "2026-11-16",
+        "member": 103.9084,
+        "spy": 122.7432
       }
     ]
   },
@@ -7928,13 +7928,13 @@
       "streak": 0,
       "on_fire": false,
       "benched": true,
-      "return": -0.02786,
-      "alpha": -0.016225,
-      "benchmark": -0.011634,
-      "copycat_return": -0.015966,
-      "copycat_alpha": -0.004331,
+      "return": -0.053275,
+      "alpha": -0.022748,
+      "benchmark": -0.030527,
+      "copycat_return": -0.040615,
+      "copycat_alpha": -0.010087,
       "trades": 0,
-      "avg_hold_days": 413.7,
+      "avg_hold_days": 414.7,
       "avg_filing_lag": null,
       "late_filings": 0,
       "filings": 0,
@@ -7943,11 +7943,6 @@
           "id": "market_beat_you",
           "name": "The Market Beat You",
           "blurb": "Negative alpha versus SPY over the same holding periods."
-        },
-        {
-          "id": "index_hugger",
-          "name": "Index Hugger",
-          "blurb": "Alpha landed within 2 percentage points of the S&P."
         }
       ],
       "excluded_options": 0,
@@ -7963,13 +7958,13 @@
       "streak": 0,
       "on_fire": false,
       "benched": true,
-      "return": -0.055708,
-      "alpha": -0.038665,
-      "benchmark": -0.017043,
-      "copycat_return": -0.047494,
-      "copycat_alpha": -0.030886,
+      "return": -0.080276,
+      "alpha": -0.042424,
+      "benchmark": -0.037851,
+      "copycat_return": -0.067468,
+      "copycat_alpha": -0.030113,
       "trades": 0,
-      "avg_hold_days": 413.7,
+      "avg_hold_days": 414.7,
       "avg_filing_lag": 34.7,
       "late_filings": 0,
       "filings": 6,
@@ -7992,19 +7987,19 @@
       "uncopyable": 6
     },
     "6m": {
-      "rank": 8,
-      "previous_rank": 9,
-      "rank_change": 1,
-      "streak": 1,
+      "rank": 10,
+      "previous_rank": 8,
+      "rank_change": -2,
+      "streak": 0,
       "on_fire": false,
       "benched": false,
-      "return": 0.045861,
-      "alpha": 0.026094,
-      "benchmark": 0.019768,
-      "copycat_return": 0.050022,
-      "copycat_alpha": 0.030471,
+      "return": 0.025149,
+      "alpha": 0.018649,
+      "benchmark": 0.006501,
+      "copycat_return": 0.031482,
+      "copycat_alpha": 0.025214,
       "trades": 12,
-      "avg_hold_days": 413.7,
+      "avg_hold_days": 414.7,
       "avg_filing_lag": 36.7,
       "late_filings": 0,
       "filings": 12,
@@ -8013,6 +8008,11 @@
           "id": "beat_the_market",
           "name": "Beat the Market",
           "blurb": "Positive alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "index_hugger",
+          "name": "Index Hugger",
+          "blurb": "Alpha landed within 2 percentage points of the S&P."
         },
         {
           "id": "punctual_pro",
@@ -8033,13 +8033,13 @@
       "streak": 0,
       "on_fire": false,
       "benched": false,
-      "return": 0.115211,
-      "alpha": 0.020526,
-      "benchmark": 0.094685,
-      "copycat_return": 0.085764,
-      "copycat_alpha": -0.002971,
+      "return": 0.100798,
+      "alpha": 0.016328,
+      "benchmark": 0.08447,
+      "copycat_return": 0.070144,
+      "copycat_alpha": -0.006109,
       "trades": 42,
-      "avg_hold_days": 341.2,
+      "avg_hold_days": 342.0,
       "avg_filing_lag": 33.6,
       "late_filings": 0,
       "filings": 61,
@@ -8048,6 +8048,11 @@
           "id": "beat_the_market",
           "name": "Beat the Market",
           "blurb": "Positive alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "index_hugger",
+          "name": "Index Hugger",
+          "blurb": "Alpha landed within 2 percentage points of the S&P."
         },
         {
           "id": "punctual_pro",
@@ -8067,19 +8072,19 @@
       "uncopyable": 6
     },
     "all": {
-      "rank": 38,
+      "rank": 39,
       "previous_rank": 38,
-      "rank_change": 0,
+      "rank_change": -1,
       "streak": 0,
       "on_fire": false,
       "benched": false,
-      "return": 0.093594,
-      "alpha": -0.042308,
-      "benchmark": 0.135902,
-      "copycat_return": 0.108104,
-      "copycat_alpha": -0.045109,
+      "return": 0.074398,
+      "alpha": -0.048794,
+      "benchmark": 0.123192,
+      "copycat_return": 0.089265,
+      "copycat_alpha": -0.050714,
       "trades": 163,
-      "avg_hold_days": 264.9,
+      "avg_hold_days": 265.3,
       "avg_filing_lag": 36.9,
       "late_filings": 3,
       "filings": 174,
