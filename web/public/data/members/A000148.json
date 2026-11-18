@@ -291,7 +291,7 @@
       "benchmark": null,
       "copycat_return": null,
       "copycat_alpha": null,
-      "trades": 4,
+      "trades": 3,
       "avg_hold_days": null,
       "avg_filing_lag": 2.8,
       "late_filings": 0,
