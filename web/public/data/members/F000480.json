@@ -14,7 +14,27 @@
     "12m": [],
     "all": []
   },
-  "trades": [],
+  "trades": [
+    {
+      "transaction_date": "2026-09-18",
+      "filed_date": "2026-10-05",
+      "lag_days": 17,
+      "late": false,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "U.S. Treasury Bill 0.0% Int Mat 12/10/2026 [GS]",
+      "asset_type_code": "GS",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    }
+  ],
   "windows": {
     "30d": {
       "rank": null,
@@ -35,7 +55,7 @@
       "filings": 0,
       "badges": [],
       "excluded_options": 0,
-      "excluded_non_stock": 0,
+      "excluded_non_stock": 1,
       "excluded_unknown": 0,
       "unmatched_sells": 0,
       "uncopyable": 0
@@ -59,7 +79,7 @@
       "filings": 0,
       "badges": [],
       "excluded_options": 0,
-      "excluded_non_stock": 0,
+      "excluded_non_stock": 1,
       "excluded_unknown": 0,
       "unmatched_sells": 0,
       "uncopyable": 0
@@ -83,7 +103,7 @@
       "filings": 0,
       "badges": [],
       "excluded_options": 0,
-      "excluded_non_stock": 0,
+      "excluded_non_stock": 1,
       "excluded_unknown": 0,
       "unmatched_sells": 0,
       "uncopyable": 0
@@ -107,7 +127,7 @@
       "filings": 0,
       "badges": [],
       "excluded_options": 0,
-      "excluded_non_stock": 0,
+      "excluded_non_stock": 1,
       "excluded_unknown": 0,
       "unmatched_sells": 0,
       "uncopyable": 0
@@ -131,7 +151,7 @@
       "filings": 0,
       "badges": [],
       "excluded_options": 0,
-      "excluded_non_stock": 0,
+      "excluded_non_stock": 1,
       "excluded_unknown": 0,
       "unmatched_sells": 0,
       "uncopyable": 0
