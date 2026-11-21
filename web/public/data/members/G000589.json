@@ -14,7 +14,65 @@
     "12m": [],
     "all": []
   },
-  "trades": [],
+  "trades": [
+    {
+      "transaction_date": "2024-11-15",
+      "filed_date": "2024-12-12",
+      "lag_days": 27,
+      "late": false,
+      "side": "sell",
+      "symbol": "WAL",
+      "asset_name": "Western Alliance Bancorporation Common Stock (WAL) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 50001.0,
+      "amount_max": 100000.0,
+      "midpoint": 75000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2024-07-23",
+      "filed_date": "2024-09-06",
+      "lag_days": 45,
+      "late": false,
+      "side": "sell",
+      "symbol": "SOHO",
+      "asset_name": "Sotherly Hotels Inc. - Common Stock (SOHO) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2024-07-23",
+      "filed_date": "2024-09-06",
+      "lag_days": 45,
+      "late": false,
+      "side": "sell",
+      "symbol": "MRO",
+      "asset_name": "Marathon Oil Corporation Common Stock (MRO) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    }
+  ],
   "windows": {
     "30d": {
       "rank": null,
@@ -36,8 +94,8 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "excluded_unknown": 2,
+      "unmatched_sells": 1,
       "uncopyable": 0
     },
     "90d": {
@@ -60,8 +118,8 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "excluded_unknown": 2,
+      "unmatched_sells": 1,
       "uncopyable": 0
     },
     "6m": {
@@ -84,8 +142,8 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "excluded_unknown": 2,
+      "unmatched_sells": 1,
       "uncopyable": 0
     },
     "12m": {
@@ -108,8 +166,8 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "excluded_unknown": 2,
+      "unmatched_sells": 1,
       "uncopyable": 0
     },
     "all": {
@@ -124,16 +182,16 @@
       "benchmark": null,
       "copycat_return": null,
       "copycat_alpha": null,
-      "trades": 0,
+      "trades": 1,
       "avg_hold_days": null,
-      "avg_filing_lag": null,
+      "avg_filing_lag": 39.0,
       "late_filings": 0,
-      "filings": 0,
+      "filings": 3,
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "excluded_unknown": 2,
+      "unmatched_sells": 1,
       "uncopyable": 0
     }
   }

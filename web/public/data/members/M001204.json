@@ -10,34 +10,29 @@
   "curves": {
     "30d": [
       {
-        "date": "2026-10-21",
+        "date": "2026-10-22",
         "member": 100.0,
         "spy": 100.0
       },
       {
-        "date": "2026-10-28",
-        "member": 91.1619,
-        "spy": 99.8991
+        "date": "2026-10-29",
+        "member": 99.4059,
+        "spy": 100.7068
       },
       {
-        "date": "2026-11-04",
-        "member": 85.3179,
-        "spy": 99.1877
+        "date": "2026-11-05",
+        "member": 85.4024,
+        "spy": 95.9474
       },
       {
-        "date": "2026-11-11",
-        "member": 87.7221,
-        "spy": 98.2822
-      },
-      {
-        "date": "2026-11-18",
-        "member": 90.076,
-        "spy": 94.4521
+        "date": "2026-11-12",
+        "member": 96.677,
+        "spy": 99.1047
       },
       {
         "date": "2026-11-19",
-        "member": 86.8935,
-        "spy": 92.5985
+        "member": 95.6339,
+        "spy": 93.7052
       }
     ],
     "90d": [
@@ -2051,21 +2046,26 @@
       "streak": 0,
       "on_fire": false,
       "benched": true,
-      "return": -0.131065,
-      "alpha": -0.057051,
-      "benchmark": -0.074015,
-      "copycat_return": -0.131065,
-      "copycat_alpha": -0.057051,
+      "return": -0.043661,
+      "alpha": 0.019287,
+      "benchmark": -0.062948,
+      "copycat_return": -0.043661,
+      "copycat_alpha": 0.019287,
       "trades": 0,
-      "avg_hold_days": 158.0,
+      "avg_hold_days": 159.0,
       "avg_filing_lag": 41.0,
       "late_filings": 0,
       "filings": 1,
       "badges": [
         {
-          "id": "market_beat_you",
-          "name": "The Market Beat You",
-          "blurb": "Negative alpha versus SPY over the same holding periods."
+          "id": "beat_the_market",
+          "name": "Beat the Market",
+          "blurb": "Positive alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "index_hugger",
+          "name": "Index Hugger",
+          "blurb": "Alpha landed within 2 percentage points of the S&P."
         },
         {
           "id": "punctual_pro",
@@ -2097,7 +2097,7 @@
       "copycat_return": 0.010659,
       "copycat_alpha": 0.075761,
       "trades": 2,
-      "avg_hold_days": 158.0,
+      "avg_hold_days": 159.0,
       "avg_filing_lag": 42.5,
       "late_filings": 0,
       "filings": 2,
@@ -2126,8 +2126,8 @@
     },
     "6m": {
       "rank": 29,
-      "previous_rank": 28,
-      "rank_change": -1,
+      "previous_rank": 29,
+      "rank_change": 0,
       "streak": 0,
       "on_fire": false,
       "benched": false,
@@ -2137,7 +2137,7 @@
       "copycat_return": -0.145494,
       "copycat_alpha": -0.106677,
       "trades": 4,
-      "avg_hold_days": 158.0,
+      "avg_hold_days": 159.0,
       "avg_filing_lag": 34.5,
       "late_filings": 0,
       "filings": 4,
@@ -2165,9 +2165,9 @@
       "uncopyable": 0
     },
     "12m": {
-      "rank": 40,
-      "previous_rank": 39,
-      "rank_change": -1,
+      "rank": 42,
+      "previous_rank": 40,
+      "rank_change": -2,
       "streak": 0,
       "on_fire": false,
       "benched": false,
@@ -2177,7 +2177,7 @@
       "copycat_return": -0.145494,
       "copycat_alpha": -0.106677,
       "trades": 9,
-      "avg_hold_days": 158.0,
+      "avg_hold_days": 159.0,
       "avg_filing_lag": 31.2,
       "late_filings": 0,
       "filings": 9,
@@ -2205,9 +2205,9 @@
       "uncopyable": 0
     },
     "all": {
-      "rank": 54,
-      "previous_rank": 53,
-      "rank_change": -1,
+      "rank": 56,
+      "previous_rank": 54,
+      "rank_change": -2,
       "streak": 0,
       "on_fire": false,
       "benched": false,
@@ -2217,7 +2217,7 @@
       "copycat_return": -0.145494,
       "copycat_alpha": -0.106677,
       "trades": 18,
-      "avg_hold_days": 158.0,
+      "avg_hold_days": 159.0,
       "avg_filing_lag": 312.4,
       "late_filings": 57,
       "filings": 79,
