@@ -7,32 +7,32 @@ The only league where everyone files late.
 ## Current standings
 
 <!-- LEADERBOARD:START -->
-**Top 10, last 12 months** (as of 2026-11-21)
+**Top 10, last 12 months** (as of 2026-11-22)
 
 | # | | Member | Seat | Return | Alpha vs S&P | Copycat | Trades |
 |---:|:---:|---|---|---:|---:|---:|---:|
-| 1 | 🆕 | [Michael Guest](https://bernhardbrugger.github.io/capitol-street-bets/#/member/G000591) | R-MS · H | +48.5% | **+39.9%** | +48.5% | 7 |
-| 2 | ▼1 | [Ed Case](https://bernhardbrugger.github.io/capitol-street-bets/#/member/C001055) | D-HI · H | +26.2% | **+21.4%** | +29.8% | 4 |
-| 3 | ▼1 | [John Fetterman](https://bernhardbrugger.github.io/capitol-street-bets/#/member/F000479) | D-PA · S | +25.3% | **+13.1%** | +19.5% | 8 |
-| 4 | ▲1 | [Nancy Pelosi](https://bernhardbrugger.github.io/capitol-street-bets/#/member/P000197) | D-CA · H | +15.9% | **+12.0%** | +14.9% | 16 |
-| 5 | ▼2 | [Kevin Hern](https://bernhardbrugger.github.io/capitol-street-bets/#/member/H001082) | R-OK · H | +15.2% | **+11.8%** | +23.8% | 162 |
-| 6 | ▼2 | [Dwight Evans](https://bernhardbrugger.github.io/capitol-street-bets/#/member/E000296) | D-PA · H | +19.4% | **+10.6%** | +23.3% | 14 |
-| 7 | ▼1 | [Dan Newhouse](https://bernhardbrugger.github.io/capitol-street-bets/#/member/N000189) | R-WA · H | +12.8% | **+9.7%** | +13.2% | 48 |
-| 8 | ▬ | [Angus S. King, Jr.](https://bernhardbrugger.github.io/capitol-street-bets/#/member/K000383) | I-ME · S | +16.0% | **+9.5%** | +14.9% | 12 |
-| 9 | ▼2 | [Julia Letlow](https://bernhardbrugger.github.io/capitol-street-bets/#/member/L000595) | R-LA · H | +15.9% | **+9.5%** | +5.3% | 45 |
-| 10 | ▲2 | [Debbie Dingell](https://bernhardbrugger.github.io/capitol-street-bets/#/member/D000624) | D-MI · H | +14.1% | **+6.5%** | +14.1% | 5 |
+| 1 | ▬ | [Michael Guest](https://bernhardbrugger.github.io/capitol-street-bets/#/member/G000591) | R-MS · H | +30.9% | **+26.2%** | +30.9% | 7 |
+| 2 | ▬ | [Ed Case](https://bernhardbrugger.github.io/capitol-street-bets/#/member/C001055) | D-HI · H | +23.8% | **+22.8%** | +27.4% | 4 |
+| 3 | ▲2 | [Kevin Hern](https://bernhardbrugger.github.io/capitol-street-bets/#/member/H001082) | R-OK · H | +15.6% | **+13.2%** | +24.3% | 162 |
+| 4 | ▼1 | [John Fetterman](https://bernhardbrugger.github.io/capitol-street-bets/#/member/F000479) | D-PA · S | +20.0% | **+11.9%** | +14.7% | 8 |
+| 5 | ▲5 | [Debbie Dingell](https://bernhardbrugger.github.io/capitol-street-bets/#/member/D000624) | D-MI · H | +15.1% | **+11.4%** | +15.0% | 5 |
+| 6 | ▲1 | [Dan Newhouse](https://bernhardbrugger.github.io/capitol-street-bets/#/member/N000189) | R-WA · H | +9.6% | **+9.9%** | +9.9% | 48 |
+| 7 | ▲4 | [Lloyd Doggett](https://bernhardbrugger.github.io/capitol-street-bets/#/member/D000399) | D-TX · H | +10.0% | **+9.6%** | +9.5% | 23 |
+| 8 | ▲1 | [Julia Letlow](https://bernhardbrugger.github.io/capitol-street-bets/#/member/L000595) | R-LA · H | +11.0% | **+7.8%** | +1.9% | 44 |
+| 9 | ▼3 | [Dwight Evans](https://bernhardbrugger.github.io/capitol-street-bets/#/member/E000296) | D-PA · H | +12.2% | **+7.0%** | +16.1% | 7 |
+| 10 | ▲6 | [Tommy Tuberville](https://bernhardbrugger.github.io/capitol-street-bets/#/member/T000278) | R-AL · S | +9.6% | **+6.8%** | +3.9% | 16 |
 
 **Most traded stocks, last 12 months**
 
 | # | Ticker | Trades | Members | Buys / sells | Est. volume | Move |
 |---:|---|---:|---:|---:|---:|---:|
-| 1 | [**MSFT**](https://bernhardbrugger.github.io/capitol-street-bets/#/stocks?s=MSFT) | 66 | 26 | 37 / 29 | ~$1.5M | +5.5% |
-| 2 | [**NVDA**](https://bernhardbrugger.github.io/capitol-street-bets/#/stocks?s=NVDA) | 49 | 19 | 21 / 28 | ~$4.5M | -18.4% |
-| 3 | [**AAPL**](https://bernhardbrugger.github.io/capitol-street-bets/#/stocks?s=AAPL) | 44 | 25 | 17 / 27 | ~$31.8M | +28.6% |
-| 4 | [**HD**](https://bernhardbrugger.github.io/capitol-street-bets/#/stocks?s=HD) | 38 | 14 | 17 / 21 | ~$634K | -1.9% |
-| 5 | [**GOOGL**](https://bernhardbrugger.github.io/capitol-street-bets/#/stocks?s=GOOGL) | 35 | 13 | 16 / 19 | ~$4.9M | -9.0% |
+| 1 | [**MSFT**](https://bernhardbrugger.github.io/capitol-street-bets/#/stocks?s=MSFT) | 65 | 25 | 37 / 28 | ~$1.5M | +2.6% |
+| 2 | [**NVDA**](https://bernhardbrugger.github.io/capitol-street-bets/#/stocks?s=NVDA) | 48 | 18 | 20 / 28 | ~$4.5M | -29.8% |
+| 3 | [**AAPL**](https://bernhardbrugger.github.io/capitol-street-bets/#/stocks?s=AAPL) | 44 | 25 | 17 / 27 | ~$31.8M | +26.2% |
+| 4 | [**HD**](https://bernhardbrugger.github.io/capitol-street-bets/#/stocks?s=HD) | 38 | 14 | 17 / 21 | ~$634K | -1.2% |
+| 5 | [**GOOGL**](https://bernhardbrugger.github.io/capitol-street-bets/#/stocks?s=GOOGL) | 35 | 13 | 16 / 19 | ~$4.9M | -11.5% |
 
-Members loaded so far: **249 of 537** seated. Updated 2026-11-21. [Full board →](https://bernhardbrugger.github.io/capitol-street-bets/)
+Members loaded so far: **273 of 537** seated. Updated 2026-11-22. [Full board →](https://bernhardbrugger.github.io/capitol-street-bets/)
 <!-- LEADERBOARD:END -->
 
 A scoreboard of how members of Congress do with their **publicly disclosed** stock trades: rank arrows, badges, a daily ticker tape, and a head-to-head for anyone deciding who they would rather copy. The tone stays on the numbers. Party is a label on the card, not a punchline.

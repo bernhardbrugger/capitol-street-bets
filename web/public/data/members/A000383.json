@@ -10,29 +10,29 @@
   "curves": {
     "30d": [
       {
-        "date": "2026-10-22",
+        "date": "2026-10-23",
         "member": 100.0,
         "spy": 100.0
       },
       {
-        "date": "2026-10-29",
+        "date": "2026-10-30",
+        "member": 99.8918,
+        "spy": 99.4408
+      },
+      {
+        "date": "2026-11-06",
+        "member": 98.3018,
+        "spy": 96.7525
+      },
+      {
+        "date": "2026-11-13",
         "member": 100.9104,
-        "spy": 100.7068
+        "spy": 99.2631
       },
       {
-        "date": "2026-11-05",
-        "member": 97.6745,
-        "spy": 95.9474
-      },
-      {
-        "date": "2026-11-12",
-        "member": 100.383,
-        "spy": 99.1047
-      },
-      {
-        "date": "2026-11-19",
-        "member": 94.8885,
-        "spy": 93.7052
+        "date": "2026-11-20",
+        "member": 92.7767,
+        "spy": 90.7681
       }
     ],
     "90d": [
@@ -102,9 +102,9 @@
         "spy": 95.9357
       },
       {
-        "date": "2026-11-19",
-        "member": 93.1217,
-        "spy": 93.7653
+        "date": "2026-11-20",
+        "member": 90.4647,
+        "spy": 90.3519
       }
     ],
     "6m": [
@@ -234,9 +234,9 @@
         "spy": 100.5042
       },
       {
-        "date": "2026-11-19",
-        "member": 96.8518,
-        "spy": 95.3748
+        "date": "2026-11-20",
+        "member": 94.0885,
+        "spy": 91.9029
       }
     ],
     "12m": [
@@ -406,9 +406,9 @@
         "spy": 119.0407
       },
       {
-        "date": "2026-11-19",
-        "member": 113.4408,
-        "spy": 112.9653
+        "date": "2026-11-20",
+        "member": 110.2041,
+        "spy": 108.853
       }
     ],
     "all": [
@@ -578,9 +578,9 @@
         "spy": 119.0407
       },
       {
-        "date": "2026-11-19",
-        "member": 113.4408,
-        "spy": 112.9653
+        "date": "2026-11-20",
+        "member": 110.2041,
+        "spy": 108.853
       }
     ]
   },
@@ -14046,13 +14046,13 @@
       "streak": 0,
       "on_fire": false,
       "benched": true,
-      "return": -0.051106,
-      "alpha": 0.011842,
-      "benchmark": -0.062948,
-      "copycat_return": -0.043593,
-      "copycat_alpha": 0.019355,
+      "return": -0.072239,
+      "alpha": 0.020081,
+      "benchmark": -0.092319,
+      "copycat_return": -0.059863,
+      "copycat_alpha": 0.032456,
       "trades": 0,
-      "avg_hold_days": 238.2,
+      "avg_hold_days": 239.2,
       "avg_filing_lag": null,
       "late_filings": 0,
       "filings": 0,
@@ -14061,11 +14061,6 @@
           "id": "beat_the_market",
           "name": "Beat the Market",
           "blurb": "Positive alpha versus SPY over the same holding periods."
-        },
-        {
-          "id": "index_hugger",
-          "name": "Index Hugger",
-          "blurb": "Alpha landed within 2 percentage points of the S&P."
         }
       ],
       "excluded_options": 4,
@@ -14081,21 +14076,21 @@
       "streak": 0,
       "on_fire": false,
       "benched": true,
-      "return": -0.070508,
-      "alpha": -0.005406,
-      "benchmark": -0.065102,
-      "copycat_return": -0.060639,
-      "copycat_alpha": 0.004463,
+      "return": -0.095523,
+      "alpha": 0.000958,
+      "benchmark": -0.096481,
+      "copycat_return": -0.083512,
+      "copycat_alpha": 0.012969,
       "trades": 0,
-      "avg_hold_days": 238.2,
+      "avg_hold_days": 239.2,
       "avg_filing_lag": 44.0,
       "late_filings": 0,
       "filings": 1,
       "badges": [
         {
-          "id": "market_beat_you",
-          "name": "The Market Beat You",
-          "blurb": "Negative alpha versus SPY over the same holding periods."
+          "id": "beat_the_market",
+          "name": "Beat the Market",
+          "blurb": "Positive alpha versus SPY over the same holding periods."
         },
         {
           "id": "index_hugger",
@@ -14121,13 +14116,13 @@
       "streak": 0,
       "on_fire": false,
       "benched": true,
-      "return": -0.023725,
-      "alpha": 0.016088,
-      "benchmark": -0.039813,
-      "copycat_return": -0.02821,
-      "copycat_alpha": 0.014972,
+      "return": -0.051535,
+      "alpha": 0.023175,
+      "benchmark": -0.07471,
+      "copycat_return": -0.05199,
+      "copycat_alpha": 0.025956,
       "trades": 2,
-      "avg_hold_days": 237.9,
+      "avg_hold_days": 238.9,
       "avg_filing_lag": 115.0,
       "late_filings": 389,
       "filings": 391,
@@ -14136,11 +14131,6 @@
           "id": "beat_the_market",
           "name": "Beat the Market",
           "blurb": "Positive alpha versus SPY over the same holding periods."
-        },
-        {
-          "id": "index_hugger",
-          "name": "Index Hugger",
-          "blurb": "Alpha landed within 2 percentage points of the S&P."
         }
       ],
       "excluded_options": 4,
@@ -14150,19 +14140,19 @@
       "uncopyable": 0
     },
     "12m": {
-      "rank": 21,
-      "previous_rank": 20,
-      "rank_change": -1,
-      "streak": 0,
+      "rank": 20,
+      "previous_rank": 21,
+      "rank_change": 1,
+      "streak": 1,
       "on_fire": false,
       "benched": false,
-      "return": 0.135304,
-      "alpha": 0.005503,
-      "benchmark": 0.129801,
-      "copycat_return": -0.02821,
-      "copycat_alpha": 0.014972,
+      "return": 0.102964,
+      "alpha": 0.014213,
+      "benchmark": 0.088751,
+      "copycat_return": -0.05199,
+      "copycat_alpha": 0.025956,
       "trades": 391,
-      "avg_hold_days": 237.9,
+      "avg_hold_days": 238.9,
       "avg_filing_lag": 115.0,
       "late_filings": 389,
       "filings": 391,
@@ -14190,19 +14180,19 @@
       "uncopyable": 0
     },
     "all": {
-      "rank": 31,
-      "previous_rank": 30,
-      "rank_change": -1,
-      "streak": 0,
+      "rank": 29,
+      "previous_rank": 31,
+      "rank_change": 2,
+      "streak": 1,
       "on_fire": false,
       "benched": false,
-      "return": 0.135304,
-      "alpha": 0.005503,
-      "benchmark": 0.129801,
-      "copycat_return": -0.02821,
-      "copycat_alpha": 0.014972,
+      "return": 0.102964,
+      "alpha": 0.014213,
+      "benchmark": 0.088751,
+      "copycat_return": -0.05199,
+      "copycat_alpha": 0.025956,
       "trades": 391,
-      "avg_hold_days": 237.9,
+      "avg_hold_days": 238.9,
       "avg_filing_lag": 115.0,
       "late_filings": 389,
       "filings": 391,

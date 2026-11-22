@@ -8,13 +8,1700 @@
   "district": "2",
   "years_in_service": 11.9,
   "curves": {
-    "30d": [],
-    "90d": [],
-    "6m": [],
-    "12m": [],
-    "all": []
+    "30d": [
+      {
+        "date": "2026-10-23",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-10-30",
+        "member": 100.4514,
+        "spy": 99.4408
+      },
+      {
+        "date": "2026-11-06",
+        "member": 100.8694,
+        "spy": 96.7525
+      },
+      {
+        "date": "2026-11-13",
+        "member": 102.422,
+        "spy": 99.2631
+      },
+      {
+        "date": "2026-11-20",
+        "member": 100.0538,
+        "spy": 90.7681
+      }
+    ],
+    "90d": [
+      {
+        "date": "2026-08-24",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-08-31",
+        "member": 98.335,
+        "spy": 100.4689
+      },
+      {
+        "date": "2026-09-08",
+        "member": 97.2473,
+        "spy": 100.3261
+      },
+      {
+        "date": "2026-09-15",
+        "member": 97.5535,
+        "spy": 99.2036
+      },
+      {
+        "date": "2026-09-22",
+        "member": 96.1426,
+        "spy": 101.298
+      },
+      {
+        "date": "2026-09-29",
+        "member": 95.2166,
+        "spy": 100.0956
+      },
+      {
+        "date": "2026-10-06",
+        "member": 95.5753,
+        "spy": 102.0459
+      },
+      {
+        "date": "2026-10-13",
+        "member": 97.9913,
+        "spy": 101.9045
+      },
+      {
+        "date": "2026-10-20",
+        "member": 102.4817,
+        "spy": 100.7309
+      },
+      {
+        "date": "2026-10-27",
+        "member": 101.8709,
+        "spy": 100.8108
+      },
+      {
+        "date": "2026-11-03",
+        "member": 103.4452,
+        "spy": 98.8055
+      },
+      {
+        "date": "2026-11-10",
+        "member": 105.0999,
+        "spy": 98.2252
+      },
+      {
+        "date": "2026-11-17",
+        "member": 103.8145,
+        "spy": 95.9357
+      },
+      {
+        "date": "2026-11-20",
+        "member": 102.6355,
+        "spy": 90.3519
+      }
+    ],
+    "6m": [
+      {
+        "date": "2026-05-26",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-06-02",
+        "member": 96.2274,
+        "spy": 101.1964
+      },
+      {
+        "date": "2026-06-09",
+        "member": 96.6701,
+        "spy": 98.1961
+      },
+      {
+        "date": "2026-06-16",
+        "member": 98.8311,
+        "spy": 99.9654
+      },
+      {
+        "date": "2026-06-24",
+        "member": 100.0419,
+        "spy": 97.6885
+      },
+      {
+        "date": "2026-07-01",
+        "member": 101.6296,
+        "spy": 99.3565
+      },
+      {
+        "date": "2026-07-09",
+        "member": 104.3852,
+        "spy": 100.1492
+      },
+      {
+        "date": "2026-07-16",
+        "member": 104.4105,
+        "spy": 100.0173
+      },
+      {
+        "date": "2026-07-23",
+        "member": 104.6352,
+        "spy": 98.3466
+      },
+      {
+        "date": "2026-07-30",
+        "member": 102.5234,
+        "spy": 98.8143
+      },
+      {
+        "date": "2026-08-06",
+        "member": 102.4594,
+        "spy": 102.3941
+      },
+      {
+        "date": "2026-08-13",
+        "member": 100.8398,
+        "spy": 103.6358
+      },
+      {
+        "date": "2026-08-20",
+        "member": 98.9482,
+        "spy": 101.6001
+      },
+      {
+        "date": "2026-08-27",
+        "member": 99.1753,
+        "spy": 102.7325
+      },
+      {
+        "date": "2026-09-03",
+        "member": 99.7274,
+        "spy": 103.0083
+      },
+      {
+        "date": "2026-09-11",
+        "member": 97.337,
+        "spy": 101.8252
+      },
+      {
+        "date": "2026-09-18",
+        "member": 97.0069,
+        "spy": 101.4788
+      },
+      {
+        "date": "2026-09-25",
+        "member": 94.7083,
+        "spy": 102.7658
+      },
+      {
+        "date": "2026-10-02",
+        "member": 95.132,
+        "spy": 102.538
+      },
+      {
+        "date": "2026-10-09",
+        "member": 96.3774,
+        "spy": 103.7277
+      },
+      {
+        "date": "2026-10-16",
+        "member": 100.7285,
+        "spy": 101.6867
+      },
+      {
+        "date": "2026-10-23",
+        "member": 102.5276,
+        "spy": 101.2497
+      },
+      {
+        "date": "2026-10-30",
+        "member": 102.9904,
+        "spy": 100.6835
+      },
+      {
+        "date": "2026-11-06",
+        "member": 103.4189,
+        "spy": 97.9616
+      },
+      {
+        "date": "2026-11-13",
+        "member": 105.0108,
+        "spy": 100.5036
+      },
+      {
+        "date": "2026-11-20",
+        "member": 102.5827,
+        "spy": 91.9024
+      }
+    ],
+    "12m": [
+      {
+        "date": "2025-11-24",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2025-12-02",
+        "member": 100.4704,
+        "spy": 101.9141
+      },
+      {
+        "date": "2025-12-09",
+        "member": 99.3899,
+        "spy": 102.1399
+      },
+      {
+        "date": "2025-12-16",
+        "member": 101.5762,
+        "spy": 101.5163
+      },
+      {
+        "date": "2025-12-23",
+        "member": 104.2002,
+        "spy": 102.8756
+      },
+      {
+        "date": "2025-12-31",
+        "member": 102.6267,
+        "spy": 101.9724
+      },
+      {
+        "date": "2026-01-08",
+        "member": 102.5789,
+        "spy": 103.1074
+      },
+      {
+        "date": "2026-01-15",
+        "member": 100.5091,
+        "spy": 103.5156
+      },
+      {
+        "date": "2026-01-23",
+        "member": 99.0023,
+        "spy": 103.0655
+      },
+      {
+        "date": "2026-01-30",
+        "member": 100.129,
+        "spy": 103.4752
+      },
+      {
+        "date": "2026-02-06",
+        "member": 105.0459,
+        "spy": 103.2734
+      },
+      {
+        "date": "2026-02-13",
+        "member": 103.5959,
+        "spy": 101.947
+      },
+      {
+        "date": "2026-02-23",
+        "member": 103.6847,
+        "spy": 102.0427
+      },
+      {
+        "date": "2026-03-02",
+        "member": 105.7844,
+        "spy": 102.6393
+      },
+      {
+        "date": "2026-03-09",
+        "member": 101.1906,
+        "spy": 101.4266
+      },
+      {
+        "date": "2026-03-16",
+        "member": 101.6473,
+        "spy": 100.0449
+      },
+      {
+        "date": "2026-03-23",
+        "member": 99.2449,
+        "spy": 98.0037
+      },
+      {
+        "date": "2026-03-30",
+        "member": 99.4711,
+        "spy": 94.503
+      },
+      {
+        "date": "2026-04-07",
+        "member": 100.77,
+        "spy": 98.5779
+      },
+      {
+        "date": "2026-04-14",
+        "member": 103.8673,
+        "spy": 103.8476
+      },
+      {
+        "date": "2026-04-21",
+        "member": 103.8623,
+        "spy": 105.2861
+      },
+      {
+        "date": "2026-04-28",
+        "member": 102.8454,
+        "spy": 106.4241
+      },
+      {
+        "date": "2026-05-05",
+        "member": 96.6258,
+        "spy": 108.2305
+      },
+      {
+        "date": "2026-05-12",
+        "member": 96.777,
+        "spy": 110.3854
+      },
+      {
+        "date": "2026-05-19",
+        "member": 98.8291,
+        "spy": 109.7199
+      },
+      {
+        "date": "2026-05-27",
+        "member": 97.7045,
+        "spy": 112.2217
+      },
+      {
+        "date": "2026-06-03",
+        "member": 94.6196,
+        "spy": 112.7869
+      },
+      {
+        "date": "2026-06-10",
+        "member": 96.2694,
+        "spy": 108.4788
+      },
+      {
+        "date": "2026-06-17",
+        "member": 96.84,
+        "spy": 110.8011
+      },
+      {
+        "date": "2026-06-25",
+        "member": 98.3055,
+        "spy": 109.8052
+      },
+      {
+        "date": "2026-07-02",
+        "member": 104.0714,
+        "spy": 111.3723
+      },
+      {
+        "date": "2026-07-10",
+        "member": 103.1635,
+        "spy": 112.8931
+      },
+      {
+        "date": "2026-07-17",
+        "member": 103.8894,
+        "spy": 111.1495
+      },
+      {
+        "date": "2026-07-24",
+        "member": 105.2697,
+        "spy": 110.4975
+      },
+      {
+        "date": "2026-07-31",
+        "member": 100.9345,
+        "spy": 111.7088
+      },
+      {
+        "date": "2026-08-07",
+        "member": 101.4229,
+        "spy": 115.6311
+      },
+      {
+        "date": "2026-08-14",
+        "member": 99.9795,
+        "spy": 116.0917
+      },
+      {
+        "date": "2026-08-21",
+        "member": 97.6716,
+        "spy": 114.5036
+      },
+      {
+        "date": "2026-08-28",
+        "member": 98.4433,
+        "spy": 115.0464
+      },
+      {
+        "date": "2026-09-04",
+        "member": 98.0003,
+        "spy": 115.172
+      },
+      {
+        "date": "2026-09-14",
+        "member": 96.7412,
+        "spy": 113.7799
+      },
+      {
+        "date": "2026-09-21",
+        "member": 95.5694,
+        "spy": 115.667
+      },
+      {
+        "date": "2026-09-28",
+        "member": 93.7686,
+        "spy": 114.4872
+      },
+      {
+        "date": "2026-10-05",
+        "member": 93.781,
+        "spy": 115.8659
+      },
+      {
+        "date": "2026-10-12",
+        "member": 96.6133,
+        "spy": 116.3549
+      },
+      {
+        "date": "2026-10-19",
+        "member": 99.7724,
+        "spy": 114.6173
+      },
+      {
+        "date": "2026-10-26",
+        "member": 101.3603,
+        "spy": 114.4513
+      },
+      {
+        "date": "2026-11-02",
+        "member": 103.2552,
+        "spy": 112.4669
+      },
+      {
+        "date": "2026-11-09",
+        "member": 102.8327,
+        "spy": 112.5551
+      },
+      {
+        "date": "2026-11-16",
+        "member": 104.199,
+        "spy": 110.65
+      },
+      {
+        "date": "2026-11-20",
+        "member": 101.4811,
+        "spy": 103.1522
+      }
+    ],
+    "all": [
+      {
+        "date": "2025-06-23",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2025-06-30",
+        "member": 100.8122,
+        "spy": 102.9493
+      },
+      {
+        "date": "2025-07-08",
+        "member": 100.8605,
+        "spy": 103.3642
+      },
+      {
+        "date": "2025-07-15",
+        "member": 99.7489,
+        "spy": 103.6641
+      },
+      {
+        "date": "2025-07-22",
+        "member": 101.3902,
+        "spy": 104.7838
+      },
+      {
+        "date": "2025-07-29",
+        "member": 101.1025,
+        "spy": 105.8502
+      },
+      {
+        "date": "2025-08-05",
+        "member": 99.9275,
+        "spy": 104.6355
+      },
+      {
+        "date": "2025-08-12",
+        "member": 100.6712,
+        "spy": 107.0882
+      },
+      {
+        "date": "2025-08-19",
+        "member": 101.5925,
+        "spy": 106.6083
+      },
+      {
+        "date": "2025-08-26",
+        "member": 101.7172,
+        "spy": 107.4998
+      },
+      {
+        "date": "2025-09-03",
+        "member": 101.1237,
+        "spy": 107.2632
+      },
+      {
+        "date": "2025-09-10",
+        "member": 100.0571,
+        "spy": 108.6745
+      },
+      {
+        "date": "2025-09-17",
+        "member": 99.8087,
+        "spy": 109.8359
+      },
+      {
+        "date": "2025-09-24",
+        "member": 101.1764,
+        "spy": 110.1558
+      },
+      {
+        "date": "2025-10-01",
+        "member": 98.8111,
+        "spy": 111.3805
+      },
+      {
+        "date": "2025-10-08",
+        "member": 105.2295,
+        "spy": 112.157
+      },
+      {
+        "date": "2025-10-15",
+        "member": 103.4636,
+        "spy": 110.834
+      },
+      {
+        "date": "2025-10-22",
+        "member": 102.9027,
+        "spy": 111.2722
+      },
+      {
+        "date": "2025-10-29",
+        "member": 100.8587,
+        "spy": 114.5364
+      },
+      {
+        "date": "2025-11-05",
+        "member": 105.4245,
+        "spy": 112.9018
+      },
+      {
+        "date": "2025-11-12",
+        "member": 109.046,
+        "spy": 113.8682
+      },
+      {
+        "date": "2025-11-19",
+        "member": 107.6362,
+        "spy": 110.4107
+      },
+      {
+        "date": "2025-11-26",
+        "member": 111.7468,
+        "spy": 113.2517
+      },
+      {
+        "date": "2025-12-04",
+        "member": 109.8589,
+        "spy": 114.0365
+      },
+      {
+        "date": "2025-12-11",
+        "member": 111.7602,
+        "spy": 114.833
+      },
+      {
+        "date": "2025-12-18",
+        "member": 112.8875,
+        "spy": 112.7168
+      },
+      {
+        "date": "2025-12-26",
+        "member": 113.7797,
+        "spy": 115.0229
+      },
+      {
+        "date": "2026-01-05",
+        "member": 112.8562,
+        "spy": 114.5914
+      },
+      {
+        "date": "2026-01-12",
+        "member": 111.8446,
+        "spy": 115.831
+      },
+      {
+        "date": "2026-01-20",
+        "member": 109.7746,
+        "spy": 112.9018
+      },
+      {
+        "date": "2026-01-27",
+        "member": 108.7422,
+        "spy": 115.886
+      },
+      {
+        "date": "2026-02-03",
+        "member": 110.9998,
+        "spy": 114.8929
+      },
+      {
+        "date": "2026-02-10",
+        "member": 114.1216,
+        "spy": 115.3245
+      },
+      {
+        "date": "2026-02-18",
+        "member": 114.4689,
+        "spy": 114.3531
+      },
+      {
+        "date": "2026-02-25",
+        "member": 115.1348,
+        "spy": 115.4961
+      },
+      {
+        "date": "2026-03-04",
+        "member": 115.0821,
+        "spy": 114.1598
+      },
+      {
+        "date": "2026-03-11",
+        "member": 112.2608,
+        "spy": 112.6935
+      },
+      {
+        "date": "2026-03-18",
+        "member": 110.0836,
+        "spy": 110.2108
+      },
+      {
+        "date": "2026-03-25",
+        "member": 110.0471,
+        "spy": 109.4426
+      },
+      {
+        "date": "2026-04-01",
+        "member": 109.887,
+        "spy": 109.1794
+      },
+      {
+        "date": "2026-04-09",
+        "member": 114.5352,
+        "spy": 113.29
+      },
+      {
+        "date": "2026-04-16",
+        "member": 114.1946,
+        "spy": 116.9141
+      },
+      {
+        "date": "2026-04-23",
+        "member": 114.0669,
+        "spy": 118.0455
+      },
+      {
+        "date": "2026-04-30",
+        "member": 109.9434,
+        "spy": 119.7467
+      },
+      {
+        "date": "2026-05-07",
+        "member": 105.6074,
+        "spy": 121.8995
+      },
+      {
+        "date": "2026-05-14",
+        "member": 107.1602,
+        "spy": 124.6638
+      },
+      {
+        "date": "2026-05-21",
+        "member": 109.0262,
+        "spy": 123.7557
+      },
+      {
+        "date": "2026-05-29",
+        "member": 105.2072,
+        "spy": 126.0485
+      },
+      {
+        "date": "2026-06-05",
+        "member": 106.5686,
+        "spy": 122.8943
+      },
+      {
+        "date": "2026-06-12",
+        "member": 106.6485,
+        "spy": 123.5941
+      },
+      {
+        "date": "2026-06-22",
+        "member": 106.7058,
+        "spy": 124.034
+      },
+      {
+        "date": "2026-06-29",
+        "member": 111.8466,
+        "spy": 123.4691
+      },
+      {
+        "date": "2026-07-07",
+        "member": 114.3973,
+        "spy": 124.5872
+      },
+      {
+        "date": "2026-07-14",
+        "member": 113.083,
+        "spy": 125.2737
+      },
+      {
+        "date": "2026-07-21",
+        "member": 113.9525,
+        "spy": 124.6822
+      },
+      {
+        "date": "2026-07-28",
+        "member": 117.2579,
+        "spy": 123.4458
+      },
+      {
+        "date": "2026-08-04",
+        "member": 111.5829,
+        "spy": 128.5229
+      },
+      {
+        "date": "2026-08-11",
+        "member": 109.5978,
+        "spy": 128.3946
+      },
+      {
+        "date": "2026-08-18",
+        "member": 109.3739,
+        "spy": 127.8764
+      },
+      {
+        "date": "2026-08-25",
+        "member": 108.6473,
+        "spy": 127.6198
+      },
+      {
+        "date": "2026-09-01",
+        "member": 107.0378,
+        "spy": 126.9316
+      },
+      {
+        "date": "2026-09-09",
+        "member": 105.9983,
+        "spy": 127.0349
+      },
+      {
+        "date": "2026-09-16",
+        "member": 106.2627,
+        "spy": 125.6436
+      },
+      {
+        "date": "2026-09-23",
+        "member": 103.5989,
+        "spy": 127.9363
+      },
+      {
+        "date": "2026-09-30",
+        "member": 102.3669,
+        "spy": 127.0732
+      },
+      {
+        "date": "2026-10-07",
+        "member": 103.5054,
+        "spy": 129.5043
+      },
+      {
+        "date": "2026-10-14",
+        "member": 107.1437,
+        "spy": 128.2346
+      },
+      {
+        "date": "2026-10-21",
+        "member": 111.3895,
+        "spy": 128.8161
+      },
+      {
+        "date": "2026-10-28",
+        "member": 110.3071,
+        "spy": 128.6862
+      },
+      {
+        "date": "2026-11-04",
+        "member": 115.8295,
+        "spy": 127.7697
+      },
+      {
+        "date": "2026-11-11",
+        "member": 114.2698,
+        "spy": 126.6033
+      },
+      {
+        "date": "2026-11-18",
+        "member": 112.4432,
+        "spy": 121.6696
+      },
+      {
+        "date": "2026-11-20",
+        "member": 111.7537,
+        "spy": 114.9396
+      }
+    ]
   },
-  "trades": [],
+  "trades": [
+    {
+      "transaction_date": "2026-11-09",
+      "filed_date": "2026-11-13",
+      "lag_days": 4,
+      "late": false,
+      "side": "sell",
+      "symbol": "JBGS",
+      "asset_name": "JBG SMITH Properties Common Shares (JBGS) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2025-12-31",
+      "filed_date": "2026-01-23",
+      "lag_days": 23,
+      "late": false,
+      "side": "sell",
+      "symbol": "SOLV",
+      "asset_name": "Solventum Corporation Common Stock (SOLV) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2025-12-31",
+      "filed_date": "2026-01-23",
+      "lag_days": 23,
+      "late": false,
+      "side": "sell",
+      "symbol": "SFL",
+      "asset_name": "SFL Corporation Ltd (SFL) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2025-12-31",
+      "filed_date": "2026-01-23",
+      "lag_days": 23,
+      "late": false,
+      "side": "sell",
+      "symbol": "PFE",
+      "asset_name": "Pfizer, Inc. Common Stock (PFE) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 100001.0,
+      "amount_max": 250000.0,
+      "midpoint": 175000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2025-12-31",
+      "filed_date": "2026-01-23",
+      "lag_days": 23,
+      "late": false,
+      "side": "sell",
+      "symbol": "KD",
+      "asset_name": "Kyndryl Holdings, Inc. Common Stock (KD) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2025-06-23",
+      "filed_date": "2025-07-24",
+      "lag_days": 31,
+      "late": false,
+      "side": "buy",
+      "symbol": "WTM",
+      "asset_name": "White Mountains Insurance Group, Ltd. Common Stock (WTM) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 50001.0,
+      "amount_max": 100000.0,
+      "midpoint": 75000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2025-06-23",
+      "filed_date": "2025-07-24",
+      "lag_days": 31,
+      "late": false,
+      "side": "sell",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company Common Stock (WFC) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2025-06-23",
+      "filed_date": "2025-07-24",
+      "lag_days": 31,
+      "late": false,
+      "side": "sell",
+      "symbol": "VTS",
+      "asset_name": "Vitesse Energy, Inc. Common Stock (VTS) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2025-06-23",
+      "filed_date": "2025-07-24",
+      "lag_days": 31,
+      "late": false,
+      "side": "sell",
+      "symbol": "T",
+      "asset_name": "AT&T Inc. (T) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2025-06-23",
+      "filed_date": "2025-07-24",
+      "lag_days": 31,
+      "late": false,
+      "side": "sell",
+      "symbol": "SPB",
+      "asset_name": "Spectrum Brands Holdings, Inc. Common Stock (SPB) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2025-06-23",
+      "filed_date": "2025-07-24",
+      "lag_days": 31,
+      "late": false,
+      "side": "sell",
+      "symbol": "SFNC",
+      "asset_name": "Simmons First National Corporation - Common Stock (SFNC) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 100001.0,
+      "amount_max": 250000.0,
+      "midpoint": 175000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2025-06-23",
+      "filed_date": "2025-07-24",
+      "lag_days": 31,
+      "late": false,
+      "side": "sell",
+      "symbol": "RF",
+      "asset_name": "Regions Financial Corporation Common Stock (RF) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2025-06-23",
+      "filed_date": "2025-07-24",
+      "lag_days": 31,
+      "late": false,
+      "side": "buy",
+      "symbol": "MKL",
+      "asset_name": "Markel Group Inc. Common Stock (MKL) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 50001.0,
+      "amount_max": 100000.0,
+      "midpoint": 75000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2025-06-23",
+      "filed_date": "2025-07-24",
+      "lag_days": 31,
+      "late": false,
+      "side": "buy",
+      "symbol": "MKL",
+      "asset_name": "Markel Group Inc. Common Stock (MKL) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2025-06-23",
+      "filed_date": "2025-07-24",
+      "lag_days": 31,
+      "late": false,
+      "side": "sell",
+      "symbol": "LAZ",
+      "asset_name": "Lazard, Inc. Common Stock (LAZ) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 50001.0,
+      "amount_max": 100000.0,
+      "midpoint": 75000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2025-06-23",
+      "filed_date": "2025-07-24",
+      "lag_days": 31,
+      "late": false,
+      "side": "buy",
+      "symbol": "L",
+      "asset_name": "Loews Corporation Common Stock (L) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 50001.0,
+      "amount_max": 100000.0,
+      "midpoint": 75000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2025-06-23",
+      "filed_date": "2025-07-24",
+      "lag_days": 31,
+      "late": false,
+      "side": "sell",
+      "symbol": "INTC",
+      "asset_name": "Intel Corporation - Common Stock (INTC) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2025-06-23",
+      "filed_date": "2025-07-24",
+      "lag_days": 31,
+      "late": false,
+      "side": "sell",
+      "symbol": "FTRE",
+      "asset_name": "Fortrea Holdings Inc. - Common Stock (FTRE) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2025-06-23",
+      "filed_date": "2025-07-24",
+      "lag_days": 31,
+      "late": false,
+      "side": "sell",
+      "symbol": "BX",
+      "asset_name": "Blackstone Inc. Common Stock (BX) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 100001.0,
+      "amount_max": 250000.0,
+      "midpoint": 175000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2025-01-31",
+      "filed_date": "2025-02-04",
+      "lag_days": 4,
+      "late": false,
+      "side": "sell",
+      "symbol": "CVS",
+      "asset_name": "CVS Health Corporation Common Stock (CVS) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2023-12-29",
+      "filed_date": "2024-01-10",
+      "lag_days": 12,
+      "late": false,
+      "side": "sell",
+      "symbol": "SCHW",
+      "asset_name": "Charles Schwab Corporation (SCHW) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 50001.0,
+      "amount_max": 100000.0,
+      "midpoint": 75000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2023-12-29",
+      "filed_date": "2024-01-10",
+      "lag_days": 12,
+      "late": false,
+      "side": "sell",
+      "symbol": "PYPL",
+      "asset_name": "PayPal Holdings, Inc. (PYPL) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2023-11-22",
+      "filed_date": "2023-12-13",
+      "lag_days": 21,
+      "late": false,
+      "side": "buy",
+      "symbol": "WBD",
+      "asset_name": "Warner Bros. Discovery, Inc. - Series A (WBD) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2023-11-22",
+      "filed_date": "2023-12-13",
+      "lag_days": 21,
+      "late": false,
+      "side": "buy",
+      "symbol": "V",
+      "asset_name": "Visa Inc. (V) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 50001.0,
+      "amount_max": 100000.0,
+      "midpoint": 75000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2023-11-22",
+      "filed_date": "2023-12-13",
+      "lag_days": 21,
+      "late": false,
+      "side": "sell",
+      "symbol": "PM",
+      "asset_name": "Philip Morris International Inc (PM) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 100001.0,
+      "amount_max": 250000.0,
+      "midpoint": 175000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2023-11-22",
+      "filed_date": "2023-12-13",
+      "lag_days": 21,
+      "late": false,
+      "side": "buy",
+      "symbol": "PCH",
+      "asset_name": "PotlatchDeltic Corporation (PCH) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2023-11-22",
+      "filed_date": "2023-12-13",
+      "lag_days": 21,
+      "late": false,
+      "side": "buy",
+      "symbol": "PCH",
+      "asset_name": "PotlatchDeltic Corporation (PCH) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2023-11-22",
+      "filed_date": "2023-12-13",
+      "lag_days": 21,
+      "late": false,
+      "side": "buy",
+      "symbol": "PCH",
+      "asset_name": "PotlatchDeltic Corporation (PCH) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2023-11-22",
+      "filed_date": "2023-12-13",
+      "lag_days": 21,
+      "late": false,
+      "side": "sell",
+      "symbol": "MO",
+      "asset_name": "Altria Group, Inc. (MO) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 50001.0,
+      "amount_max": 100000.0,
+      "midpoint": 75000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2023-11-22",
+      "filed_date": "2023-12-13",
+      "lag_days": 21,
+      "late": false,
+      "side": "buy",
+      "symbol": "MMM",
+      "asset_name": "3M Company (MMM) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2023-11-22",
+      "filed_date": "2023-12-13",
+      "lag_days": 21,
+      "late": false,
+      "side": "buy",
+      "symbol": "MKL",
+      "asset_name": "Markel Group Inc. (MKL) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 50001.0,
+      "amount_max": 100000.0,
+      "midpoint": 75000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2023-11-22",
+      "filed_date": "2023-12-13",
+      "lag_days": 21,
+      "late": false,
+      "side": "buy",
+      "symbol": "INTC",
+      "asset_name": "Intel Corporation (INTC) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2023-11-22",
+      "filed_date": "2023-12-13",
+      "lag_days": 21,
+      "late": false,
+      "side": "buy",
+      "symbol": "FIS",
+      "asset_name": "Fidelity National Information Services, Inc. (FIS) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2023-02-23",
+      "filed_date": "2023-03-23",
+      "lag_days": 28,
+      "late": false,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "US TREASURY BILL (MATURITY 08/24/2023) [GS]",
+      "asset_type_code": "GS",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2023-02-14",
+      "filed_date": "2023-03-16",
+      "lag_days": 30,
+      "late": false,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "US TREASURY BILL (MATURITY 08/10/2023) [GS]",
+      "asset_type_code": "GS",
+      "amount_min": 50001.0,
+      "amount_max": 100000.0,
+      "midpoint": 75000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "non_stock",
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2022-12-01",
+      "filed_date": "2023-03-14",
+      "lag_days": 103,
+      "late": true,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "ADFA UA JONESBORO 041186242 [GS]",
+      "asset_type_code": "GS",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2021-04-14",
+      "filed_date": "2021-04-27",
+      "lag_days": 13,
+      "late": false,
+      "side": "sell",
+      "symbol": "SYF",
+      "asset_name": "Synchrony Financial (SYF) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2021-04-08",
+      "filed_date": "2021-04-27",
+      "lag_days": 19,
+      "late": false,
+      "side": "buy",
+      "symbol": "TSLA",
+      "asset_name": "Tesla, Inc. (TSLA) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2020-11-30",
+      "filed_date": "2020-12-30",
+      "lag_days": 30,
+      "late": false,
+      "side": "sell",
+      "symbol": "XOM",
+      "asset_name": "Exxon Mobil Corporation (XOM) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2020-11-30",
+      "filed_date": "2020-12-30",
+      "lag_days": 30,
+      "late": false,
+      "side": "sell",
+      "symbol": "XOM",
+      "asset_name": "Exxon Mobil Corporation (XOM) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2020-11-30",
+      "filed_date": "2020-12-30",
+      "lag_days": 30,
+      "late": false,
+      "side": "sell",
+      "symbol": "T",
+      "asset_name": "AT&T Inc. (T) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2020-11-30",
+      "filed_date": "2020-12-30",
+      "lag_days": 30,
+      "late": false,
+      "side": "sell",
+      "symbol": "SWN",
+      "asset_name": "Southwestern Energy Company (SWN) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2020-11-30",
+      "filed_date": "2020-12-30",
+      "lag_days": 30,
+      "late": false,
+      "side": "buy",
+      "symbol": "FVD",
+      "asset_name": "First Trust VL Dividend (FVD) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2020-11-30",
+      "filed_date": "2020-12-30",
+      "lag_days": 30,
+      "late": false,
+      "side": "buy",
+      "symbol": "BRK.B",
+      "asset_name": "Berkshire Hathaway Inc. New (BRK.B) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "DEPENDENT_CHILD",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    }
+  ],
   "windows": {
     "30d": {
       "rank": null,
@@ -23,21 +1710,32 @@
       "streak": 0,
       "on_fire": false,
       "benched": true,
-      "return": null,
-      "alpha": null,
-      "benchmark": null,
-      "copycat_return": null,
-      "copycat_alpha": null,
-      "trades": 0,
-      "avg_hold_days": null,
-      "avg_filing_lag": null,
+      "return": 0.000538,
+      "alpha": 0.092857,
+      "benchmark": -0.092319,
+      "copycat_return": 0.000462,
+      "copycat_alpha": 0.092782,
+      "trades": 1,
+      "avg_hold_days": 517.0,
+      "avg_filing_lag": 4.0,
       "late_filings": 0,
-      "filings": 0,
-      "badges": [],
+      "filings": 1,
+      "badges": [
+        {
+          "id": "beat_the_market",
+          "name": "Beat the Market",
+          "blurb": "Positive alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        }
+      ],
       "excluded_options": 0,
-      "excluded_non_stock": 0,
-      "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "excluded_non_stock": 2,
+      "excluded_unknown": 22,
+      "unmatched_sells": 16,
       "uncopyable": 0
     },
     "90d": {
@@ -47,21 +1745,32 @@
       "streak": 0,
       "on_fire": false,
       "benched": true,
-      "return": null,
-      "alpha": null,
-      "benchmark": null,
-      "copycat_return": null,
-      "copycat_alpha": null,
-      "trades": 0,
-      "avg_hold_days": null,
-      "avg_filing_lag": null,
+      "return": 0.026355,
+      "alpha": 0.122836,
+      "benchmark": -0.096481,
+      "copycat_return": 0.026324,
+      "copycat_alpha": 0.122804,
+      "trades": 1,
+      "avg_hold_days": 517.0,
+      "avg_filing_lag": 4.0,
       "late_filings": 0,
-      "filings": 0,
-      "badges": [],
+      "filings": 1,
+      "badges": [
+        {
+          "id": "beat_the_market",
+          "name": "Beat the Market",
+          "blurb": "Positive alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        }
+      ],
       "excluded_options": 0,
-      "excluded_non_stock": 0,
-      "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "excluded_non_stock": 2,
+      "excluded_unknown": 22,
+      "unmatched_sells": 16,
       "uncopyable": 0
     },
     "6m": {
@@ -71,69 +1780,107 @@
       "streak": 0,
       "on_fire": false,
       "benched": true,
-      "return": null,
-      "alpha": null,
-      "benchmark": null,
-      "copycat_return": null,
-      "copycat_alpha": null,
-      "trades": 0,
-      "avg_hold_days": null,
-      "avg_filing_lag": null,
+      "return": 0.023884,
+      "alpha": 0.098759,
+      "benchmark": -0.074875,
+      "copycat_return": 0.02386,
+      "copycat_alpha": 0.098735,
+      "trades": 1,
+      "avg_hold_days": 517.0,
+      "avg_filing_lag": 4.0,
       "late_filings": 0,
-      "filings": 0,
-      "badges": [],
+      "filings": 1,
+      "badges": [
+        {
+          "id": "beat_the_market",
+          "name": "Beat the Market",
+          "blurb": "Positive alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        }
+      ],
       "excluded_options": 0,
-      "excluded_non_stock": 0,
-      "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "excluded_non_stock": 2,
+      "excluded_unknown": 22,
+      "unmatched_sells": 16,
       "uncopyable": 0
     },
     "12m": {
-      "rank": null,
+      "rank": 26,
       "previous_rank": null,
       "rank_change": null,
       "streak": 0,
       "on_fire": false,
-      "benched": true,
-      "return": null,
-      "alpha": null,
-      "benchmark": null,
-      "copycat_return": null,
-      "copycat_alpha": null,
-      "trades": 0,
-      "avg_hold_days": null,
-      "avg_filing_lag": null,
+      "benched": false,
+      "return": 0.019115,
+      "alpha": -0.02759,
+      "benchmark": 0.046705,
+      "copycat_return": 0.019393,
+      "copycat_alpha": -0.027312,
+      "trades": 5,
+      "avg_hold_days": 517.0,
+      "avg_filing_lag": 19.2,
       "late_filings": 0,
-      "filings": 0,
-      "badges": [],
+      "filings": 5,
+      "badges": [
+        {
+          "id": "market_beat_you",
+          "name": "The Market Beat You",
+          "blurb": "Negative alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "one_big_bet",
+          "name": "One Big Bet",
+          "blurb": "The largest one or two trades are at least 70% of the dollars."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        }
+      ],
       "excluded_options": 0,
-      "excluded_non_stock": 0,
-      "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "excluded_non_stock": 2,
+      "excluded_unknown": 22,
+      "unmatched_sells": 16,
       "uncopyable": 0
     },
     "all": {
-      "rank": null,
+      "rank": 40,
       "previous_rank": null,
       "rank_change": null,
       "streak": 0,
       "on_fire": false,
-      "benched": true,
-      "return": null,
-      "alpha": null,
-      "benchmark": null,
-      "copycat_return": null,
-      "copycat_alpha": null,
-      "trades": 0,
-      "avg_hold_days": null,
-      "avg_filing_lag": null,
+      "benched": false,
+      "return": 0.117537,
+      "alpha": -0.031859,
+      "benchmark": 0.149396,
+      "copycat_return": 0.112238,
+      "copycat_alpha": 0.02493,
+      "trades": 20,
+      "avg_hold_days": 517.0,
+      "avg_filing_lag": 24.4,
       "late_filings": 0,
-      "filings": 0,
-      "badges": [],
+      "filings": 41,
+      "badges": [
+        {
+          "id": "market_beat_you",
+          "name": "The Market Beat You",
+          "blurb": "Negative alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        }
+      ],
       "excluded_options": 0,
-      "excluded_non_stock": 0,
-      "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "excluded_non_stock": 2,
+      "excluded_unknown": 22,
+      "unmatched_sells": 16,
       "uncopyable": 0
     }
   }
