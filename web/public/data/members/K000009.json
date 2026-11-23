@@ -14,7 +14,27 @@
     "12m": [],
     "all": []
   },
-  "trades": [],
+  "trades": [
+    {
+      "transaction_date": "2022-10-21",
+      "filed_date": "2023-05-15",
+      "lag_days": 206,
+      "late": true,
+      "side": "sell",
+      "symbol": "ANDE",
+      "asset_name": "The Andersons, Inc. (ANDE) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": null,
+      "amount_max": null,
+      "midpoint": null,
+      "midpoint_method": "missing",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    }
+  ],
   "windows": {
     "30d": {
       "rank": null,
@@ -126,9 +146,9 @@
       "copycat_alpha": null,
       "trades": 0,
       "avg_hold_days": null,
-      "avg_filing_lag": null,
-      "late_filings": 0,
-      "filings": 0,
+      "avg_filing_lag": 206.0,
+      "late_filings": 1,
+      "filings": 1,
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,

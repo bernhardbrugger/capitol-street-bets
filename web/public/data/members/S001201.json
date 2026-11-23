@@ -14779,13 +14779,7 @@
       "avg_filing_lag": 694.0,
       "late_filings": 599,
       "filings": 695,
-      "badges": [
-        {
-          "id": "fashionably_late",
-          "name": "Fashionably Late",
-          "blurb": "Highest average gap between the trade and the filing."
-        }
-      ],
+      "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 32,
       "excluded_unknown": 699,

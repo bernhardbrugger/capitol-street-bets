@@ -14,7 +14,27 @@
     "12m": [],
     "all": []
   },
-  "trades": [],
+  "trades": [
+    {
+      "transaction_date": "2023-10-31",
+      "filed_date": "2026-03-15",
+      "lag_days": 866,
+      "late": true,
+      "side": "sell",
+      "symbol": "NWL",
+      "asset_name": "Newell Brands Inc. (NWL) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    }
+  ],
   "windows": {
     "30d": {
       "rank": null,
@@ -36,7 +56,7 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 1,
       "unmatched_sells": 0,
       "uncopyable": 0
     },
@@ -60,7 +80,7 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 1,
       "unmatched_sells": 0,
       "uncopyable": 0
     },
@@ -84,7 +104,7 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 1,
       "unmatched_sells": 0,
       "uncopyable": 0
     },
@@ -102,13 +122,19 @@
       "copycat_alpha": null,
       "trades": 0,
       "avg_hold_days": null,
-      "avg_filing_lag": null,
-      "late_filings": 0,
-      "filings": 0,
-      "badges": [],
+      "avg_filing_lag": 866.0,
+      "late_filings": 1,
+      "filings": 1,
+      "badges": [
+        {
+          "id": "fashionably_late",
+          "name": "Fashionably Late",
+          "blurb": "Highest average gap between the trade and the filing."
+        }
+      ],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 1,
       "unmatched_sells": 0,
       "uncopyable": 0
     },
@@ -126,13 +152,19 @@
       "copycat_alpha": null,
       "trades": 0,
       "avg_hold_days": null,
-      "avg_filing_lag": null,
-      "late_filings": 0,
-      "filings": 0,
-      "badges": [],
+      "avg_filing_lag": 866.0,
+      "late_filings": 1,
+      "filings": 1,
+      "badges": [
+        {
+          "id": "fashionably_late",
+          "name": "Fashionably Late",
+          "blurb": "Highest average gap between the trade and the filing."
+        }
+      ],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 1,
       "unmatched_sells": 0,
       "uncopyable": 0
     }

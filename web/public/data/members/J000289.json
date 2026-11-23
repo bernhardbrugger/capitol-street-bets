@@ -14,7 +14,27 @@
     "12m": [],
     "all": []
   },
-  "trades": [],
+  "trades": [
+    {
+      "transaction_date": "2025-10-27",
+      "filed_date": "2026-01-14",
+      "lag_days": 79,
+      "late": true,
+      "side": "sell",
+      "symbol": "CBSI",
+      "asset_name": "Central Bancshares, Inc. New (CBSI) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 50001.0,
+      "amount_max": 100000.0,
+      "midpoint": 75000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    }
+  ],
   "windows": {
     "30d": {
       "rank": null,
@@ -36,7 +56,7 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 1,
       "unmatched_sells": 0,
       "uncopyable": 0
     },
@@ -60,7 +80,7 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 1,
       "unmatched_sells": 0,
       "uncopyable": 0
     },
@@ -84,7 +104,7 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 1,
       "unmatched_sells": 0,
       "uncopyable": 0
     },
@@ -102,13 +122,13 @@
       "copycat_alpha": null,
       "trades": 0,
       "avg_hold_days": null,
-      "avg_filing_lag": null,
-      "late_filings": 0,
-      "filings": 0,
+      "avg_filing_lag": 79.0,
+      "late_filings": 1,
+      "filings": 1,
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 1,
       "unmatched_sells": 0,
       "uncopyable": 0
     },
@@ -126,13 +146,13 @@
       "copycat_alpha": null,
       "trades": 0,
       "avg_hold_days": null,
-      "avg_filing_lag": null,
-      "late_filings": 0,
-      "filings": 0,
+      "avg_filing_lag": 79.0,
+      "late_filings": 1,
+      "filings": 1,
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 1,
       "unmatched_sells": 0,
       "uncopyable": 0
     }

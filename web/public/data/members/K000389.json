@@ -10,101 +10,101 @@
   "curves": {
     "30d": [
       {
-        "date": "2026-10-23",
+        "date": "2026-10-26",
         "member": 100.0,
         "spy": 100.0
       },
       {
-        "date": "2026-10-30",
-        "member": 97.0114,
-        "spy": 99.4408
+        "date": "2026-11-02",
+        "member": 98.1092,
+        "spy": 98.2662
       },
       {
-        "date": "2026-11-06",
-        "member": 103.1978,
-        "spy": 96.7525
+        "date": "2026-11-09",
+        "member": 106.6837,
+        "spy": 98.3433
       },
       {
-        "date": "2026-11-13",
-        "member": 99.7352,
-        "spy": 99.2631
+        "date": "2026-11-16",
+        "member": 96.4806,
+        "spy": 96.6787
       },
       {
         "date": "2026-11-20",
-        "member": 86.7397,
-        "spy": 90.7681
+        "member": 86.3486,
+        "spy": 90.1277
       }
     ],
     "90d": [
       {
-        "date": "2026-08-24",
+        "date": "2026-08-25",
         "member": 100.0,
         "spy": 100.0
       },
       {
-        "date": "2026-08-31",
-        "member": 97.3364,
-        "spy": 100.4689
+        "date": "2026-09-01",
+        "member": 93.2116,
+        "spy": 99.4608
       },
       {
-        "date": "2026-09-08",
-        "member": 97.1839,
-        "spy": 100.3434
+        "date": "2026-09-09",
+        "member": 95.7931,
+        "spy": 99.5649
       },
       {
-        "date": "2026-09-15",
-        "member": 94.358,
-        "spy": 99.2219
+        "date": "2026-09-16",
+        "member": 91.7294,
+        "spy": 98.4762
       },
       {
-        "date": "2026-09-22",
-        "member": 96.2628,
-        "spy": 101.3166
+        "date": "2026-09-23",
+        "member": 91.5089,
+        "spy": 100.2732
       },
       {
-        "date": "2026-09-29",
-        "member": 90.3232,
-        "spy": 100.146
+        "date": "2026-09-30",
+        "member": 88.0465,
+        "spy": 99.6154
       },
       {
-        "date": "2026-10-06",
-        "member": 90.337,
-        "spy": 102.0973
+        "date": "2026-10-07",
+        "member": 86.815,
+        "spy": 101.5211
       },
       {
-        "date": "2026-10-13",
-        "member": 89.4325,
-        "spy": 101.9548
+        "date": "2026-10-14",
+        "member": 85.2093,
+        "spy": 100.5207
       },
       {
-        "date": "2026-10-20",
-        "member": 88.2256,
-        "spy": 100.7806
+        "date": "2026-10-21",
+        "member": 86.8198,
+        "spy": 100.9765
       },
       {
-        "date": "2026-10-27",
-        "member": 85.9042,
-        "spy": 100.8606
+        "date": "2026-10-28",
+        "member": 84.7525,
+        "spy": 100.8746
       },
       {
-        "date": "2026-11-03",
-        "member": 81.753,
-        "spy": 98.8543
+        "date": "2026-11-04",
+        "member": 85.1235,
+        "spy": 100.1562
       },
       {
-        "date": "2026-11-10",
-        "member": 86.6804,
-        "spy": 98.2737
+        "date": "2026-11-11",
+        "member": 84.8774,
+        "spy": 99.2419
       },
       {
-        "date": "2026-11-17",
-        "member": 81.3607,
-        "spy": 95.983
+        "date": "2026-11-18",
+        "member": 76.9858,
+        "spy": 95.3745
       },
       {
         "date": "2026-11-20",
-        "member": 72.8965,
-        "spy": 90.3966
+        "member": 71.5843,
+        "spy": 90.099
       }
     ],
     "6m": [
@@ -57690,7 +57690,7 @@
       "copycat_return": -0.132887,
       "copycat_alpha": -0.041611,
       "trades": 0,
-      "avg_hold_days": 173.6,
+      "avg_hold_days": 174.6,
       "avg_filing_lag": 28.3,
       "late_filings": 0,
       "filings": 3,
@@ -57714,18 +57714,18 @@
     },
     "90d": {
       "rank": 19,
-      "previous_rank": 20,
-      "rank_change": 1,
-      "streak": 1,
+      "previous_rank": 19,
+      "rank_change": 0,
+      "streak": 0,
       "on_fire": false,
       "benched": false,
-      "return": -0.247562,
-      "alpha": -0.160772,
-      "benchmark": -0.086789,
-      "copycat_return": -0.257035,
-      "copycat_alpha": -0.166742,
+      "return": -0.258925,
+      "alpha": -0.169464,
+      "benchmark": -0.089461,
+      "copycat_return": -0.268458,
+      "copycat_alpha": -0.175459,
       "trades": 11,
-      "avg_hold_days": 128.2,
+      "avg_hold_days": 128.8,
       "avg_filing_lag": 27.3,
       "late_filings": 0,
       "filings": 14,
@@ -57754,9 +57754,9 @@
     },
     "6m": {
       "rank": 21,
-      "previous_rank": 22,
-      "rank_change": 1,
-      "streak": 1,
+      "previous_rank": 21,
+      "rank_change": 0,
+      "streak": 0,
       "on_fire": false,
       "benched": false,
       "return": -0.133211,
@@ -57765,7 +57765,7 @@
       "copycat_return": -0.153938,
       "copycat_alpha": -0.091343,
       "trades": 27,
-      "avg_hold_days": 101.0,
+      "avg_hold_days": 101.3,
       "avg_filing_lag": 25.6,
       "late_filings": 0,
       "filings": 34,
@@ -57794,8 +57794,8 @@
     },
     "12m": {
       "rank": 40,
-      "previous_rank": 39,
-      "rank_change": -1,
+      "previous_rank": 40,
+      "rank_change": 0,
       "streak": 0,
       "on_fire": false,
       "benched": false,
@@ -57805,7 +57805,7 @@
       "copycat_return": -0.177487,
       "copycat_alpha": -0.191538,
       "trades": 47,
-      "avg_hold_days": 92.1,
+      "avg_hold_days": 92.4,
       "avg_filing_lag": 23.0,
       "late_filings": 0,
       "filings": 47,
@@ -57833,8 +57833,8 @@
       "uncopyable": 5
     },
     "all": {
-      "rank": 55,
-      "previous_rank": 54,
+      "rank": 56,
+      "previous_rank": 55,
       "rank_change": -1,
       "streak": 0,
       "on_fire": false,
@@ -57845,7 +57845,7 @@
       "copycat_return": -0.177487,
       "copycat_alpha": -0.191538,
       "trades": 47,
-      "avg_hold_days": 92.1,
+      "avg_hold_days": 92.4,
       "avg_filing_lag": 23.0,
       "late_filings": 0,
       "filings": 47,
@@ -57859,11 +57859,6 @@
           "id": "punctual_pro",
           "name": "Punctual Pro",
           "blurb": "Every filing in this window landed inside 45 days."
-        },
-        {
-          "id": "paper_hands",
-          "name": "Paper Hands",
-          "blurb": "Shortest average holding period on the board."
         }
       ],
       "excluded_options": 0,

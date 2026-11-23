@@ -14,7 +14,46 @@
     "12m": [],
     "all": []
   },
-  "trades": [],
+  "trades": [
+    {
+      "transaction_date": "2020-03-02",
+      "filed_date": "2020-03-19",
+      "lag_days": 17,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "Pacur, LLC Company: Pacur, LLC (Oshkosh, WI) Description: Manufacturing - Plastic Extrusion",
+      "asset_type_code": "Other",
+      "amount_min": 5000001.0,
+      "amount_max": 25000000.0,
+      "midpoint": 15000000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2019-12-20",
+      "filed_date": "2020-08-06",
+      "lag_days": 230,
+      "late": true,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "Wisconsin St Hlth & Edl Rate/Coupon: 5.0% Matures: 12/15/2023",
+      "asset_type_code": "Municipal Security",
+      "amount_min": 100001.0,
+      "amount_max": 250000.0,
+      "midpoint": 175000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    }
+  ],
   "windows": {
     "30d": {
       "rank": null,
@@ -36,7 +75,7 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 2,
       "unmatched_sells": 0,
       "uncopyable": 0
     },
@@ -60,7 +99,7 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 2,
       "unmatched_sells": 0,
       "uncopyable": 0
     },
@@ -84,7 +123,7 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 2,
       "unmatched_sells": 0,
       "uncopyable": 0
     },
@@ -108,7 +147,7 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 2,
       "unmatched_sells": 0,
       "uncopyable": 0
     },
@@ -132,7 +171,7 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 2,
       "unmatched_sells": 0,
       "uncopyable": 0
     }

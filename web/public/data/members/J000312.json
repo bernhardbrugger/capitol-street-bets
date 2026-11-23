@@ -14,7 +14,46 @@
     "12m": [],
     "all": []
   },
-  "trades": [],
+  "trades": [
+    {
+      "transaction_date": "2026-08-14",
+      "filed_date": "2026-09-28",
+      "lag_days": 45,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "Greenbrier Hotel Corporation and Affiliates Company: Greenbrier Hotel Corporation and Affiliates (White Sulphur Springs, WV) Description: Hospitality",
+      "asset_type_code": "Non-Public Stock",
+      "amount_min": null,
+      "amount_max": null,
+      "midpoint": null,
+      "midpoint_method": "missing",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-08-28",
+      "filed_date": "2025-10-10",
+      "lag_days": 43,
+      "late": false,
+      "side": "sell",
+      "symbol": "PEBO",
+      "asset_name": "Peoples Bancorp Inc. - Common Stock",
+      "asset_type_code": "Stock",
+      "amount_min": 250001.0,
+      "amount_max": 500000.0,
+      "midpoint": 375000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    }
+  ],
   "windows": {
     "30d": {
       "rank": null,
@@ -36,8 +75,8 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "excluded_unknown": 1,
+      "unmatched_sells": 1,
       "uncopyable": 0
     },
     "90d": {
@@ -60,8 +99,8 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "excluded_unknown": 1,
+      "unmatched_sells": 1,
       "uncopyable": 0
     },
     "6m": {
@@ -84,8 +123,8 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "excluded_unknown": 1,
+      "unmatched_sells": 1,
       "uncopyable": 0
     },
     "12m": {
@@ -108,8 +147,8 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "excluded_unknown": 1,
+      "unmatched_sells": 1,
       "uncopyable": 0
     },
     "all": {
@@ -124,16 +163,16 @@
       "benchmark": null,
       "copycat_return": null,
       "copycat_alpha": null,
-      "trades": 0,
+      "trades": 1,
       "avg_hold_days": null,
-      "avg_filing_lag": null,
+      "avg_filing_lag": 43.0,
       "late_filings": 0,
-      "filings": 0,
+      "filings": 1,
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "excluded_unknown": 1,
+      "unmatched_sells": 1,
       "uncopyable": 0
     }
   }
