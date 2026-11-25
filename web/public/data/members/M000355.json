@@ -8,13 +8,1888 @@
   "district": null,
   "years_in_service": 41.9,
   "curves": {
-    "30d": [],
-    "90d": [],
-    "6m": [],
-    "12m": [],
-    "all": []
+    "30d": [
+      {
+        "date": "2026-10-26",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-11-02",
+        "member": 103.9201,
+        "spy": 98.2662
+      },
+      {
+        "date": "2026-11-09",
+        "member": 103.4362,
+        "spy": 98.3433
+      },
+      {
+        "date": "2026-11-16",
+        "member": 102.6497,
+        "spy": 96.6787
+      },
+      {
+        "date": "2026-11-23",
+        "member": 96.7937,
+        "spy": 94.3713
+      },
+      {
+        "date": "2026-11-24",
+        "member": 98.2335,
+        "spy": 93.9127
+      }
+    ],
+    "90d": [
+      {
+        "date": "2026-08-27",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-09-03",
+        "member": 104.0925,
+        "spy": 100.6979
+      },
+      {
+        "date": "2026-09-11",
+        "member": 105.3763,
+        "spy": 99.5414
+      },
+      {
+        "date": "2026-09-18",
+        "member": 100.5096,
+        "spy": 99.2028
+      },
+      {
+        "date": "2026-09-25",
+        "member": 96.8332,
+        "spy": 100.4609
+      },
+      {
+        "date": "2026-10-02",
+        "member": 93.8922,
+        "spy": 100.2382
+      },
+      {
+        "date": "2026-10-09",
+        "member": 97.5101,
+        "spy": 101.4012
+      },
+      {
+        "date": "2026-10-16",
+        "member": 97.8836,
+        "spy": 99.4059
+      },
+      {
+        "date": "2026-10-23",
+        "member": 96.1563,
+        "spy": 98.9787
+      },
+      {
+        "date": "2026-10-30",
+        "member": 97.3351,
+        "spy": 98.4252
+      },
+      {
+        "date": "2026-11-06",
+        "member": 97.9653,
+        "spy": 95.7644
+      },
+      {
+        "date": "2026-11-13",
+        "member": 100.4279,
+        "spy": 98.2494
+      },
+      {
+        "date": "2026-11-20",
+        "member": 91.7564,
+        "spy": 89.8411
+      },
+      {
+        "date": "2026-11-24",
+        "member": 94.7558,
+        "spy": 93.6141
+      }
+    ],
+    "6m": [
+      {
+        "date": "2026-05-27",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2026-06-03",
+        "member": 103.1669,
+        "spy": 100.3455
+      },
+      {
+        "date": "2026-06-10",
+        "member": 107.4808,
+        "spy": 96.5126
+      },
+      {
+        "date": "2026-06-17",
+        "member": 109.8935,
+        "spy": 98.5787
+      },
+      {
+        "date": "2026-06-25",
+        "member": 111.1129,
+        "spy": 97.6927
+      },
+      {
+        "date": "2026-07-02",
+        "member": 112.1225,
+        "spy": 99.0869
+      },
+      {
+        "date": "2026-07-10",
+        "member": 114.2861,
+        "spy": 100.44
+      },
+      {
+        "date": "2026-07-17",
+        "member": 114.745,
+        "spy": 98.8887
+      },
+      {
+        "date": "2026-07-24",
+        "member": 113.1715,
+        "spy": 98.3087
+      },
+      {
+        "date": "2026-07-31",
+        "member": 113.3551,
+        "spy": 99.3863
+      },
+      {
+        "date": "2026-08-07",
+        "member": 114.4041,
+        "spy": 102.876
+      },
+      {
+        "date": "2026-08-14",
+        "member": 116.4627,
+        "spy": 103.2858
+      },
+      {
+        "date": "2026-08-21",
+        "member": 109.9328,
+        "spy": 101.8728
+      },
+      {
+        "date": "2026-08-28",
+        "member": 113.6698,
+        "spy": 102.3558
+      },
+      {
+        "date": "2026-09-04",
+        "member": 117.8067,
+        "spy": 102.8194
+      },
+      {
+        "date": "2026-09-14",
+        "member": 116.1568,
+        "spy": 101.5765
+      },
+      {
+        "date": "2026-09-21",
+        "member": 113.3154,
+        "spy": 103.2613
+      },
+      {
+        "date": "2026-09-28",
+        "member": 105.8126,
+        "spy": 102.208
+      },
+      {
+        "date": "2026-10-05",
+        "member": 106.6375,
+        "spy": 103.4388
+      },
+      {
+        "date": "2026-10-12",
+        "member": 109.0992,
+        "spy": 103.8754
+      },
+      {
+        "date": "2026-10-19",
+        "member": 107.1089,
+        "spy": 102.3241
+      },
+      {
+        "date": "2026-10-26",
+        "member": 108.2219,
+        "spy": 102.1759
+      },
+      {
+        "date": "2026-11-02",
+        "member": 112.4643,
+        "spy": 100.4044
+      },
+      {
+        "date": "2026-11-09",
+        "member": 111.9406,
+        "spy": 100.4832
+      },
+      {
+        "date": "2026-11-16",
+        "member": 111.0895,
+        "spy": 98.7824
+      },
+      {
+        "date": "2026-11-23",
+        "member": 104.752,
+        "spy": 96.4248
+      },
+      {
+        "date": "2026-11-24",
+        "member": 106.3101,
+        "spy": 95.9562
+      }
+    ],
+    "12m": [
+      {
+        "date": "2025-11-25",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2025-12-03",
+        "member": 104.9259,
+        "spy": 101.1695
+      },
+      {
+        "date": "2025-12-10",
+        "member": 106.4995,
+        "spy": 101.7139
+      },
+      {
+        "date": "2025-12-17",
+        "member": 108.7307,
+        "spy": 99.3218
+      },
+      {
+        "date": "2025-12-24",
+        "member": 111.9132,
+        "spy": 102.1296
+      },
+      {
+        "date": "2026-01-02",
+        "member": 111.7957,
+        "spy": 101.063
+      },
+      {
+        "date": "2026-01-09",
+        "member": 112.6765,
+        "spy": 102.6754
+      },
+      {
+        "date": "2026-01-16",
+        "member": 103.7868,
+        "spy": 102.3189
+      },
+      {
+        "date": "2026-01-26",
+        "member": 103.3993,
+        "spy": 102.4772
+      },
+      {
+        "date": "2026-02-02",
+        "member": 108.355,
+        "spy": 102.8737
+      },
+      {
+        "date": "2026-02-09",
+        "member": 111.1029,
+        "spy": 102.6577
+      },
+      {
+        "date": "2026-02-17",
+        "member": 102.636,
+        "spy": 101.0156
+      },
+      {
+        "date": "2026-02-24",
+        "member": 99.3127,
+        "spy": 101.6813
+      },
+      {
+        "date": "2026-03-03",
+        "member": 97.4997,
+        "spy": 100.6742
+      },
+      {
+        "date": "2026-03-10",
+        "member": 92.5024,
+        "spy": 100.208
+      },
+      {
+        "date": "2026-03-17",
+        "member": 90.057,
+        "spy": 99.2624
+      },
+      {
+        "date": "2026-03-24",
+        "member": 94.0501,
+        "spy": 96.6565
+      },
+      {
+        "date": "2026-03-31",
+        "member": 94.0501,
+        "spy": 96.2363
+      },
+      {
+        "date": "2026-04-08",
+        "member": 100.016,
+        "spy": 100.0349
+      },
+      {
+        "date": "2026-04-15",
+        "member": 94.8534,
+        "spy": 103.576
+      },
+      {
+        "date": "2026-04-22",
+        "member": 95.196,
+        "spy": 105.2437
+      },
+      {
+        "date": "2026-04-29",
+        "member": 96.2947,
+        "spy": 105.2985
+      },
+      {
+        "date": "2026-05-06",
+        "member": 95.007,
+        "spy": 108.591
+      },
+      {
+        "date": "2026-05-13",
+        "member": 86.8672,
+        "spy": 109.8459
+      },
+      {
+        "date": "2026-05-20",
+        "member": 89.5608,
+        "spy": 109.689
+      },
+      {
+        "date": "2026-05-28",
+        "member": 90.5532,
+        "spy": 111.6645
+      },
+      {
+        "date": "2026-06-04",
+        "member": 96.3292,
+        "spy": 111.9475
+      },
+      {
+        "date": "2026-06-11",
+        "member": 97.2498,
+        "spy": 109.0893
+      },
+      {
+        "date": "2026-06-18",
+        "member": 97.0137,
+        "spy": 110.4171
+      },
+      {
+        "date": "2026-06-26",
+        "member": 98.9729,
+        "spy": 107.7925
+      },
+      {
+        "date": "2026-07-06",
+        "member": 103.2099,
+        "spy": 111.0884
+      },
+      {
+        "date": "2026-07-13",
+        "member": 103.4695,
+        "spy": 110.7764
+      },
+      {
+        "date": "2026-07-20",
+        "member": 101.888,
+        "spy": 109.7295
+      },
+      {
+        "date": "2026-07-27",
+        "member": 102.9974,
+        "spy": 109.2859
+      },
+      {
+        "date": "2026-08-03",
+        "member": 103.7292,
+        "spy": 112.0333
+      },
+      {
+        "date": "2026-08-10",
+        "member": 103.2925,
+        "spy": 114.3045
+      },
+      {
+        "date": "2026-08-17",
+        "member": 103.3161,
+        "spy": 114.2513
+      },
+      {
+        "date": "2026-08-24",
+        "member": 99.9879,
+        "spy": 112.8909
+      },
+      {
+        "date": "2026-08-31",
+        "member": 101.9589,
+        "spy": 113.4203
+      },
+      {
+        "date": "2026-09-08",
+        "member": 103.5433,
+        "spy": 113.5304
+      },
+      {
+        "date": "2026-09-15",
+        "member": 105.6151,
+        "spy": 112.2602
+      },
+      {
+        "date": "2026-09-22",
+        "member": 97.8811,
+        "spy": 114.6302
+      },
+      {
+        "date": "2026-09-29",
+        "member": 94.7381,
+        "spy": 113.2696
+      },
+      {
+        "date": "2026-10-06",
+        "member": 95.9506,
+        "spy": 115.4766
+      },
+      {
+        "date": "2026-10-13",
+        "member": 95.0442,
+        "spy": 115.3165
+      },
+      {
+        "date": "2026-10-20",
+        "member": 96.7628,
+        "spy": 113.9884
+      },
+      {
+        "date": "2026-10-27",
+        "member": 97.3043,
+        "spy": 114.0789
+      },
+      {
+        "date": "2026-11-03",
+        "member": 100.6828,
+        "spy": 111.8096
+      },
+      {
+        "date": "2026-11-10",
+        "member": 100.9535,
+        "spy": 111.153
+      },
+      {
+        "date": "2026-11-17",
+        "member": 97.3396,
+        "spy": 108.5621
+      },
+      {
+        "date": "2026-11-24",
+        "member": 95.5739,
+        "spy": 106.5374
+      }
+    ],
+    "all": [
+      {
+        "date": "2024-12-02",
+        "member": 100.0,
+        "spy": 100.0
+      },
+      {
+        "date": "2024-12-09",
+        "member": 96.4665,
+        "spy": 100.1739
+      },
+      {
+        "date": "2024-12-16",
+        "member": 95.6164,
+        "spy": 100.5235
+      },
+      {
+        "date": "2024-12-23",
+        "member": 93.7035,
+        "spy": 98.519
+      },
+      {
+        "date": "2024-12-31",
+        "member": 93.305,
+        "spy": 97.0926
+      },
+      {
+        "date": "2025-01-08",
+        "member": 95.0717,
+        "spy": 97.6575
+      },
+      {
+        "date": "2025-01-16",
+        "member": 100.89,
+        "spy": 98.0137
+      },
+      {
+        "date": "2025-01-24",
+        "member": 102.7099,
+        "spy": 100.719
+      },
+      {
+        "date": "2025-01-31",
+        "member": 104.6759,
+        "spy": 99.7001
+      },
+      {
+        "date": "2025-02-07",
+        "member": 107.1599,
+        "spy": 99.5262
+      },
+      {
+        "date": "2025-02-14",
+        "member": 106.2434,
+        "spy": 101.0056
+      },
+      {
+        "date": "2025-02-24",
+        "member": 102.577,
+        "spy": 98.9364
+      },
+      {
+        "date": "2025-03-03",
+        "member": 102.3247,
+        "spy": 96.7099
+      },
+      {
+        "date": "2025-03-10",
+        "member": 88.7088,
+        "spy": 92.8681
+      },
+      {
+        "date": "2025-03-17",
+        "member": 94.102,
+        "spy": 93.9566
+      },
+      {
+        "date": "2025-03-24",
+        "member": 98.6716,
+        "spy": 95.1046
+      },
+      {
+        "date": "2025-03-31",
+        "member": 95.364,
+        "spy": 92.671
+      },
+      {
+        "date": "2025-04-07",
+        "member": 82.585,
+        "spy": 83.5578
+      },
+      {
+        "date": "2025-04-14",
+        "member": 83.8204,
+        "spy": 89.313
+      },
+      {
+        "date": "2025-04-22",
+        "member": 87.9782,
+        "spy": 87.3466
+      },
+      {
+        "date": "2025-04-29",
+        "member": 94.4474,
+        "spy": 91.8311
+      },
+      {
+        "date": "2025-05-06",
+        "member": 97.6089,
+        "spy": 92.5733
+      },
+      {
+        "date": "2025-05-13",
+        "member": 100.9431,
+        "spy": 97.2185
+      },
+      {
+        "date": "2025-05-20",
+        "member": 100.3188,
+        "spy": 98.2141
+      },
+      {
+        "date": "2025-05-28",
+        "member": 97.941,
+        "spy": 97.3659
+      },
+      {
+        "date": "2025-06-04",
+        "member": 99.6541,
+        "spy": 98.6297
+      },
+      {
+        "date": "2025-06-11",
+        "member": 99.0591,
+        "spy": 99.5284
+      },
+      {
+        "date": "2025-06-18",
+        "member": 98.808,
+        "spy": 98.8796
+      },
+      {
+        "date": "2025-06-26",
+        "member": 105.7089,
+        "spy": 101.2679
+      },
+      {
+        "date": "2025-07-03",
+        "member": 110.5211,
+        "spy": 103.4972
+      },
+      {
+        "date": "2025-07-11",
+        "member": 109.133,
+        "spy": 103.2125
+      },
+      {
+        "date": "2025-07-18",
+        "member": 106.6079,
+        "spy": 103.8679
+      },
+      {
+        "date": "2025-07-25",
+        "member": 111.4729,
+        "spy": 105.4436
+      },
+      {
+        "date": "2025-08-01",
+        "member": 102.8269,
+        "spy": 102.8981
+      },
+      {
+        "date": "2025-08-08",
+        "member": 102.9194,
+        "spy": 105.4568
+      },
+      {
+        "date": "2025-08-15",
+        "member": 101.9279,
+        "spy": 106.4929
+      },
+      {
+        "date": "2025-08-22",
+        "member": 104.572,
+        "spy": 106.8024
+      },
+      {
+        "date": "2025-08-29",
+        "member": 108.6438,
+        "spy": 106.7593
+      },
+      {
+        "date": "2025-09-08",
+        "member": 104.6249,
+        "spy": 107.3849
+      },
+      {
+        "date": "2025-09-15",
+        "member": 107.6258,
+        "spy": 109.3842
+      },
+      {
+        "date": "2025-09-22",
+        "member": 112.5834,
+        "spy": 110.3657
+      },
+      {
+        "date": "2025-09-29",
+        "member": 111.9092,
+        "spy": 109.8427
+      },
+      {
+        "date": "2025-10-06",
+        "member": 106.674,
+        "spy": 111.1552
+      },
+      {
+        "date": "2025-10-13",
+        "member": 104.334,
+        "spy": 109.7368
+      },
+      {
+        "date": "2025-10-20",
+        "member": 113.7204,
+        "spy": 111.1038
+      },
+      {
+        "date": "2025-10-27",
+        "member": 115.0292,
+        "spy": 113.411
+      },
+      {
+        "date": "2025-11-03",
+        "member": 115.4126,
+        "spy": 113.0965
+      },
+      {
+        "date": "2025-11-10",
+        "member": 113.8261,
+        "spy": 112.7821
+      },
+      {
+        "date": "2025-11-17",
+        "member": 110.2831,
+        "spy": 110.1721
+      },
+      {
+        "date": "2025-11-24",
+        "member": 111.9224,
+        "spy": 110.6785
+      },
+      {
+        "date": "2025-12-02",
+        "member": 113.9334,
+        "spy": 112.4417
+      },
+      {
+        "date": "2025-12-09",
+        "member": 117.3255,
+        "spy": 112.6908
+      },
+      {
+        "date": "2025-12-16",
+        "member": 121.6812,
+        "spy": 112.0028
+      },
+      {
+        "date": "2025-12-23",
+        "member": 124.6905,
+        "spy": 113.5025
+      },
+      {
+        "date": "2025-12-31",
+        "member": 123.0143,
+        "spy": 112.506
+      },
+      {
+        "date": "2026-01-08",
+        "member": 126.182,
+        "spy": 113.7583
+      },
+      {
+        "date": "2026-01-15",
+        "member": 117.4179,
+        "spy": 114.2087
+      },
+      {
+        "date": "2026-01-23",
+        "member": 114.7781,
+        "spy": 113.7121
+      },
+      {
+        "date": "2026-01-30",
+        "member": 119.4373,
+        "spy": 114.1641
+      },
+      {
+        "date": "2026-02-06",
+        "member": 124.0306,
+        "spy": 113.9414
+      },
+      {
+        "date": "2026-02-13",
+        "member": 114.8045,
+        "spy": 112.478
+      },
+      {
+        "date": "2026-02-23",
+        "member": 112.3891,
+        "spy": 112.5836
+      },
+      {
+        "date": "2026-03-02",
+        "member": 109.7696,
+        "spy": 113.1491
+      },
+      {
+        "date": "2026-03-09",
+        "member": 104.7849,
+        "spy": 111.8122
+      },
+      {
+        "date": "2026-03-16",
+        "member": 100.6908,
+        "spy": 110.289
+      },
+      {
+        "date": "2026-03-23",
+        "member": 104.0538,
+        "spy": 108.0388
+      },
+      {
+        "date": "2026-03-30",
+        "member": 102.0865,
+        "spy": 104.1797
+      },
+      {
+        "date": "2026-04-07",
+        "member": 108.6663,
+        "spy": 108.6718
+      },
+      {
+        "date": "2026-04-14",
+        "member": 108.5999,
+        "spy": 114.4811
+      },
+      {
+        "date": "2026-04-21",
+        "member": 108.4005,
+        "spy": 116.067
+      },
+      {
+        "date": "2026-04-28",
+        "member": 108.334,
+        "spy": 117.3215
+      },
+      {
+        "date": "2026-05-05",
+        "member": 106.1939,
+        "spy": 119.3128
+      },
+      {
+        "date": "2026-05-12",
+        "member": 99.9331,
+        "spy": 121.6883
+      },
+      {
+        "date": "2026-05-19",
+        "member": 99.0957,
+        "spy": 120.9547
+      },
+      {
+        "date": "2026-05-27",
+        "member": 101.1694,
+        "spy": 123.7127
+      },
+      {
+        "date": "2026-06-03",
+        "member": 104.3733,
+        "spy": 124.1401
+      },
+      {
+        "date": "2026-06-10",
+        "member": 108.7377,
+        "spy": 119.3983
+      },
+      {
+        "date": "2026-06-17",
+        "member": 111.1785,
+        "spy": 121.9544
+      },
+      {
+        "date": "2026-06-25",
+        "member": 112.4122,
+        "spy": 120.8582
+      },
+      {
+        "date": "2026-07-02",
+        "member": 113.4337,
+        "spy": 122.5831
+      },
+      {
+        "date": "2026-07-10",
+        "member": 115.6225,
+        "spy": 124.257
+      },
+      {
+        "date": "2026-07-17",
+        "member": 116.0868,
+        "spy": 122.3379
+      },
+      {
+        "date": "2026-07-24",
+        "member": 114.4949,
+        "spy": 121.6203
+      },
+      {
+        "date": "2026-07-31",
+        "member": 114.6806,
+        "spy": 122.9534
+      },
+      {
+        "date": "2026-08-07",
+        "member": 115.7419,
+        "spy": 127.2706
+      },
+      {
+        "date": "2026-08-14",
+        "member": 117.8245,
+        "spy": 127.7776
+      },
+      {
+        "date": "2026-08-21",
+        "member": 111.2183,
+        "spy": 126.0296
+      },
+      {
+        "date": "2026-08-28",
+        "member": 114.999,
+        "spy": 126.6271
+      },
+      {
+        "date": "2026-09-04",
+        "member": 119.1843,
+        "spy": 127.2006
+      },
+      {
+        "date": "2026-09-14",
+        "member": 117.5151,
+        "spy": 125.663
+      },
+      {
+        "date": "2026-09-21",
+        "member": 114.6405,
+        "spy": 127.7473
+      },
+      {
+        "date": "2026-09-28",
+        "member": 107.0499,
+        "spy": 126.4442
+      },
+      {
+        "date": "2026-10-05",
+        "member": 107.8845,
+        "spy": 127.9669
+      },
+      {
+        "date": "2026-10-12",
+        "member": 110.3749,
+        "spy": 128.507
+      },
+      {
+        "date": "2026-10-19",
+        "member": 108.3614,
+        "spy": 126.5879
+      },
+      {
+        "date": "2026-10-26",
+        "member": 109.4874,
+        "spy": 126.4046
+      },
+      {
+        "date": "2026-11-02",
+        "member": 113.7794,
+        "spy": 124.213
+      },
+      {
+        "date": "2026-11-09",
+        "member": 113.2495,
+        "spy": 124.3104
+      },
+      {
+        "date": "2026-11-16",
+        "member": 112.3885,
+        "spy": 122.2063
+      },
+      {
+        "date": "2026-11-23",
+        "member": 105.9769,
+        "spy": 119.2897
+      },
+      {
+        "date": "2026-11-24",
+        "member": 107.5533,
+        "spy": 118.71
+      }
+    ]
   },
-  "trades": [],
+  "trades": [
+    {
+      "transaction_date": "2026-09-01",
+      "filed_date": "2026-09-21",
+      "lag_days": 20,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company Common Stock",
+      "asset_type_code": "Stock",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2026-06-01",
+      "filed_date": "2026-06-30",
+      "lag_days": 29,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company Common Stock",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2026-03-01",
+      "filed_date": "2026-03-19",
+      "lag_days": 18,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company Common Stock",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-12-24",
+      "filed_date": "2026-01-13",
+      "lag_days": 20,
+      "late": false,
+      "side": "sell",
+      "symbol": "LAZR",
+      "asset_name": "Luminar Technologies Inc",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-12-01",
+      "filed_date": "2025-12-19",
+      "lag_days": 18,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-09-01",
+      "filed_date": "2025-09-12",
+      "lag_days": 11,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-06-26",
+      "filed_date": "2025-07-07",
+      "lag_days": 11,
+      "late": false,
+      "side": "sell",
+      "symbol": "LAZR",
+      "asset_name": "Luminar Technologies Inc",
+      "asset_type_code": "Stock",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-06-01",
+      "filed_date": "2025-06-19",
+      "lag_days": 18,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2025-03-03",
+      "filed_date": "2025-03-12",
+      "lag_days": 9,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2024-12-02",
+      "filed_date": "2025-01-04",
+      "lag_days": 33,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2024-09-01",
+      "filed_date": "2024-09-16",
+      "lag_days": 15,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2024-06-04",
+      "filed_date": "2024-06-13",
+      "lag_days": 9,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2024-03-05",
+      "filed_date": "2024-03-19",
+      "lag_days": 14,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-12-05",
+      "filed_date": "2023-12-18",
+      "lag_days": 13,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company Common Stock",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-09-01",
+      "filed_date": "2023-09-15",
+      "lag_days": 14,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company Common Stock",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-08-03",
+      "filed_date": "2023-08-31",
+      "lag_days": 28,
+      "late": false,
+      "side": "buy",
+      "symbol": "",
+      "asset_name": "Chamberlain Units Company: Chariot Parent, LLC d/b/a Chamberlain Group (Oak Brook, Illinois)",
+      "asset_type_code": "Other",
+      "amount_min": 50001.0,
+      "amount_max": 100000.0,
+      "midpoint": 75000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-06-05",
+      "filed_date": "2023-06-14",
+      "lag_days": 9,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company Common Stock",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2023-03-03",
+      "filed_date": "2023-03-28",
+      "lag_days": 25,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company Common Stock",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2022-12-05",
+      "filed_date": "2022-12-29",
+      "lag_days": 24,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company Common Stock",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2022-11-29",
+      "filed_date": "2022-12-29",
+      "lag_days": 30,
+      "late": false,
+      "side": "buy",
+      "symbol": "KR",
+      "asset_name": "Kroger Company (The) Common Stock",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2022-09-06",
+      "filed_date": "2022-09-26",
+      "lag_days": 20,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company Common Stock",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2022-06-03",
+      "filed_date": "2022-06-13",
+      "lag_days": 10,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company Common Stock",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2022-03-03",
+      "filed_date": "2022-03-14",
+      "lag_days": 11,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company Common Stock",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2021-12-03",
+      "filed_date": "2021-12-16",
+      "lag_days": 13,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company Common Stock",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2021-09-03",
+      "filed_date": "2021-09-15",
+      "lag_days": 12,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "WFC - Wells Fargo & Company",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2021-06-03",
+      "filed_date": "2021-06-07",
+      "lag_days": 4,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2021-03-03",
+      "filed_date": "2021-03-16",
+      "lag_days": 13,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2020-12-03",
+      "filed_date": "2020-12-07",
+      "lag_days": 4,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2020-09-02",
+      "filed_date": "2020-09-11",
+      "lag_days": 9,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2020-06-03",
+      "filed_date": "2020-06-23",
+      "lag_days": 20,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2020-03-04",
+      "filed_date": "2020-03-11",
+      "lag_days": 7,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2019-12-04",
+      "filed_date": "2019-12-12",
+      "lag_days": 8,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2019-09-01",
+      "filed_date": "2019-09-16",
+      "lag_days": 15,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2019-06-03",
+      "filed_date": "2019-06-14",
+      "lag_days": 11,
+      "late": false,
+      "side": "sell",
+      "symbol": "VMC",
+      "asset_name": "Vulcan Materials Company",
+      "asset_type_code": "Stock",
+      "amount_min": 250001.0,
+      "amount_max": 500000.0,
+      "midpoint": 375000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2019-06-03",
+      "filed_date": "2019-06-14",
+      "lag_days": 11,
+      "late": false,
+      "side": "sell",
+      "symbol": "IR",
+      "asset_name": "Ingersoll-Rand Plc",
+      "asset_type_code": "Stock",
+      "amount_min": 250001.0,
+      "amount_max": 500000.0,
+      "midpoint": 375000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2019-06-01",
+      "filed_date": "2019-06-21",
+      "lag_days": 20,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2019-03-05",
+      "filed_date": "2019-03-06",
+      "lag_days": 1,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2018-12-05",
+      "filed_date": "2018-12-17",
+      "lag_days": 12,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2018-09-06",
+      "filed_date": "2018-09-14",
+      "lag_days": 8,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2018-06-01",
+      "filed_date": "2018-06-13",
+      "lag_days": 12,
+      "late": false,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2018-03-05",
+      "filed_date": "2018-05-15",
+      "lag_days": 71,
+      "late": true,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2017-12-05",
+      "filed_date": "2018-05-15",
+      "lag_days": 161,
+      "late": true,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2017-09-07",
+      "filed_date": "2018-05-15",
+      "lag_days": 250,
+      "late": true,
+      "side": "buy",
+      "symbol": "WFC",
+      "asset_name": "Wells Fargo & Company",
+      "asset_type_code": "Stock",
+      "amount_min": 1001.0,
+      "amount_max": 15000.0,
+      "midpoint": 8000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2017-04-21",
+      "filed_date": "2017-05-15",
+      "lag_days": 24,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "AMCP Security Holdings, L.P. Incentive Units (parent of Centerra)",
+      "asset_type_code": "Stock",
+      "amount_min": 15001.0,
+      "amount_max": 50000.0,
+      "midpoint": 32500.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2017-02-02",
+      "filed_date": "2017-05-15",
+      "lag_days": 102,
+      "late": true,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "IR-Ingersoll-Rand Plc",
+      "asset_type_code": "Stock",
+      "amount_min": 50001.0,
+      "amount_max": 100000.0,
+      "midpoint": 75000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    },
+    {
+      "transaction_date": "2016-06-09",
+      "filed_date": "2017-05-15",
+      "lag_days": 340,
+      "late": true,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "IR-Ingersoll-Rand Plc",
+      "asset_type_code": "Stock",
+      "amount_min": 50001.0,
+      "amount_max": 100000.0,
+      "midpoint": 75000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SPOUSE",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://efdsearch.senate.gov/search/"
+    }
+  ],
   "windows": {
     "30d": {
       "rank": null,
@@ -23,21 +1898,27 @@
       "streak": 0,
       "on_fire": false,
       "benched": true,
-      "return": null,
-      "alpha": null,
-      "benchmark": null,
-      "copycat_return": null,
-      "copycat_alpha": null,
+      "return": -0.017665,
+      "alpha": 0.043208,
+      "benchmark": -0.060873,
+      "copycat_return": -0.017665,
+      "copycat_alpha": 0.043208,
       "trades": 0,
-      "avg_hold_days": null,
+      "avg_hold_days": 404.6,
       "avg_filing_lag": null,
       "late_filings": 0,
       "filings": 0,
-      "badges": [],
+      "badges": [
+        {
+          "id": "beat_the_market",
+          "name": "Beat the Market",
+          "blurb": "Positive alpha versus SPY over the same holding periods."
+        }
+      ],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "excluded_unknown": 36,
+      "unmatched_sells": 2,
       "uncopyable": 0
     },
     "90d": {
@@ -47,21 +1928,37 @@
       "streak": 0,
       "on_fire": false,
       "benched": true,
-      "return": null,
-      "alpha": null,
-      "benchmark": null,
-      "copycat_return": null,
-      "copycat_alpha": null,
-      "trades": 0,
-      "avg_hold_days": null,
-      "avg_filing_lag": null,
+      "return": -0.052442,
+      "alpha": 0.011417,
+      "benchmark": -0.063859,
+      "copycat_return": -0.050494,
+      "copycat_alpha": 0.018359,
+      "trades": 1,
+      "avg_hold_days": 404.6,
+      "avg_filing_lag": 20.0,
       "late_filings": 0,
-      "filings": 0,
-      "badges": [],
+      "filings": 1,
+      "badges": [
+        {
+          "id": "beat_the_market",
+          "name": "Beat the Market",
+          "blurb": "Positive alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "index_hugger",
+          "name": "Index Hugger",
+          "blurb": "Alpha landed within 2 percentage points of the S&P."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        }
+      ],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "excluded_unknown": 36,
+      "unmatched_sells": 2,
       "uncopyable": 0
     },
     "6m": {
@@ -71,69 +1968,97 @@
       "streak": 0,
       "on_fire": false,
       "benched": true,
-      "return": null,
-      "alpha": null,
-      "benchmark": null,
-      "copycat_return": null,
-      "copycat_alpha": null,
-      "trades": 0,
-      "avg_hold_days": null,
-      "avg_filing_lag": null,
+      "return": 0.015151,
+      "alpha": 0.063645,
+      "benchmark": -0.048494,
+      "copycat_return": 0.011608,
+      "copycat_alpha": 0.063927,
+      "trades": 2,
+      "avg_hold_days": 404.6,
+      "avg_filing_lag": 24.5,
       "late_filings": 0,
-      "filings": 0,
-      "badges": [],
+      "filings": 2,
+      "badges": [
+        {
+          "id": "beat_the_market",
+          "name": "Beat the Market",
+          "blurb": "Positive alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        }
+      ],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "excluded_unknown": 36,
+      "unmatched_sells": 2,
       "uncopyable": 0
     },
     "12m": {
-      "rank": null,
+      "rank": 28,
       "previous_rank": null,
       "rank_change": null,
       "streak": 0,
       "on_fire": false,
-      "benched": true,
-      "return": null,
-      "alpha": null,
-      "benchmark": null,
-      "copycat_return": null,
-      "copycat_alpha": null,
-      "trades": 0,
-      "avg_hold_days": null,
-      "avg_filing_lag": null,
+      "benched": false,
+      "return": -0.041495,
+      "alpha": -0.050953,
+      "benchmark": 0.009458,
+      "copycat_return": -0.046669,
+      "copycat_alpha": -0.056913,
+      "trades": 5,
+      "avg_hold_days": 404.6,
+      "avg_filing_lag": 21.0,
       "late_filings": 0,
-      "filings": 0,
-      "badges": [],
+      "filings": 5,
+      "badges": [
+        {
+          "id": "market_beat_you",
+          "name": "The Market Beat You",
+          "blurb": "Negative alpha versus SPY over the same holding periods."
+        },
+        {
+          "id": "punctual_pro",
+          "name": "Punctual Pro",
+          "blurb": "Every filing in this window landed inside 45 days."
+        }
+      ],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "excluded_unknown": 36,
+      "unmatched_sells": 2,
       "uncopyable": 0
     },
     "all": {
-      "rank": null,
+      "rank": 46,
       "previous_rank": null,
       "rank_change": null,
       "streak": 0,
       "on_fire": false,
-      "benched": true,
-      "return": null,
-      "alpha": null,
-      "benchmark": null,
-      "copycat_return": null,
-      "copycat_alpha": null,
-      "trades": 0,
-      "avg_hold_days": null,
-      "avg_filing_lag": null,
-      "late_filings": 0,
-      "filings": 0,
-      "badges": [],
+      "benched": false,
+      "return": -0.006079,
+      "alpha": -0.058378,
+      "benchmark": 0.0523,
+      "copycat_return": 0.006008,
+      "copycat_alpha": -0.04981,
+      "trades": 10,
+      "avg_hold_days": 404.6,
+      "avg_filing_lag": 24.8,
+      "late_filings": 3,
+      "filings": 42,
+      "badges": [
+        {
+          "id": "market_beat_you",
+          "name": "The Market Beat You",
+          "blurb": "Negative alpha versus SPY over the same holding periods."
+        }
+      ],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
-      "unmatched_sells": 0,
+      "excluded_unknown": 36,
+      "unmatched_sells": 2,
       "uncopyable": 0
     }
   }
