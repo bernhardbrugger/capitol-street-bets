@@ -5,6 +5,8 @@ description = "A playful league table of publicly disclosed US Congress stock tr
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
+# Windows ships no time zone database; zoneinfo needs this for America/New_York.
+dependencies = ['tzdata; sys_platform == "win32"']
 
 [project.optional-dependencies]
 dev = ["pytest>=8.0"]

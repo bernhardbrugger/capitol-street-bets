@@ -65,6 +65,7 @@ Vite, rather than a server framework, because the page is a scoreboard over one 
 ## Run it locally
 
 ```bash
+pip install -e ".[dev]"   # pytest, plus tzdata on Windows
 python -m pytest
 cd web && npm install && npm run dev
 ```
