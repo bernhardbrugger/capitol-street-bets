@@ -454,11 +454,13 @@ def write_site(site_data: Path, league: dict, members: dict[str, dict], history:
 def load_history(path: Path) -> dict:
     if not path.exists():
         return {}
-    return json.loads(path.read_text())
+    return json.loads(path.read_text(encoding="utf-8"))
 
 
 def _dump(path: Path, payload: object) -> None:
-    path.write_text(json.dumps(payload, indent=2, sort_keys=False) + "\n")
+    path.write_text(
+        json.dumps(payload, indent=2, sort_keys=False) + "\n", encoding="utf-8", newline="\n"
+    )
 
 
 def empty_history_from_snapshots(

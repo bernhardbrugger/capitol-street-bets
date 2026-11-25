@@ -141,9 +141,9 @@ def render(league: dict, site_url: str, top: int = 10) -> str:
 
 
 def update_readme(readme: Path, league_path: Path, site_url: str, top: int = 10) -> bool:
-    league = json.loads(league_path.read_text())
+    league = json.loads(league_path.read_text(encoding="utf-8"))
     block = f"{START}\n{render(league, site_url, top)}\n{END}"
-    text = readme.read_text()
+    text = readme.read_text(encoding="utf-8")
     if START in text and END in text:
         head, rest = text.split(START, 1)
         _, tail = rest.split(END, 1)
@@ -152,5 +152,5 @@ def update_readme(readme: Path, league_path: Path, site_url: str, top: int = 10)
         new = text.rstrip() + "\n\n## Current standings\n\n" + block + "\n"
     if new == text:
         return False
-    readme.write_text(new)
+    readme.write_text(new, encoding="utf-8", newline="\n")
     return True

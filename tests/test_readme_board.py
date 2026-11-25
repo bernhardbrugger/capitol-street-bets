@@ -24,6 +24,17 @@ def test_update_is_idempotent(tmp_path):
     assert update_readme(readme, league, "https://e.test/") is False
 
 
+def test_update_keeps_non_ascii_text_as_utf8(tmp_path):
+    # Windows defaults to cp1252: the README's arrows and accents must survive byte for byte.
+    readme = tmp_path / "README.md"
+    readme.write_bytes(f"# Café → board\n\n{START}\nold\n{END}\n\nNancy Pelosi · tail\n".encode())
+    league = tmp_path / "league.json"
+    league.write_bytes(json.dumps({"sample": False, "generated_at": "2026-11-10T00:00:00", "windows": {}}).encode())
+    assert update_readme(readme, league, "https://e.test/") is True
+    text = readme.read_bytes().decode("utf-8")
+    assert text.startswith("# Café → board\n") and text.endswith("Nancy Pelosi · tail\n")
+
+
 def test_recent_disclosures_cap_one_busy_filer():
     from datetime import date
 
