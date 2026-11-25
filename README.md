@@ -70,9 +70,9 @@ python -m pytest
 cd web && npm install && npm run dev
 ```
 
-The dev server prints a local URL. The sample board is already in `web/public/data`.
+The dev server prints a local URL and shows the board in `web/public/data`: the live data the daily job last committed.
 
-Regenerate that sample:
+To work on the fictional sample league instead (it overwrites those files, so don't commit them; `git checkout web/public/data && git clean -fd web/public/data` brings the live board back):
 
 ```bash
 PYTHONPATH=src python -m capitol_street_bets sample
