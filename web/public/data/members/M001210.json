@@ -14,7 +14,46 @@
     "12m": [],
     "all": []
   },
-  "trades": [],
+  "trades": [
+    {
+      "transaction_date": "2022-05-01",
+      "filed_date": "2022-06-08",
+      "lag_days": 38,
+      "late": false,
+      "side": "sell",
+      "symbol": "",
+      "asset_name": "Condominium - Raleigh, NC [OT]",
+      "asset_type_code": "OT",
+      "amount_min": 250001.0,
+      "amount_max": 500000.0,
+      "midpoint": 375000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": false,
+      "exclude_reason": "unknown",
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    },
+    {
+      "transaction_date": "2021-01-22",
+      "filed_date": "2021-02-12",
+      "lag_days": 21,
+      "late": false,
+      "side": "sell",
+      "symbol": "NYMX",
+      "asset_name": "Nymox Pharmaceutical Corporation (NYMX) [ST]",
+      "asset_type_code": "ST",
+      "amount_min": 50001.0,
+      "amount_max": 100000.0,
+      "midpoint": 75000.5,
+      "midpoint_method": "midpoint",
+      "owner_code": "SELF",
+      "included": true,
+      "exclude_reason": null,
+      "source_url": null,
+      "disclosure_portal": "https://disclosures-clerk.house.gov/FinancialDisclosure"
+    }
+  ],
   "windows": {
     "30d": {
       "rank": null,
@@ -36,7 +75,7 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 2,
       "unmatched_sells": 0,
       "uncopyable": 0
     },
@@ -60,7 +99,7 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 2,
       "unmatched_sells": 0,
       "uncopyable": 0
     },
@@ -84,7 +123,7 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 2,
       "unmatched_sells": 0,
       "uncopyable": 0
     },
@@ -108,7 +147,7 @@
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 2,
       "unmatched_sells": 0,
       "uncopyable": 0
     },
@@ -126,13 +165,13 @@
       "copycat_alpha": null,
       "trades": 0,
       "avg_hold_days": null,
-      "avg_filing_lag": null,
+      "avg_filing_lag": 21.0,
       "late_filings": 0,
-      "filings": 0,
+      "filings": 1,
       "badges": [],
       "excluded_options": 0,
       "excluded_non_stock": 0,
-      "excluded_unknown": 0,
+      "excluded_unknown": 2,
       "unmatched_sells": 0,
       "uncopyable": 0
     }
